@@ -2,7 +2,7 @@
 
 A source-reviewed catalogue of MCP servers, skills, libraries, and agents for real-world evidence workflows, maintained by [Black Swan Causal Labs](https://blackswancausallabs.com).
 
-The public registry is available at [rwe-mcp-registry.smokeyultimatum.chatgpt.site](https://rwe-mcp-registry.smokeyultimatum.chatgpt.site) and is updated weekly.
+The public registry is available at [black-swan-causal-labs.github.io/RWE-MCP-Registry](https://black-swan-causal-labs.github.io/RWE-MCP-Registry/) and is updated weekly.
 
 ## Public dataset
 
