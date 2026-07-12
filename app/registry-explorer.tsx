@@ -1,0 +1,135 @@
+"use client";
+
+import { useMemo, useState } from "react";
+
+type Entry = {
+  name: string; org: string; url: string; kind: string; category: string;
+  tier: string; tierLabel: string; stars: number; lastPush: string;
+  daysSincePush: number; stale: boolean; dataSources: string[]; tags: string[];
+  summary: string; note: string | null;
+  verification: {
+    status: string; verifiedAt: string; repositoryStatus: string;
+    canonicalRepository?: string; publisherClassification?: string;
+    license?: string; defaultBranch?: string; forks?: number; openIssues?: number;
+    officialRegistryListed: boolean; officialRegistryName?: string | null;
+    officialRegistryVersion?: string | null; officialRegistryStatus?: string | null;
+    verificationSources: string[]; note: string;
+  };
+};
+
+const tierCopy: Record<string, { label: string; description: string }> = {
+  "1": { label: "Provenanced", description: "Institutional, consortium, or known author" },
+  "2": { label: "Active", description: "Maintained, coherent scope, unaffiliated" },
+  "3": { label: "Unreviewed", description: "Indexed, not assessed" },
+  F: { label: "Flagged", description: "Verify carefully before use" },
+};
+
+const formatDate = (date: string) => new Intl.DateTimeFormat("en-US", { month: "short", day: "numeric", year: "numeric", timeZone: "UTC" }).format(new Date(`${date}T00:00:00Z`));
+
+export function RegistryExplorer() {
+  return (
+    <main>
+      <header className="site-header">
+        <a className="brand" href="https://blackswancausallabs.com" aria-label="Black Swan Causal Labs home">
+          <span>BLACK SWAN <b>CAUSAL LABS</b></span>
+        </a>
+        <nav aria-label="Primary navigation">
+          <a href="#registry">Registry</a><a href="/methods">Methods</a><a href="https://blackswancausallabs.com/blog">Field notes</a>
+        </nav>
+      </header>
+
+      <section className="hero">
+        <div className="hero-grid">
+          <div>
+            <h1>The RWE<br /><i>MCP Registry</i></h1>
+            <p className="lede">A source-reviewed catalogue of MCP servers, skills, libraries, and agents for real-world evidence workflows.</p>
+          </div>
+          <div className="update-stamp" aria-label="Registry update schedule">
+            <strong>Updated<br />weekly</strong>
+            <span>Last reviewed</span>
+            <time dateTime="2026-07-12">Jul 12, 2026</time>
+          </div>
+        </div>
+        <div className="signal-line" aria-hidden="true" />
+      </section>
+
+      <section className="registry" id="registry">
+        <CardPrototype />
+
+        <aside className="coverage-note" aria-label="Registry coverage boundary">
+          <p><strong>This index covers publicly discoverable work only.</strong> Private repositories, internal enterprise servers, unpublished skills, and public projects that are not registered, indexed, or documented cannot be observed. An absent capability means “not found in the searched public sources,” not “does not exist.”</p>
+          <a href="/methods#coverage">How coverage is defined ↗</a>
+        </aside>
+
+      </section>
+
+      <footer><p>© 2026 Black Swan Causal Labs</p><p><a href="https://blackswancausallabs.com/#contact">Suggest an addition ↗</a></p></footer>
+    </main>
+  );
+}
+
+const prototypeCards = [
+  { name:"bioSkills", kind:"Skill collection", category:"Study design & analytics", summary:"Bioinformatics skill collection with an RWE-relevant clinical-biostatistics component.", tags:["Clinical biostatistics","Survival analysis","Study design"], added:"Jul 11, 2026", checked:"Jul 12, 2026", status:"Static documentation reviewed", runtime:"Not runtime tested", repository:"GPTomics/bioSkills", website:"GitHub", packages:"Clinical-biostatistics component", workflowFit:["Analysis planning","Statistical programming","Reproducible workflow guidance"], capabilities:["Selective skill-category installation","Clinical-biostatistics methods guidance","Survival, estimand, missing-data, and trial-design skills"], limitation:"Capabilities are attributed to the clinical-biostatistics component, not the entire collection. Generated code and method choices require independent review.", url:"https://github.com/GPTomics/bioSkills" },
+  { name:"HEORAgent MCP Server", kind:"MCP server", category:"Trials & evidence synthesis", summary:"HEOR-oriented MCP server documenting evidence synthesis, economic modeling, HTA, RWE, and pharmacovigilance workflows.", tags:["HEOR","Economic modeling","HTA"], added:"Jul 12, 2026", checked:"Jul 12, 2026", status:"Static implementation reviewed", runtime:"Not runtime tested", repository:"neptun2000/heor-agent-mcp", website:"npm", packages:"heor-agent-mcp 1.27.0", workflowFit:["Evidence synthesis","Cost-effectiveness and budget impact","HTA preparation"], capabilities:["Multi-source literature and bias assessment","Economic and indirect-comparison modeling","HTA dossier and RWE method workflows"], limitation:"The broad, decision-grade tool surface requires tool-by-tool runtime and methodological validation. Outputs are not substitutes for independent HEOR or regulatory review.", url:"https://github.com/neptun2000/heor-agent-mcp" },
+  { name:"paper-mcp", kind:"MCP server", category:"Trials & evidence synthesis", summary:"Scholarly-search server combining medical-evidence retrieval, citation exploration, and PDF/LaTeX utilities.", tags:["PubMed / Europe PMC","Citation graphs","PDF extraction"], added:"Jul 12, 2026", checked:"Jul 12, 2026", status:"Static implementation reviewed", runtime:"Not runtime tested", repository:"MCPServings/paper-mcp", website:"GitHub", packages:"paper-mcp 0.5.0", workflowFit:["Literature discovery","Citation chaining","Evidence retrieval"], capabilities:["PubMed and Europe PMC evidence search","Semantic Scholar and OpenAlex citation tools","Paper fetch, full text, and optional PDF extraction"], limitation:"Coverage, evidence-grading logic, full-text licensing, credentials, and citation accuracy require separate testing; some optional utilities use external services.", url:"https://github.com/MCPServings/paper-mcp" },
+  { name:"paper-search-mcp-openai", kind:"MCP server", category:"Trials & evidence synthesis", summary:"Multi-source scholarly search and retrieval across PubMed, preprints, indexes, and citation services.", tags:["PubMed","Multi-source search","Full text"], added:"Jul 12, 2026", checked:"Jul 12, 2026", status:"Static implementation reviewed", runtime:"Not runtime tested", repository:"adamamer20/paper-search-mcp-openai", website:"GitHub", packages:"paper-search-mcp 0.1.3", workflowFit:["Literature discovery","Evidence scoping","Citation chasing"], capabilities:["Unified search and fetch","Source-specific search and download","PubMed, preprint, Semantic Scholar, and Crossref support"], limitation:"Provider coverage and full-text availability vary; reproducible reviews still require logged queries, dates, deduplication, and primary-source verification.", url:"https://github.com/adamamer20/paper-search-mcp-openai" },
+  { name:"pubmed-mcp-smithery", kind:"MCP server", category:"Trials & evidence synthesis", summary:"PubMed server with keyword, MeSH, publication-count, article-detail, and PICO-oriented search tools.", tags:["PubMed","MeSH","PICO search"], added:"Jul 12, 2026", checked:"Jul 12, 2026", status:"Static implementation reviewed · caveat", runtime:"Not runtime tested", repository:"lineex/pubmed-mcp-smithery", website:"Smithery", packages:"Source script", workflowFit:["Search strategy development","Literature discovery","Evidence scoping"], capabilities:["Keyword and journal search","MeSH and PMID detail retrieval","PICO combination searches"], limitation:"No package manifest or license file was found; PICO query generation is not a systematic review and NCBI rate-limit behavior remains untested.", url:"https://github.com/lineex/pubmed-mcp-smithery" },
+  { name:"bq-health-mcp", kind:"MCP server", category:"OMOP & terminology", summary:"Read-only structured exploration of a public synthetic OMOP observation table in BigQuery.", tags:["BigQuery","OMOP observation","Synthetic data"], added:"Jul 12, 2026", checked:"Jul 12, 2026", status:"Static implementation reviewed · caveat", runtime:"Not runtime tested", repository:"a-xp/bq-health-mcp", website:"GitHub", packages:"bq-health-mcp 0.1.0", workflowFit:["Data exploration","Feasibility prototyping","Concept-frequency review"], capabilities:["Filtered observation queries","Aggregate statistics and frequent concepts","Person-level synthetic timelines"], limitation:"It targets one synthetic observation table, not a complete production CDM; stronger SQL verification, authorization, and usage limits remain TODOs.", url:"https://github.com/a-xp/bq-health-mcp" },
+  { name:"OHDSI MCPs", kind:"MCP collection", category:"OMOP & terminology", summary:"Hosted reference servers for the Book of OHDSI, OMOP CDM specifications, and the OHDSI Weekly Digest.", tags:["OMOP CDM docs","Book of OHDSI","Weekly digest"], added:"Jul 12, 2026", checked:"Jul 12, 2026", status:"Static documentation reviewed", runtime:"Not runtime tested", repository:"Leko/ohdsi-mcps", website:"Hosted endpoints", packages:"Three component servers", workflowFit:["Standards reference","Methods orientation","Community monitoring"], capabilities:["Chapter reading and search","CDM table and field reference","Weekly Digest retrieval"], limitation:"These are reference and community-content services—not patient-data access or vocabulary lookup. Claims must retain component and upstream-source attribution.", url:"https://github.com/Leko/ohdsi-mcps" },
+  { name:"ohdsi-webapi-mcp", kind:"MCP server", category:"OMOP & terminology", summary:"OHDSI WebAPI bridge for vocabulary discovery, cohort construction, persistence, and feasibility estimation.", tags:["OHDSI WebAPI","Cohort definitions","Concept sets"], added:"Jul 12, 2026", checked:"Jul 12, 2026", status:"Static implementation reviewed · write scope", runtime:"Not runtime tested", repository:"clsweeting/ohdsi-webapi-mcp", website:"GitHub", packages:"ohdsi-webapi-mcp 0.2.1", workflowFit:["Cohort design","Feasibility estimation","Vocabulary navigation"], capabilities:["Concept and hierarchy tools","Cohort criteria and validation","Persistence, comparison, and job control"], limitation:"It can save or clone cohort definitions and cancel jobs. Authorization inherits the target WebAPI deployment and was not established by this review.", url:"https://github.com/clsweeting/ohdsi-webapi-mcp" },
+  { name:"OMOP MCP Server", kind:"MCP server", category:"OMOP & terminology", summary:"OHNLP terminology-mapping server using an LLM and OMOPHub vocabulary services.", tags:["Terminology mapping","OMOP concepts","Batch mapping"], added:"Jul 12, 2026", checked:"Jul 12, 2026", status:"Static implementation reviewed · validation priority", runtime:"Not runtime tested", repository:"OHNLP/omop_mcp", website:"OMapper demo", packages:"omop_mcp 0.2.0", workflowFit:["Source-to-standard mapping","Vocabulary search","Harmonization preparation"], capabilities:["Contextual concept lookup","CSV batch mapping","Preferred-vocabulary guidance"], limitation:"LLM- and API-derived mappings require authoritative vocabulary-version checks and human review; batch mapping also reads and writes local files.", url:"https://github.com/OHNLP/omop_mcp" },
+  { name:"OMOPHub MCP Server", kind:"MCP server", category:"OMOP & terminology", summary:"Search, map, validate, and navigate OMOP concepts across clinical coding systems.", tags:["Vocabulary search","Crosswalks","Concept hierarchy"], added:"Jul 12, 2026", checked:"Jul 12, 2026", status:"Static implementation reviewed", runtime:"Not runtime tested", repository:"OMOPHub/omophub-mcp", website:"omophub.com", packages:"@omophub/omophub-mcp 1.5.2", workflowFit:["Terminology normalization","Concept-set development","Code validation"], capabilities:["Concept lookup and semantic search","Cross-vocabulary mapping","Hierarchy and FHIR-oriented tools"], limitation:"Results depend on service coverage, vocabulary versions, and API availability; mappings and hierarchy expansions still require study-specific review.", url:"https://github.com/OMOPHub/omophub-mcp" },
+  { name:"pyomop", kind:"Library + MCP server", category:"OMOP & terminology", summary:"Python OMOP toolkit with database management, FHIR import, QueryLibrary execution, and MCP interfaces.", tags:["OMOP CDM","FHIR import","SQL execution"], added:"Jul 12, 2026", checked:"Jul 12, 2026", status:"Static implementation reviewed · high-risk writes", runtime:"Not runtime tested", repository:"dermatologist/pyomop", website:"Documentation", packages:"pyomop", workflowFit:["Data-model prototyping","ETL experimentation","OMOP query tooling"], capabilities:["OMOP v5.4/v6 models","FHIR Bulk Export conversion","Database, vocabulary, and SQL tools"], limitation:"The MCP surface includes raw SQL and database creation/loading. Least-privilege credentials, write isolation, PHI controls, and mapping validation are essential.", url:"https://github.com/dermatologist/pyomop" },
+  { name:"UCSFOMOPAgent", kind:"MCP server", category:"OMOP & terminology", summary:"Credentialed read-only access to UCSF’s de-identified OMOP CDM with schema, concept, and lab helpers.", tags:["De-identified EHR","OMOP querying","Phenotyping"], added:"Jul 12, 2026", checked:"Jul 12, 2026", status:"Static implementation reviewed · restricted deployment", runtime:"Not runtime tested", repository:"BaranziniLab/UCSFOMOPAgent", website:"GitHub", packages:"ucsfomopagent 0.2.0", workflowFit:["Cohort feasibility","Phenotype exploration","Clinical-data retrieval"], capabilities:["Validated read-only T-SQL","Live schema and concept search","Measurement concept resolution"], limitation:"It is institution-specific and returns row-level de-identified data; disclosure risk, credentials, query validation, and benchmark claims require UCSF governance review.", url:"https://github.com/BaranziniLab/UCSFOMOPAgent" },
+  { name:"WebApiMcp", kind:"MCP server", category:"OMOP & terminology", summary:"Read-oriented OHDSI WebAPI wrapper for concepts, sources, cohort definitions, and concept sets.", tags:["OHDSI WebAPI","Cohort definitions","Concept sets"], added:"Jul 12, 2026", checked:"Jul 12, 2026", status:"Static implementation reviewed · caveat", runtime:"Not runtime tested", repository:"schuemie/WebApiMcp", website:"GitHub", packages:"webapi-mcp 0.1.0", workflowFit:["Cohort-definition review","Vocabulary lookup","Source inspection"], capabilities:["Concept search and record counts","Cohort definition retrieval","Concept set retrieval and metadata"], limitation:"Access controls, disclosure thresholds, and compatibility depend on the configured WebAPI deployment; no repository license was declared.", url:"https://github.com/schuemie/WebApiMcp" },
+  { name:"SignalBridge for openFDA", kind:"MCP server", category:"Pharmacovigilance & safety", summary:"Structured openFDA access for FAERS exploration, drug labels, listedness, and recall searches.", tags:["FAERS","Drug labels","Recalls"], added:"Jul 12, 2026", checked:"Jul 12, 2026", status:"Static implementation reviewed", runtime:"Not runtime tested", repository:"Janiumang/mcp-server-openfda", website:"GitHub", packages:"mcp-server-openfda 0.1.0", workflowFit:["Safety case exploration","Label review","Regulatory-source retrieval"], capabilities:["Adverse-event search and counts","Drug-label sections","Recall and enforcement searches"], limitation:"openFDA reports do not provide incidence or causality. Reporting bias, duplicate cases, product normalization, truncation, and label versions require qualified PV review.", url:"https://github.com/Janiumang/mcp-server-openfda" },
+  { name:"PV Signal MCP Server", kind:"MCP server", category:"Pharmacovigilance & safety", summary:"Stateless PRR and ROR calculator for caller-supplied adverse-event contingency counts.", tags:["PRR","ROR","Disproportionality"], added:"Jul 12, 2026", checked:"Jul 12, 2026", status:"Static implementation reviewed · methods caveat", runtime:"Not runtime tested", repository:"aneesh-sayal-tkd/pharmacovigilance-mcp-server", website:"GitHub", packages:"Source repository", workflowFit:["Signal screening","Contingency-table analysis"], capabilities:["PRR and ROR calculations","ROR confidence interval","Threshold-based ranking"], limitation:"It does not retrieve or validate FAERS data, calculate documented chi-square, apply continuity corrections, or adjust for multiplicity; README and implementation differ.", url:"https://github.com/aneesh-sayal-tkd/pharmacovigilance-mcp-server" },
+  { name:"Vigil", kind:"MCP server + A2A agent", category:"Pharmacovigilance & safety", summary:"Workspace adverse-event scanner using BOCPD, Poisson z-score, CUSUM, and signed FHIR outputs.", tags:["Safety surveillance","FHIR DetectedIssue","Change detection"], added:"Jul 12, 2026", checked:"Jul 12, 2026", status:"Static implementation reviewed · validation priority", runtime:"Not runtime tested", repository:"AbhinavGupta707/Vigil", website:"Live demo", packages:"vigil 1.0.0", workflowFit:["Signal detection research","Workspace surveillance","Audit-ready prototyping"], capabilities:["Three-method detection ensemble","Benjamini–Hochberg control","Signed FHIR safety output"], limitation:"Performance is based on engineered frozen corpora, not prospective external validation. Patient-level scanning and FHIR writes require independent statistical, privacy, and clinical review.", url:"https://github.com/AbhinavGupta707/Vigil" },
+  { name:"AqtaBio Research", kind:"MCP server + research mirror", category:"Public health & surveillance", summary:"Pre-etiologic zoonotic spillover-risk forecasting at 25 km resolution.", tags:["Spillover forecasting","Hotspots","Disease X"], added:"Jul 12, 2026", checked:"Jul 12, 2026", status:"Static implementation reviewed · research caveat", runtime:"Not runtime tested", repository:"Aqta-ai/aqtabio-research", website:"aqtabio.org", packages:"AqtaBio MCP 0.1.0", workflowFit:["Surveillance prioritization","Preparedness planning","Research forecasting"], capabilities:["Pathogen and Disease X risk","Hotspots, trends, and risk drivers","FHIR outputs and sentinel placement"], limitation:"Aggregate validation and external replication are pending; production ingestion and trained models are closed, and some mirrored code does not run independently.", url:"https://github.com/Aqta-ai/aqtabio-research" },
+  { name:"wonder-mcp", kind:"MCP server", category:"Public health & surveillance", summary:"CDC WONDER querying with preserved request provenance, replication code, and epidemiologic calculations.", tags:["CDC WONDER","Mortality","Reproducible queries"], added:"Jul 12, 2026", checked:"Jul 12, 2026", status:"Static implementation reviewed", runtime:"Not runtime tested", repository:"hesscl/wonder-mcp", website:"CDC WONDER", packages:"wonder-mcp 0.1.0", workflowFit:["Mortality and natality analysis","Population-health surveillance","Reproducible extraction"], capabilities:["WONDER database and variable discovery","Exact XML query preservation","Rate, trend, life-table, and decomposition tools"], limitation:"Suppression, data-use restrictions, provisional data, denominators, and comparability must be preserved; derived calculations require independent methodological checking.", url:"https://github.com/hesscl/wonder-mcp" },
+];
+
+function CardPrototype() {
+  const [expanded, setExpanded] = useState<string | null>(null);
+  const [query, setQuery] = useState("");
+  const [category, setCategory] = useState("All categories");
+  const categories = useMemo(() => [...new Set(prototypeCards.map(card => card.category))], []);
+  const results = useMemo(() => prototypeCards.filter(card => {
+    const needle = query.trim().toLowerCase();
+    const haystack = [card.name, card.kind, card.category, card.summary, card.status, ...card.tags, ...card.workflowFit, ...card.capabilities].join(" ").toLowerCase();
+    return (!needle || haystack.includes(needle)) && (category === "All categories" || card.category === category);
+  }), [query, category]);
+  return <section className="card-prototype" aria-label="Reviewed registry catalogue">
+    <div className="review-controls"><label className="search-box"><span aria-hidden="true">⌕</span><input value={query} onChange={e => setQuery(e.target.value)} placeholder="Search ‘FAERS’, ‘PubMed’, ‘OMOP’…" aria-label="Search reviewed catalogue" /></label><label><span>Category</span><select value={category} onChange={e => setCategory(e.target.value)}>{["All categories", ...categories].map(option => <option key={option}>{option}</option>)}</select></label></div>
+    <div className="prototype-list">{results.map((card) => { const open = expanded === card.name; return <article className={`prototype-card ${open ? "is-open" : ""}`} key={card.name}>
+      <button className="prototype-summary" onClick={() => setExpanded(open ? null : card.name)} aria-expanded={open}>
+        <div><span className="prototype-type">{card.kind} · {card.category}</span><strong>{card.name}</strong><p>{card.summary}</p><div className="tags">{card.tags.map(tag => <span key={tag}>{tag}</span>)}</div></div>
+        <div className="prototype-freshness"><span>Added {card.added}</span><span>Checked {card.checked}</span><b>{open ? "Close −" : "View RWE uses +"}</b></div>
+      </button>
+      {open && <div className="prototype-details"><div className="capability-panel"><span>RWE workflow fit</span><div className="workflow-tags">{card.workflowFit.map(item => <b key={item}>{item}</b>)}</div><span>Documented capabilities</span><ul>{card.capabilities.map(capability => <li key={capability}>{capability}</li>)}</ul><p><b>Limitation</b> {card.limitation}</p></div><dl><div><dt>Status</dt><dd>{card.status}</dd></div><div><dt>Runtime</dt><dd>{card.runtime}</dd></div><div><dt>Repository</dt><dd>{card.repository}</dd></div><div><dt>Website</dt><dd>{card.website}</dd></div><div><dt>Packages</dt><dd>{card.packages}</dd></div></dl><a className="prototype-link" href={card.url} target={card.url === "#" ? undefined : "_blank"} rel="noreferrer">Open source ↗</a></div>}
+    </article>; })}</div>
+    {!results.length && <div className="empty"><span>∅</span><h3>No reviewed match.</h3><p>Try a broader source, method, or workflow term.</p><button onClick={() => { setQuery(""); setCategory("All categories"); }}>Clear filters</button></div>}
+  </section>;
+}
+
+function Filter({ label, value, options, setValue, display = (v: string) => v }: { label: string; value: string; options: string[]; setValue: (v: string) => void; display?: (v: string) => string }) {
+  return <label><span>{label}</span><select value={value} onChange={(e) => setValue(e.target.value)}>{options.map((option) => <option key={option} value={option}>{display(option)}</option>)}</select></label>;
+}
+
+function EntryCard({ item, number }: { item: Entry; number: number }) {
+  return <article className={`entry-card tier-${item.tier.toLowerCase()}`}>
+    <div className="card-index">{String(number).padStart(2, "0")}</div>
+    <div className="card-main">
+      <div className="card-meta"><span>{item.category}</span><span>{item.kind}</span></div>
+      <h3><a href={item.url} target="_blank" rel="noreferrer">{item.name} <span>↗</span></a></h3>
+      <p className="org">{item.org}</p><p className="summary">{item.summary}</p>
+      <div className="tags">{item.tags.slice(0, 4).map((tag) => <span key={tag}>{tag}</span>)}</div>
+      {item.note && <p className="caveat"><b>Editorial note</b> {item.note}</p>}
+    </div>
+    <div className="card-evidence">
+      <div className={`verification-badge ${item.verification.status === "Unavailable" ? "unavailable" : ""}`}><span>{item.verification.status === "Metadata verified" ? "Repository checked" : "Repository unavailable"}</span><small>{formatDate(item.verification.verifiedAt)}</small></div>
+      <div className="tier-badge"><span>Editorial classification</span><b>{tierCopy[item.tier]?.label}</b><small>{tierCopy[item.tier]?.description}</small></div>
+      <dl><div><dt>Repository</dt><dd>{item.verification.repositoryStatus}</dd></div><div><dt>Last push</dt><dd>{item.lastPush ? formatDate(item.lastPush) : "Not available"}{item.stale && <em>stale</em>}</dd></div><div><dt>License</dt><dd>{item.verification.license ?? "Not available"}</dd></div><div><dt>Official registry</dt><dd>{item.verification.officialRegistryListed ? `${item.verification.officialRegistryName} ${item.verification.officialRegistryVersion}` : "No exact URL match"}</dd></div><div><dt>Sources</dt><dd>{item.dataSources.join(", ")}</dd></div><div><dt>Stars</dt><dd>{item.stars}</dd></div></dl>
+    </div>
+  </article>;
+}
