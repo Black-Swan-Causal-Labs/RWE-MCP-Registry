@@ -27,6 +27,8 @@ const tierCopy: Record<string, { label: string; description: string }> = {
 const formatDate = (date: string) => new Intl.DateTimeFormat("en-US", { month: "short", day: "numeric", year: "numeric", timeZone: "UTC" }).format(new Date(`${date}T00:00:00Z`));
 
 export function RegistryExplorer() {
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
   return (
     <main>
       <header className="site-header">
@@ -34,7 +36,7 @@ export function RegistryExplorer() {
           <span>BLACK SWAN <b>CAUSAL LABS</b></span>
         </a>
         <nav aria-label="Primary navigation">
-          <a href="#registry">Registry</a><a href="/methods">Methods</a><a href="https://blackswancausallabs.com/blog">Field notes</a>
+          <a href="#registry">Registry</a><a href={`${basePath}/methods/`}>Methods</a><a href="https://blackswancausallabs.com/blog">Field notes</a>
         </nav>
       </header>
 

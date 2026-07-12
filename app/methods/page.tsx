@@ -7,10 +7,12 @@ export const metadata: Metadata = {
 };
 
 export default function MethodsPage() {
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
   return <main className="methods-page">
     <header className="site-header">
       <a className="brand" href="https://blackswancausallabs.com"><span>BLACK SWAN <b>CAUSAL LABS</b></span></a>
-      <nav aria-label="Primary navigation"><a href="/">Registry</a><a href="#protocol">Protocol</a><a href="#vocabulary">Search terms</a></nav>
+      <nav aria-label="Primary navigation"><a href={`${basePath}/`}>Registry</a><a href="#protocol">Protocol</a><a href="#vocabulary">Search terms</a></nav>
     </header>
 
     <section className="methods-hero">
@@ -53,7 +55,7 @@ export default function MethodsPage() {
       <div><h3>Eligible</h3><p>A public MCP server, connector, agent skill, library with an agent-facing interface, plugin, or orchestrated agent workflow that supports an identifiable RWE, HEOR, epidemiology, public-health, evidence-synthesis, or enabling activity.</p><h3>Not eligible</h3><p>Generic health assistants, incidental MCP mentions, nonfunctional demonstrations, duplicates, implausible bulk projects, or projects connected only by a broad disease or treatment word.</p><h3>Stopping rule</h3><p>Every predefined query is run, the Official MCP Registry is fully screened, two synonym and citation-chaining rounds produce no new eligible projects, and every candidate has a recorded disposition.</p></div>
     </section>
 
-    <footer><p>© 2026 Black Swan Causal Labs</p><p><a href="/">← Return to the registry</a></p></footer>
+    <footer><p>© 2026 Black Swan Causal Labs</p><p><a href={`${basePath}/`}>← Return to the registry</a></p></footer>
   </main>;
 }
 
