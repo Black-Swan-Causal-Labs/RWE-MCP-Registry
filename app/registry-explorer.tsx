@@ -36,7 +36,7 @@ export function RegistryExplorer() {
           <span>BLACK SWAN <b>CAUSAL LABS</b></span>
         </a>
         <nav aria-label="Primary navigation">
-          <a href="#registry">Registry</a><a href={`${basePath}/methods/`}>Methods</a><a href="https://blackswancausallabs.com/blog">Field notes</a>
+          <a href="#registry">Registry</a><a href={`${basePath}/methods/`}>Methods</a><a href={`${basePath}/faq/`}>FAQ</a>
         </nav>
       </header>
 
