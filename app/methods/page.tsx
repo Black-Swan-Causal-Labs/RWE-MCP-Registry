@@ -12,7 +12,7 @@ export default function MethodsPage() {
   return <main className="methods-page">
     <header className="site-header">
       <a className="brand" href="https://blackswancausallabs.com"><span>BLACK SWAN <b>CAUSAL LABS</b></span></a>
-      <nav aria-label="Primary navigation"><a href={`${basePath}/`}>Registry</a><a href="#protocol">Protocol</a><a href="#vocabulary">Search terms</a></nav>
+      <nav aria-label="Primary navigation"><a href={`${basePath}/`}>Registry</a><a href={`${basePath}/methods/`}>Methods</a><a href={`${basePath}/faq/`}>FAQ</a></nav>
     </header>
 
     <section className="methods-hero">
