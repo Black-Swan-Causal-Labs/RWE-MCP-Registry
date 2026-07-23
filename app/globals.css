@@ -48,6 +48,7 @@ h1 i { color:var(--teal); font-weight:400; }
 .prototype-summary:hover strong { color:var(--teal); }
 .prototype-type { display:block; color:var(--teal); text-transform:uppercase; letter-spacing:.1em; font-size:9px; margin-bottom:8px; }
 .prototype-summary strong { display:block; font:30px/1.1 Georgia,serif; transition:color .2s; }
+.prototype-summary .favorite-star { display:inline; color:#b28c3a; font:22px/1 Georgia,serif; margin-left:5px; vertical-align:3px; }
 .prototype-summary p { margin:8px 0 0; font:15px/1.45 Georgia,serif; }
 .prototype-summary .tags { margin-top:13px; }
 .prototype-freshness { width:100%; border-top:1px solid var(--line); padding-top:14px; margin-top:auto; display:flex; flex-direction:column; gap:5px; font-size:10px; color:#686b68; }
