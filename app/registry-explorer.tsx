@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import expansionCards from "../data/approved-expansion.json";
 
 type Entry = {
   name: string; org: string; url: string; kind: string; category: string;
@@ -49,7 +50,7 @@ export function RegistryExplorer() {
           <div className="update-stamp" aria-label="Registry update schedule">
             <strong>Updated<br />weekly</strong>
             <span>Last reviewed</span>
-            <time dateTime="2026-07-23">Jul 23, 2026</time>
+            <time dateTime="2026-08-11">Aug 11, 2026</time>
           </div>
         </div>
         <div className="signal-line" aria-hidden="true" />
@@ -70,7 +71,7 @@ export function RegistryExplorer() {
   );
 }
 
-const prototypeCards = [
+const originalCards = [
   { name:"bioSkills", kind:"Skill collection", category:"Trials & Study Design", summary:"Bioinformatics skill collection with an RWE-relevant clinical-biostatistics component.", tags:["Clinical biostatistics","Survival analysis","Study design"], added:"Jul 11, 2026", checked:"Jul 23, 2026", status:"Static documentation reviewed", runtime:"Not runtime tested", repository:"GPTomics/bioSkills", website:"GitHub", packages:"Clinical-biostatistics component", workflowFit:["Analysis planning","Statistical programming","Reproducible workflow guidance"], capabilities:["Selective skill-category installation","Clinical-biostatistics methods guidance","Survival, estimand, missing-data, and trial-design skills"], limitation:"Capabilities are attributed to the clinical-biostatistics component, not the entire collection. Generated code and method choices require independent review.", url:"https://github.com/GPTomics/bioSkills" },
   { name:"HEORAgent MCP Server", kind:"MCP server", category:"Literature & Evidence Synthesis", summary:"HEOR-oriented MCP server documenting evidence synthesis, economic modeling, HTA, RWE, and pharmacovigilance workflows.", tags:["HEOR","Economic modeling","HTA"], added:"Jul 12, 2026", checked:"Jul 23, 2026", status:"Static implementation reviewed", runtime:"Not runtime tested", repository:"neptun2000/heor-agent-mcp", website:"npm", packages:"heor-agent-mcp 1.27.0", workflowFit:["Evidence synthesis","Cost-effectiveness and budget impact","HTA preparation"], capabilities:["Multi-source literature and bias assessment","Economic and indirect-comparison modeling","HTA dossier and RWE method workflows"], limitation:"The broad, decision-grade tool surface requires tool-by-tool runtime and methodological validation. Outputs are not substitutes for independent HEOR or regulatory review.", url:"https://github.com/neptun2000/heor-agent-mcp" },
   { name:"paper-mcp", kind:"MCP server", category:"Literature & Evidence Synthesis", summary:"Scholarly-search server combining medical-evidence retrieval, citation exploration, and PDF/LaTeX utilities.", tags:["PubMed / Europe PMC","Citation graphs","PDF extraction"], added:"Jul 12, 2026", checked:"Jul 23, 2026", status:"Static implementation reviewed", runtime:"Not runtime tested", repository:"MCPServings/paper-mcp", website:"GitHub", packages:"paper-mcp 0.5.0", workflowFit:["Literature discovery","Citation chaining","Evidence retrieval"], capabilities:["PubMed and Europe PMC evidence search","Semantic Scholar and OpenAlex citation tools","Paper fetch, full text, and optional PDF extraction"], limitation:"Coverage, evidence-grading logic, full-text licensing, credentials, and citation accuracy require separate testing; some optional utilities use external services.", url:"https://github.com/MCPServings/paper-mcp" },
@@ -112,6 +113,8 @@ const prototypeCards = [
   { name:"PubMed MCP Server (Cyanheads)", kind:"MCP server", category:"Literature & Evidence Synthesis", summary:"Biomedical literature server spanning PubMed, PubMed Central, Europe PMC, MeSH, related articles, citations, and open-full-text retrieval.", tags:["PubMed / PMC","Europe PMC","MeSH"], added:"Jul 23, 2026", checked:"Jul 23, 2026", status:"Static implementation and documentation reviewed", runtime:"Not independently runtime tested", repository:"cyanheads/pubmed-mcp-server", website:"Hosted + GitHub", packages:"@cyanheads/pubmed-mcp-server 2.9.8", workflowFit:["Literature discovery","Query refinement","Citation and full-text retrieval"], capabilities:["Ten tools for search, metadata, full text, and citations","Related records, spelling, MeSH, and citation matching","Identifier conversion with hosted and self-hosted transports"], limitation:"Full text is limited by PMC, Europe PMC, and Unpaywall availability and licensing. Reproducible reviews still require logged queries, dates, deduplication, screening, evidence grading, and verification of citations and extracted content.", url:"https://github.com/cyanheads/pubmed-mcp-server" },
   { name:"Pharmaceutical & Bioequivalence Intelligence MCP", kind:"MCP server", category:"Pharmacovigilance & safety", summary:"Multi-source pharmaceutical intelligence server for drug records, interactions, FAERS adverse events, WHO, TGA, FDA NDI, and ChEMBL context.", tags:["Drug safety","FAERS","Interactions"], added:"Jul 23, 2026", checked:"Jul 23, 2026", status:"Static implementation and documentation reviewed · caveat", runtime:"Not independently runtime tested", repository:"rootsbymenda/pharma-mcp-server", website:"GitHub", packages:"pharma-regulatory", workflowFit:["Safety-case research","Drug and interaction context","Regulatory evidence scoping"], capabilities:["Drug lookup and interaction checks","FAERS adverse-event summaries","Cross-source pharmaceutical search with source links"], limitation:"The repository describes bounded local datasets for several sources, including a small FAERS subset, so results are not comprehensive or incidence estimates. Interaction severity and management text require clinical and primary-source verification.", url:"https://github.com/rootsbymenda/pharma-mcp-server" },
 ];
+
+const prototypeCards = [...originalCards, ...expansionCards];
 
 function CardPrototype() {
   const [expanded, setExpanded] = useState<string | null>(null);

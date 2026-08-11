@@ -1,0 +1,1233 @@
+[
+  {
+    "name": "openFDA Regulatory Metadata",
+    "kind": "MCP server",
+    "category": "Regulatory & Product Data",
+    "summary": "Purpose-built openFDA server for reproducible resolution of FDA drug, biologic, and device application identifiers to regulatory metadata.",
+    "tags": [
+      "openFDA",
+      "Application resolution",
+      "CDER / CBER / CDRH"
+    ],
+    "added": "Aug 11, 2026",
+    "checked": "Aug 11, 2026",
+    "status": "Static documentation and registry metadata reviewed",
+    "runtime": "Not independently runtime tested by registry",
+    "repository": "Black-Swan-Causal-Labs/openfda-mcp",
+    "website": "Official MCP Registry",
+    "packages": "com.blackswancausallabs/openfda-mcp 0.1.0",
+    "workflowFit": [
+      "RWE case-roster construction",
+      "Product and submission resolution",
+      "Reproducible regulatory provenance"
+    ],
+    "capabilities": [
+      "Resolve brand or generic drug names to NDA, BLA, or ANDA applications",
+      "Resolve device submissions through product code to class and medical specialty",
+      "Search labels and run an explicitly experimental RWE-signal candidate sweep"
+    ],
+    "limitation": "The RWE signal sweep is unvalidated and produces candidates for human review, not findings. HDE class III is a documented regulatory inference because openFDA lacks HDE records; API availability, rate limits, source updates, and every roster decision still require verification.",
+    "favorite": true,
+    "url": "https://github.com/Black-Swan-Causal-Labs/openfda-mcp"
+  },
+  {
+    "name": "ROBINS-I V2 MCP",
+    "kind": "MCP server",
+    "category": "Causal Inference & Analytics",
+    "summary": "Structured ROBINS-I V2 risk-of-bias assessment for one result from a non-randomized cohort study, with domain-level judgments and evidence traceability.",
+    "tags": [
+      "ROBINS-I V2",
+      "Risk of bias",
+      "Non-randomized studies"
+    ],
+    "added": "Aug 11, 2026",
+    "checked": "Aug 11, 2026",
+    "status": "Static documentation and registry metadata reviewed",
+    "runtime": "Not independently runtime tested by registry",
+    "repository": "Black-Swan-Causal-Labs/robins-i-mcp",
+    "website": "Official MCP Registry",
+    "packages": "com.blackswancausallabs/robins-i-mcp 0.1.0",
+    "workflowFit": [
+      "Critical appraisal",
+      "Evidence-synthesis quality assessment",
+      "Audit-ready bias documentation"
+    ],
+    "capabilities": [
+      "Guide assessments through the seven ROBINS-I V2 bias domains",
+      "Capture result-specific signaling answers, evidence, and rationale",
+      "Produce structured domain judgments and an overall risk-of-bias record"
+    ],
+    "limitation": "ROBINS-I judgments depend on a correctly specified result, target trial, confounding context, evidence base, and expert interpretation. Structured prompts do not make the assessment objective or validate the underlying study.",
+    "favorite": true,
+    "url": "https://github.com/Black-Swan-Causal-Labs/robins-i-mcp"
+  },
+  {
+    "name": "DICOM/HL7/FHIR Interoperability MCP Server",
+    "kind": "MCP server",
+    "category": "Clinical Data & Interoperability",
+    "summary": "DICOM/HL7 healthcare interoperability MCP server for Claude",
+    "tags": [
+      "FHIR / clinical data",
+      "Interoperability",
+      "Governed access"
+    ],
+    "added": "Aug 11, 2026",
+    "checked": "Aug 11, 2026",
+    "status": "Static documentation and registry metadata reviewed",
+    "runtime": "Not independently runtime tested by registry",
+    "repository": "NyxToolsDev/dicom-hl7-mcp-server",
+    "website": "Official MCP Registry",
+    "packages": "io.github.NyxToolsDev/dicom-hl7-mcp-server 0.2.0",
+    "workflowFit": [
+      "Clinical-source inspection",
+      "Interoperability prototyping",
+      "Cohort and data-availability assessment"
+    ],
+    "capabilities": [
+      "Documented tools capability",
+      "Documented reference tools (free) capability",
+      "Documented mapping & generation tools (premium) capability"
+    ],
+    "limitation": "Clinical systems can contain PHI and may expose write operations. Production use requires explicit authorization, least privilege, audit logging, retention controls, source-system validation, and organization-specific governance.",
+    "favorite": false,
+    "url": "https://github.com/NyxToolsDev/dicom-hl7-mcp-server"
+  },
+  {
+    "name": "io.ausdata/aihw-mcp",
+    "kind": "MCP server",
+    "category": "Public Health & Epidemiology",
+    "summary": "Query the Australian Institute of Health and Welfare in plain English from Claude or any MCP client. Mortality (GRIM/MORT), cancer incidence, health expenditure, youth justice detention, and the public hospitals register.",
+    "tags": [
+      "Public health",
+      "Population data",
+      "Surveillance"
+    ],
+    "added": "Aug 11, 2026",
+    "checked": "Aug 11, 2026",
+    "status": "Static documentation and registry metadata reviewed",
+    "runtime": "Not independently runtime tested by registry",
+    "repository": "Bigred97/aihw-mcp",
+    "website": "Official MCP Registry",
+    "packages": "io.ausdata/aihw-mcp 0.4.18",
+    "workflowFit": [
+      "Population-health surveillance",
+      "Burden and trend description",
+      "External context for RWE studies"
+    ],
+    "capabilities": [
+      "Documented claude code / cursor capability",
+      "Documented auto-updating data capability",
+      "Documented curated datasets (6 in v0.1) capability"
+    ],
+    "limitation": "Survey design, reporting delay, suppression, revisions, changing definitions, geographic comparability, and ecological inference can affect interpretation. Results require dataset-specific denominator and provenance checks.",
+    "favorite": false,
+    "url": "https://github.com/Bigred97/aihw-mcp"
+  },
+  {
+    "name": "io.fhirfly/mcp-server",
+    "kind": "MCP server",
+    "category": "Clinical Data & Interoperability",
+    "summary": "Healthcare reference data for AI agents: providers, drugs, diagnoses, labs, codes, claims.",
+    "tags": [
+      "FHIR / clinical data",
+      "Interoperability",
+      "Governed access"
+    ],
+    "added": "Aug 11, 2026",
+    "checked": "Aug 11, 2026",
+    "status": "Static documentation and registry metadata reviewed",
+    "runtime": "Not independently runtime tested by registry",
+    "repository": "FHIRfly-io/fhirfly-mcp-server",
+    "website": "Official MCP Registry",
+    "packages": "io.fhirfly/mcp-server 0.9.0",
+    "workflowFit": [
+      "Clinical-source inspection",
+      "Interoperability prototyping",
+      "Cohort and data-availability assessment"
+    ],
+    "capabilities": [
+      "Documented step 1: get a fhirfly api key capability",
+      "Documented available tools capability",
+      "Documented \"fhirflyapikey environment variable is required\" capability"
+    ],
+    "limitation": "Clinical systems can contain PHI and may expose write operations. Production use requires explicit authorization, least privilege, audit logging, retention controls, source-system validation, and organization-specific governance.",
+    "favorite": false,
+    "url": "https://github.com/FHIRfly-io/fhirfly-mcp-server"
+  },
+  {
+    "name": "io.github.aks129/healthclaw-guardrails",
+    "kind": "MCP server",
+    "category": "Clinical Data & Interoperability",
+    "summary": "Open-source guardrails between AI agents and FHIR clinical data — PHI redaction, immutable audit, step-up auth, tenant isolation. MCP server + OpenAI/Gemini adapters. A healthclaw.io project.",
+    "tags": [
+      "FHIR / clinical data",
+      "Interoperability",
+      "Governed access"
+    ],
+    "added": "Aug 11, 2026",
+    "checked": "Aug 11, 2026",
+    "status": "Static documentation and registry metadata reviewed",
+    "runtime": "Not independently runtime tested by registry",
+    "repository": "aks129/HealthClawGuardrails",
+    "website": "Official MCP Registry",
+    "packages": "io.github.aks129/healthclaw-guardrails 1.6.0",
+    "workflowFit": [
+      "Clinical-source inspection",
+      "Interoperability prototyping",
+      "Cohort and data-availability assessment"
+    ],
+    "capabilities": [
+      "Documented the open-source security layer between ai agents and clinical data. capability",
+      "Documented mcp tools (29) capability",
+      "Documented fhir version support capability"
+    ],
+    "limitation": "Clinical systems can contain PHI and may expose write operations. Production use requires explicit authorization, least privilege, audit logging, retention controls, source-system validation, and organization-specific governance.",
+    "favorite": false,
+    "url": "https://github.com/aks129/HealthClawGuardrails"
+  },
+  {
+    "name": "io.github.anthesiallc/meddata",
+    "kind": "MCP server",
+    "category": "Biomedical & RWE Infrastructure",
+    "summary": "Drug & supplement lookup and interaction checks from free U.S. government health data.",
+    "tags": [
+      "Biomedical data",
+      "Research infrastructure",
+      "Identifier resolution"
+    ],
+    "added": "Aug 11, 2026",
+    "checked": "Aug 11, 2026",
+    "status": "Static documentation and registry metadata reviewed",
+    "runtime": "Not independently runtime tested by registry",
+    "repository": "anthesiallc/meddata-mcp",
+    "website": "Official MCP Registry",
+    "packages": "io.github.anthesiallc/meddata 0.2.1",
+    "workflowFit": [
+      "Biomedical evidence enrichment",
+      "Identifier and dataset discovery",
+      "Translational context for RWE"
+    ],
+    "capabilities": [
+      "Search documented biomedical sources",
+      "Retrieve structured identifiers or research records",
+      "Support cross-source evidence enrichment"
+    ],
+    "limitation": "Biomedical or translational evidence does not by itself establish clinical effectiveness or causal validity. Source versions, identifiers, coverage, licensing, and cross-database consistency require verification.",
+    "favorite": false,
+    "url": "https://github.com/anthesiallc/meddata-mcp"
+  },
+  {
+    "name": "io.github.CSOAI-ORG/clinical-trials-ai-mcp",
+    "kind": "MCP server",
+    "category": "Trials & Study Design",
+    "summary": "Search clinical trials, evaluate eligibility, compare trials, and retrieve endpoint data. Uses a reference database for demonstration purposes.",
+    "tags": [
+      "Clinical trials",
+      "Study design",
+      "Protocol evidence"
+    ],
+    "added": "Aug 11, 2026",
+    "checked": "Aug 11, 2026",
+    "status": "Static documentation and registry metadata reviewed",
+    "runtime": "Not independently runtime tested by registry",
+    "repository": "CSOAI-ORG/clinical-trials-ai-mcp",
+    "website": "Official MCP Registry",
+    "packages": "io.github.CSOAI-ORG/clinical-trials-ai-mcp 1.0.9",
+    "workflowFit": [
+      "Trial landscape review",
+      "Protocol and design support",
+      "External evidence context"
+    ],
+    "capabilities": [
+      "Search or structure documented trial information",
+      "Retrieve study records or design inputs",
+      "Support protocol-oriented comparison and evidence review"
+    ],
+    "limitation": "Trial records and automated design outputs may be incomplete, outdated, selectively reported, or method-dependent. Protocol decisions, eligibility judgments, and calculations require primary-record and statistical review.",
+    "favorite": false,
+    "url": "https://github.com/CSOAI-ORG/clinical-trials-ai-mcp"
+  },
+  {
+    "name": "io.github.langcare/langcare-mcp-fhir",
+    "kind": "MCP server",
+    "category": "Clinical Data & Interoperability",
+    "summary": "Enterprise-grade MCP Server for FHIR-based EMRs, designed for robust deployments in agentic AI platforms.",
+    "tags": [
+      "FHIR / clinical data",
+      "Interoperability",
+      "Governed access"
+    ],
+    "added": "Aug 11, 2026",
+    "checked": "Aug 11, 2026",
+    "status": "Static documentation and registry metadata reviewed",
+    "runtime": "Not independently runtime tested by registry",
+    "repository": "langcare/langcare-mcp-fhir",
+    "website": "Official MCP Registry",
+    "packages": "io.github.langcare/langcare-mcp-fhir 2.0.4",
+    "workflowFit": [
+      "Clinical-source inspection",
+      "Interoperability prototyping",
+      "Cohort and data-availability assessment"
+    ],
+    "capabilities": [
+      "Documented 4 generic mcp tools capability",
+      "Documented 1. fhirread capability",
+      "Documented 2. fhirsearch capability"
+    ],
+    "limitation": "Clinical systems can contain PHI and may expose write operations. Production use requires explicit authorization, least privilege, audit logging, retention controls, source-system validation, and organization-specific governance.",
+    "favorite": false,
+    "url": "https://github.com/langcare/langcare-mcp-fhir"
+  },
+  {
+    "name": "io.github.SidneyBissoli/cid10-br-mcp",
+    "kind": "MCP server",
+    "category": "OMOP & terminology",
+    "summary": "DEPRECATED - superseded by medical-terminologies-mcp (full CID-10 + 6 more terminologies, hosted at medical.sidneybissoli.com). MCP Server for Brazilian ICD-10 (DATASUS)",
+    "tags": [
+      "Terminology",
+      "Code lookup",
+      "Normalization"
+    ],
+    "added": "Aug 11, 2026",
+    "checked": "Aug 11, 2026",
+    "status": "Static documentation and registry metadata reviewed",
+    "runtime": "Not independently runtime tested by registry",
+    "repository": "SidneyBissoli/cid10-br-mcp",
+    "website": "Official MCP Registry",
+    "packages": "io.github.SidneyBissoli/cid10-br-mcp 1.1.0",
+    "workflowFit": [
+      "Concept-set development",
+      "Code validation",
+      "Data harmonization"
+    ],
+    "capabilities": [
+      "Documented available tools capability",
+      "Documented data source capability"
+    ],
+    "limitation": "Automated code lookup or mapping can omit descendants, include inappropriate concepts, or obscure local meaning. Vocabulary versions, licensing, hierarchy behavior, and study-specific concept sets require expert adjudication.",
+    "favorite": false,
+    "url": "https://github.com/SidneyBissoli/cid10-br-mcp"
+  },
+  {
+    "name": "Last EHR — Medplum",
+    "kind": "MCP server",
+    "category": "Clinical Data & Interoperability",
+    "summary": "Make every AI chart write a reviewable proposal. Draft protocol for agent-initiated FHIR writes (Proposal → Decision → Commit → Audit) with web + MCP implementations and a conformance suite. Runs over Medplum, HAPI, Firely, Aidbox, or Oystehr.",
+    "tags": [
+      "FHIR / clinical data",
+      "Interoperability",
+      "Governed access"
+    ],
+    "added": "Aug 11, 2026",
+    "checked": "Aug 11, 2026",
+    "status": "Static documentation and registry metadata reviewed",
+    "runtime": "Not independently runtime tested by registry",
+    "repository": "cbetz/last-ehr",
+    "website": "Official MCP Registry",
+    "packages": "io.github.cbetz/last-ehr 0.3.1",
+    "workflowFit": [
+      "Clinical-source inspection",
+      "Interoperability prototyping",
+      "Cohort and data-availability assessment"
+    ],
+    "capabilities": [
+      "Documented 30-second synthetic-data walkthrough capability",
+      "Documented launch from the medplum app (smart on fhir) capability",
+      "Documented use chart tools over mcp capability"
+    ],
+    "limitation": "Clinical systems can contain PHI and may expose write operations. Production use requires explicit authorization, least privilege, audit logging, retention controls, source-system validation, and organization-specific governance.",
+    "favorite": false,
+    "url": "https://github.com/cbetz/last-ehr"
+  },
+  {
+    "name": "Openfda",
+    "kind": "MCP server",
+    "category": "Regulatory & Product Data",
+    "summary": "OpenFDA MCP — wraps the openFDA API (free, no auth required)",
+    "tags": [
+      "Regulatory data",
+      "Product evidence",
+      "Source verification"
+    ],
+    "added": "Aug 11, 2026",
+    "checked": "Aug 11, 2026",
+    "status": "Static documentation and registry metadata reviewed",
+    "runtime": "Not independently runtime tested by registry",
+    "repository": "pipeworx-io/mcp-openfda",
+    "website": "Official MCP Registry",
+    "packages": "io.github.pipeworx-io/openfda 0.1.0",
+    "workflowFit": [
+      "Product and identifier resolution",
+      "Regulatory context",
+      "Evidence-source triangulation"
+    ],
+    "capabilities": [
+      "Search or resolve documented regulatory records",
+      "Return structured product or submission metadata",
+      "Support traceable links back to public source data"
+    ],
+    "limitation": "Regulatory records answer different questions from comparative-effectiveness studies and can change over time. Coverage, field semantics, refresh cadence, and every decision-relevant result must be checked against the authoritative source.",
+    "favorite": false,
+    "url": "https://github.com/pipeworx-io/mcp-openfda"
+  },
+  {
+    "name": "Pubmed",
+    "kind": "MCP server",
+    "category": "Literature & Evidence Synthesis",
+    "summary": "MCP server for PubMed biomedical literature search",
+    "tags": [
+      "Literature search",
+      "Evidence retrieval",
+      "Citation workflows"
+    ],
+    "added": "Aug 11, 2026",
+    "checked": "Aug 11, 2026",
+    "status": "Static documentation and registry metadata reviewed",
+    "runtime": "Not independently runtime tested by registry",
+    "repository": "pipeworx-io/mcp-pubmed",
+    "website": "Official MCP Registry",
+    "packages": "io.github.pipeworx-io/pubmed 1.1.0",
+    "workflowFit": [
+      "Literature discovery",
+      "Evidence scoping",
+      "Citation and source retrieval"
+    ],
+    "capabilities": [
+      "Search one or more documented scholarly sources",
+      "Retrieve publication metadata or accessible content",
+      "Support citation chaining, screening, or evidence organization"
+    ],
+    "limitation": "Provider coverage, indexing delay, query translation, deduplication, full-text rights, and citation accuracy vary. Reproducible reviews still require logged searches, dates, screening decisions, evidence grading, and primary-source verification.",
+    "favorite": false,
+    "url": "https://github.com/pipeworx-io/mcp-pubmed"
+  },
+  {
+    "name": "io.github.cyanheads/cdc-health-mcp-server",
+    "kind": "MCP server",
+    "category": "Public Health & Epidemiology",
+    "summary": "Search and query CDC public health data — mortality, vaccinations, surveillance, behavioral risk (Socrata SODA API) via MCP. STDIO or Streamable HTTP.",
+    "tags": [
+      "Public health",
+      "Population data",
+      "Surveillance"
+    ],
+    "added": "Aug 11, 2026",
+    "checked": "Aug 11, 2026",
+    "status": "Static documentation and registry metadata reviewed",
+    "runtime": "Not independently runtime tested by registry",
+    "repository": "cyanheads/cdc-health-mcp-server",
+    "website": "Official MCP Registry",
+    "packages": "io.github.cyanheads/cdc-health-mcp-server 0.8.4",
+    "workflowFit": [
+      "Population-health surveillance",
+      "Burden and trend description",
+      "External context for RWE studies"
+    ],
+    "capabilities": [
+      "Documented tools capability",
+      "Documented cdcdiscoverdatasets capability",
+      "Documented cdcgetdatasetschema capability"
+    ],
+    "limitation": "Survey design, reporting delay, suppression, revisions, changing definitions, geographic comparability, and ecological inference can affect interpretation. Results require dataset-specific denominator and provenance checks.",
+    "favorite": false,
+    "url": "https://github.com/cyanheads/cdc-health-mcp-server"
+  },
+  {
+    "name": "alldid-mcp",
+    "kind": "MCP server",
+    "category": "Causal Inference & Analytics",
+    "summary": "[Work In Progress] Advanced DID Model Context Protocol(MCP) server. Empower LLMs to perform rigorous Causal Inference in Stata—automating comprehensive workflows from diagnostics and parallel trends to modern staggered estimators.",
+    "tags": [
+      "Causal methods",
+      "Study design",
+      "Sensitivity analysis"
+    ],
+    "added": "Aug 11, 2026",
+    "checked": "Aug 11, 2026",
+    "status": "Registry metadata reviewed · documentation caveat",
+    "runtime": "Not independently runtime tested by registry",
+    "repository": "gorgeousfish/alldid-mcp",
+    "website": "GitHub",
+    "packages": "Source repository",
+    "workflowFit": [
+      "Study-design review",
+      "Effect-estimation planning",
+      "Bias and sensitivity analysis"
+    ],
+    "capabilities": [
+      "Expose documented causal or statistical methods",
+      "Structure analysis inputs and method selection",
+      "Return method-oriented diagnostics or review outputs"
+    ],
+    "limitation": "A tool interface cannot establish identification. Study design, estimand, assumptions, estimator choice, diagnostics, and numerical behavior require qualified review against the data-generating process and known analyses.",
+    "favorite": false,
+    "url": "https://github.com/gorgeousfish/alldid-mcp"
+  },
+  {
+    "name": "aria-mcp-server",
+    "kind": "MCP server",
+    "category": "Trials & Study Design",
+    "summary": "ARIA Clinical Research MCP Server — exposes PubMed, ClinicalTrials.gov & ISRCTN as MCP tools. Any Claude agent can search 35M+ biomedical papers and 400K+ clinical trials in real time.",
+    "tags": [
+      "Clinical trials",
+      "Study design",
+      "Protocol evidence"
+    ],
+    "added": "Aug 11, 2026",
+    "checked": "Aug 11, 2026",
+    "status": "Static documentation and registry metadata reviewed",
+    "runtime": "Not independently runtime tested by registry",
+    "repository": "pkotecha-eng/aria-mcp-server",
+    "website": "Official MCP Registry",
+    "packages": "io.github.pkotecha-eng/aria-mcp-server 0.2.1",
+    "workflowFit": [
+      "Trial landscape review",
+      "Protocol and design support",
+      "External evidence context"
+    ],
+    "capabilities": [
+      "Documented tools capability",
+      "Documented data sources capability"
+    ],
+    "limitation": "Trial records and automated design outputs may be incomplete, outdated, selectively reported, or method-dependent. Protocol decisions, eligibility judgments, and calculations require primary-record and statistical review.",
+    "favorite": false,
+    "url": "https://github.com/pkotecha-eng/aria-mcp-server"
+  },
+  {
+    "name": "fhir-mcp-suite",
+    "kind": "MCP server",
+    "category": "Clinical Data & Interoperability",
+    "summary": "Three MCP servers for clinical AI: FHIR R4 query + US Core validation, SNOMED/LOINC/ICD terminology, and drug safety reasoning via FDA labeling — composable, production-ready, Apache-2.0.",
+    "tags": [
+      "FHIR / clinical data",
+      "Interoperability",
+      "Governed access"
+    ],
+    "added": "Aug 11, 2026",
+    "checked": "Aug 11, 2026",
+    "status": "Static documentation and registry metadata reviewed",
+    "runtime": "Not independently runtime tested by registry",
+    "repository": "pcmedsinge/fhir-mcp-suite",
+    "website": "Official MCP Registry",
+    "packages": "io.github.pcmedsinge/mcp-terminology 1.0.0",
+    "workflowFit": [
+      "Clinical-source inspection",
+      "Interoperability prototyping",
+      "Cohort and data-availability assessment"
+    ],
+    "capabilities": [
+      "Expose documented clinical-data or interoperability operations",
+      "Support structured resource search or retrieval",
+      "Provide machine-readable outputs for downstream workflows"
+    ],
+    "limitation": "Clinical systems can contain PHI and may expose write operations. Production use requires explicit authorization, least privilege, audit logging, retention controls, source-system validation, and organization-specific governance.",
+    "favorite": false,
+    "url": "https://github.com/pcmedsinge/fhir-mcp-suite"
+  },
+  {
+    "name": "openfda-mcp-server",
+    "kind": "MCP server",
+    "category": "Regulatory & Product Data",
+    "summary": "Query FDA data on drugs, food, devices, and recalls via openFDA. STDIO or Streamable HTTP.",
+    "tags": [
+      "Regulatory data",
+      "Product evidence",
+      "Source verification"
+    ],
+    "added": "Aug 11, 2026",
+    "checked": "Aug 11, 2026",
+    "status": "Static documentation and registry metadata reviewed",
+    "runtime": "Not independently runtime tested by registry",
+    "repository": "cyanheads/openfda-mcp-server",
+    "website": "Official MCP Registry",
+    "packages": "io.github.cyanheads/openfda-mcp-server 0.7.3",
+    "workflowFit": [
+      "Product and identifier resolution",
+      "Regulatory context",
+      "Evidence-source triangulation"
+    ],
+    "capabilities": [
+      "Documented tools capability",
+      "Documented openfdadrugprofile capability",
+      "Documented openfdasearchadverseevents capability"
+    ],
+    "limitation": "Regulatory records answer different questions from comparative-effectiveness studies and can change over time. Coverage, field semantics, refresh cadence, and every decision-relevant result must be checked against the authoritative source.",
+    "favorite": false,
+    "url": "https://github.com/cyanheads/openfda-mcp-server"
+  },
+  {
+    "name": "Thoth",
+    "kind": "Agent",
+    "category": "Literature & Evidence Synthesis",
+    "summary": "Thoth — agentic systematic literature reviews with per-claim citation verification (cite_check). 8-stage LangGraph agent, authenticated MCP server on the official registry, public eval dashboard, Langfuse/OTel tracing. 676 tests, $0/mo.",
+    "tags": [
+      "Literature search",
+      "Evidence retrieval",
+      "Citation workflows"
+    ],
+    "added": "Aug 11, 2026",
+    "checked": "Aug 11, 2026",
+    "status": "Static documentation and registry metadata reviewed",
+    "runtime": "Not independently runtime tested by registry",
+    "repository": "ahmedEid1/thoth",
+    "website": "Official MCP Registry",
+    "packages": "io.github.ahmedEid1/thoth 1.0.1",
+    "workflowFit": [
+      "Literature discovery",
+      "Evidence scoping",
+      "Citation and source retrieval"
+    ],
+    "capabilities": [
+      "Search one or more documented scholarly sources",
+      "Retrieve publication metadata or accessible content",
+      "Support citation chaining, screening, or evidence organization"
+    ],
+    "limitation": "Provider coverage, indexing delay, query translation, deduplication, full-text rights, and citation accuracy vary. Reproducible reviews still require logged searches, dates, screening decisions, evidence grading, and primary-source verification.",
+    "favorite": false,
+    "url": "https://github.com/ahmedEid1/thoth"
+  },
+  {
+    "name": "Ebi Ols",
+    "kind": "MCP server",
+    "category": "Biomedical & RWE Infrastructure",
+    "summary": "EBI Ontology Lookup Service — 250+ biomedical ontologies",
+    "tags": [
+      "Biomedical data",
+      "Research infrastructure",
+      "Identifier resolution"
+    ],
+    "added": "Aug 11, 2026",
+    "checked": "Aug 11, 2026",
+    "status": "Static documentation and registry metadata reviewed",
+    "runtime": "Not independently runtime tested by registry",
+    "repository": "pipeworx-io/mcp-ebi-ols",
+    "website": "Official MCP Registry",
+    "packages": "io.github.pipeworx-io/ebi-ols 0.1.0",
+    "workflowFit": [
+      "Biomedical evidence enrichment",
+      "Identifier and dataset discovery",
+      "Translational context for RWE"
+    ],
+    "capabilities": [
+      "Documented tools capability",
+      "Documented data source capability"
+    ],
+    "limitation": "Biomedical or translational evidence does not by itself establish clinical effectiveness or causal validity. Source versions, identifiers, coverage, licensing, and cross-database consistency require verification.",
+    "favorite": false,
+    "url": "https://github.com/pipeworx-io/mcp-ebi-ols"
+  },
+  {
+    "name": "Monarch Initiative",
+    "kind": "MCP server",
+    "category": "Biomedical & RWE Infrastructure",
+    "summary": "Monarch biomedical knowledge graph — diseases, phenotypes, genes, variants",
+    "tags": [
+      "Biomedical data",
+      "Research infrastructure",
+      "Identifier resolution"
+    ],
+    "added": "Aug 11, 2026",
+    "checked": "Aug 11, 2026",
+    "status": "Static documentation and registry metadata reviewed",
+    "runtime": "Not independently runtime tested by registry",
+    "repository": "pipeworx-io/mcp-monarch-initiative",
+    "website": "Official MCP Registry",
+    "packages": "io.github.pipeworx-io/monarch-initiative 0.1.0",
+    "workflowFit": [
+      "Biomedical evidence enrichment",
+      "Identifier and dataset discovery",
+      "Translational context for RWE"
+    ],
+    "capabilities": [
+      "Documented tools capability",
+      "Documented data source capability"
+    ],
+    "limitation": "Biomedical or translational evidence does not by itself establish clinical effectiveness or causal validity. Source versions, identifiers, coverage, licensing, and cross-database consistency require verification.",
+    "favorite": false,
+    "url": "https://github.com/pipeworx-io/mcp-monarch-initiative"
+  },
+  {
+    "name": "io.github.pubspro/pharma-mcp",
+    "kind": "MCP server",
+    "category": "Pharmacovigilance & safety",
+    "summary": "MCP server for clinical and pharmaceutical data — ClinicalTrials.gov, PubMed, FDA drug labels, FAERS adverse events, and ICH guidelines. No API keys required.",
+    "tags": [
+      "Drug safety",
+      "Adverse events",
+      "Signal review"
+    ],
+    "added": "Aug 11, 2026",
+    "checked": "Aug 11, 2026",
+    "status": "Static documentation and registry metadata reviewed",
+    "runtime": "Not independently runtime tested by registry",
+    "repository": "pubspro/pharma-mcp",
+    "website": "Official MCP Registry",
+    "packages": "io.github.pubspro/pharma-mcp 1.0.0",
+    "workflowFit": [
+      "Safety-case research",
+      "Signal triage",
+      "Product-event characterization"
+    ],
+    "capabilities": [
+      "Documented tools capability",
+      "Documented add to claude code capability",
+      "Documented data sources capability"
+    ],
+    "limitation": "Spontaneous reports generally lack reliable denominators and cannot establish incidence or causality. Duplicates, missingness, stimulated reporting, coding choices, and derived signal statistics require pharmacovigilance review.",
+    "favorite": false,
+    "url": "https://github.com/pubspro/pharma-mcp"
+  },
+  {
+    "name": "Ncbi Eutils",
+    "kind": "MCP server",
+    "category": "Literature & Evidence Synthesis",
+    "summary": "NCBI E-utilities — federated Entrez search/fetch (PubMed/Gene/Nucleotide/…)",
+    "tags": [
+      "Literature search",
+      "Evidence retrieval",
+      "Citation workflows"
+    ],
+    "added": "Aug 11, 2026",
+    "checked": "Aug 11, 2026",
+    "status": "Static documentation and registry metadata reviewed",
+    "runtime": "Not independently runtime tested by registry",
+    "repository": "pipeworx-io/mcp-ncbi-eutils",
+    "website": "Official MCP Registry",
+    "packages": "io.github.pipeworx-io/ncbi-eutils 0.1.0",
+    "workflowFit": [
+      "Literature discovery",
+      "Evidence scoping",
+      "Citation and source retrieval"
+    ],
+    "capabilities": [
+      "Documented tools capability",
+      "Documented data source capability"
+    ],
+    "limitation": "Provider coverage, indexing delay, query translation, deduplication, full-text rights, and citation accuracy vary. Reproducible reviews still require logged searches, dates, screening decisions, evidence grading, and primary-source verification.",
+    "favorite": false,
+    "url": "https://github.com/pipeworx-io/mcp-ncbi-eutils"
+  },
+  {
+    "name": "Public Health",
+    "kind": "MCP server",
+    "category": "Pharmacovigilance & safety",
+    "summary": "13 production MCP servers for US government data — safety recalls, cybersecurity vulnerabilities, disasters, finance, and more",
+    "tags": [
+      "Drug safety",
+      "Adverse events",
+      "Signal review"
+    ],
+    "added": "Aug 11, 2026",
+    "checked": "Aug 11, 2026",
+    "status": "Static documentation and registry metadata reviewed",
+    "runtime": "Not independently runtime tested by registry",
+    "repository": "martc03/gov-mcp-servers",
+    "website": "Official MCP Registry",
+    "packages": "io.github.martc03/public-health 1.0.0",
+    "workflowFit": [
+      "Safety-case research",
+      "Signal triage",
+      "Product-event characterization"
+    ],
+    "capabilities": [
+      "Documented tools capability",
+      "Documented vulnlookupcve — enriched cve lookup capability",
+      "Documented vulnsearch — search cves capability"
+    ],
+    "limitation": "Spontaneous reports generally lack reliable denominators and cannot establish incidence or causality. Duplicates, missingness, stimulated reporting, coding choices, and derived signal statistics require pharmacovigilance review.",
+    "favorite": false,
+    "url": "https://github.com/martc03/gov-mcp-servers"
+  },
+  {
+    "name": "com.medplum/mcp",
+    "kind": "MCP server",
+    "category": "Clinical Data & Interoperability",
+    "summary": "Medplum is a healthcare platform that helps you quickly develop high-quality compliant applications.",
+    "tags": [
+      "FHIR / clinical data",
+      "Interoperability",
+      "Governed access"
+    ],
+    "added": "Aug 11, 2026",
+    "checked": "Aug 11, 2026",
+    "status": "Static documentation and registry metadata reviewed",
+    "runtime": "Not independently runtime tested by registry",
+    "repository": "medplum/medplum",
+    "website": "Official MCP Registry",
+    "packages": "com.medplum/mcp 1.0.0",
+    "workflowFit": [
+      "Clinical-source inspection",
+      "Interoperability prototyping",
+      "Cohort and data-availability assessment"
+    ],
+    "capabilities": [
+      "Expose documented clinical-data or interoperability operations",
+      "Support structured resource search or retrieval",
+      "Provide machine-readable outputs for downstream workflows"
+    ],
+    "limitation": "Clinical systems can contain PHI and may expose write operations. Production use requires explicit authorization, least privilege, audit logging, retention controls, source-system validation, and organization-specific governance.",
+    "favorite": false,
+    "url": "https://github.com/medplum/medplum"
+  },
+  {
+    "name": "com.themineworks/academic-research-mcp",
+    "kind": "MCP server",
+    "category": "Literature & Evidence Synthesis",
+    "summary": "Seven remote MCP servers over 51 Apify scrapers. Tool lists, manifests, pricing and client config. No result, no charge.",
+    "tags": [
+      "Literature search",
+      "Evidence retrieval",
+      "Citation workflows"
+    ],
+    "added": "Aug 11, 2026",
+    "checked": "Aug 11, 2026",
+    "status": "Static documentation and registry metadata reviewed",
+    "runtime": "Not independently runtime tested by registry",
+    "repository": "themineworks/mcp-servers",
+    "website": "Official MCP Registry",
+    "packages": "com.themineworks/academic-research-mcp 1.0.0",
+    "workflowFit": [
+      "Literature discovery",
+      "Evidence scoping",
+      "Citation and source retrieval"
+    ],
+    "capabilities": [
+      "Search one or more documented scholarly sources",
+      "Retrieve publication metadata or accessible content",
+      "Support citation chaining, screening, or evidence organization"
+    ],
+    "limitation": "Provider coverage, indexing delay, query translation, deduplication, full-text rights, and citation accuracy vary. Reproducible reviews still require logged searches, dates, screening decisions, evidence grading, and primary-source verification.",
+    "favorite": false,
+    "url": "https://github.com/themineworks/mcp-servers"
+  },
+  {
+    "name": "Data Aggregator",
+    "kind": "MCP server",
+    "category": "Literature & Evidence Synthesis",
+    "summary": "Unified research-data acquisition MCP — search & fetch datasets across Zenodo, DataCite, NCBI omics (GEO/SRA/BioProject), and literature (PubMed/OpenAIRE) behind one normalized model.",
+    "tags": [
+      "Literature search",
+      "Evidence retrieval",
+      "Citation workflows"
+    ],
+    "added": "Aug 11, 2026",
+    "checked": "Aug 11, 2026",
+    "status": "Static documentation and registry metadata reviewed",
+    "runtime": "Not independently runtime tested by registry",
+    "repository": "musharna/data-aggregator-mcp",
+    "website": "Official MCP Registry",
+    "packages": "io.github.musharna/data-aggregator-mcp 0.45.3",
+    "workflowFit": [
+      "Literature discovery",
+      "Evidence scoping",
+      "Citation and source retrieval"
+    ],
+    "capabilities": [
+      "Documented 🛠️ tools capability",
+      "Documented operate(op, id, file?, query?, n?, columns?) capability"
+    ],
+    "limitation": "Provider coverage, indexing delay, query translation, deduplication, full-text rights, and citation accuracy vary. Reproducible reviews still require logged searches, dates, screening decisions, evidence grading, and primary-source verification.",
+    "favorite": false,
+    "url": "https://github.com/musharna/data-aggregator-mcp"
+  },
+  {
+    "name": "Fda Devices",
+    "kind": "MCP server",
+    "category": "Regulatory & Product Data",
+    "summary": "FDA medical-device regulatory intelligence from keyless openFDA datasets.",
+    "tags": [
+      "Regulatory data",
+      "Product evidence",
+      "Source verification"
+    ],
+    "added": "Aug 11, 2026",
+    "checked": "Aug 11, 2026",
+    "status": "Static documentation and registry metadata reviewed",
+    "runtime": "Not independently runtime tested by registry",
+    "repository": "pipeworx-io/mcp-fda-devices",
+    "website": "Official MCP Registry",
+    "packages": "io.github.pipeworx-io/fda-devices 0.1.3",
+    "workflowFit": [
+      "Product and identifier resolution",
+      "Regulatory context",
+      "Evidence-source triangulation"
+    ],
+    "capabilities": [
+      "Search or resolve documented regulatory records",
+      "Return structured product or submission metadata",
+      "Support traceable links back to public source data"
+    ],
+    "limitation": "Regulatory records answer different questions from comparative-effectiveness studies and can change over time. Coverage, field semantics, refresh cadence, and every decision-relevant result must be checked against the authoritative source.",
+    "favorite": false,
+    "url": "https://github.com/pipeworx-io/mcp-fda-devices"
+  },
+  {
+    "name": "Find Research Papers",
+    "kind": "MCP server",
+    "category": "Literature & Evidence Synthesis",
+    "summary": "MCP server for scientific grounding: search arXiv, OpenAlex, Crossref, Semantic Scholar, PubMed — references/citations from paywalled journals via public metadata",
+    "tags": [
+      "Literature search",
+      "Evidence retrieval",
+      "Citation workflows"
+    ],
+    "added": "Aug 11, 2026",
+    "checked": "Aug 11, 2026",
+    "status": "Static documentation and registry metadata reviewed",
+    "runtime": "Not independently runtime tested by registry",
+    "repository": "surendranb/find-research-papers-mcp",
+    "website": "Official MCP Registry",
+    "packages": "io.github.surendranb/find-research-papers-mcp 0.1.0",
+    "workflowFit": [
+      "Literature discovery",
+      "Evidence scoping",
+      "Citation and source retrieval"
+    ],
+    "capabilities": [
+      "Search one or more documented scholarly sources",
+      "Retrieve publication metadata or accessible content",
+      "Support citation chaining, screening, or evidence organization"
+    ],
+    "limitation": "Provider coverage, indexing delay, query translation, deduplication, full-text rights, and citation accuracy vary. Reproducible reviews still require logged searches, dates, screening decisions, evidence grading, and primary-source verification.",
+    "favorite": false,
+    "url": "https://github.com/surendranb/find-research-papers-mcp"
+  },
+  {
+    "name": "io.github.berntpopp/genefoundry",
+    "kind": "MCP server",
+    "category": "Biomedical & RWE Infrastructure",
+    "summary": "MCP gateway federating 21 biomedical MCP servers — gnomAD, ClinVar, HPO, UniProt, Ensembl VEP, PanelApp and more — behind one Streamable-HTTP endpoint, with collision-free namespaced tools and BM25 tool search.",
+    "tags": [
+      "Biomedical data",
+      "Research infrastructure",
+      "Identifier resolution"
+    ],
+    "added": "Aug 11, 2026",
+    "checked": "Aug 11, 2026",
+    "status": "Static documentation and registry metadata reviewed",
+    "runtime": "Not independently runtime tested by registry",
+    "repository": "berntpopp/genefoundry-router",
+    "website": "Official MCP Registry",
+    "packages": "io.github.berntpopp/genefoundry 0.8.2",
+    "workflowFit": [
+      "Biomedical evidence enrichment",
+      "Identifier and dataset discovery",
+      "Translational context for RWE"
+    ],
+    "capabilities": [
+      "Documented tools capability",
+      "Documented data & provenance capability"
+    ],
+    "limitation": "Biomedical or translational evidence does not by itself establish clinical effectiveness or causal validity. Source versions, identifiers, coverage, licensing, and cross-database consistency require verification.",
+    "favorite": false,
+    "url": "https://github.com/berntpopp/genefoundry-router"
+  },
+  {
+    "name": "io.github.cyanheads/medical-codes-mcp-server",
+    "kind": "MCP server",
+    "category": "OMOP & terminology",
+    "summary": "Decode, search, validate, and crosswalk US medical codes — ICD-10-CM, ICD-10-PCS, HCPCS Level II, RxNorm — over a bundled offline index via MCP. STDIO or Streamable HTTP.",
+    "tags": [
+      "Terminology",
+      "Code lookup",
+      "Normalization"
+    ],
+    "added": "Aug 11, 2026",
+    "checked": "Aug 11, 2026",
+    "status": "Static documentation and registry metadata reviewed",
+    "runtime": "Not independently runtime tested by registry",
+    "repository": "cyanheads/medical-codes-mcp-server",
+    "website": "Official MCP Registry",
+    "packages": "io.github.cyanheads/medical-codes-mcp-server 0.2.7",
+    "workflowFit": [
+      "Concept-set development",
+      "Code validation",
+      "Data harmonization"
+    ],
+    "capabilities": [
+      "Documented bundled code systems capability",
+      "Documented tools capability",
+      "Documented medcodegetcode capability"
+    ],
+    "limitation": "Automated code lookup or mapping can omit descendants, include inappropriate concepts, or obscure local meaning. Vocabulary versions, licensing, hierarchy behavior, and study-specific concept sets require expert adjudication.",
+    "favorite": false,
+    "url": "https://github.com/cyanheads/medical-codes-mcp-server"
+  },
+  {
+    "name": "io.github.mims-harvard/tooluniverse",
+    "kind": "MCP server",
+    "category": "Literature & Evidence Synthesis",
+    "summary": "Democratizing AI scientists with ToolUniverse",
+    "tags": [
+      "Literature search",
+      "Evidence retrieval",
+      "Citation workflows"
+    ],
+    "added": "Aug 11, 2026",
+    "checked": "Aug 11, 2026",
+    "status": "Static documentation and registry metadata reviewed",
+    "runtime": "Not independently runtime tested by registry",
+    "repository": "mims-harvard/ToolUniverse",
+    "website": "Official MCP Registry",
+    "packages": "io.github.mims-harvard/tooluniverse 1.4.0",
+    "workflowFit": [
+      "Literature discovery",
+      "Evidence scoping",
+      "Citation and source retrieval"
+    ],
+    "capabilities": [
+      "Documented building ai scientists with tooluniverse capability",
+      "Documented what is tooluniverse? capability",
+      "Documented ai scientists powered by tooluniverse capability"
+    ],
+    "limitation": "Provider coverage, indexing delay, query translation, deduplication, full-text rights, and citation accuracy vary. Reproducible reviews still require logged searches, dates, screening decisions, evidence grading, and primary-source verification.",
+    "favorite": false,
+    "url": "https://github.com/mims-harvard/ToolUniverse"
+  },
+  {
+    "name": "io.github.nickjlamb/pubcrawl",
+    "kind": "MCP server",
+    "category": "Regulatory & Product Data",
+    "summary": "MCP server giving AI assistants verifiable access to PubMed, Europe PMC, US/UK drug labelling, and ClinicalTrials.gov. Built by PharmaTools.AI.",
+    "tags": [
+      "Regulatory data",
+      "Product evidence",
+      "Source verification"
+    ],
+    "added": "Aug 11, 2026",
+    "checked": "Aug 11, 2026",
+    "status": "Static documentation and registry metadata reviewed",
+    "runtime": "Not independently runtime tested by registry",
+    "repository": "nickjlamb/pubcrawl",
+    "website": "Official MCP Registry",
+    "packages": "io.github.nickjlamb/pubcrawl 2.5.0",
+    "workflowFit": [
+      "Product and identifier resolution",
+      "Regulatory context",
+      "Evidence-source triangulation"
+    ],
+    "capabilities": [
+      "Documented 🧰 tools capability",
+      "Documented 📚 literature capability",
+      "Documented 🧫 clinical trials capability"
+    ],
+    "limitation": "Regulatory records answer different questions from comparative-effectiveness studies and can change over time. Coverage, field semantics, refresh cadence, and every decision-relevant result must be checked against the authoritative source.",
+    "favorite": false,
+    "url": "https://github.com/nickjlamb/pubcrawl"
+  },
+  {
+    "name": "io.github.rubatoyd/scienceon-mcp",
+    "kind": "MCP server",
+    "category": "Literature & Evidence Synthesis",
+    "summary": "KISTI ScienceON OpenAPI 문헌 검색·메타데이터 수집기 — MCP 서버 + CLI (bring your own API key)",
+    "tags": [
+      "Literature search",
+      "Evidence retrieval",
+      "Citation workflows"
+    ],
+    "added": "Aug 11, 2026",
+    "checked": "Aug 11, 2026",
+    "status": "Static documentation and registry metadata reviewed",
+    "runtime": "Not independently runtime tested by registry",
+    "repository": "rubatoyd/scienceON-mcp",
+    "website": "Official MCP Registry",
+    "packages": "io.github.rubatoyd/scienceon-mcp 0.2.0",
+    "workflowFit": [
+      "Literature discovery",
+      "Evidence scoping",
+      "Citation and source retrieval"
+    ],
+    "capabilities": [
+      "Search one or more documented scholarly sources",
+      "Retrieve publication metadata or accessible content",
+      "Support citation chaining, screening, or evidence organization"
+    ],
+    "limitation": "Provider coverage, indexing delay, query translation, deduplication, full-text rights, and citation accuracy vary. Reproducible reviews still require logged searches, dates, screening decisions, evidence grading, and primary-source verification.",
+    "favorite": false,
+    "url": "https://github.com/rubatoyd/scienceON-mcp"
+  },
+  {
+    "name": "Patsnap Patent & Literature Search",
+    "kind": "MCP server",
+    "category": "Literature & Evidence Synthesis",
+    "summary": "Search global patents across WIPO, EPO, USPTO, CNIPA, JPO, KIPO and other authorities, together with scientific literature from PubMed, arXiv, Nature, Science and other major sources using natural-language, semantic, keyword and structured search.",
+    "tags": [
+      "Literature search",
+      "Evidence retrieval",
+      "Citation workflows"
+    ],
+    "added": "Aug 11, 2026",
+    "checked": "Aug 11, 2026",
+    "status": "Static documentation and registry metadata reviewed",
+    "runtime": "Not independently runtime tested by registry",
+    "repository": "patsnap/patent-literature-search-mcp",
+    "website": "Official MCP Registry",
+    "packages": "io.github.patsnap/patent-literature-search-mcp 1.2.0",
+    "workflowFit": [
+      "Literature discovery",
+      "Evidence scoping",
+      "Citation and source retrieval"
+    ],
+    "capabilities": [
+      "Documented data coverage capability",
+      "Documented scientific-literature coverage capability",
+      "Documented what you can search capability"
+    ],
+    "limitation": "Provider coverage, indexing delay, query translation, deduplication, full-text rights, and citation accuracy vary. Reproducible reviews still require logged searches, dates, screening decisions, evidence grading, and primary-source verification.",
+    "favorite": false,
+    "url": "https://github.com/patsnap/patent-literature-search-mcp"
+  },
+  {
+    "name": "io.github.wei-ai-lab/clinical-trial-design",
+    "kind": "MCP server",
+    "category": "Trials & Study Design",
+    "summary": "Claude Code plugin & MCP server for Phase 2/3 clinical trial design. 9 tools: single-primary (binary/continuous/PH+NPH survival), multi-hypothesis (co-primary, multi-population, Maurer-Bretz). Backed by gsDesign, gsDesign2, graphicalMCP. Word/PDF reporting, Monte-Carlo verification, 176-case benchmark corpus.",
+    "tags": [
+      "Clinical trials",
+      "Study design",
+      "Protocol evidence"
+    ],
+    "added": "Aug 11, 2026",
+    "checked": "Aug 11, 2026",
+    "status": "Static documentation and registry metadata reviewed",
+    "runtime": "Not independently runtime tested by registry",
+    "repository": "wei-ai-lab/clinical-trial-design",
+    "website": "Official MCP Registry",
+    "packages": "io.github.wei-ai-lab/clinical-trial-design 0.0.12",
+    "workflowFit": [
+      "Trial landscape review",
+      "Protocol and design support",
+      "External evidence context"
+    ],
+    "capabilities": [
+      "Documented what clinical-trial-design actually computes capability",
+      "Documented tool surface capability",
+      "Documented single-primary design tools (3) capability"
+    ],
+    "limitation": "Trial records and automated design outputs may be incomplete, outdated, selectively reported, or method-dependent. Protocol decisions, eligibility judgments, and calculations require primary-record and statistical review.",
+    "favorite": false,
+    "url": "https://github.com/wei-ai-lab/clinical-trial-design"
+  },
+  {
+    "name": "K01 Synthetic Health Data",
+    "kind": "MCP server",
+    "category": "Clinical Data & Interoperability",
+    "summary": "MCP server for generating and querying privacy-preserving synthetic health data. FHIR-compliant, differentially private.",
+    "tags": [
+      "FHIR / clinical data",
+      "Interoperability",
+      "Governed access"
+    ],
+    "added": "Aug 11, 2026",
+    "checked": "Aug 11, 2026",
+    "status": "Static documentation and registry metadata reviewed",
+    "runtime": "Not independently runtime tested by registry",
+    "repository": "K01labs/k01-mcp-server",
+    "website": "Official MCP Registry",
+    "packages": "is.k01/synthetic-health-data 1.7.1",
+    "workflowFit": [
+      "Clinical-source inspection",
+      "Interoperability prototyping",
+      "Cohort and data-availability assessment"
+    ],
+    "capabilities": [
+      "Documented available tools capability",
+      "Documented search for complex patients capability",
+      "Documented compare fhir versions capability"
+    ],
+    "limitation": "Clinical systems can contain PHI and may expose write operations. Production use requires explicit authorization, least privilege, audit logging, retention controls, source-system validation, and organization-specific governance.",
+    "favorite": false,
+    "url": "https://github.com/K01labs/k01-mcp-server"
+  },
+  {
+    "name": "Bioregistry",
+    "kind": "MCP server",
+    "category": "Biomedical & RWE Infrastructure",
+    "summary": "Bioregistry — meta-registry of biomedical identifier prefixes",
+    "tags": [
+      "Biomedical data",
+      "Research infrastructure",
+      "Identifier resolution"
+    ],
+    "added": "Aug 11, 2026",
+    "checked": "Aug 11, 2026",
+    "status": "Static documentation and registry metadata reviewed",
+    "runtime": "Not independently runtime tested by registry",
+    "repository": "pipeworx-io/mcp-bioregistry",
+    "website": "Official MCP Registry",
+    "packages": "io.github.pipeworx-io/bioregistry 0.1.0",
+    "workflowFit": [
+      "Biomedical evidence enrichment",
+      "Identifier and dataset discovery",
+      "Translational context for RWE"
+    ],
+    "capabilities": [
+      "Documented tools capability",
+      "Documented data source capability"
+    ],
+    "limitation": "Biomedical or translational evidence does not by itself establish clinical effectiveness or causal validity. Source versions, identifiers, coverage, licensing, and cross-database consistency require verification.",
+    "favorite": false,
+    "url": "https://github.com/pipeworx-io/mcp-bioregistry"
+  },
+  {
+    "name": "Clinicaltables",
+    "kind": "MCP server",
+    "category": "OMOP & terminology",
+    "summary": "NIH Clinical Tables: ICD-10/9, RxTerms, LOINC, NPI, conditions search. Keyless.",
+    "tags": [
+      "Terminology",
+      "Code lookup",
+      "Normalization"
+    ],
+    "added": "Aug 11, 2026",
+    "checked": "Aug 11, 2026",
+    "status": "Static documentation and registry metadata reviewed",
+    "runtime": "Not independently runtime tested by registry",
+    "repository": "pipeworx-io/mcp-clinicaltables",
+    "website": "Official MCP Registry",
+    "packages": "io.github.pipeworx-io/clinicaltables 0.1.0",
+    "workflowFit": [
+      "Concept-set development",
+      "Code validation",
+      "Data harmonization"
+    ],
+    "capabilities": [
+      "Search documented clinical codes or terminology sources",
+      "Validate or retrieve concept metadata",
+      "Support code normalization and mapping workflows"
+    ],
+    "limitation": "Automated code lookup or mapping can omit descendants, include inappropriate concepts, or obscure local meaning. Vocabulary versions, licensing, hierarchy behavior, and study-specific concept sets require expert adjudication.",
+    "favorite": false,
+    "url": "https://github.com/pipeworx-io/mcp-clinicaltables"
+  },
+  {
+    "name": "Europepmc",
+    "kind": "MCP server",
+    "category": "Literature & Evidence Synthesis",
+    "summary": "Europe PubMed Central — biomedical literature search and full text",
+    "tags": [
+      "Literature search",
+      "Evidence retrieval",
+      "Citation workflows"
+    ],
+    "added": "Aug 11, 2026",
+    "checked": "Aug 11, 2026",
+    "status": "Static documentation and registry metadata reviewed",
+    "runtime": "Not independently runtime tested by registry",
+    "repository": "pipeworx-io/mcp-europepmc",
+    "website": "Official MCP Registry",
+    "packages": "io.github.pipeworx-io/europepmc 0.1.0",
+    "workflowFit": [
+      "Literature discovery",
+      "Evidence scoping",
+      "Citation and source retrieval"
+    ],
+    "capabilities": [
+      "Documented tools capability",
+      "Documented data source capability"
+    ],
+    "limitation": "Provider coverage, indexing delay, query translation, deduplication, full-text rights, and citation accuracy vary. Reproducible reviews still require logged searches, dates, screening decisions, evidence grading, and primary-source verification.",
+    "favorite": false,
+    "url": "https://github.com/pipeworx-io/mcp-europepmc"
+  }
+]
