@@ -91,6 +91,17 @@ for (const item of official) {
   if (repo && item._meta?.["io.modelcontextprotocol.registry/official"]?.isLatest) officialByRepo.set(repo, item);
 }
 
+for (const item of currentSweep) {
+  const officialItem = officialByRepo.get(item.url?.toLowerCase().replace(/\/$/, ""));
+  item.officialRegistryName = officialItem?.server?.name ?? null;
+  item.officialRegistryVersion = officialItem?.server?.version ?? null;
+  const displayedVersion = item.priorPackage?.match(/(?:^|\s)(\d+\.\d+\.\d+(?:[-+][\w.-]+)?)$/)?.[1] ?? null;
+  item.displayedVersion = displayedVersion;
+  if (displayedVersion && item.officialRegistryVersion && displayedVersion !== item.officialRegistryVersion) {
+    item.changes.push(`Displayed version ${displayedVersion} differs from official registry ${item.officialRegistryVersion}`);
+  }
+}
+
 const direct = /real[- ]world evidence|\brwe\b|health economics|\bheor\b|pharmacoepidemi|faers|vaers|pharmacovigil|adverse event|signal detection|mortality|vital statistics|public health surveillance|epidemiolog|causal inference|target trial|propensity score|treatment effect|survival analysis|cohort study|observational study/i;
 const enabling = /\bfhir\b|\behr\b|electronic health record|\bomop\b|\bohdsi\b|\bcdisc\b|meddra|snomed|rxnorm|loinc|icd-10|clinicaltrials|clinical trial|pubmed|cochrane|literature|evidence synthesis|drug label|openfda|fda recall|regulatory metadata|record linkage|data linkage|cohort definition|claims data|healthlake|healthomics|biomedical/i;
 const unrelated = /banking|bankreg|crypto|trading|marketing|advertising|restaurant|game|real estate|email automation|resume|hiring|eu ai act|sfc regulatory|sebi|rbi circular|pension|space regulatory|fcc filing|plant genomic|causal memory|emotional state|package.*dead|practice management|billing|scheduling|pain medicine|prior.auth|appeals/i;
