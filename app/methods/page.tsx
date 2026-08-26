@@ -39,7 +39,7 @@ export default function MethodsPage() {
         <div>
           <p><strong>On August 11, 2026, all 40 previously published entries and the 201-record known inventory were rechecked.</strong> The pass recorded canonical identity, availability or archive status, last push, stars, forks, default branch, documentation changes, and the license identifier exposed in repository metadata.</p>
           <p>The complete Official MCP Registry v0.1 snapshot was also harvested. A listing is credited only when an exact GitHub repository URL appears in the registry record; name similarity alone is not sufficient.</p>
-          <dl><div><dt>80</dt><dd>reviewed catalogue entries</dd></div><div><dt>201</dt><dd>known records rechecked</dd></div><div><dt>127</dt><dd>deduplicated candidates screened</dd></div><div><dt>0</dt><dd>repositories executed</dd></div></dl>
+          <dl><div><dt>130</dt><dd>reviewed catalogue entries</dd></div><div><dt>256</dt><dd>known records screened</dd></div><div><dt>135</dt><dd>canonical unpublished candidates</dd></div><div><dt>0</dt><dd>repositories executed</dd></div></dl>
           <p><strong>A “Repository checked” label is deliberately narrow.</strong> It records factual public metadata. The separate editorial classifications—Provenanced, Active, Unreviewed, and Flagged—summarize visible provenance and maintenance signals. Neither establishes that a project implements MCP correctly, installs successfully, is free of malicious behavior, protects sensitive data, exposes the claimed tools, or produces valid clinical or causal results.</p>
         </div>
       </aside>

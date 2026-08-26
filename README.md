@@ -8,7 +8,7 @@ The public registry is available at [black-swan-causal-labs.github.io/RWE-MCP-Re
 
 The [`public-data`](public-data) directory contains the external-facing workbook of reviewed RWE capability cards:
 
-- [`rwe-mcp-verified-capability-cards.xlsx`](public-data/rwe-mcp-verified-capability-cards.xlsx) — 80 reviewed capability cards covering study design, evidence synthesis, clinical interoperability, OMOP/terminology, pharmacovigilance, regulatory data, public health, and RWE infrastructure.
+- [`rwe-mcp-verified-capability-cards.xlsx`](public-data/rwe-mcp-verified-capability-cards.xlsx) — 130 reviewed capability cards covering study design, evidence synthesis, clinical interoperability, OMOP/terminology, pharmacovigilance, regulatory data, public health, and RWE infrastructure.
 
 The workbook includes identity and static documentation review only. Inclusion does not mean that a project has passed installation, runtime, security, privacy, clinical, or methodological validation.
 

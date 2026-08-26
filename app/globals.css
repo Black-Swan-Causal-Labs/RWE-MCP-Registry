@@ -44,16 +44,17 @@ h1 i { color:var(--teal); font-weight:400; }
 .review-result span { color:#777; }
 .prototype-list { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:16px; align-items:start; }
 .prototype-card { border:1px solid var(--ink); background:#fbfaf5; min-width:0; }
+.prototype-card.is-open { grid-column:1 / -1; }
 .prototype-summary { width:100%; min-height:310px; border:0; background:transparent; color:inherit; padding:22px; display:flex; flex-direction:column; gap:20px; text-align:left; cursor:pointer; }
 .prototype-summary:hover strong { color:var(--teal); }
 .prototype-type { display:block; color:var(--teal); text-transform:uppercase; letter-spacing:.1em; font-size:9px; margin-bottom:8px; }
-.prototype-summary strong { display:block; font:30px/1.1 Georgia,serif; transition:color .2s; }
+.prototype-summary strong { display:block; max-width:100%; overflow-wrap:anywhere; word-break:break-word; font:30px/1.1 Georgia,serif; transition:color .2s; }
 .prototype-summary .favorite-star { display:inline; color:#b28c3a; font:22px/1 Georgia,serif; margin-left:5px; vertical-align:3px; }
 .prototype-summary p { margin:8px 0 0; font:15px/1.45 Georgia,serif; }
 .prototype-summary .tags { margin-top:13px; }
 .prototype-freshness { width:100%; border-top:1px solid var(--line); padding-top:14px; margin-top:auto; display:flex; flex-direction:column; gap:5px; font-size:10px; color:#686b68; }
 .prototype-freshness b { color:var(--ink); margin-top:8px; text-transform:uppercase; letter-spacing:.08em; font-size:9px; }
-.prototype-details { display:grid; grid-template-columns:1fr; gap:24px; padding:24px 22px 26px; border-top:1px solid var(--ink); }
+.prototype-details { display:grid; grid-template-columns:minmax(0,1.4fr) minmax(240px,.6fr); gap:32px; padding:24px 22px 26px; border-top:1px solid var(--ink); }
 .capability-panel>span { display:block; color:var(--teal); text-transform:uppercase; letter-spacing:.1em; font-size:9px; margin-bottom:10px; }
 .workflow-tags { display:flex; flex-wrap:wrap; gap:6px; margin:0 0 24px; }
 .workflow-tags b { border:1px solid var(--teal); border-radius:20px; padding:6px 9px; color:var(--teal); font-size:9px; font-weight:400; text-transform:uppercase; letter-spacing:.04em; }
@@ -63,7 +64,8 @@ h1 i { color:var(--teal); font-weight:400; }
 .capability-panel p b { text-transform:uppercase; letter-spacing:.08em; margin-right:5px; }
 .prototype-details dl { margin:0; }
 .prototype-details dl div { display:grid; grid-template-columns:90px 1fr; padding:8px 0; border-top:1px solid var(--line); font-size:11px; }
-.prototype-details dt { color:#777; }.prototype-details dd { margin:0; line-height:1.4; }
+.prototype-details dt { color:#777; }.prototype-details dd { min-width:0; margin:0; overflow-wrap:anywhere; line-height:1.4; }
+.prototype-details .prototype-link { grid-column:1 / -1; }
 .prototype-link { justify-self:start; text-transform:uppercase; letter-spacing:.08em; font-size:9px; text-underline-offset:4px; }
 .section-heading { display:grid; grid-template-columns:1.4fr .6fr; gap:6vw; align-items:end; margin-bottom:46px; }
 .kicker { color:var(--teal); text-transform:uppercase; letter-spacing:.14em; font-size:10px; }
@@ -138,6 +140,6 @@ footer p { margin:0; }footer>p:last-child { text-align:right; }footer a { color:
 @media(max-width:1000px){.prototype-list{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:800px){.prototype-heading{grid-template-columns:1fr;gap:16px}}
 @media(max-width:700px){.review-controls{grid-template-columns:1fr}.review-controls .search-box{border-right:0;border-bottom:1px solid var(--ink)}.review-controls>label:last-child{height:64px}}
-@media(max-width:620px){.prototype-list{grid-template-columns:1fr}.prototype-summary{min-height:0}}
+@media(max-width:620px){.prototype-list{grid-template-columns:1fr}.prototype-summary{min-height:0}.prototype-details{grid-template-columns:1fr}}
 @media(max-width:800px){.faq-hero{padding-top:48px}.faq-group{grid-template-columns:1fr;gap:32px;padding:52px 0}.faq-group-heading h2{font-size:38px}.faq-contact{grid-template-columns:1fr;align-items:start}.faq-contact>a{white-space:normal}}
 @media(max-width:480px){.faq-hero h1{font-size:58px}.faq-list summary span{font-size:18px}.faq-answer{padding-right:24px}}

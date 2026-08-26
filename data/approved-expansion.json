@@ -108,7 +108,7 @@
     "runtime": "Not independently runtime tested by registry",
     "repository": "Bigred97/aihw-mcp",
     "website": "Official MCP Registry",
-    "packages": "io.ausdata/aihw-mcp 0.4.18",
+    "packages": "io.ausdata/aihw-mcp 0.4.24",
     "workflowFit": [
       "Population-health surveillance",
       "Burden and trend description",
@@ -417,7 +417,7 @@
     "runtime": "Not independently runtime tested by registry",
     "repository": "cyanheads/cdc-health-mcp-server",
     "website": "Official MCP Registry",
-    "packages": "io.github.cyanheads/cdc-health-mcp-server 0.8.4",
+    "packages": "io.github.cyanheads/cdc-health-mcp-server 0.8.6",
     "workflowFit": [
       "Population-health surveillance",
       "Burden and trend description",
@@ -540,7 +540,7 @@
     "runtime": "Not independently runtime tested by registry",
     "repository": "cyanheads/openfda-mcp-server",
     "website": "Official MCP Registry",
-    "packages": "io.github.cyanheads/openfda-mcp-server 0.7.3",
+    "packages": "io.github.cyanheads/openfda-mcp-server 0.7.4",
     "workflowFit": [
       "Product and identifier resolution",
       "Regulatory context",
@@ -938,7 +938,7 @@
     "runtime": "Not independently runtime tested by registry",
     "repository": "cyanheads/medical-codes-mcp-server",
     "website": "Official MCP Registry",
-    "packages": "io.github.cyanheads/medical-codes-mcp-server 0.2.7",
+    "packages": "io.github.cyanheads/medical-codes-mcp-server 0.2.8",
     "workflowFit": [
       "Concept-set development",
       "Code validation",
@@ -969,7 +969,7 @@
     "runtime": "Not independently runtime tested by registry",
     "repository": "mims-harvard/ToolUniverse",
     "website": "Official MCP Registry",
-    "packages": "io.github.mims-harvard/tooluniverse 1.4.0",
+    "packages": "io.github.mims-harvard/tooluniverse 1.4.1",
     "workflowFit": [
       "Literature discovery",
       "Evidence scoping",
@@ -1031,7 +1031,7 @@
     "runtime": "Not independently runtime tested by registry",
     "repository": "rubatoyd/scienceON-mcp",
     "website": "Official MCP Registry",
-    "packages": "io.github.rubatoyd/scienceon-mcp 0.2.0",
+    "packages": "io.github.rubatoyd/scienceon-mcp 0.5.1",
     "workflowFit": [
       "Literature discovery",
       "Evidence scoping",
