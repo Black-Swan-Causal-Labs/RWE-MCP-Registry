@@ -4,7 +4,14 @@ import { fileURLToPath } from "node:url";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const automationRoot = "/Users/jddmacbook/Documents/RWE-MCP-Registry-Automation";
-const outputDir = path.join(root, "outputs", "2026-08-11-release-sweep");
+const reviewDate = process.env.REVIEW_DATE ?? new Intl.DateTimeFormat("en-CA", {
+  timeZone: process.env.REVIEW_TIME_ZONE ?? "America/Los_Angeles",
+  year: "numeric",
+  month: "2-digit",
+  day: "2-digit",
+}).format(new Date());
+const priorReviewDate = process.env.PRIOR_REVIEW_DATE ?? "2026-08-11";
+const outputDir = path.join(root, "outputs", `${reviewDate}-release-sweep`);
 const githubToken = process.env.GH_TOKEN;
 const githubHeaders = {
   Accept: "application/vnd.github+json",
@@ -14,9 +21,11 @@ const githubHeaders = {
 };
 
 const source = await fs.readFile(path.join(root, "app", "registry-explorer.tsx"), "utf8");
-const arrayText = source.match(/const prototypeCards = (\[[\s\S]*?\n\]);\n\nfunction CardPrototype/)?.[1];
-if (!arrayText) throw new Error("Could not locate prototypeCards");
-const published = Function(`"use strict"; return (${arrayText});`)();
+const arrayText = source.match(/const originalCards = (\[[\s\S]*?\n\]);\n\nconst prototypeCards/)?.[1];
+if (!arrayText) throw new Error("Could not locate originalCards");
+const originalCards = Function(`"use strict"; return (${arrayText});`)();
+const expansionCards = JSON.parse(await fs.readFile(path.join(root, "data", "approved-expansion.json"), "utf8"));
+const published = [...originalCards, ...expansionCards];
 const publishedRepos = new Set(published.map((card) => card.url.toLowerCase().replace(/\/$/, "")));
 
 function repoCoordinates(url) {
@@ -39,7 +48,7 @@ async function githubMetadata(card) {
     const priorPackage = card.packages ?? "";
     if (repo.archived) changes.push("Repository archived");
     if (repo.disabled) changes.push("Repository disabled");
-    if (repo.pushed_at?.slice(0, 10) > "2026-07-23") changes.push("Repository activity since last website review");
+    if (repo.pushed_at?.slice(0, 10) > priorReviewDate) changes.push("Repository activity since last website review");
     return {
       name: card.name, url: card.url, category: card.category, favorite: Boolean(card.favorite),
       status: repo.archived ? "archived" : "available", pushedAt: repo.pushed_at?.slice(0, 10) ?? null,
@@ -149,54 +158,11 @@ for (const item of official) {
 }
 
 const candidates = [...candidateMap.values()].sort((a, b) => b.score - a.score || a.name.localeCompare(b.name));
-const proposedUrls = [
-  "https://github.com/Black-Swan-Causal-Labs/openfda-mcp",
-  "https://github.com/Black-Swan-Causal-Labs/robins-i-mcp",
-  "https://github.com/NyxToolsDev/dicom-hl7-mcp-server",
-  "https://github.com/Bigred97/aihw-mcp",
-  "https://github.com/FHIRfly-io/fhirfly-mcp-server",
-  "https://github.com/aks129/HealthClawGuardrails",
-  "https://github.com/anthesiallc/meddata-mcp",
-  "https://github.com/CSOAI-ORG/clinical-trials-ai-mcp",
-  "https://github.com/langcare/langcare-mcp-fhir",
-  "https://github.com/SidneyBissoli/cid10-br-mcp",
-  "https://github.com/cbetz/last-ehr",
-  "https://github.com/pipeworx-io/mcp-openfda",
-  "https://github.com/pipeworx-io/mcp-pubmed",
-  "https://github.com/cyanheads/cdc-health-mcp-server",
-  "https://github.com/gorgeousfish/alldid-mcp",
-  "https://github.com/pkotecha-eng/aria-mcp-server",
-  "https://github.com/pcmedsinge/fhir-mcp-suite",
-  "https://github.com/cyanheads/openfda-mcp-server",
-  "https://github.com/ahmedEid1/thoth",
-  "https://github.com/brunoescalhao/hypokrates",
-  "https://github.com/Niteowlpt/pharma-signal-api",
-  "https://github.com/pubspro/pharma-mcp",
-  "https://github.com/Taru0208/openfda-mcp-server",
-  "https://github.com/martc03/gov-mcp-servers",
-  "https://github.com/medplum/medplum",
-  "https://github.com/themineworks/mcp-servers",
-  "https://github.com/musharna/data-aggregator-mcp",
-  "https://github.com/pipeworx-io/mcp-fda-devices",
-  "https://github.com/surendranb/find-research-papers-mcp",
-  "https://github.com/berntpopp/genefoundry-router",
-  "https://github.com/cyanheads/medical-codes-mcp-server",
-  "https://github.com/mims-harvard/ToolUniverse",
-  "https://github.com/nickjlamb/pubcrawl",
-  "https://github.com/rubatoyd/scienceON-mcp",
-  "https://github.com/patsnap/patent-literature-search-mcp",
-  "https://github.com/wei-ai-lab/clinical-trial-design",
-  "https://github.com/K01labs/k01-mcp-server",
-  "https://github.com/pipeworx-io/mcp-bioregistry",
-  "https://github.com/pipeworx-io/mcp-clinicaltables",
-  "https://github.com/pipeworx-io/mcp-europepmc",
-].map((url) => url.toLowerCase());
-const candidateByUrl = new Map(candidates.map((item) => [item.canonicalUrl.toLowerCase().replace(/\/$/, ""), item]));
-const shortlist = proposedUrls.map((url, index) => {
-  const item = candidateByUrl.get(url);
-  if (!item) throw new Error(`Proposed candidate not found: ${url}`);
-  return { rank: index + 1, ...item, proposedDisposition: "Proposed — requires final human approval" };
-});
+const shortlist = candidates.slice(0, 40).map((item, index) => ({
+  rank: index + 1,
+  ...item,
+  proposedDisposition: "Proposed — requires final human approval",
+}));
 
 await fs.mkdir(outputDir, { recursive: true });
 await fs.writeFile(path.join(outputDir, "release-sweep.json"), `${JSON.stringify({
