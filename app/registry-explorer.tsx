@@ -5,6 +5,9 @@ import expansionCards from "../data/approved-expansion.json";
 import expansionCards2 from "../data/approved-expansion-2.json";
 import webmcpCards from "../data/reviewed-webmcp.json";
 import reviewedExpansionCards from "../data/reviewed-expansion-2026-09-07.json";
+import sourceChecks from "../data/source-checks.json";
+
+const latestSourceChecks: Record<string, { checkedAt: string; available: boolean }> = sourceChecks;
 
 type Entry = {
   name: string; org: string; url: string; kind: string; category: string;
@@ -134,9 +137,9 @@ function CardPrototype() {
     <div className="prototype-list">{results.map((card) => { const open = expanded === card.name; return <article className={`prototype-card ${open ? "is-open" : ""}`} key={card.name}>
       <button className="prototype-summary" onClick={() => setExpanded(open ? null : card.name)} aria-expanded={open}>
         <div><span className="prototype-type">{card.kind} · {card.category}</span><strong>{card.name} {"favorite" in card && card.favorite ? <span className="favorite-star" title="Black Swan Causal Labs favorite" aria-label="Black Swan Causal Labs favorite">★</span> : null}</strong><p>{card.summary}</p><div className="tags">{card.tags.map(tag => <span key={tag}>{tag}</span>)}</div></div>
-        <div className="prototype-freshness"><span>Added {card.added}</span><span>Checked Aug 25, 2026</span><b>{open ? "Close −" : "View RWE uses +"}</b></div>
+        <div className="prototype-freshness"><span>Added {card.added}</span><span title="Latest source availability check; capability review date is shown in details">Checked {latestSourceChecks[card.url] ? formatDate(latestSourceChecks[card.url].checkedAt.slice(0, 10)) : card.checked}</span><b>{open ? "Close −" : "View RWE uses +"}</b></div>
       </button>
-      {open && <div className="prototype-details"><div className="capability-panel"><span>RWE workflow fit</span><div className="workflow-tags">{card.workflowFit.map(item => <b key={item}>{item}</b>)}</div><span>Documented capabilities</span><ul>{card.capabilities.map(capability => <li key={capability}>{capability}</li>)}</ul><p><b>Limitation</b> {card.limitation}</p></div><dl><div><dt>Status</dt><dd>{card.status}</dd></div><div><dt>Runtime</dt><dd>{card.runtime}</dd></div><div><dt>Repository</dt><dd>{card.repository}</dd></div><div><dt>Website</dt><dd>{card.website}</dd></div><div><dt>Packages</dt><dd>{card.packages}</dd></div></dl><a className="prototype-link" href={card.url} target={card.url === "#" ? undefined : "_blank"} rel="noreferrer">Open source ↗</a></div>}
+      {open && <div className="prototype-details"><div className="capability-panel"><span>RWE workflow fit</span><div className="workflow-tags">{card.workflowFit.map(item => <b key={item}>{item}</b>)}</div><span>Documented capabilities</span><ul>{card.capabilities.map(capability => <li key={capability}>{capability}</li>)}</ul><p><b>Limitation</b> {card.limitation}</p></div><dl><div><dt>Capability review</dt><dd>{card.checked}</dd></div><div><dt>Status</dt><dd>{card.status}</dd></div><div><dt>Runtime</dt><dd>{card.runtime}</dd></div><div><dt>Repository</dt><dd>{card.repository}</dd></div><div><dt>Website</dt><dd>{card.website}</dd></div><div><dt>Packages</dt><dd>{card.packages}</dd></div></dl><a className="prototype-link" href={card.url} target={card.url === "#" ? undefined : "_blank"} rel="noreferrer">Open source ↗</a></div>}
     </article>; })}</div>
     {!results.length && <div className="empty"><span>∅</span><h3>No reviewed match.</h3><p>Try a broader source, method, or workflow term.</p><button onClick={() => { setQuery(""); setCategory("All categories"); }}>Clear filters</button></div>}
   </section>;

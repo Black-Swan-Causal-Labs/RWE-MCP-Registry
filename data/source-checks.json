@@ -1,0 +1,1064 @@
+{
+  "https://github.com/GPTomics/bioSkills": {
+    "checkedAt": "2026-09-07T07:17:32.418Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/GPTomics/bioSkills",
+    "archived": true
+  },
+  "https://github.com/neptun2000/heor-agent-mcp": {
+    "checkedAt": "2026-09-07T07:17:32.415Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/neptun2000/heor-agent-mcp",
+    "archived": false
+  },
+  "https://github.com/MCPServings/paper-mcp": {
+    "checkedAt": "2026-09-07T07:17:32.502Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/MCPServings/paper-mcp",
+    "archived": false
+  },
+  "https://github.com/adamamer20/paper-search-mcp-openai": {
+    "checkedAt": "2026-09-07T07:17:32.470Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/adamamer20/paper-search-mcp-openai",
+    "archived": false
+  },
+  "https://github.com/lineex/pubmed-mcp-smithery": {
+    "checkedAt": "2026-09-07T07:17:32.478Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/lineex/pubmed-mcp-smithery",
+    "archived": false
+  },
+  "https://github.com/a-xp/bq-health-mcp": {
+    "checkedAt": "2026-09-07T07:17:32.419Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/a-xp/bq-health-mcp",
+    "archived": false
+  },
+  "https://github.com/Leko/ohdsi-mcps": {
+    "checkedAt": "2026-09-07T07:17:32.437Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/Leko/ohdsi-mcps",
+    "archived": false
+  },
+  "https://github.com/clsweeting/ohdsi-webapi-mcp": {
+    "checkedAt": "2026-09-07T07:17:32.437Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/clsweeting/ohdsi-webapi-mcp",
+    "archived": false
+  },
+  "https://github.com/OHNLP/omop_mcp": {
+    "checkedAt": "2026-09-07T07:17:32.763Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/OHNLP/omop_mcp",
+    "archived": false
+  },
+  "https://github.com/OMOPHub/omophub-mcp": {
+    "checkedAt": "2026-09-07T07:17:32.712Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/OMOPHub/omophub-mcp",
+    "archived": false
+  },
+  "https://github.com/dermatologist/pyomop": {
+    "checkedAt": "2026-09-07T07:17:32.689Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/dermatologist/pyomop",
+    "archived": false
+  },
+  "https://github.com/BaranziniLab/UCSFOMOPAgent": {
+    "checkedAt": "2026-09-07T07:17:32.733Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/BaranziniLab/UCSFOMOPAgent",
+    "archived": false
+  },
+  "https://github.com/schuemie/WebApiMcp": {
+    "checkedAt": "2026-09-07T07:17:32.648Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/schuemie/WebApiMcp",
+    "archived": false
+  },
+  "https://github.com/Janiumang/mcp-server-openfda": {
+    "checkedAt": "2026-09-07T07:17:32.738Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/Janiumang/mcp-server-openfda",
+    "archived": false
+  },
+  "https://github.com/aneesh-sayal-tkd/pharmacovigilance-mcp-server": {
+    "checkedAt": "2026-09-07T07:17:32.764Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/aneesh-sayal-tkd/pharmacovigilance-mcp-server",
+    "archived": false
+  },
+  "https://github.com/AbhinavGupta707/Vigil": {
+    "checkedAt": "2026-09-07T07:17:32.860Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/AbhinavGupta707/Vigil",
+    "archived": false
+  },
+  "https://github.com/Aqta-ai/aqtabio-research": {
+    "checkedAt": "2026-09-07T07:17:32.916Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/Aqta-ai/aqtabio-research",
+    "archived": false
+  },
+  "https://github.com/hesscl/wonder-mcp": {
+    "checkedAt": "2026-09-07T07:17:32.968Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/hesscl/wonder-mcp",
+    "archived": false
+  },
+  "https://github.com/Black-Swan-Causal-Labs/dagstudio-mcp": {
+    "checkedAt": "2026-09-07T07:17:32.965Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/Black-Swan-Causal-Labs/dagstudio-mcp",
+    "archived": false
+  },
+  "https://github.com/Black-Swan-Causal-Labs/target-mcp": {
+    "checkedAt": "2026-09-07T07:17:33.038Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/Black-Swan-Causal-Labs/target-mcp",
+    "archived": false
+  },
+  "https://github.com/awslabs/mcp/tree/main/src/healthlake-mcp-server": {
+    "checkedAt": "2026-09-07T07:17:33.092Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/awslabs/mcp",
+    "archived": false
+  },
+  "https://github.com/CharmHealth/charm-mcp-server": {
+    "checkedAt": "2026-09-07T07:17:33.148Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/CharmHealth/charm-mcp-server",
+    "archived": false
+  },
+  "https://github.com/jmandel/health-record-mcp": {
+    "checkedAt": "2026-09-07T07:17:32.984Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/jmandel/health-record-mcp",
+    "archived": true
+  },
+  "https://github.com/SidneyBissoli/medical-terminologies-mcp": {
+    "checkedAt": "2026-09-07T07:17:33.140Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/SidneyBissoli/medical-terminologies-mcp",
+    "archived": false
+  },
+  "https://github.com/chriserikbarnes/MedRecPro": {
+    "checkedAt": "2026-09-07T07:17:33.185Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/chriserikbarnes/MedRecPro",
+    "archived": false
+  },
+  "https://github.com/lesong36/dowhy_mcp": {
+    "checkedAt": "2026-09-07T07:17:33.253Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/lesong36/dowhy_mcp",
+    "archived": false
+  },
+  "https://github.com/brycewang-stanford/StatsPAI": {
+    "checkedAt": "2026-09-07T07:17:33.270Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/brycewang-stanford/StatsPAI",
+    "archived": false
+  },
+  "https://github.com/Cicatriiz/cdisc-library-mcp-server": {
+    "checkedAt": "2026-09-07T07:17:33.189Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/Cicatriiz/cdisc-library-mcp-server",
+    "archived": false
+  },
+  "https://github.com/vikasgaddu1/crf-annotation-mcp": {
+    "checkedAt": "2026-09-07T07:17:33.358Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/vikasgaddu1/crf-annotation-mcp",
+    "archived": false
+  },
+  "https://github.com/fastomop/omcp_kge": {
+    "checkedAt": "2026-09-07T07:17:33.417Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/fastomop/omcp_kge",
+    "archived": false
+  },
+  "https://github.com/soundarmoorthy/mcp_rwe": {
+    "checkedAt": "2026-09-07T07:17:33.337Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/soundarmoorthy/mcp_rwe",
+    "archived": false
+  },
+  "https://github.com/openpharma-org/ema-mcp": {
+    "checkedAt": "2026-09-07T07:17:33.416Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/openpharma-org/ema-mcp",
+    "archived": false
+  },
+  "https://github.com/openpharma-org/fda-mcp": {
+    "checkedAt": "2026-09-07T07:17:33.495Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/openpharma-org/fda-mcp",
+    "archived": false
+  },
+  "https://github.com/NancyNSH/Claude-Skills-for-Epidemiology-Researchers": {
+    "checkedAt": "2026-09-07T07:17:33.444Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/NancyNSH/Claude-Skills-for-Epidemiology-Researchers",
+    "archived": false
+  },
+  "https://github.com/JeonKH81/MediStat-Table1": {
+    "checkedAt": "2026-09-07T07:17:33.461Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/JeonKH81/MediStat-Table1",
+    "archived": false
+  },
+  "https://github.com/cyanheads/clinicaltrialsgov-mcp-server": {
+    "checkedAt": "2026-09-07T07:17:33.539Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/cyanheads/clinicaltrialsgov-mcp-server",
+    "archived": false
+  },
+  "https://github.com/wso2/fhir-mcp-server": {
+    "checkedAt": "2026-09-07T07:17:33.657Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/wso2/fhir-mcp-server",
+    "archived": false
+  },
+  "https://github.com/pipeworx-io/mcp-rxnorm": {
+    "checkedAt": "2026-09-07T07:17:33.651Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/pipeworx-io/mcp-rxnorm",
+    "archived": false
+  },
+  "https://github.com/cyanheads/pubmed-mcp-server": {
+    "checkedAt": "2026-09-07T07:17:33.712Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/cyanheads/pubmed-mcp-server",
+    "archived": false
+  },
+  "https://github.com/rootsbymenda/pharma-mcp-server": {
+    "checkedAt": "2026-09-07T07:17:33.629Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/rootsbymenda/pharma-mcp-server",
+    "archived": false
+  },
+  "https://github.com/Black-Swan-Causal-Labs/openfda-mcp": {
+    "checkedAt": "2026-09-07T07:17:33.797Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/Black-Swan-Causal-Labs/openfda-mcp",
+    "archived": false
+  },
+  "https://github.com/Black-Swan-Causal-Labs/robins-i-mcp": {
+    "checkedAt": "2026-09-07T07:17:33.773Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/Black-Swan-Causal-Labs/robins-i-mcp",
+    "archived": false
+  },
+  "https://github.com/NyxToolsDev/dicom-hl7-mcp-server": {
+    "checkedAt": "2026-09-07T07:17:33.773Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/NyxToolsDev/dicom-hl7-mcp-server",
+    "archived": false
+  },
+  "https://github.com/Bigred97/aihw-mcp": {
+    "checkedAt": "2026-09-07T07:17:33.800Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/Bigred97/aihw-mcp",
+    "archived": false
+  },
+  "https://github.com/FHIRfly-io/fhirfly-mcp-server": {
+    "checkedAt": "2026-09-07T07:17:34.088Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/FHIRfly-io/fhirfly-mcp-server",
+    "archived": false
+  },
+  "https://github.com/aks129/HealthClawGuardrails": {
+    "checkedAt": "2026-09-07T07:17:33.876Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/aks129/HealthClawGuardrails",
+    "archived": false
+  },
+  "https://github.com/anthesiallc/meddata-mcp": {
+    "checkedAt": "2026-09-07T07:17:33.883Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/anthesiallc/meddata-mcp",
+    "archived": false
+  },
+  "https://github.com/CSOAI-ORG/clinical-trials-ai-mcp": {
+    "checkedAt": "2026-09-07T07:17:33.987Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/CSOAI-ORG/clinical-trials-ai-mcp",
+    "archived": false
+  },
+  "https://github.com/langcare/langcare-mcp-fhir": {
+    "checkedAt": "2026-09-07T07:17:34.214Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/langcare/langcare-mcp-fhir",
+    "archived": false
+  },
+  "https://github.com/SidneyBissoli/cid10-br-mcp": {
+    "checkedAt": "2026-09-07T07:17:34.045Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/SidneyBissoli/cid10-br-mcp",
+    "archived": true
+  },
+  "https://github.com/cbetz/last-ehr": {
+    "checkedAt": "2026-09-07T07:17:34.094Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/cbetz/last-ehr",
+    "archived": false
+  },
+  "https://github.com/pipeworx-io/mcp-openfda": {
+    "checkedAt": "2026-09-07T07:17:34.074Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/pipeworx-io/mcp-openfda",
+    "archived": false
+  },
+  "https://github.com/pipeworx-io/mcp-pubmed": {
+    "checkedAt": "2026-09-07T07:17:34.149Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/pipeworx-io/mcp-pubmed",
+    "archived": false
+  },
+  "https://github.com/cyanheads/cdc-health-mcp-server": {
+    "checkedAt": "2026-09-07T07:17:34.085Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/cyanheads/cdc-health-mcp-server",
+    "archived": false
+  },
+  "https://github.com/gorgeousfish/alldid-mcp": {
+    "checkedAt": "2026-09-07T07:17:34.241Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/gorgeousfish/alldid-mcp",
+    "archived": false
+  },
+  "https://github.com/pkotecha-eng/aria-mcp-server": {
+    "checkedAt": "2026-09-07T07:17:34.269Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/pkotecha-eng/aria-mcp-server",
+    "archived": false
+  },
+  "https://github.com/pcmedsinge/fhir-mcp-suite": {
+    "checkedAt": "2026-09-07T07:17:34.323Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/pcmedsinge/fhir-mcp-suite",
+    "archived": false
+  },
+  "https://github.com/cyanheads/openfda-mcp-server": {
+    "checkedAt": "2026-09-07T07:17:34.336Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/cyanheads/openfda-mcp-server",
+    "archived": false
+  },
+  "https://github.com/ahmedEid1/thoth": {
+    "checkedAt": "2026-09-07T07:17:34.295Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/ahmedEid1/thoth",
+    "archived": false
+  },
+  "https://github.com/pipeworx-io/mcp-ebi-ols": {
+    "checkedAt": "2026-09-07T07:17:34.395Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/pipeworx-io/mcp-ebi-ols",
+    "archived": false
+  },
+  "https://github.com/pipeworx-io/mcp-monarch-initiative": {
+    "checkedAt": "2026-09-07T07:17:34.424Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/pipeworx-io/mcp-monarch-initiative",
+    "archived": false
+  },
+  "https://github.com/pubspro/pharma-mcp": {
+    "checkedAt": "2026-09-07T07:17:34.487Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/pubspro/pharma-mcp",
+    "archived": false
+  },
+  "https://github.com/pipeworx-io/mcp-ncbi-eutils": {
+    "checkedAt": "2026-09-07T07:17:34.573Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/pipeworx-io/mcp-ncbi-eutils",
+    "archived": false
+  },
+  "https://github.com/martc03/gov-mcp-servers": {
+    "checkedAt": "2026-09-07T07:17:34.500Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/martc03/gov-mcp-servers",
+    "archived": false
+  },
+  "https://github.com/medplum/medplum": {
+    "checkedAt": "2026-09-07T07:17:34.585Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/medplum/medplum",
+    "archived": false
+  },
+  "https://github.com/themineworks/mcp-servers": {
+    "checkedAt": "2026-09-07T07:17:34.598Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/themineworks/mcp-servers",
+    "archived": false
+  },
+  "https://github.com/musharna/data-aggregator-mcp": {
+    "checkedAt": "2026-09-07T07:17:34.631Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/musharna/data-aggregator-mcp",
+    "archived": false
+  },
+  "https://github.com/pipeworx-io/mcp-fda-devices": {
+    "checkedAt": "2026-09-07T07:17:34.744Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/pipeworx-io/mcp-fda-devices",
+    "archived": false
+  },
+  "https://github.com/surendranb/find-research-papers-mcp": {
+    "checkedAt": "2026-09-07T07:17:34.661Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/surendranb/find-research-papers-mcp",
+    "archived": false
+  },
+  "https://github.com/berntpopp/genefoundry-router": {
+    "checkedAt": "2026-09-07T07:17:34.703Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/berntpopp/genefoundry-router",
+    "archived": false
+  },
+  "https://github.com/cyanheads/medical-codes-mcp-server": {
+    "checkedAt": "2026-09-07T07:17:34.817Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/cyanheads/medical-codes-mcp-server",
+    "archived": false
+  },
+  "https://github.com/mims-harvard/ToolUniverse": {
+    "checkedAt": "2026-09-07T07:17:34.888Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/mims-harvard/ToolUniverse",
+    "archived": false
+  },
+  "https://github.com/nickjlamb/pubcrawl": {
+    "checkedAt": "2026-09-07T07:17:34.795Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/nickjlamb/pubcrawl",
+    "archived": false
+  },
+  "https://github.com/rubatoyd/scienceON-mcp": {
+    "checkedAt": "2026-09-07T07:17:34.807Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/rubatoyd/scienceON-mcp",
+    "archived": false
+  },
+  "https://github.com/patsnap/patent-literature-search-mcp": {
+    "checkedAt": "2026-09-07T07:17:34.948Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/patsnap/patent-literature-search-mcp",
+    "archived": false
+  },
+  "https://github.com/wei-ai-lab/clinical-trial-design": {
+    "checkedAt": "2026-09-07T07:17:34.947Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/wei-ai-lab/clinical-trial-design",
+    "archived": false
+  },
+  "https://github.com/K01labs/k01-mcp-server": {
+    "checkedAt": "2026-09-07T07:17:34.981Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/K01labs/k01-mcp-server",
+    "archived": false
+  },
+  "https://github.com/pipeworx-io/mcp-bioregistry": {
+    "checkedAt": "2026-09-07T07:17:34.987Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/pipeworx-io/mcp-bioregistry",
+    "archived": false
+  },
+  "https://github.com/pipeworx-io/mcp-clinicaltables": {
+    "checkedAt": "2026-09-07T07:17:35.087Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/pipeworx-io/mcp-clinicaltables",
+    "archived": false
+  },
+  "https://github.com/pipeworx-io/mcp-europepmc": {
+    "checkedAt": "2026-09-07T07:17:35.119Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/pipeworx-io/mcp-europepmc",
+    "archived": false
+  },
+  "https://github.com/aehrc/mcp-fhir-tools": {
+    "checkedAt": "2026-09-07T07:17:35.157Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/aehrc/mcp-fhir-tools",
+    "archived": false
+  },
+  "https://github.com/Kartha-AI/agentcare-mcp": {
+    "checkedAt": "2026-09-07T07:17:35.183Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/Kartha-AI/agentcare-mcp",
+    "archived": false
+  },
+  "https://github.com/neiltron/apple-health-mcp": {
+    "checkedAt": "2026-09-07T07:17:35.157Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/neiltron/apple-health-mcp",
+    "archived": false
+  },
+  "https://github.com/erikhoward/azure-fhir-mcp-server": {
+    "checkedAt": "2026-09-07T07:17:35.202Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/erikhoward/azure-fhir-mcp-server",
+    "archived": false
+  },
+  "https://github.com/genomoncology/biomcp": {
+    "checkedAt": "2026-09-07T07:17:35.265Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/genomoncology/biomcp",
+    "archived": false
+  },
+  "https://github.com/ncbo/bioportal-mcp": {
+    "checkedAt": "2026-09-07T07:17:35.330Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/ncbo/bioportal-mcp",
+    "archived": false
+  },
+  "https://github.com/cyanheads/biorxiv-mcp-server": {
+    "checkedAt": "2026-09-07T07:17:35.300Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/cyanheads/biorxiv-mcp-server",
+    "archived": false
+  },
+  "https://github.com/longevity-genie/biothings-mcp": {
+    "checkedAt": "2026-09-07T07:17:35.384Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/longevity-genie/biothings-mcp",
+    "archived": false
+  },
+  "https://github.com/ChristianHinge/dicom-mcp": {
+    "checkedAt": "2026-09-07T07:17:35.399Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/ChristianHinge/dicom-mcp",
+    "archived": false
+  },
+  "https://github.com/openpharma-org/drugbank-mcp-server": {
+    "checkedAt": "2026-09-07T07:17:35.459Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/openpharma-org/drugbank-mcp-server",
+    "archived": false
+  },
+  "https://github.com/jsfaulkner86/ehr-mcp": {
+    "checkedAt": "2026-09-07T07:17:35.393Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/jsfaulkner86/ehr-mcp",
+    "archived": false
+  },
+  "https://github.com/genepattern/genepattern-mcp": {
+    "checkedAt": "2026-09-07T07:17:35.476Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/genepattern/genepattern-mcp",
+    "archived": false
+  },
+  "https://github.com/Eldergenix/GenomeMCP": {
+    "checkedAt": "2026-09-07T07:17:35.546Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/Eldergenix/GenomeMCP",
+    "archived": false
+  },
+  "https://github.com/wkurzatz/PharmacyMCP": {
+    "checkedAt": "2026-09-07T07:17:35.576Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/wkurzatz/PharmacyMCP",
+    "archived": false
+  },
+  "https://github.com/PhilipAD/health-export-mcp": {
+    "checkedAt": "2026-09-07T07:17:35.598Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/PhilipAD/health-export-mcp",
+    "archived": false
+  },
+  "https://github.com/contextkits/healthcare-billing-codes": {
+    "checkedAt": "2026-09-07T07:17:35.720Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/contextkits/healthcare-billing-codes",
+    "archived": false
+  },
+  "https://github.com/Cicatriiz/healthcare-mcp-public": {
+    "checkedAt": "2026-09-07T07:17:35.621Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/Cicatriiz/healthcare-mcp-public",
+    "archived": false
+  },
+  "https://github.com/ajhcs/healthcare-data-mcp": {
+    "checkedAt": "2026-09-07T07:17:35.607Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/ajhcs/healthcare-data-mcp",
+    "archived": false
+  },
+  "https://github.com/stabgan/mcp-icd10": {
+    "checkedAt": "2026-09-07T07:17:35.707Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/stabgan/mcp-icd10",
+    "archived": false
+  },
+  "https://github.com/rafiattrach/m3": {
+    "checkedAt": "2026-09-07T07:17:35.770Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/rafiattrach/m3",
+    "archived": false
+  },
+  "https://github.com/Shaumik-Ashraf/mcp-fhir-patient-index": {
+    "checkedAt": "2026-09-07T07:17:35.768Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/Shaumik-Ashraf/mcp-fhir-patient-index",
+    "archived": false
+  },
+  "https://github.com/andybrandt/mcp-simple-pubmed": {
+    "checkedAt": "2026-09-07T07:17:35.823Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/andybrandt/mcp-simple-pubmed",
+    "archived": false
+  },
+  "https://github.com/Kryzo/mcp-Loinc": {
+    "checkedAt": "2026-09-07T07:17:35.831Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/Kryzo/mcp-Loinc",
+    "archived": false
+  },
+  "https://github.com/openpharma-org/medicaid-mcp-server": {
+    "checkedAt": "2026-09-07T07:17:35.891Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/openpharma-org/medicaid-mcp-server",
+    "archived": false
+  },
+  "https://github.com/u9401066/medical-calc-mcp": {
+    "checkedAt": "2026-09-07T07:17:35.839Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/u9401066/medical-calc-mcp",
+    "archived": false
+  },
+  "https://github.com/pascalwhoop/medical-mcps": {
+    "checkedAt": "2026-09-07T07:17:35.916Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/pascalwhoop/medical-mcps",
+    "archived": false
+  },
+  "https://github.com/ezhou89/medical-research-mcp-suite": {
+    "checkedAt": "2026-09-07T07:17:35.932Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/ezhou89/medical-research-mcp-suite",
+    "archived": false
+  },
+  "https://github.com/JamesANZ/medical-mcp": {
+    "checkedAt": "2026-09-07T07:17:36.045Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/JamesANZ/medical-mcp",
+    "archived": false
+  },
+  "https://github.com/openpharma-org/medicare-mcp": {
+    "checkedAt": "2026-09-07T07:17:36.016Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/openpharma-org/medicare-mcp",
+    "archived": false
+  },
+  "https://github.com/the-momentum/fhir-mcp-server": {
+    "checkedAt": "2026-09-07T07:17:36.145Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/the-momentum/fhir-mcp-server",
+    "archived": false
+  },
+  "https://github.com/cyanheads/npi-providers-mcp-server": {
+    "checkedAt": "2026-09-07T07:17:36.102Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/cyanheads/npi-providers-mcp-server",
+    "archived": false
+  },
+  "https://github.com/opentargets/platform-mcp": {
+    "checkedAt": "2026-09-07T07:17:36.155Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/opentargets/platform-mcp",
+    "archived": false
+  },
+  "https://github.com/sscotti/dicom-mcp": {
+    "checkedAt": "2026-09-07T07:17:36.157Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/sscotti/dicom-mcp",
+    "archived": false
+  },
+  "https://github.com/Julius-Schmidt/mcp-pharmacogenomics": {
+    "checkedAt": "2026-09-07T07:17:36.114Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/Julius-Schmidt/mcp-pharmacogenomics",
+    "archived": false
+  },
+  "https://github.com/Cicatriiz/pophive-mcp-server": {
+    "checkedAt": "2026-09-07T07:17:36.179Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/Cicatriiz/pophive-mcp-server",
+    "archived": false
+  },
+  "https://github.com/lynnlangit/precision-medicine-mcp": {
+    "checkedAt": "2026-09-07T07:17:36.280Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/lynnlangit/precision-medicine-mcp",
+    "archived": false
+  },
+  "https://github.com/Augmented-Nature/AlphaFold-MCP-Server": {
+    "checkedAt": "2026-09-07T07:17:36.302Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/Augmented-Nature/AlphaFold-MCP-Server",
+    "archived": false
+  },
+  "https://github.com/chrismannina/pubmed-mcp": {
+    "checkedAt": "2026-09-07T07:17:36.308Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/chrismannina/pubmed-mcp",
+    "archived": false
+  },
+  "https://github.com/quiquemz/fhir-mcp-server": {
+    "checkedAt": "2026-09-07T07:17:36.345Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/quiquemz/fhir-mcp-server",
+    "archived": false
+  },
+  "https://github.com/reactome/reactome-mcp": {
+    "checkedAt": "2026-09-07T07:17:36.421Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/reactome/reactome-mcp",
+    "archived": false
+  },
+  "https://github.com/eigenbau/mcp-snomed-ct": {
+    "checkedAt": "2026-09-07T07:17:36.359Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/eigenbau/mcp-snomed-ct",
+    "archived": false
+  },
+  "https://github.com/Appsilon/TealFlowMCP": {
+    "checkedAt": "2026-09-07T07:17:36.452Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/Appsilon/TealFlowMCP",
+    "archived": false
+  },
+  "https://github.com/cyanheads/who-gho-mcp-server": {
+    "checkedAt": "2026-09-07T07:17:36.394Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/cyanheads/who-gho-mcp-server",
+    "archived": false
+  },
+  "https://github.com/mj991218/mcp-fhir": {
+    "checkedAt": "2026-09-07T07:17:36.529Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/mj991218/mcp-fhir",
+    "archived": false
+  },
+  "https://github.com/albertorb/mcp-server-fhir": {
+    "checkedAt": "2026-09-07T07:17:36.508Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/albertorb/mcp-server-fhir",
+    "archived": false
+  },
+  "https://github.com/chinahamu/japan-healthcare-mcp": {
+    "checkedAt": "2026-09-07T07:17:36.513Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/chinahamu/japan-healthcare-mcp",
+    "archived": false
+  },
+  "https://github.com/JuanM94/mcp-lab-analyzer": {
+    "checkedAt": "2026-09-07T07:17:36.543Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/JuanM94/mcp-lab-analyzer",
+    "archived": false
+  },
+  "https://github.com/pipeworx-io/mcp-medical-codes": {
+    "checkedAt": "2026-09-07T07:17:36.623Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/pipeworx-io/mcp-medical-codes",
+    "archived": false
+  },
+  "https://github.com/RNAcentral/rnacentral-mcp-server": {
+    "checkedAt": "2026-09-07T07:17:36.747Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/RNAcentral/rnacentral-mcp-server",
+    "archived": false
+  },
+  "https://github.com/xSoVx/fhir-mcp": {
+    "checkedAt": "2026-09-07T07:17:36.712Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/xSoVx/fhir-mcp",
+    "archived": false
+  },
+  "https://github.com/Black-Swan-Causal-Labs/dag-studio-webmcp": {
+    "checkedAt": "2026-09-07T07:17:36.730Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/Black-Swan-Causal-Labs/dag-studio-webmcp",
+    "archived": false
+  },
+  "https://github.com/Black-Swan-Causal-Labs/study-design-diagram-studio": {
+    "checkedAt": "2026-09-07T07:17:36.746Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/Black-Swan-Causal-Labs/study-design-diagram-studio",
+    "archived": false
+  },
+  "https://github.com/jamesrosing/tebra-mcp-server": {
+    "checkedAt": "2026-09-07T07:17:36.747Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/jamesrosing/tebra-mcp-server",
+    "archived": false
+  },
+  "https://github.com/CSOAI-ORG/healthcare-fhir-mcp": {
+    "checkedAt": "2026-09-07T07:17:36.800Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/CSOAI-ORG/healthcare-fhir-mcp",
+    "archived": false
+  },
+  "https://github.com/akutishevsky/withings-mcp": {
+    "checkedAt": "2026-09-07T07:17:36.751Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/akutishevsky/withings-mcp",
+    "archived": false
+  },
+  "https://github.com/ammawla/encode-toolkit": {
+    "checkedAt": "2026-09-07T07:17:36.880Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/ammawla/encode-toolkit",
+    "archived": false
+  },
+  "https://github.com/the-momentum/apple-health-mcp-server": {
+    "checkedAt": "2026-09-07T07:17:37.019Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/the-momentum/apple-health-mcp-server",
+    "archived": false
+  },
+  "https://github.com/its-kios09/daktaritb-mcp": {
+    "checkedAt": "2026-09-07T07:17:37.038Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/its-kios09/daktaritb-mcp",
+    "archived": false
+  },
+  "https://github.com/davidmosiah/google-health-mcp": {
+    "checkedAt": "2026-09-07T07:17:36.997Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/davidmosiah/google-health-mcp",
+    "archived": false
+  },
+  "https://github.com/ryoureddy/medadapt-content-server": {
+    "checkedAt": "2026-09-07T07:17:37.032Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/ryoureddy/medadapt-content-server",
+    "archived": false
+  },
+  "https://github.com/gscfwid/NCCN_guidelines_MCP": {
+    "checkedAt": "2026-09-07T07:17:36.996Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/gscfwid/NCCN_guidelines_MCP",
+    "archived": false
+  },
+  "https://github.com/Nexgene-Research/nexonco-mcp": {
+    "checkedAt": "2026-09-07T07:17:37.091Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/Nexgene-Research/nexonco-mcp",
+    "archived": false
+  },
+  "https://github.com/peter-fusek/oncofiles": {
+    "checkedAt": "2026-09-07T07:17:37.082Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/peter-fusek/oncofiles",
+    "archived": false
+  },
+  "https://github.com/burakdirin/apple-health-export-mcp": {
+    "checkedAt": "2026-09-07T07:17:37.081Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/burakdirin/apple-health-export-mcp",
+    "archived": false
+  },
+  "https://github.com/jefftrojan/caretrace-mcp": {
+    "checkedAt": "2026-09-07T07:17:37.245Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/jefftrojan/caretrace-mcp",
+    "archived": false
+  },
+  "https://github.com/akshaygoyal/google-health-mcp": {
+    "checkedAt": "2026-09-07T07:17:37.303Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/akshaygoyal/google-health-mcp",
+    "archived": false
+  },
+  "https://github.com/u9401066/medvision-mcp": {
+    "checkedAt": "2026-09-07T07:17:37.271Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/u9401066/medvision-mcp",
+    "archived": false
+  },
+  "https://github.com/sanjibani/open-dental-mcp": {
+    "checkedAt": "2026-09-07T07:17:37.271Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/sanjibani/open-dental-mcp",
+    "archived": false
+  },
+  "https://github.com/Schimmilab/oura-mcp-server": {
+    "checkedAt": "2026-09-07T07:17:37.354Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/Schimmilab/oura-mcp-server",
+    "archived": false
+  },
+  "https://github.com/jackdark425/aigroup-econ-mcp": {
+    "checkedAt": "2026-09-07T07:17:37.357Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/jackdark425/aigroup-econ-mcp",
+    "archived": false
+  },
+  "https://github.com/AlterLab-IEU/AlterLab-Academic-Skills": {
+    "checkedAt": "2026-09-07T07:17:37.323Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/AlterLab-IEU/AlterLab-Academic-Skills",
+    "archived": false
+  },
+  "https://github.com/aizech/clinical-skills": {
+    "checkedAt": "2026-09-07T07:17:37.353Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/aizech/clinical-skills",
+    "archived": false
+  },
+  "https://github.com/OpenClinicalAI/clinicalai-mcp": {
+    "checkedAt": "2026-09-07T07:17:37.529Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/OpenClinicalAI/clinicalai-mcp",
+    "archived": false
+  },
+  "https://github.com/JackKuo666/ClinicalTrials-MCP-Server": {
+    "checkedAt": "2026-09-07T07:17:37.528Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/JackKuo666/ClinicalTrials-MCP-Server",
+    "archived": false
+  },
+  "https://github.com/DasClown/drug-pipeline-mcp": {
+    "checkedAt": "2026-09-07T07:17:37.527Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/DasClown/drug-pipeline-mcp",
+    "archived": false
+  },
+  "https://github.com/guptaprakhariitr/fda-approvals-mcp": {
+    "checkedAt": "2026-09-07T07:17:37.657Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/guptaprakhariitr/fda-approvals-mcp",
+    "archived": false
+  },
+  "https://github.com/Limecooler/fda-mcp": {
+    "checkedAt": "2026-09-07T07:17:37.577Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/Limecooler/fda-mcp",
+    "archived": false
+  },
+  "https://github.com/Al1Abdullah/Helix": {
+    "checkedAt": "2026-09-07T07:17:37.621Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/Al1Abdullah/Helix",
+    "archived": false
+  },
+  "https://github.com/bilalmirza96/LabClaw": {
+    "checkedAt": "2026-09-07T07:17:37.573Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/bilalmirza96/LabClaw",
+    "archived": false
+  },
+  "https://github.com/xjtulyc/MedgeClaw": {
+    "checkedAt": "2026-09-07T07:17:37.637Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/xjtulyc/MedgeClaw",
+    "archived": false
+  },
+  "https://github.com/SVerITG/Metis_PH": {
+    "checkedAt": "2026-09-07T07:17:37.778Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/SVerITG/Metis_PH",
+    "archived": false
+  },
+  "https://github.com/SuyashEkhande/OpenFDA-Semantic-MCP": {
+    "checkedAt": "2026-09-07T07:17:37.775Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/SuyashEkhande/OpenFDA-Semantic-MCP",
+    "archived": false
+  },
+  "https://github.com/Intersect-Collaborations-LLC/research-workflow-assistant": {
+    "checkedAt": "2026-09-07T07:17:37.869Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/Intersect-Collaborations-LLC/research-workflow-assistant",
+    "archived": false
+  },
+  "https://github.com/i-akiya/Shiranui": {
+    "checkedAt": "2026-09-07T07:17:37.813Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/i-akiya/Shiranui",
+    "archived": false
+  },
+  "https://github.com/drkamarul/claude-skills": {
+    "checkedAt": "2026-09-07T07:17:37.855Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/drkamarul/claude-skills",
+    "archived": false
+  },
+  "https://github.com/pianovirus/kfda-mcp": {
+    "checkedAt": "2026-09-07T07:17:37.832Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/pianovirus/kfda-mcp",
+    "archived": false
+  },
+  "https://github.com/nexvigilant/nexvigilant-station": {
+    "checkedAt": "2026-09-07T07:17:37.923Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/nexvigilant/nexvigilant-station",
+    "archived": false
+  },
+  "https://github.com/brandonmbehring-dev/research-kb": {
+    "checkedAt": "2026-09-07T07:17:37.899Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/brandonmbehring-dev/research-kb",
+    "archived": false
+  },
+  "https://github.com/faulkj/fhirHydrant": {
+    "checkedAt": "2026-09-07T07:17:37.986Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/faulkj/fhirHydrant",
+    "archived": false
+  },
+  "https://github.com/open-and-sustainable/prismaid": {
+    "checkedAt": "2026-09-07T07:17:38.065Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/open-and-sustainable/prismaid",
+    "archived": false
+  },
+  "https://github.com/srikarjy/biolab-mcp-server": {
+    "checkedAt": "2026-09-07T07:17:38.085Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/srikarjy/biolab-mcp-server",
+    "archived": false
+  },
+  "https://github.com/OHDSI/StudyAgent": {
+    "checkedAt": "2026-09-07T07:17:38.085Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/OHDSI/StudyAgent",
+    "archived": false
+  },
+  "https://github.com/OHDSI/SlashOhdsiStrategusAssistant": {
+    "checkedAt": "2026-09-07T07:17:38.117Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/OHDSI/SlashOhdsiStrategusAssistant",
+    "archived": false
+  },
+  "https://github.com/Firefox2100/biomedical-terminology-service": {
+    "checkedAt": "2026-09-07T07:17:38.112Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/Firefox2100/biomedical-terminology-service",
+    "archived": false
+  },
+  "https://github.com/mosaic-care/langcare-mcp-fhir": {
+    "checkedAt": "2026-09-07T07:17:38.229Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/mosaic-care/langcare-mcp-fhir",
+    "archived": false
+  },
+  "https://github.com/hannesill/m4": {
+    "checkedAt": "2026-09-07T07:17:38.201Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/hannesill/m4",
+    "archived": false
+  },
+  "https://github.com/salwks/mcp-techTrend": {
+    "checkedAt": "2026-09-07T07:17:38.254Z",
+    "available": true,
+    "canonicalUrl": "https://github.com/salwks/mcp-techTrend",
+    "archived": false
+  }
+}
