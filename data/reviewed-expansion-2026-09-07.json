@@ -1,0 +1,1922 @@
+[
+  {
+    "id": "RWE-0010",
+    "name": "Tebra MCP Server",
+    "category": "Clinical Data & Interoperability",
+    "summary": "Connects agents to Tebra clinical and practice records through SOAP and FHIR interfaces.",
+    "capabilities": [
+      "Retrieve patients, encounters, clinical documents and related records",
+      "Expose SOAP operations and optional FHIR access to agent workflows"
+    ],
+    "limitation": "Includes write operations and identifiable clinical data. Practice records require research permissions, population definitions and quality assessment before reuse.",
+    "kind": "MCP server",
+    "access": "Tebra SOAP credentials and customer key; optional SMART on FHIR credentials.",
+    "tags": [
+      "Clinical Data",
+      "MCP server"
+    ],
+    "workflowFit": [
+      "Clinical Data & Interoperability",
+      "Source inspection and research preparation"
+    ],
+    "added": "Sep 7, 2026",
+    "checked": "Sep 7, 2026",
+    "status": "Static source and documentation reviewed",
+    "runtime": "Not independently runtime tested by registry",
+    "repository": "jamesrosing/tebra-mcp-server",
+    "website": "https://github.com/jamesrosing/tebra-mcp-server",
+    "packages": "See pinned project manifest and setup documentation",
+    "url": "https://github.com/jamesrosing/tebra-mcp-server",
+    "verification": {
+      "reviewedAt": "2026-09-07",
+      "repositoryStatus": "available",
+      "commit": "0ad77451f4a089ea66e580bdde0fb9a02be603a6",
+      "pushedAt": "2026-09-06T18:29:01Z",
+      "stars": 1,
+      "license": "MIT",
+      "sources": [
+        "https://github.com/jamesrosing/tebra-mcp-server/blob/0ad77451f4a089ea66e580bdde0fb9a02be603a6/README.md",
+        "https://github.com/jamesrosing/tebra-mcp-server/blob/0ad77451f4a089ea66e580bdde0fb9a02be603a6/package.json",
+        "https://github.com/jamesrosing/tebra-mcp-server/blob/0ad77451f4a089ea66e580bdde0fb9a02be603a6/server.json",
+        "https://github.com/jamesrosing/tebra-mcp-server/blob/0ad77451f4a089ea66e580bdde0fb9a02be603a6/skills/tebra/SKILL.md"
+      ]
+    }
+  },
+  {
+    "id": "RWE-0021",
+    "name": "Healthcare FHIR MCP (CSOAI)",
+    "category": "Clinical Data & Interoperability",
+    "summary": "FHIR connector exposing clinical resource queries and workflow operations.",
+    "capabilities": [
+      "Query patient and clinical resources from a configured FHIR endpoint",
+      "Expose FHIR workflow tools with a separate service-metering layer"
+    ],
+    "limitation": "Source review does not substantiate compliance claims. Metering middleware fails open and is not a patient-data authorization boundary; enforce access at the FHIR service.",
+    "kind": "MCP server",
+    "access": "FHIR endpoint configuration; optional MEOK service key with external verification.",
+    "tags": [
+      "Clinical Data",
+      "MCP server"
+    ],
+    "workflowFit": [
+      "Clinical Data & Interoperability",
+      "Source inspection and research preparation"
+    ],
+    "added": "Sep 7, 2026",
+    "checked": "Sep 7, 2026",
+    "status": "Static source and documentation reviewed",
+    "runtime": "Not independently runtime tested by registry",
+    "repository": "CSOAI-ORG/healthcare-fhir-mcp",
+    "website": "https://github.com/CSOAI-ORG/healthcare-fhir-mcp",
+    "packages": "See pinned project manifest and setup documentation",
+    "url": "https://github.com/CSOAI-ORG/healthcare-fhir-mcp",
+    "verification": {
+      "reviewedAt": "2026-09-07",
+      "repositoryStatus": "available",
+      "commit": "e61c14881f22cd4a4f8e17d50ff1487d9a637901",
+      "pushedAt": "2026-09-04T12:39:41Z",
+      "stars": 0,
+      "license": "MIT",
+      "sources": [
+        "https://github.com/CSOAI-ORG/healthcare-fhir-mcp/blob/e61c14881f22cd4a4f8e17d50ff1487d9a637901/README.md",
+        "https://github.com/CSOAI-ORG/healthcare-fhir-mcp/blob/e61c14881f22cd4a4f8e17d50ff1487d9a637901/package.json",
+        "https://github.com/CSOAI-ORG/healthcare-fhir-mcp/blob/e61c14881f22cd4a4f8e17d50ff1487d9a637901/pyproject.toml",
+        "https://github.com/CSOAI-ORG/healthcare-fhir-mcp/blob/e61c14881f22cd4a4f8e17d50ff1487d9a637901/server.json",
+        "https://github.com/CSOAI-ORG/healthcare-fhir-mcp/blob/e61c14881f22cd4a4f8e17d50ff1487d9a637901/server.py",
+        "https://github.com/CSOAI-ORG/healthcare-fhir-mcp/blob/e61c14881f22cd4a4f8e17d50ff1487d9a637901/auth_middleware.py"
+      ]
+    }
+  },
+  {
+    "id": "RWE-0090",
+    "name": "Withings MCP",
+    "category": "Clinical Data & Interoperability",
+    "summary": "Retrieves account-level Withings measurements and wearable time series.",
+    "capabilities": [
+      "Retrieve activity, sleep and body measurements",
+      "Access supported heart-rate, HRV and ECG account records"
+    ],
+    "limitation": "Availability depends on device and account scopes. Proprietary measurements need validation for the intended endpoint; a personal account is not a representative cohort.",
+    "kind": "MCP server",
+    "access": "Withings OAuth application and authorized user account.",
+    "tags": [
+      "Clinical Data",
+      "MCP server"
+    ],
+    "workflowFit": [
+      "Clinical Data & Interoperability",
+      "Source inspection and research preparation"
+    ],
+    "added": "Sep 7, 2026",
+    "checked": "Sep 7, 2026",
+    "status": "Static source and documentation reviewed",
+    "runtime": "Not independently runtime tested by registry",
+    "repository": "akutishevsky/withings-mcp",
+    "website": "https://github.com/akutishevsky/withings-mcp",
+    "packages": "See pinned project manifest and setup documentation",
+    "url": "https://github.com/akutishevsky/withings-mcp",
+    "verification": {
+      "reviewedAt": "2026-09-07",
+      "repositoryStatus": "available",
+      "commit": "3a78c2eee6d52f1efa8dc247fdfce23b7f293f8c",
+      "pushedAt": "2026-08-30T08:07:55Z",
+      "stars": 41,
+      "license": "MIT",
+      "sources": [
+        "https://github.com/akutishevsky/withings-mcp/blob/3a78c2eee6d52f1efa8dc247fdfce23b7f293f8c/README.md",
+        "https://github.com/akutishevsky/withings-mcp/blob/3a78c2eee6d52f1efa8dc247fdfce23b7f293f8c/package.json",
+        "https://github.com/akutishevsky/withings-mcp/blob/3a78c2eee6d52f1efa8dc247fdfce23b7f293f8c/server.json"
+      ]
+    }
+  },
+  {
+    "id": "RWE-0004",
+    "name": "ENCODE Toolkit",
+    "category": "Biomedical & RWE Infrastructure",
+    "summary": "Combines ENCODE MCP tools with bioinformatics skills for functional-genomics research.",
+    "capabilities": [
+      "Search ENCODE experiments and retrieve metadata and files",
+      "Track experiments and citations; guide downstream bioinformatics workflows"
+    ],
+    "limitation": "Additional database integrations are skills or external dependencies, not all built-in MCP tools. Functional-genomics results do not by themselves establish patient-level causal effects.",
+    "kind": "MCP server + skill collection",
+    "access": "See pinned project setup; external data access may require credentials.",
+    "tags": [
+      "Biomedical",
+      "MCP server + skill collection"
+    ],
+    "workflowFit": [
+      "Biomedical & RWE Infrastructure",
+      "Source inspection and research preparation"
+    ],
+    "added": "Sep 7, 2026",
+    "checked": "Sep 7, 2026",
+    "status": "Static source and documentation reviewed",
+    "runtime": "Not independently runtime tested by registry",
+    "repository": "ammawla/encode-toolkit",
+    "website": "https://github.com/ammawla/encode-toolkit",
+    "packages": "See pinned project manifest and setup documentation",
+    "url": "https://github.com/ammawla/encode-toolkit",
+    "verification": {
+      "reviewedAt": "2026-09-07",
+      "repositoryStatus": "available",
+      "commit": "b1d90bc9e7ead40d49b8c89f0b9b9e7b8e592a5b",
+      "pushedAt": "2026-07-26T01:22:15Z",
+      "stars": 24,
+      "license": "AGPL-3.0",
+      "sources": [
+        "https://github.com/ammawla/encode-toolkit/blob/b1d90bc9e7ead40d49b8c89f0b9b9e7b8e592a5b/README.md",
+        "https://github.com/ammawla/encode-toolkit/blob/b1d90bc9e7ead40d49b8c89f0b9b9e7b8e592a5b/package.json",
+        "https://github.com/ammawla/encode-toolkit/blob/b1d90bc9e7ead40d49b8c89f0b9b9e7b8e592a5b/pyproject.toml",
+        "https://github.com/ammawla/encode-toolkit/blob/b1d90bc9e7ead40d49b8c89f0b9b9e7b8e592a5b/server.json",
+        "https://github.com/ammawla/encode-toolkit/blob/b1d90bc9e7ead40d49b8c89f0b9b9e7b8e592a5b/plugin/skills/accessibility-aggregation/SKILL.md",
+        "https://github.com/ammawla/encode-toolkit/blob/b1d90bc9e7ead40d49b8c89f0b9b9e7b8e592a5b/plugin/skills/batch-analysis/SKILL.md",
+        "https://github.com/ammawla/encode-toolkit/blob/b1d90bc9e7ead40d49b8c89f0b9b9e7b8e592a5b/plugin/skills/bioinformatics-installer/SKILL.md"
+      ]
+    }
+  },
+  {
+    "id": "RWE-0249",
+    "name": "Apple Health MCP Server (Momentum)",
+    "category": "Clinical Data & Interoperability",
+    "summary": "Queries imported Apple Health export data using a local DuckDB workflow.",
+    "capabilities": [
+      "Import Apple Health export records",
+      "Query measurements and time series through SQL-oriented tools"
+    ],
+    "limitation": "Exports contain sensitive personal data. Check units, device provenance, missingness and time zones; agent-generated SQL and derived summaries need review.",
+    "kind": "MCP server",
+    "access": "See pinned project setup; external data access may require credentials.",
+    "tags": [
+      "Clinical Data",
+      "MCP server"
+    ],
+    "workflowFit": [
+      "Clinical Data & Interoperability",
+      "Source inspection and research preparation"
+    ],
+    "added": "Sep 7, 2026",
+    "checked": "Sep 7, 2026",
+    "status": "Static source and documentation reviewed",
+    "runtime": "Not independently runtime tested by registry",
+    "repository": "the-momentum/apple-health-mcp-server",
+    "website": "https://github.com/the-momentum/apple-health-mcp-server",
+    "packages": "See pinned project manifest and setup documentation",
+    "url": "https://github.com/the-momentum/apple-health-mcp-server",
+    "verification": {
+      "reviewedAt": "2026-09-07",
+      "repositoryStatus": "available",
+      "commit": "638e05a2451a6fb6e5e619e9f49a3052e0e99985",
+      "pushedAt": "2026-07-09T10:57:10Z",
+      "stars": 264,
+      "license": "MIT",
+      "sources": [
+        "https://github.com/the-momentum/apple-health-mcp-server/blob/638e05a2451a6fb6e5e619e9f49a3052e0e99985/README.md",
+        "https://github.com/the-momentum/apple-health-mcp-server/blob/638e05a2451a6fb6e5e619e9f49a3052e0e99985/pyproject.toml"
+      ]
+    }
+  },
+  {
+    "id": "RWE-0192",
+    "name": "DaktariTB MCP",
+    "category": "Clinical Data & Interoperability",
+    "summary": "Connects TB and HIV clinical workflows to FHIR records and associated care operations.",
+    "capabilities": [
+      "Access clinical records for TB/HIV workflow support",
+      "Expose laboratory-order and related clinical workflow actions"
+    ],
+    "limitation": "Includes treatment-oriented calculations and write actions. Inclusion covers clinical-data connectivity, not validation of dosing, treatment advice or local guideline compliance.",
+    "kind": "MCP server",
+    "access": "See pinned project setup; external data access may require credentials.",
+    "tags": [
+      "Clinical Data",
+      "MCP server"
+    ],
+    "workflowFit": [
+      "Clinical Data & Interoperability",
+      "Source inspection and research preparation"
+    ],
+    "added": "Sep 7, 2026",
+    "checked": "Sep 7, 2026",
+    "status": "Static source and documentation reviewed",
+    "runtime": "Not independently runtime tested by registry",
+    "repository": "its-kios09/daktaritb-mcp",
+    "website": "https://github.com/its-kios09/daktaritb-mcp",
+    "packages": "See pinned project manifest and setup documentation",
+    "url": "https://github.com/its-kios09/daktaritb-mcp",
+    "verification": {
+      "reviewedAt": "2026-09-07",
+      "repositoryStatus": "available",
+      "commit": "6030b39469f02a38b23f2610760bd168ce244b34",
+      "pushedAt": "2026-04-19T18:39:08Z",
+      "stars": 1,
+      "license": "NOASSERTION",
+      "sources": [
+        "https://github.com/its-kios09/daktaritb-mcp/blob/6030b39469f02a38b23f2610760bd168ce244b34/README.md",
+        "https://github.com/its-kios09/daktaritb-mcp/blob/6030b39469f02a38b23f2610760bd168ce244b34/pyproject.toml",
+        "https://github.com/its-kios09/daktaritb-mcp/blob/6030b39469f02a38b23f2610760bd168ce244b34/src/daktaritb_mcp/server.py"
+      ]
+    }
+  },
+  {
+    "id": "RWE-0250",
+    "name": "Google Health MCP (davidmosiah)",
+    "category": "Clinical Data & Interoperability",
+    "summary": "Local connector to Google Health API data from supported Fitbit and Pixel Watch accounts.",
+    "capabilities": [
+      "Retrieve supported account health and activity measurements",
+      "Serve tools through stdio or local HTTP"
+    ],
+    "limitation": "Beta upstream access and account/device support can vary. Verify measurement provenance and OAuth scopes before research use.",
+    "kind": "MCP server",
+    "access": "Google OAuth application and authorized Google Health account.",
+    "tags": [
+      "Clinical Data",
+      "MCP server"
+    ],
+    "workflowFit": [
+      "Clinical Data & Interoperability",
+      "Source inspection and research preparation"
+    ],
+    "added": "Sep 7, 2026",
+    "checked": "Sep 7, 2026",
+    "status": "Static source and documentation reviewed",
+    "runtime": "Not independently runtime tested by registry",
+    "repository": "davidmosiah/google-health-mcp",
+    "website": "https://github.com/davidmosiah/google-health-mcp",
+    "packages": "See pinned project manifest and setup documentation",
+    "url": "https://github.com/davidmosiah/google-health-mcp",
+    "verification": {
+      "reviewedAt": "2026-09-07",
+      "repositoryStatus": "available",
+      "commit": "e0322e872b44cf21f898ffee4a550bc164ee8392",
+      "pushedAt": "2026-08-29T10:29:37Z",
+      "stars": 53,
+      "license": "MIT",
+      "sources": [
+        "https://github.com/davidmosiah/google-health-mcp/blob/e0322e872b44cf21f898ffee4a550bc164ee8392/README.md",
+        "https://github.com/davidmosiah/google-health-mcp/blob/e0322e872b44cf21f898ffee4a550bc164ee8392/package.json",
+        "https://github.com/davidmosiah/google-health-mcp/blob/e0322e872b44cf21f898ffee4a550bc164ee8392/server.json",
+        "https://github.com/davidmosiah/google-health-mcp/blob/e0322e872b44cf21f898ffee4a550bc164ee8392/skill/SKILL.md"
+      ]
+    }
+  },
+  {
+    "id": "RWE-0200",
+    "name": "MedAdapt Content Server",
+    "category": "Literature & Evidence Synthesis",
+    "summary": "Retrieves and caches medical literature and textbook content alongside user-provided documents.",
+    "capabilities": [
+      "Search PubMed, NCBI Bookshelf and a local resource database",
+      "Retrieve cached source content and import local learning documents"
+    ],
+    "limitation": "Educational overviews and key-point extraction use simplified heuristics and generic fallbacks. Local-cache preference can limit fresh retrieval; not a systematic-review search engine.",
+    "kind": "MCP server",
+    "access": "See pinned project setup; external data access may require credentials.",
+    "tags": [
+      "Literature",
+      "MCP server"
+    ],
+    "workflowFit": [
+      "Literature & Evidence Synthesis",
+      "Source inspection and research preparation"
+    ],
+    "added": "Sep 7, 2026",
+    "checked": "Sep 7, 2026",
+    "status": "Static source and documentation reviewed",
+    "runtime": "Not independently runtime tested by registry",
+    "repository": "ryoureddy/medadapt-content-server",
+    "website": "https://github.com/ryoureddy/medadapt-content-server",
+    "packages": "See pinned project manifest and setup documentation",
+    "url": "https://github.com/ryoureddy/medadapt-content-server",
+    "verification": {
+      "reviewedAt": "2026-09-07",
+      "repositoryStatus": "available",
+      "commit": "8ae3d033684db57b08f2578184b19aa4b2072426",
+      "pushedAt": "2025-03-28T06:24:18Z",
+      "stars": 7,
+      "license": "MIT",
+      "sources": [
+        "https://github.com/ryoureddy/medadapt-content-server/blob/8ae3d033684db57b08f2578184b19aa4b2072426/README.md",
+        "https://github.com/ryoureddy/medadapt-content-server/blob/8ae3d033684db57b08f2578184b19aa4b2072426/content_server.py",
+        "https://github.com/ryoureddy/medadapt-content-server/blob/8ae3d033684db57b08f2578184b19aa4b2072426/pubmed_utils.py"
+      ]
+    }
+  },
+  {
+    "id": "RWE-0205",
+    "name": "NCCN Guidelines MCP",
+    "category": "Literature & Evidence Synthesis",
+    "summary": "Searches a guideline index and retrieves NCCN PDF content for evidence-reference workflows.",
+    "capabilities": [
+      "Search indexed guideline metadata",
+      "Download authorized guideline PDFs and extract page content"
+    ],
+    "limitation": "NCCN access and reuse restrictions apply. Cached content can lag updates; verify guideline version, page context and extraction accuracy.",
+    "kind": "MCP server",
+    "access": "NCCN login for restricted PDFs; local PDF cache.",
+    "tags": [
+      "Literature",
+      "MCP server"
+    ],
+    "workflowFit": [
+      "Literature & Evidence Synthesis",
+      "Source inspection and research preparation"
+    ],
+    "added": "Sep 7, 2026",
+    "checked": "Sep 7, 2026",
+    "status": "Static source and documentation reviewed",
+    "runtime": "Not independently runtime tested by registry",
+    "repository": "gscfwid/NCCN_guidelines_MCP",
+    "website": "https://github.com/gscfwid/NCCN_guidelines_MCP",
+    "packages": "See pinned project manifest and setup documentation",
+    "url": "https://github.com/gscfwid/NCCN_guidelines_MCP",
+    "verification": {
+      "reviewedAt": "2026-09-07",
+      "repositoryStatus": "available",
+      "commit": "dcc65a6392a67ba26eab697c1d87f446dc1cfc21",
+      "pushedAt": "2025-07-22T15:29:29Z",
+      "stars": 13,
+      "license": "MIT",
+      "sources": [
+        "https://github.com/gscfwid/NCCN_guidelines_MCP/blob/dcc65a6392a67ba26eab697c1d87f446dc1cfc21/README.md",
+        "https://github.com/gscfwid/NCCN_guidelines_MCP/blob/dcc65a6392a67ba26eab697c1d87f446dc1cfc21/pyproject.toml",
+        "https://github.com/gscfwid/NCCN_guidelines_MCP/blob/dcc65a6392a67ba26eab697c1d87f446dc1cfc21/server.py"
+      ]
+    }
+  },
+  {
+    "id": "RWE-0206",
+    "name": "NexOnco MCP",
+    "category": "Literature & Evidence Synthesis",
+    "summary": "Retrieves structured cancer-variant evidence from CIViC.",
+    "capabilities": [
+      "Filter evidence by disease, therapy, variant and evidence type",
+      "Inspect evidence direction and source-provided ratings"
+    ],
+    "limitation": "CIViC classifications and ratings are source annotations, not independent comparative-effectiveness estimates. Check record dates and underlying publications.",
+    "kind": "MCP server",
+    "access": "See pinned project setup; external data access may require credentials.",
+    "tags": [
+      "Literature",
+      "MCP server"
+    ],
+    "workflowFit": [
+      "Literature & Evidence Synthesis",
+      "Source inspection and research preparation"
+    ],
+    "added": "Sep 7, 2026",
+    "checked": "Sep 7, 2026",
+    "status": "Static source and documentation reviewed",
+    "runtime": "Not independently runtime tested by registry",
+    "repository": "Nexgene-Research/nexonco-mcp",
+    "website": "https://github.com/Nexgene-Research/nexonco-mcp",
+    "packages": "See pinned project manifest and setup documentation",
+    "url": "https://github.com/Nexgene-Research/nexonco-mcp",
+    "verification": {
+      "reviewedAt": "2026-09-07",
+      "repositoryStatus": "available",
+      "commit": "d0b45e147a5cd764d4ceea27f5607014cbde213b",
+      "pushedAt": "2025-08-12T11:06:01Z",
+      "stars": 64,
+      "license": "MIT",
+      "sources": [
+        "https://github.com/Nexgene-Research/nexonco-mcp/blob/d0b45e147a5cd764d4ceea27f5607014cbde213b/README.md",
+        "https://github.com/Nexgene-Research/nexonco-mcp/blob/d0b45e147a5cd764d4ceea27f5607014cbde213b/pyproject.toml",
+        "https://github.com/Nexgene-Research/nexonco-mcp/blob/d0b45e147a5cd764d4ceea27f5607014cbde213b/src/nexonco/server.py"
+      ]
+    }
+  },
+  {
+    "id": "RWE-0207",
+    "name": "OncoFiles",
+    "category": "Clinical Data & Interoperability",
+    "summary": "Organizes patient-provided oncology documents and longitudinal records with research lookups.",
+    "capabilities": [
+      "Extract records and construct laboratory or treatment timelines",
+      "Connect document sources and retrieve PubMed or trial references"
+    ],
+    "limitation": "OCR and timeline extraction need source verification. Gmail, Drive and calendar integrations can read or write sensitive data; patient records are not a validated outcomes dataset.",
+    "kind": "Clinical agent application + MCP tools",
+    "access": "See pinned project setup; external data access may require credentials.",
+    "tags": [
+      "Clinical Data",
+      "Clinical agent application + MCP tools"
+    ],
+    "workflowFit": [
+      "Clinical Data & Interoperability",
+      "Source inspection and research preparation"
+    ],
+    "added": "Sep 7, 2026",
+    "checked": "Sep 7, 2026",
+    "status": "Static source and documentation reviewed",
+    "runtime": "Not independently runtime tested by registry",
+    "repository": "peter-fusek/oncofiles",
+    "website": "https://github.com/peter-fusek/oncofiles",
+    "packages": "See pinned project manifest and setup documentation",
+    "url": "https://github.com/peter-fusek/oncofiles",
+    "verification": {
+      "reviewedAt": "2026-09-07",
+      "repositoryStatus": "available",
+      "commit": "0abd270f46a16dbf1600c95d4a1663ba20b5ad04",
+      "pushedAt": "2026-08-07T13:13:01Z",
+      "stars": 5,
+      "license": "MIT",
+      "sources": [
+        "https://github.com/peter-fusek/oncofiles/blob/0abd270f46a16dbf1600c95d4a1663ba20b5ad04/README.md",
+        "https://github.com/peter-fusek/oncofiles/blob/0abd270f46a16dbf1600c95d4a1663ba20b5ad04/pyproject.toml",
+        "https://github.com/peter-fusek/oncofiles/blob/0abd270f46a16dbf1600c95d4a1663ba20b5ad04/server.json",
+        "https://github.com/peter-fusek/oncofiles/blob/0abd270f46a16dbf1600c95d4a1663ba20b5ad04/src/oncofiles/server.py"
+      ]
+    }
+  },
+  {
+    "id": "RWE-0247",
+    "name": "Apple Health Export MCP",
+    "category": "Clinical Data & Interoperability",
+    "summary": "Imports Apple Health ZIP exports into SQLite for local metric exploration.",
+    "capabilities": [
+      "Inspect record types, sources and date coverage",
+      "Aggregate measurements, sleep records and workouts"
+    ],
+    "limitation": "Imported observations may overlap across devices. Validate deduplication, units, time zones and endpoint definitions; export ingestion writes a local database.",
+    "kind": "MCP server",
+    "access": "See pinned project setup; external data access may require credentials.",
+    "tags": [
+      "Clinical Data",
+      "MCP server"
+    ],
+    "workflowFit": [
+      "Clinical Data & Interoperability",
+      "Source inspection and research preparation"
+    ],
+    "added": "Sep 7, 2026",
+    "checked": "Sep 7, 2026",
+    "status": "Static source and documentation reviewed",
+    "runtime": "Not independently runtime tested by registry",
+    "repository": "burakdirin/apple-health-export-mcp",
+    "website": "https://github.com/burakdirin/apple-health-export-mcp",
+    "packages": "See pinned project manifest and setup documentation",
+    "url": "https://github.com/burakdirin/apple-health-export-mcp",
+    "verification": {
+      "reviewedAt": "2026-09-07",
+      "repositoryStatus": "available",
+      "commit": "02e9ce9fe48910fe57033c915d23d0512a64233c",
+      "pushedAt": "2026-06-30T20:15:28Z",
+      "stars": 0,
+      "license": "MIT",
+      "sources": [
+        "https://github.com/burakdirin/apple-health-export-mcp/blob/02e9ce9fe48910fe57033c915d23d0512a64233c/README.md",
+        "https://github.com/burakdirin/apple-health-export-mcp/blob/02e9ce9fe48910fe57033c915d23d0512a64233c/pyproject.toml",
+        "https://github.com/burakdirin/apple-health-export-mcp/blob/02e9ce9fe48910fe57033c915d23d0512a64233c/src/apple_health_export_mcp/server.py",
+        "https://github.com/burakdirin/apple-health-export-mcp/blob/02e9ce9fe48910fe57033c915d23d0512a64233c/src/apple_health_export_mcp/tools.py"
+      ]
+    }
+  },
+  {
+    "id": "RWE-0190",
+    "name": "CareTrace MCP",
+    "category": "Clinical Data & Interoperability",
+    "summary": "Experimental clinical-text pipeline for entity extraction, FHIR bundle generation and timeline reconstruction.",
+    "capabilities": [
+      "Extract medical entities from text",
+      "Build a FHIR bundle and reconstruct a clinical timeline"
+    ],
+    "limitation": "Generated concepts, dates and resources require manual validation against originals. Local Ollama and remote model configurations have different data-governance implications.",
+    "kind": "Experimental MCP server",
+    "access": "See pinned project setup; external data access may require credentials.",
+    "tags": [
+      "Clinical Data",
+      "Experimental MCP server"
+    ],
+    "workflowFit": [
+      "Clinical Data & Interoperability",
+      "Source inspection and research preparation"
+    ],
+    "added": "Sep 7, 2026",
+    "checked": "Sep 7, 2026",
+    "status": "Static source and documentation reviewed",
+    "runtime": "Not independently runtime tested by registry",
+    "repository": "jefftrojan/caretrace-mcp",
+    "website": "https://github.com/jefftrojan/caretrace-mcp",
+    "packages": "See pinned project manifest and setup documentation",
+    "url": "https://github.com/jefftrojan/caretrace-mcp",
+    "verification": {
+      "reviewedAt": "2026-09-07",
+      "repositoryStatus": "available",
+      "commit": "ec363224d72f7db67b47d1465f2f21b13e3bf889",
+      "pushedAt": "2026-05-13T00:57:04Z",
+      "stars": 0,
+      "license": "Not specified",
+      "sources": [
+        "https://github.com/jefftrojan/caretrace-mcp/blob/ec363224d72f7db67b47d1465f2f21b13e3bf889/README.md",
+        "https://github.com/jefftrojan/caretrace-mcp/blob/ec363224d72f7db67b47d1465f2f21b13e3bf889/mcp_server/server.py"
+      ]
+    }
+  },
+  {
+    "id": "RWE-0251",
+    "name": "Google Health MCP (akshaygoyal)",
+    "category": "Clinical Data & Interoperability",
+    "summary": "Self-hosted remote MCP connector for Google Health account measurements.",
+    "capabilities": [
+      "Expose supported Google Health measurement tools",
+      "Use an OAuth-backed hosted connector for agent access"
+    ],
+    "limitation": "Account and device coverage constrain completeness. Hosting, token storage and health-data access require appropriate controls; distinct deployment from the local Google Health connector.",
+    "kind": "MCP server",
+    "access": "Google OAuth; self-hosted Cloudflare configuration.",
+    "tags": [
+      "Clinical Data",
+      "MCP server"
+    ],
+    "workflowFit": [
+      "Clinical Data & Interoperability",
+      "Source inspection and research preparation"
+    ],
+    "added": "Sep 7, 2026",
+    "checked": "Sep 7, 2026",
+    "status": "Static source and documentation reviewed",
+    "runtime": "Not independently runtime tested by registry",
+    "repository": "akshaygoyal/google-health-mcp",
+    "website": "https://github.com/akshaygoyal/google-health-mcp",
+    "packages": "See pinned project manifest and setup documentation",
+    "url": "https://github.com/akshaygoyal/google-health-mcp",
+    "verification": {
+      "reviewedAt": "2026-09-07",
+      "repositoryStatus": "available",
+      "commit": "e2f4564c2ce050f077f4759aa66416dd2c6d3cad",
+      "pushedAt": "2026-06-30T21:39:23Z",
+      "stars": 1,
+      "license": "MIT",
+      "sources": [
+        "https://github.com/akshaygoyal/google-health-mcp/blob/e2f4564c2ce050f077f4759aa66416dd2c6d3cad/README.md",
+        "https://github.com/akshaygoyal/google-health-mcp/blob/e2f4564c2ce050f077f4759aa66416dd2c6d3cad/package.json",
+        "https://github.com/akshaygoyal/google-health-mcp/blob/e2f4564c2ce050f077f4759aa66416dd2c6d3cad/src/tools.ts"
+      ]
+    }
+  },
+  {
+    "id": "RWE-0204",
+    "name": "MedVision MCP",
+    "category": "Biomedical & RWE Infrastructure",
+    "summary": "Research imaging tools for pathology classification, radiology embeddings and image retrieval.",
+    "capabilities": [
+      "Generate model-based imaging features and classifications",
+      "Index image embeddings and inspect DICOM or region-of-interest data"
+    ],
+    "limitation": "Models and similarity results are not independently validated for diagnosis. Planned segmentation is not counted as an implemented capability; assess dataset shift and image privacy.",
+    "kind": "MCP server",
+    "access": "See pinned project setup; external data access may require credentials.",
+    "tags": [
+      "Biomedical",
+      "MCP server"
+    ],
+    "workflowFit": [
+      "Biomedical & RWE Infrastructure",
+      "Source inspection and research preparation"
+    ],
+    "added": "Sep 7, 2026",
+    "checked": "Sep 7, 2026",
+    "status": "Static source and documentation reviewed",
+    "runtime": "Not independently runtime tested by registry",
+    "repository": "u9401066/medvision-mcp",
+    "website": "https://github.com/u9401066/medvision-mcp",
+    "packages": "See pinned project manifest and setup documentation",
+    "url": "https://github.com/u9401066/medvision-mcp",
+    "verification": {
+      "reviewedAt": "2026-09-07",
+      "repositoryStatus": "available",
+      "commit": "0dfd8b5c6e0f9baba8cf2b1bb4a1615eee7bd040",
+      "pushedAt": "2026-02-02T09:01:47Z",
+      "stars": 0,
+      "license": "Not specified",
+      "sources": [
+        "https://github.com/u9401066/medvision-mcp/blob/0dfd8b5c6e0f9baba8cf2b1bb4a1615eee7bd040/README.md",
+        "https://github.com/u9401066/medvision-mcp/blob/0dfd8b5c6e0f9baba8cf2b1bb4a1615eee7bd040/pyproject.toml",
+        "https://github.com/u9401066/medvision-mcp/blob/0dfd8b5c6e0f9baba8cf2b1bb4a1615eee7bd040/.claude/skills/bug-fix/SKILL.md",
+        "https://github.com/u9401066/medvision-mcp/blob/0dfd8b5c6e0f9baba8cf2b1bb4a1615eee7bd040/.claude/skills/changelog-updater/SKILL.md",
+        "https://github.com/u9401066/medvision-mcp/blob/0dfd8b5c6e0f9baba8cf2b1bb4a1615eee7bd040/.claude/skills/code-refactor/SKILL.md"
+      ]
+    }
+  },
+  {
+    "id": "RWE-0224",
+    "name": "Open Dental MCP",
+    "category": "Clinical Data & Interoperability",
+    "summary": "Connects agents to Open Dental patient and procedure records.",
+    "capabilities": [
+      "Retrieve patient and procedure-log information",
+      "Expose appointment and record-management operations"
+    ],
+    "limitation": "Contains write actions and identifiable dental records. Research reuse requires authorized extraction and validation of procedure coding and longitudinal completeness.",
+    "kind": "MCP server",
+    "access": "Open Dental developer/customer API credentials.",
+    "tags": [
+      "Clinical Data",
+      "MCP server"
+    ],
+    "workflowFit": [
+      "Clinical Data & Interoperability",
+      "Source inspection and research preparation"
+    ],
+    "added": "Sep 7, 2026",
+    "checked": "Sep 7, 2026",
+    "status": "Static source and documentation reviewed",
+    "runtime": "Not independently runtime tested by registry",
+    "repository": "sanjibani/open-dental-mcp",
+    "website": "https://github.com/sanjibani/open-dental-mcp",
+    "packages": "See pinned project manifest and setup documentation",
+    "url": "https://github.com/sanjibani/open-dental-mcp",
+    "verification": {
+      "reviewedAt": "2026-09-07",
+      "repositoryStatus": "available",
+      "commit": "fb12b4c0dc03dcc4a81334f0adcc6c9612172f7c",
+      "pushedAt": "2026-06-26T11:21:46Z",
+      "stars": 5,
+      "license": "MIT",
+      "sources": [
+        "https://github.com/sanjibani/open-dental-mcp/blob/fb12b4c0dc03dcc4a81334f0adcc6c9612172f7c/README.md",
+        "https://github.com/sanjibani/open-dental-mcp/blob/fb12b4c0dc03dcc4a81334f0adcc6c9612172f7c/pyproject.toml",
+        "https://github.com/sanjibani/open-dental-mcp/blob/fb12b4c0dc03dcc4a81334f0adcc6c9612172f7c/src/open_dental_mcp/server.py"
+      ]
+    }
+  },
+  {
+    "id": "RWE-0254",
+    "name": "Oura MCP Server (Schimmilab)",
+    "category": "Clinical Data & Interoperability",
+    "summary": "Retrieves Oura sleep, activity and related wearable measurements for personal longitudinal analysis.",
+    "capabilities": [
+      "Retrieve sleep, HRV, tags and workout records",
+      "Explore correlations and deviations across measurements"
+    ],
+    "limitation": "Readiness advice, anomalies and correlations are exploratory outputs. They do not establish clinical validity or causality; device algorithms and account coverage affect interpretation.",
+    "kind": "MCP server",
+    "access": "Authorized Oura account credentials or OAuth configuration.",
+    "tags": [
+      "Clinical Data",
+      "MCP server"
+    ],
+    "workflowFit": [
+      "Clinical Data & Interoperability",
+      "Source inspection and research preparation"
+    ],
+    "added": "Sep 7, 2026",
+    "checked": "Sep 7, 2026",
+    "status": "Static source and documentation reviewed",
+    "runtime": "Not independently runtime tested by registry",
+    "repository": "Schimmilab/oura-mcp-server",
+    "website": "https://github.com/Schimmilab/oura-mcp-server",
+    "packages": "See pinned project manifest and setup documentation",
+    "url": "https://github.com/Schimmilab/oura-mcp-server",
+    "verification": {
+      "reviewedAt": "2026-09-07",
+      "repositoryStatus": "available",
+      "commit": "3343258a40e6a0734a867ce1d89201eae82a005a",
+      "pushedAt": "2026-08-29T18:43:30Z",
+      "stars": 0,
+      "license": "MIT",
+      "sources": [
+        "https://github.com/Schimmilab/oura-mcp-server/blob/3343258a40e6a0734a867ce1d89201eae82a005a/README.md",
+        "https://github.com/Schimmilab/oura-mcp-server/blob/3343258a40e6a0734a867ce1d89201eae82a005a/src/oura_mcp/core/server.py"
+      ]
+    }
+  },
+  {
+    "id": "RWE-0124",
+    "name": "AIGroup Econ MCP",
+    "category": "Causal Inference & Analytics",
+    "summary": "Exposes statistical and econometric analysis tools relevant to observational research.",
+    "capabilities": [
+      "Run supported regression, missing-data and descriptive analyses",
+      "Explore DID, IV, matching, regression discontinuity and synthetic-control methods"
+    ],
+    "limitation": "Method availability is source-reviewed only. Check estimands, identification assumptions, diagnostics, uncertainty and implementation-specific behavior before relying on estimates.",
+    "kind": "MCP server",
+    "access": "See pinned project setup; external data access may require credentials.",
+    "tags": [
+      "Causal Inference",
+      "MCP server"
+    ],
+    "workflowFit": [
+      "Causal Inference & Analytics",
+      "Source inspection and research preparation"
+    ],
+    "added": "Sep 7, 2026",
+    "checked": "Sep 7, 2026",
+    "status": "Static source and documentation reviewed",
+    "runtime": "Not independently runtime tested by registry",
+    "repository": "jackdark425/aigroup-econ-mcp",
+    "website": "https://github.com/jackdark425/aigroup-econ-mcp",
+    "packages": "See pinned project manifest and setup documentation",
+    "url": "https://github.com/jackdark425/aigroup-econ-mcp",
+    "verification": {
+      "reviewedAt": "2026-09-07",
+      "repositoryStatus": "available",
+      "commit": "467ab6443f374bb55c47f9326c4847b91b234c38",
+      "pushedAt": "2026-04-17T15:47:39Z",
+      "stars": 10,
+      "license": "MIT",
+      "sources": [
+        "https://github.com/jackdark425/aigroup-econ-mcp/blob/467ab6443f374bb55c47f9326c4847b91b234c38/README.md",
+        "https://github.com/jackdark425/aigroup-econ-mcp/blob/467ab6443f374bb55c47f9326c4847b91b234c38/pyproject.toml",
+        "https://github.com/jackdark425/aigroup-econ-mcp/blob/467ab6443f374bb55c47f9326c4847b91b234c38/aigroup_econ_mcp/server.py"
+      ]
+    }
+  },
+  {
+    "id": "RWE-0160",
+    "name": "AlterLab Academic Skills",
+    "category": "Biomedical & RWE Infrastructure",
+    "summary": "Academic skill collection with statistical-analysis, survival and clinical-research components.",
+    "capabilities": [
+      "Provide statistical and survival-analysis workflow guidance",
+      "Supply clinical-research and database-specific agent skills"
+    ],
+    "limitation": "A collection of instructions and dependencies, not a standalone MCP server. Individual skills require review and adaptation; installation does not validate generated methods.",
+    "kind": "Agent skill collection",
+    "access": "See pinned project setup; external data access may require credentials.",
+    "tags": [
+      "Biomedical",
+      "Agent skill collection"
+    ],
+    "workflowFit": [
+      "Biomedical & RWE Infrastructure",
+      "Source inspection and research preparation"
+    ],
+    "added": "Sep 7, 2026",
+    "checked": "Sep 7, 2026",
+    "status": "Static source and documentation reviewed",
+    "runtime": "Not independently runtime tested by registry",
+    "repository": "AlterLab-IEU/AlterLab-Academic-Skills",
+    "website": "https://github.com/AlterLab-IEU/AlterLab-Academic-Skills",
+    "packages": "See pinned project manifest and setup documentation",
+    "url": "https://github.com/AlterLab-IEU/AlterLab-Academic-Skills",
+    "verification": {
+      "reviewedAt": "2026-09-07",
+      "repositoryStatus": "available",
+      "commit": "4a5b75358026b33d3e53101bf551331e12113bee",
+      "pushedAt": "2026-09-04T13:48:46Z",
+      "stars": 66,
+      "license": "MIT",
+      "sources": [
+        "https://github.com/AlterLab-IEU/AlterLab-Academic-Skills/blob/4a5b75358026b33d3e53101bf551331e12113bee/README.md",
+        "https://github.com/AlterLab-IEU/AlterLab-Academic-Skills/blob/4a5b75358026b33d3e53101bf551331e12113bee/package.json",
+        "https://github.com/AlterLab-IEU/AlterLab-Academic-Skills/blob/4a5b75358026b33d3e53101bf551331e12113bee/pyproject.toml",
+        "https://github.com/AlterLab-IEU/AlterLab-Academic-Skills/blob/4a5b75358026b33d3e53101bf551331e12113bee/mcp-servers/chemistry/server.py",
+        "https://github.com/AlterLab-IEU/AlterLab-Academic-Skills/blob/4a5b75358026b33d3e53101bf551331e12113bee/mcp-servers/genes-ontologies/server.py",
+        "https://github.com/AlterLab-IEU/AlterLab-Academic-Skills/blob/4a5b75358026b33d3e53101bf551331e12113bee/mcp-servers/structures/server.py",
+        "https://github.com/AlterLab-IEU/AlterLab-Academic-Skills/blob/4a5b75358026b33d3e53101bf551331e12113bee/skills/data-science/alterlab-statistical-analysis/SKILL.md"
+      ]
+    }
+  },
+  {
+    "id": "RWE-0164",
+    "name": "Clinical Skills (aizech)",
+    "category": "Biomedical & RWE Infrastructure",
+    "summary": "Agent skills for imaging research, clinical documentation and related data preparation.",
+    "capabilities": [
+      "Guide imaging-study review and radiology-report analysis",
+      "Support structured reporting and imaging-data workflows"
+    ],
+    "limitation": "Instructions do not establish diagnostic performance or reporting correctness. Verify DICOM handling, source citations and generated outputs in the intended research setting.",
+    "kind": "Agent skill collection",
+    "access": "See pinned project setup; external data access may require credentials.",
+    "tags": [
+      "Biomedical",
+      "Agent skill collection"
+    ],
+    "workflowFit": [
+      "Biomedical & RWE Infrastructure",
+      "Source inspection and research preparation"
+    ],
+    "added": "Sep 7, 2026",
+    "checked": "Sep 7, 2026",
+    "status": "Static source and documentation reviewed",
+    "runtime": "Not independently runtime tested by registry",
+    "repository": "aizech/clinical-skills",
+    "website": "https://github.com/aizech/clinical-skills",
+    "packages": "See pinned project manifest and setup documentation",
+    "url": "https://github.com/aizech/clinical-skills",
+    "verification": {
+      "reviewedAt": "2026-09-07",
+      "repositoryStatus": "available",
+      "commit": "743831b202a38977ed594eb5b1f21032800c41b2",
+      "pushedAt": "2026-06-21T20:29:45Z",
+      "stars": 4,
+      "license": "MIT",
+      "sources": [
+        "https://github.com/aizech/clinical-skills/blob/743831b202a38977ed594eb5b1f21032800c41b2/README.md",
+        "https://github.com/aizech/clinical-skills/blob/743831b202a38977ed594eb5b1f21032800c41b2/.agents/skills/ai-detection-pipeline/SKILL.md",
+        "https://github.com/aizech/clinical-skills/blob/743831b202a38977ed594eb5b1f21032800c41b2/.agents/skills/ai-quality-review/SKILL.md",
+        "https://github.com/aizech/clinical-skills/blob/743831b202a38977ed594eb5b1f21032800c41b2/.agents/skills/ai-report-assist/SKILL.md",
+        "https://github.com/aizech/clinical-skills/blob/743831b202a38977ed594eb5b1f21032800c41b2/skills/clinical-documentation/imaging-study-review/SKILL.md"
+      ]
+    }
+  },
+  {
+    "id": "RWE-0169",
+    "name": "ClinicalAI MCP",
+    "category": "Biomedical & RWE Infrastructure",
+    "summary": "Collection of clinical MCP components for evidence, terminology, drugs and calculations.",
+    "capabilities": [
+      "Expose modular clinical-reference and evidence tools",
+      "Support terminology and calculation workflows with shared utilities"
+    ],
+    "limitation": "Publisher identifies clinician validation as pending. Do not infer calculator validity or privacy compliance; some terminology and data sources need separate licenses.",
+    "kind": "MCP server collection",
+    "access": "See pinned project setup; external data access may require credentials.",
+    "tags": [
+      "Biomedical",
+      "MCP server collection"
+    ],
+    "workflowFit": [
+      "Biomedical & RWE Infrastructure",
+      "Source inspection and research preparation"
+    ],
+    "added": "Sep 7, 2026",
+    "checked": "Sep 7, 2026",
+    "status": "Static source and documentation reviewed",
+    "runtime": "Not independently runtime tested by registry",
+    "repository": "OpenClinicalAI/clinicalai-mcp",
+    "website": "https://github.com/OpenClinicalAI/clinicalai-mcp",
+    "packages": "See pinned project manifest and setup documentation",
+    "url": "https://github.com/OpenClinicalAI/clinicalai-mcp",
+    "verification": {
+      "reviewedAt": "2026-09-07",
+      "repositoryStatus": "available",
+      "commit": "ec1447a16fcc37f63c8d3031da325b2bd63c1f4f",
+      "pushedAt": "2026-05-26T02:31:10Z",
+      "stars": 1,
+      "license": "Apache-2.0",
+      "sources": [
+        "https://github.com/OpenClinicalAI/clinicalai-mcp/blob/ec1447a16fcc37f63c8d3031da325b2bd63c1f4f/README.md",
+        "https://github.com/OpenClinicalAI/clinicalai-mcp/blob/ec1447a16fcc37f63c8d3031da325b2bd63c1f4f/package.json",
+        "https://github.com/OpenClinicalAI/clinicalai-mcp/blob/ec1447a16fcc37f63c8d3031da325b2bd63c1f4f/packages/calc/src/tools.ts",
+        "https://github.com/OpenClinicalAI/clinicalai-mcp/blob/ec1447a16fcc37f63c8d3031da325b2bd63c1f4f/packages/shared/src/server.ts"
+      ]
+    }
+  },
+  {
+    "id": "RWE-0176",
+    "name": "ClinicalTrials MCP Server (JackKuo666)",
+    "category": "Trials & Study Design",
+    "summary": "Queries ClinicalTrials.gov and supports local trial-result exports.",
+    "capabilities": [
+      "Search trials and retrieve NCT study details",
+      "Save or load CSV results and inspect trial statistics"
+    ],
+    "limitation": "Registry entries can be incomplete or revised. Preserve query and retrieval dates; a saved CSV is a snapshot, not evidence that a search is exhaustive.",
+    "kind": "MCP server",
+    "access": "See pinned project setup; external data access may require credentials.",
+    "tags": [
+      "Trials",
+      "MCP server"
+    ],
+    "workflowFit": [
+      "Trials & Study Design",
+      "Source inspection and research preparation"
+    ],
+    "added": "Sep 7, 2026",
+    "checked": "Sep 7, 2026",
+    "status": "Static source and documentation reviewed",
+    "runtime": "Not independently runtime tested by registry",
+    "repository": "JackKuo666/ClinicalTrials-MCP-Server",
+    "website": "https://github.com/JackKuo666/ClinicalTrials-MCP-Server",
+    "packages": "See pinned project manifest and setup documentation",
+    "url": "https://github.com/JackKuo666/ClinicalTrials-MCP-Server",
+    "verification": {
+      "reviewedAt": "2026-09-07",
+      "repositoryStatus": "available",
+      "commit": "2f9e1dce94f3fe158c7dc62cffa428d74583e9e7",
+      "pushedAt": "2025-04-09T11:27:16Z",
+      "stars": 16,
+      "license": "Not specified",
+      "sources": [
+        "https://github.com/JackKuo666/ClinicalTrials-MCP-Server/blob/2f9e1dce94f3fe158c7dc62cffa428d74583e9e7/README.md"
+      ]
+    }
+  },
+  {
+    "id": "RWE-0178",
+    "name": "Drug Pipeline MCP",
+    "category": "Pharmacovigilance & safety",
+    "summary": "Combines trial, regulatory and safety-source retrieval for drug evidence exploration.",
+    "capabilities": [
+      "Retrieve trial protocols, results and locations",
+      "Explore FDA/EMA product records and FAERS-based safety information"
+    ],
+    "limitation": "Spontaneous-report signals are not incidence or causal estimates. Verify source coverage, dates and derived calculations; pipeline and patent estimates need separate confirmation.",
+    "kind": "MCP server",
+    "access": "See pinned project setup; external data access may require credentials.",
+    "tags": [
+      "Pharmacovigilance",
+      "MCP server"
+    ],
+    "workflowFit": [
+      "Pharmacovigilance & safety",
+      "Source inspection and research preparation"
+    ],
+    "added": "Sep 7, 2026",
+    "checked": "Sep 7, 2026",
+    "status": "Static source and documentation reviewed",
+    "runtime": "Not independently runtime tested by registry",
+    "repository": "DasClown/drug-pipeline-mcp",
+    "website": "https://github.com/DasClown/drug-pipeline-mcp",
+    "packages": "See pinned project manifest and setup documentation",
+    "url": "https://github.com/DasClown/drug-pipeline-mcp",
+    "verification": {
+      "reviewedAt": "2026-09-07",
+      "repositoryStatus": "available",
+      "commit": "c9bcae8d108789fb450a2c812739e96998fbbbb2",
+      "pushedAt": "2026-07-07T06:08:24Z",
+      "stars": 5,
+      "license": "MIT",
+      "sources": [
+        "https://github.com/DasClown/drug-pipeline-mcp/blob/c9bcae8d108789fb450a2c812739e96998fbbbb2/README.md",
+        "https://github.com/DasClown/drug-pipeline-mcp/blob/c9bcae8d108789fb450a2c812739e96998fbbbb2/pyproject.toml",
+        "https://github.com/DasClown/drug-pipeline-mcp/blob/c9bcae8d108789fb450a2c812739e96998fbbbb2/server.json",
+        "https://github.com/DasClown/drug-pipeline-mcp/blob/c9bcae8d108789fb450a2c812739e96998fbbbb2/drug_pipeline/server.py"
+      ]
+    }
+  },
+  {
+    "id": "RWE-0153",
+    "name": "FDA Approvals MCP",
+    "category": "Regulatory & Product Data",
+    "summary": "Hosted connector for FDA product, labeling, recall and safety-source searches.",
+    "capabilities": [
+      "Search approval, labeling and recall information",
+      "Retrieve adverse-event and device-related source records"
+    ],
+    "limitation": "Hosted service access and limits may change. Deduplication and synthesis claims were not independently validated; check source identifiers and reporting limitations.",
+    "kind": "MCP server",
+    "access": "Hosted service credentials and plan-dependent access; see publisher setup.",
+    "tags": [
+      "Regulatory",
+      "MCP server"
+    ],
+    "workflowFit": [
+      "Regulatory & Product Data",
+      "Source inspection and research preparation"
+    ],
+    "added": "Sep 7, 2026",
+    "checked": "Sep 7, 2026",
+    "status": "Static source and documentation reviewed",
+    "runtime": "Not independently runtime tested by registry",
+    "repository": "guptaprakhariitr/fda-approvals-mcp",
+    "website": "https://github.com/guptaprakhariitr/fda-approvals-mcp",
+    "packages": "See pinned project manifest and setup documentation",
+    "url": "https://github.com/guptaprakhariitr/fda-approvals-mcp",
+    "verification": {
+      "reviewedAt": "2026-09-07",
+      "repositoryStatus": "available",
+      "commit": "73940ca6b152bc52fb7f8fe65b24b0305eb888e1",
+      "pushedAt": "2026-06-11T08:39:23Z",
+      "stars": 1,
+      "license": "NOASSERTION",
+      "sources": [
+        "https://github.com/guptaprakhariitr/fda-approvals-mcp/blob/73940ca6b152bc52fb7f8fe65b24b0305eb888e1/README.md",
+        "https://github.com/guptaprakhariitr/fda-approvals-mcp/blob/73940ca6b152bc52fb7f8fe65b24b0305eb888e1/package.json",
+        "https://github.com/guptaprakhariitr/fda-approvals-mcp/blob/73940ca6b152bc52fb7f8fe65b24b0305eb888e1/server.json",
+        "https://github.com/guptaprakhariitr/fda-approvals-mcp/blob/73940ca6b152bc52fb7f8fe65b24b0305eb888e1/src/tools.ts"
+      ]
+    }
+  },
+  {
+    "id": "RWE-0155",
+    "name": "FDA MCP (Limecooler)",
+    "category": "Regulatory & Product Data",
+    "summary": "Searches FDA datasets and retrieves linked regulatory document content.",
+    "capabilities": [
+      "Search records, count results and inspect available fields",
+      "Retrieve supported decision documents and extract PDF text"
+    ],
+    "limitation": "Field availability and source indexing vary. PDF/OCR text and count queries require verification; data retrieval does not establish safety or effectiveness.",
+    "kind": "MCP server",
+    "access": "See pinned project setup; external data access may require credentials.",
+    "tags": [
+      "Regulatory",
+      "MCP server"
+    ],
+    "workflowFit": [
+      "Regulatory & Product Data",
+      "Source inspection and research preparation"
+    ],
+    "added": "Sep 7, 2026",
+    "checked": "Sep 7, 2026",
+    "status": "Static source and documentation reviewed",
+    "runtime": "Not independently runtime tested by registry",
+    "repository": "Limecooler/fda-mcp",
+    "website": "https://github.com/Limecooler/fda-mcp",
+    "packages": "See pinned project manifest and setup documentation",
+    "url": "https://github.com/Limecooler/fda-mcp",
+    "verification": {
+      "reviewedAt": "2026-09-07",
+      "repositoryStatus": "available",
+      "commit": "23ed29d5d8fc465967bed554875f1ebd0a6720b9",
+      "pushedAt": "2026-02-20T03:47:02Z",
+      "stars": 1,
+      "license": "MIT",
+      "sources": [
+        "https://github.com/Limecooler/fda-mcp/blob/23ed29d5d8fc465967bed554875f1ebd0a6720b9/README.md",
+        "https://github.com/Limecooler/fda-mcp/blob/23ed29d5d8fc465967bed554875f1ebd0a6720b9/pyproject.toml",
+        "https://github.com/Limecooler/fda-mcp/blob/23ed29d5d8fc465967bed554875f1ebd0a6720b9/src/fda_mcp/server.py"
+      ]
+    }
+  },
+  {
+    "id": "RWE-0179",
+    "name": "Helix",
+    "category": "Literature & Evidence Synthesis",
+    "summary": "Combines ClinicalTrials.gov, PubMed and FDA labeling retrieval with preliminary evidence ranking.",
+    "capabilities": [
+      "Retrieve trial, publication and drug-label context",
+      "Produce heuristic evidence and eligibility-oriented rankings"
+    ],
+    "limitation": "Ranking formulas are not validated evidence grades or clinical eligibility determinations. Review original records and use a prespecified synthesis protocol.",
+    "kind": "MCP server",
+    "access": "See pinned project setup; external data access may require credentials.",
+    "tags": [
+      "Literature",
+      "MCP server"
+    ],
+    "workflowFit": [
+      "Literature & Evidence Synthesis",
+      "Source inspection and research preparation"
+    ],
+    "added": "Sep 7, 2026",
+    "checked": "Sep 7, 2026",
+    "status": "Static source and documentation reviewed",
+    "runtime": "Not independently runtime tested by registry",
+    "repository": "Al1Abdullah/Helix",
+    "website": "https://github.com/Al1Abdullah/Helix",
+    "packages": "See pinned project manifest and setup documentation",
+    "url": "https://github.com/Al1Abdullah/Helix",
+    "verification": {
+      "reviewedAt": "2026-09-07",
+      "repositoryStatus": "available",
+      "commit": "eb725da1d89a90968a916c2efa327861a7d1291d",
+      "pushedAt": "2026-05-29T09:11:17Z",
+      "stars": 1,
+      "license": "MIT",
+      "sources": [
+        "https://github.com/Al1Abdullah/Helix/blob/eb725da1d89a90968a916c2efa327861a7d1291d/README.md",
+        "https://github.com/Al1Abdullah/Helix/blob/eb725da1d89a90968a916c2efa327861a7d1291d/pyproject.toml",
+        "https://github.com/Al1Abdullah/Helix/blob/eb725da1d89a90968a916c2efa327861a7d1291d/src/helix/server.py"
+      ]
+    }
+  },
+  {
+    "id": "RWE-0165",
+    "name": "LabClaw",
+    "category": "Biomedical & RWE Infrastructure",
+    "summary": "Agent skill collection spanning biomedical analysis, literature retrieval and statistical workflows.",
+    "capabilities": [
+      "Provide clinical-trial and literature-search skills",
+      "Guide survival and statistical-analysis workflows"
+    ],
+    "limitation": "Skills may wrap or reproduce upstream tools and require their dependencies. Repository affiliation and method claims are not independent validation.",
+    "kind": "Agent skill collection",
+    "access": "See pinned project setup; external data access may require credentials.",
+    "tags": [
+      "Biomedical",
+      "Agent skill collection"
+    ],
+    "workflowFit": [
+      "Biomedical & RWE Infrastructure",
+      "Source inspection and research preparation"
+    ],
+    "added": "Sep 7, 2026",
+    "checked": "Sep 7, 2026",
+    "status": "Static source and documentation reviewed",
+    "runtime": "Not independently runtime tested by registry",
+    "repository": "bilalmirza96/LabClaw",
+    "website": "https://github.com/bilalmirza96/LabClaw",
+    "packages": "See pinned project manifest and setup documentation",
+    "url": "https://github.com/bilalmirza96/LabClaw",
+    "verification": {
+      "reviewedAt": "2026-09-07",
+      "repositoryStatus": "available",
+      "commit": "205972f93402f874a54b9a5e1b590151ece6432b",
+      "pushedAt": "2026-04-04T02:32:09Z",
+      "stars": 1,
+      "license": "Not specified",
+      "sources": [
+        "https://github.com/bilalmirza96/LabClaw/blob/205972f93402f874a54b9a5e1b590151ece6432b/README.md",
+        "https://github.com/bilalmirza96/LabClaw/blob/205972f93402f874a54b9a5e1b590151ece6432b/skills/bio/alphafold-database/SKILL.md",
+        "https://github.com/bilalmirza96/LabClaw/blob/205972f93402f874a54b9a5e1b590151ece6432b/skills/bio/analyze_lab_video_cell_behavior/SKILL.md",
+        "https://github.com/bilalmirza96/LabClaw/blob/205972f93402f874a54b9a5e1b590151ece6432b/skills/bio/anndata/SKILL.md",
+        "https://github.com/bilalmirza96/LabClaw/blob/205972f93402f874a54b9a5e1b590151ece6432b/skills/literature/clinical-trials-search/SKILL.md"
+      ]
+    }
+  },
+  {
+    "id": "RWE-0166",
+    "name": "MedgeClaw",
+    "category": "Biomedical & RWE Infrastructure",
+    "summary": "Biomedical agent workflow combining OpenClaw, coding agents and research skills.",
+    "capabilities": [
+      "Coordinate biomedical analysis through coding-agent workflows",
+      "Support R/Python research environments and external skill integrations"
+    ],
+    "limitation": "Runs generated code and may connect messaging services. Review data routing, dependencies and generated analyses; underlying skills are not new independently validated methods.",
+    "kind": "Agent workflow + skill integration",
+    "access": "See pinned project setup; external data access may require credentials.",
+    "tags": [
+      "Biomedical",
+      "Agent workflow + skill integration"
+    ],
+    "workflowFit": [
+      "Biomedical & RWE Infrastructure",
+      "Source inspection and research preparation"
+    ],
+    "added": "Sep 7, 2026",
+    "checked": "Sep 7, 2026",
+    "status": "Static source and documentation reviewed",
+    "runtime": "Not independently runtime tested by registry",
+    "repository": "xjtulyc/MedgeClaw",
+    "website": "https://github.com/xjtulyc/MedgeClaw",
+    "packages": "See pinned project manifest and setup documentation",
+    "url": "https://github.com/xjtulyc/MedgeClaw",
+    "verification": {
+      "reviewedAt": "2026-09-07",
+      "repositoryStatus": "available",
+      "commit": "fef51d37ee3e1f5754790d9ae20f72c006c78dcc",
+      "pushedAt": "2026-03-12T07:34:39Z",
+      "stars": 642,
+      "license": "Not specified",
+      "sources": [
+        "https://github.com/xjtulyc/MedgeClaw/blob/fef51d37ee3e1f5754790d9ae20f72c006c78dcc/README.md",
+        "https://github.com/xjtulyc/MedgeClaw/blob/fef51d37ee3e1f5754790d9ae20f72c006c78dcc/skills/biomed-dispatch/SKILL.md",
+        "https://github.com/xjtulyc/MedgeClaw/blob/fef51d37ee3e1f5754790d9ae20f72c006c78dcc/skills/charls-reproduce/SKILL.md",
+        "https://github.com/xjtulyc/MedgeClaw/blob/fef51d37ee3e1f5754790d9ae20f72c006c78dcc/skills/cjk-viz/SKILL.md"
+      ]
+    }
+  },
+  {
+    "id": "RWE-0168",
+    "name": "Metis PH",
+    "category": "Literature & Evidence Synthesis",
+    "summary": "Research assistant for querying a local reference library and developing epidemiologic analysis workflows.",
+    "capabilities": [
+      "Search and cite a local research library",
+      "Use epidemiology-oriented skills and model-assisted reasoning"
+    ],
+    "limitation": "Evidence coverage depends on the supplied corpus. External model calls may transmit research content; generated methodological assertions need expert and source review.",
+    "kind": "Research assistant + MCP integration",
+    "access": "See pinned project setup; external data access may require credentials.",
+    "tags": [
+      "Literature",
+      "Research assistant + MCP integration"
+    ],
+    "workflowFit": [
+      "Literature & Evidence Synthesis",
+      "Source inspection and research preparation"
+    ],
+    "added": "Sep 7, 2026",
+    "checked": "Sep 7, 2026",
+    "status": "Static source and documentation reviewed",
+    "runtime": "Not independently runtime tested by registry",
+    "repository": "SVerITG/Metis_PH",
+    "website": "https://github.com/SVerITG/Metis_PH",
+    "packages": "See pinned project manifest and setup documentation",
+    "url": "https://github.com/SVerITG/Metis_PH",
+    "verification": {
+      "reviewedAt": "2026-09-07",
+      "repositoryStatus": "available",
+      "commit": "c9902186aae622430e63260d4e96111bde44739b",
+      "pushedAt": "2026-09-06T13:58:41Z",
+      "stars": 1,
+      "license": "AGPL-3.0",
+      "sources": [
+        "https://github.com/SVerITG/Metis_PH/blob/c9902186aae622430e63260d4e96111bde44739b/README.md",
+        "https://github.com/SVerITG/Metis_PH/blob/c9902186aae622430e63260d4e96111bde44739b/server.json",
+        "https://github.com/SVerITG/Metis_PH/blob/c9902186aae622430e63260d4e96111bde44739b/system/mcp-server/src/metis_mcp/server.py"
+      ]
+    }
+  },
+  {
+    "id": "RWE-0159",
+    "name": "OpenFDA Semantic MCP",
+    "category": "Regulatory & Product Data",
+    "summary": "Provides domain-oriented tools over openFDA drug and safety information.",
+    "capabilities": [
+      "Retrieve semantic drug and product profiles",
+      "Explore source records through structured FDA-oriented queries"
+    ],
+    "limitation": "Semantic summaries and report counts need source verification. No independent support is claimed for anti-hallucination guarantees or causal safety conclusions.",
+    "kind": "MCP server",
+    "access": "See pinned project setup; external data access may require credentials.",
+    "tags": [
+      "Regulatory",
+      "MCP server"
+    ],
+    "workflowFit": [
+      "Regulatory & Product Data",
+      "Source inspection and research preparation"
+    ],
+    "added": "Sep 7, 2026",
+    "checked": "Sep 7, 2026",
+    "status": "Static source and documentation reviewed",
+    "runtime": "Not independently runtime tested by registry",
+    "repository": "SuyashEkhande/OpenFDA-Semantic-MCP",
+    "website": "https://github.com/SuyashEkhande/OpenFDA-Semantic-MCP",
+    "packages": "See pinned project manifest and setup documentation",
+    "url": "https://github.com/SuyashEkhande/OpenFDA-Semantic-MCP",
+    "verification": {
+      "reviewedAt": "2026-09-07",
+      "repositoryStatus": "available",
+      "commit": "bcd0e65abeb1e0271e8ee89686a1ad75f3fbac24",
+      "pushedAt": "2026-04-12T13:12:57Z",
+      "stars": 13,
+      "license": "Not specified",
+      "sources": [
+        "https://github.com/SuyashEkhande/OpenFDA-Semantic-MCP/blob/bcd0e65abeb1e0271e8ee89686a1ad75f3fbac24/README.md",
+        "https://github.com/SuyashEkhande/OpenFDA-Semantic-MCP/blob/bcd0e65abeb1e0271e8ee89686a1ad75f3fbac24/pyproject.toml",
+        "https://github.com/SuyashEkhande/OpenFDA-Semantic-MCP/blob/bcd0e65abeb1e0271e8ee89686a1ad75f3fbac24/src/openfda_mcp/domains/animal_veterinary/tools.py",
+        "https://github.com/SuyashEkhande/OpenFDA-Semantic-MCP/blob/bcd0e65abeb1e0271e8ee89686a1ad75f3fbac24/src/openfda_mcp/domains/cosmetics/tools.py",
+        "https://github.com/SuyashEkhande/OpenFDA-Semantic-MCP/blob/bcd0e65abeb1e0271e8ee89686a1ad75f3fbac24/src/openfda_mcp/domains/device/tools.py"
+      ]
+    }
+  },
+  {
+    "id": "RWE-0180",
+    "name": "Research Workflow Assistant",
+    "category": "Literature & Evidence Synthesis",
+    "summary": "Agent workflow for literature work, citations and reproducible research documents.",
+    "capabilities": [
+      "Coordinate database and Zotero integrations",
+      "Guide systematic-review and Quarto research-document workflows"
+    ],
+    "limitation": "Generated searches, citations and reports require protocol review. Availability depends on external agents and MCP services; reporting-compliance claims are not independently verified.",
+    "kind": "Agent workflow + MCP integrations",
+    "access": "See pinned project setup; external data access may require credentials.",
+    "tags": [
+      "Literature",
+      "Agent workflow + MCP integrations"
+    ],
+    "workflowFit": [
+      "Literature & Evidence Synthesis",
+      "Source inspection and research preparation"
+    ],
+    "added": "Sep 7, 2026",
+    "checked": "Sep 7, 2026",
+    "status": "Static source and documentation reviewed",
+    "runtime": "Not independently runtime tested by registry",
+    "repository": "Intersect-Collaborations-LLC/research-workflow-assistant",
+    "website": "https://github.com/Intersect-Collaborations-LLC/research-workflow-assistant",
+    "packages": "See pinned project manifest and setup documentation",
+    "url": "https://github.com/Intersect-Collaborations-LLC/research-workflow-assistant",
+    "verification": {
+      "reviewedAt": "2026-09-07",
+      "repositoryStatus": "available",
+      "commit": "51dcaa8a22b8ee54cdcc864a7d3e92d63f2c4a1d",
+      "pushedAt": "2026-08-29T14:32:08Z",
+      "stars": 24,
+      "license": "MIT",
+      "sources": [
+        "https://github.com/Intersect-Collaborations-LLC/research-workflow-assistant/blob/51dcaa8a22b8ee54cdcc864a7d3e92d63f2c4a1d/README.md",
+        "https://github.com/Intersect-Collaborations-LLC/research-workflow-assistant/blob/51dcaa8a22b8ee54cdcc864a7d3e92d63f2c4a1d/pyproject.toml",
+        "https://github.com/Intersect-Collaborations-LLC/research-workflow-assistant/blob/51dcaa8a22b8ee54cdcc864a7d3e92d63f2c4a1d/mcp-servers/bibliography-manager/src/bibliography_manager/server.py",
+        "https://github.com/Intersect-Collaborations-LLC/research-workflow-assistant/blob/51dcaa8a22b8ee54cdcc864a7d3e92d63f2c4a1d/mcp-servers/chat-exporter/src/chat_exporter/server.py",
+        "https://github.com/Intersect-Collaborations-LLC/research-workflow-assistant/blob/51dcaa8a22b8ee54cdcc864a7d3e92d63f2c4a1d/mcp-servers/crossref-server/src/crossref_server/server.py"
+      ]
+    }
+  },
+  {
+    "id": "RWE-0131",
+    "name": "Shiranui",
+    "category": "OMOP & terminology",
+    "summary": "R interface and MCP tooling for CDISC Library standards metadata.",
+    "capabilities": [
+      "Retrieve ADaM, SDTM, CDASH and SEND metadata",
+      "Explore controlled terminology and biomedical concepts"
+    ],
+    "limitation": "Provides standards references, not automatic conformity validation or a completed data transformation. Preserve standard versions and applicable access terms.",
+    "kind": "R package + MCP server",
+    "access": "CDISC Library API key.",
+    "tags": [
+      "OMOP",
+      "R package + MCP server"
+    ],
+    "workflowFit": [
+      "OMOP & terminology",
+      "Source inspection and research preparation"
+    ],
+    "added": "Sep 7, 2026",
+    "checked": "Sep 7, 2026",
+    "status": "Static source and documentation reviewed",
+    "runtime": "Not independently runtime tested by registry",
+    "repository": "i-akiya/Shiranui",
+    "website": "https://github.com/i-akiya/Shiranui",
+    "packages": "See pinned project manifest and setup documentation",
+    "url": "https://github.com/i-akiya/Shiranui",
+    "verification": {
+      "reviewedAt": "2026-09-07",
+      "repositoryStatus": "available",
+      "commit": "2d77554e4a33b065ab826a73580e9a7e2644296e",
+      "pushedAt": "2026-01-10T12:29:12Z",
+      "stars": 7,
+      "license": "MIT",
+      "sources": [
+        "https://github.com/i-akiya/Shiranui/blob/2d77554e4a33b065ab826a73580e9a7e2644296e/README.md",
+        "https://github.com/i-akiya/Shiranui/blob/2d77554e4a33b065ab826a73580e9a7e2644296e/pyproject.toml",
+        "https://github.com/i-akiya/Shiranui/blob/2d77554e4a33b065ab826a73580e9a7e2644296e/src/shiranui/server.py"
+      ]
+    }
+  },
+  {
+    "id": "RWE-0162",
+    "name": "Claude Research Skills (drkamarul)",
+    "category": "Causal Inference & Analytics",
+    "summary": "Research skill collection covering data preparation, R modeling and medical-research workflows.",
+    "capabilities": [
+      "Guide mixed-model analyses and data wrangling",
+      "Support medical-research, Quarto and spatial-analysis workflows"
+    ],
+    "limitation": "Some search guidance favors recent English open-access and highly cited work. Those selection rules require explicit protocol justification and can introduce bias.",
+    "kind": "Agent skill collection",
+    "access": "See pinned project setup; external data access may require credentials.",
+    "tags": [
+      "Causal Inference",
+      "Agent skill collection"
+    ],
+    "workflowFit": [
+      "Causal Inference & Analytics",
+      "Source inspection and research preparation"
+    ],
+    "added": "Sep 7, 2026",
+    "checked": "Sep 7, 2026",
+    "status": "Static source and documentation reviewed",
+    "runtime": "Not independently runtime tested by registry",
+    "repository": "drkamarul/claude-skills",
+    "website": "https://github.com/drkamarul/claude-skills",
+    "packages": "See pinned project manifest and setup documentation",
+    "url": "https://github.com/drkamarul/claude-skills",
+    "verification": {
+      "reviewedAt": "2026-09-07",
+      "repositoryStatus": "available",
+      "commit": "55daeb6d8fcbfe2c96d2806d7e0838cb3c3ebd46",
+      "pushedAt": "2026-07-27T03:53:24Z",
+      "stars": 0,
+      "license": "MIT",
+      "sources": [
+        "https://github.com/drkamarul/claude-skills/blob/55daeb6d8fcbfe2c96d2806d7e0838cb3c3ebd46/datamanagement/SKILL.md",
+        "https://github.com/drkamarul/claude-skills/blob/55daeb6d8fcbfe2c96d2806d7e0838cb3c3ebd46/lmer-mixed-effects/SKILL.md",
+        "https://github.com/drkamarul/claude-skills/blob/55daeb6d8fcbfe2c96d2806d7e0838cb3c3ebd46/medical-research/SKILL.md"
+      ]
+    }
+  },
+  {
+    "id": "RWE-0156",
+    "name": "KFDA MCP",
+    "category": "Regulatory & Product Data",
+    "summary": "Retrieves Korean MFDS drug and related product information.",
+    "capabilities": [
+      "Search drug and patient-facing product information",
+      "Look up DUR information, supplements and built-in ATC mappings"
+    ],
+    "limitation": "Built-in mappings may be incomplete. Verify Korean source records and current restrictions; retrieval is not validated prescribing advice.",
+    "kind": "MCP server",
+    "access": "Applicable Korean public-data API credentials; see project setup.",
+    "tags": [
+      "Regulatory",
+      "MCP server"
+    ],
+    "workflowFit": [
+      "Regulatory & Product Data",
+      "Source inspection and research preparation"
+    ],
+    "added": "Sep 7, 2026",
+    "checked": "Sep 7, 2026",
+    "status": "Static source and documentation reviewed",
+    "runtime": "Not independently runtime tested by registry",
+    "repository": "pianovirus/kfda-mcp",
+    "website": "https://github.com/pianovirus/kfda-mcp",
+    "packages": "See pinned project manifest and setup documentation",
+    "url": "https://github.com/pianovirus/kfda-mcp",
+    "verification": {
+      "reviewedAt": "2026-09-07",
+      "repositoryStatus": "available",
+      "commit": "3620ea4450217fcb9d88db6c394538da460103d3",
+      "pushedAt": "2026-06-30T09:08:34Z",
+      "stars": 0,
+      "license": "MIT",
+      "sources": [
+        "https://github.com/pianovirus/kfda-mcp/blob/3620ea4450217fcb9d88db6c394538da460103d3/README.md",
+        "https://github.com/pianovirus/kfda-mcp/blob/3620ea4450217fcb9d88db6c394538da460103d3/pyproject.toml",
+        "https://github.com/pianovirus/kfda-mcp/blob/3620ea4450217fcb9d88db6c394538da460103d3/src/kfda_mcp/server.py"
+      ]
+    }
+  },
+  {
+    "id": "RWE-0142",
+    "name": "NexVigilant Station",
+    "category": "Pharmacovigilance & safety",
+    "summary": "Hosted service documenting pharmacovigilance source queries and signal-calculation tools.",
+    "capabilities": [
+      "Retrieve documented FAERS, labeling, trial and literature information",
+      "Expose documented disproportionality and case-assessment functions"
+    ],
+    "limitation": "Documentation-only review: backend implementation and live tool inventory were not inspected. Signal and causality scores need independent validation. Source-available license requires permission for organizational use.",
+    "kind": "Hosted MCP service",
+    "access": "Publisher documents an unauthenticated Streamable HTTP endpoint; organizational license permission required.",
+    "tags": [
+      "Pharmacovigilance",
+      "Hosted MCP service"
+    ],
+    "workflowFit": [
+      "Pharmacovigilance & safety",
+      "Source inspection and research preparation"
+    ],
+    "added": "Sep 7, 2026",
+    "checked": "Sep 7, 2026",
+    "status": "Static documentation reviewed; hosted implementation not inspected",
+    "runtime": "Not independently runtime tested by registry",
+    "repository": "nexvigilant/nexvigilant-station",
+    "website": "https://github.com/nexvigilant/nexvigilant-station",
+    "packages": "See pinned project manifest and setup documentation",
+    "url": "https://github.com/nexvigilant/nexvigilant-station",
+    "verification": {
+      "reviewedAt": "2026-09-07",
+      "repositoryStatus": "available",
+      "commit": "28dddb074c7aa5177cac43d88d09bfefa5a2ec48",
+      "pushedAt": "2026-03-24T01:38:12Z",
+      "stars": 0,
+      "license": "NOASSERTION",
+      "sources": [
+        "https://github.com/nexvigilant/nexvigilant-station/blob/28dddb074c7aa5177cac43d88d09bfefa5a2ec48/README.md"
+      ]
+    }
+  },
+  {
+    "id": "RWE-0127",
+    "name": "Research KB",
+    "category": "Literature & Evidence Synthesis",
+    "summary": "Local research knowledge base with hybrid retrieval and assumption-oriented evidence inspection.",
+    "capabilities": [
+      "Search a supplied corpus using lexical and embedding retrieval",
+      "Inspect citations and extracted methodological assumptions"
+    ],
+    "limitation": "Corpus access and licenses are separate from the code. Graph functionality is documented as disabled pending rebuild; extracted assumptions are not proof of causal identification.",
+    "kind": "MCP server",
+    "access": "See pinned project setup; external data access may require credentials.",
+    "tags": [
+      "Literature",
+      "MCP server"
+    ],
+    "workflowFit": [
+      "Literature & Evidence Synthesis",
+      "Source inspection and research preparation"
+    ],
+    "added": "Sep 7, 2026",
+    "checked": "Sep 7, 2026",
+    "status": "Static source and documentation reviewed",
+    "runtime": "Not independently runtime tested by registry",
+    "repository": "brandonmbehring-dev/research-kb",
+    "website": "https://github.com/brandonmbehring-dev/research-kb",
+    "packages": "See pinned project manifest and setup documentation",
+    "url": "https://github.com/brandonmbehring-dev/research-kb",
+    "verification": {
+      "reviewedAt": "2026-09-07",
+      "repositoryStatus": "available",
+      "commit": "bb567b9c892b40d9f2f6c576a1036ec8ac2d1e26",
+      "pushedAt": "2026-08-31T13:02:06Z",
+      "stars": 0,
+      "license": "MIT",
+      "sources": [
+        "https://github.com/brandonmbehring-dev/research-kb/blob/bb567b9c892b40d9f2f6c576a1036ec8ac2d1e26/README.md",
+        "https://github.com/brandonmbehring-dev/research-kb/blob/bb567b9c892b40d9f2f6c576a1036ec8ac2d1e26/pyproject.toml",
+        "https://github.com/brandonmbehring-dev/research-kb/blob/bb567b9c892b40d9f2f6c576a1036ec8ac2d1e26/packages/daemon/src/research_kb_daemon/server.py",
+        "https://github.com/brandonmbehring-dev/research-kb/blob/bb567b9c892b40d9f2f6c576a1036ec8ac2d1e26/packages/mcp-server/src/research_kb_mcp/server.py",
+        "https://github.com/brandonmbehring-dev/research-kb/blob/bb567b9c892b40d9f2f6c576a1036ec8ac2d1e26/skills/assumption-tracking/SKILL.md"
+      ]
+    }
+  },
+  {
+    "id": "RWE-0259",
+    "name": "fhirHydrant",
+    "category": "Clinical Data & Interoperability",
+    "summary": "FHIR R4+ connector with resource inspection, terminology and optional write workflows.",
+    "capabilities": [
+      "Read resources and history; use supported terminology operations",
+      "Expose explicitly enabled CRUD and bundle transactions"
+    ],
+    "limitation": "Write tools require deliberate gating. Validate FHIR profiles, authorization and patient-data governance; resource connectivity does not establish research completeness.",
+    "kind": "MCP server",
+    "access": "Configured FHIR endpoint; optional SMART Backend Services JWT authentication.",
+    "tags": [
+      "Clinical Data",
+      "MCP server"
+    ],
+    "workflowFit": [
+      "Clinical Data & Interoperability",
+      "Source inspection and research preparation"
+    ],
+    "added": "Sep 7, 2026",
+    "checked": "Sep 7, 2026",
+    "status": "Static source and documentation reviewed",
+    "runtime": "Not independently runtime tested by registry",
+    "repository": "faulkj/fhirHydrant",
+    "website": "https://github.com/faulkj/fhirHydrant",
+    "packages": "See pinned project manifest and setup documentation",
+    "url": "https://github.com/faulkj/fhirHydrant",
+    "verification": {
+      "reviewedAt": "2026-09-07",
+      "repositoryStatus": "available",
+      "commit": "caba5aa0cc782c71f9ebe78bd79cfdcfee6fa221",
+      "pushedAt": "2026-08-27T23:21:21Z",
+      "stars": 17,
+      "license": "NOASSERTION",
+      "sources": [
+        "https://github.com/faulkj/fhirHydrant/blob/caba5aa0cc782c71f9ebe78bd79cfdcfee6fa221/README.md",
+        "https://github.com/faulkj/fhirHydrant/blob/caba5aa0cc782c71f9ebe78bd79cfdcfee6fa221/package.json",
+        "https://github.com/faulkj/fhirHydrant/blob/caba5aa0cc782c71f9ebe78bd79cfdcfee6fa221/server.json",
+        "https://github.com/faulkj/fhirHydrant/blob/caba5aa0cc782c71f9ebe78bd79cfdcfee6fa221/ts/server.ts"
+      ]
+    }
+  },
+  {
+    "id": "RWE-0260",
+    "name": "prismAId",
+    "category": "Literature & Evidence Synthesis",
+    "summary": "Library and MCP tools for literature-search, screening and evidence-review workflows.",
+    "capabilities": [
+      "Search, screen, retrieve and convert literature",
+      "Support structured review and reporting-conformance checks"
+    ],
+    "limitation": "LLM screening and extraction require human checking. Reporting or SHACL conformance does not establish review completeness or methodological validity.",
+    "kind": "Library + MCP server",
+    "access": "See pinned project setup; external data access may require credentials.",
+    "tags": [
+      "Literature",
+      "Library + MCP server"
+    ],
+    "workflowFit": [
+      "Literature & Evidence Synthesis",
+      "Source inspection and research preparation"
+    ],
+    "added": "Sep 7, 2026",
+    "checked": "Sep 7, 2026",
+    "status": "Static source and documentation reviewed",
+    "runtime": "Not independently runtime tested by registry",
+    "repository": "open-and-sustainable/prismaid",
+    "website": "https://github.com/open-and-sustainable/prismaid",
+    "packages": "See pinned project manifest and setup documentation",
+    "url": "https://github.com/open-and-sustainable/prismaid",
+    "verification": {
+      "reviewedAt": "2026-09-07",
+      "repositoryStatus": "available",
+      "commit": "9457f7cfd2043f14a6d88019787692fdf2e1a985",
+      "pushedAt": "2026-08-20T10:34:10Z",
+      "stars": 28,
+      "license": "AGPL-3.0",
+      "sources": [
+        "https://github.com/open-and-sustainable/prismaid/blob/9457f7cfd2043f14a6d88019787692fdf2e1a985/README.md",
+        "https://github.com/open-and-sustainable/prismaid/blob/9457f7cfd2043f14a6d88019787692fdf2e1a985/server.json"
+      ]
+    }
+  },
+  {
+    "id": "RWE-0261",
+    "name": "Biolab MCP Server",
+    "category": "Literature & Evidence Synthesis",
+    "summary": "Literature and trial retrieval tools with source identifiers and query-audit records.",
+    "capabilities": [
+      "Search PubMed, Europe PMC, ClinicalTrials.gov and preprint sources",
+      "Retrieve source records and maintain query provenance"
+    ],
+    "limitation": "An audit trail records actions rather than validating evidence synthesis. Check source coverage, retention and the sensitivity of externally transmitted queries.",
+    "kind": "MCP server",
+    "access": "See pinned project setup; external data access may require credentials.",
+    "tags": [
+      "Literature",
+      "MCP server"
+    ],
+    "workflowFit": [
+      "Literature & Evidence Synthesis",
+      "Source inspection and research preparation"
+    ],
+    "added": "Sep 7, 2026",
+    "checked": "Sep 7, 2026",
+    "status": "Static source and documentation reviewed",
+    "runtime": "Not independently runtime tested by registry",
+    "repository": "srikarjy/biolab-mcp-server",
+    "website": "https://github.com/srikarjy/biolab-mcp-server",
+    "packages": "See pinned project manifest and setup documentation",
+    "url": "https://github.com/srikarjy/biolab-mcp-server",
+    "verification": {
+      "reviewedAt": "2026-09-07",
+      "repositoryStatus": "available",
+      "commit": "0bfb24074b7480c0455f5c117b274bc83e815f44",
+      "pushedAt": "2026-08-15T08:45:30Z",
+      "stars": 1,
+      "license": "MIT",
+      "sources": [
+        "https://github.com/srikarjy/biolab-mcp-server/blob/0bfb24074b7480c0455f5c117b274bc83e815f44/README.md",
+        "https://github.com/srikarjy/biolab-mcp-server/blob/0bfb24074b7480c0455f5c117b274bc83e815f44/pyproject.toml",
+        "https://github.com/srikarjy/biolab-mcp-server/blob/0bfb24074b7480c0455f5c117b274bc83e815f44/server.json",
+        "https://github.com/srikarjy/biolab-mcp-server/blob/0bfb24074b7480c0455f5c117b274bc83e815f44/biolab/server.py"
+      ]
+    }
+  },
+  {
+    "id": "RWE-0262",
+    "name": "OHDSI StudyAgent",
+    "category": "Trials & Study Design",
+    "summary": "Study-design agent harness with deterministic MCP components for OHDSI workflows.",
+    "capabilities": [
+      "Assist vocabulary, concept-set and phenotype work",
+      "Coordinate study-intent and validation steps through an agent workflow"
+    ],
+    "limitation": "Human review remains necessary for study intent and methods. Schema or tool validation does not validate identification assumptions; database execution requires governed access.",
+    "kind": "Agent harness + MCP components",
+    "access": "See pinned project setup; external data access may require credentials.",
+    "tags": [
+      "Trials",
+      "Agent harness + MCP components"
+    ],
+    "workflowFit": [
+      "Trials & Study Design",
+      "Source inspection and research preparation"
+    ],
+    "added": "Sep 7, 2026",
+    "checked": "Sep 7, 2026",
+    "status": "Static source and documentation reviewed",
+    "runtime": "Not independently runtime tested by registry",
+    "repository": "OHDSI/StudyAgent",
+    "website": "https://github.com/OHDSI/StudyAgent",
+    "packages": "See pinned project manifest and setup documentation",
+    "url": "https://github.com/OHDSI/StudyAgent",
+    "verification": {
+      "reviewedAt": "2026-09-07",
+      "repositoryStatus": "available",
+      "commit": "489aabd9ab7141fa322a2d13d4212b2477c15903",
+      "pushedAt": "2026-09-05T16:14:40Z",
+      "stars": 12,
+      "license": "Not specified",
+      "sources": [
+        "https://github.com/OHDSI/StudyAgent/blob/489aabd9ab7141fa322a2d13d4212b2477c15903/README.md",
+        "https://github.com/OHDSI/StudyAgent/blob/489aabd9ab7141fa322a2d13d4212b2477c15903/pyproject.toml",
+        "https://github.com/OHDSI/StudyAgent/blob/489aabd9ab7141fa322a2d13d4212b2477c15903/acp_agent/study_agent_acp/server.py",
+        "https://github.com/OHDSI/StudyAgent/blob/489aabd9ab7141fa322a2d13d4212b2477c15903/core/study_agent_core/tools.py",
+        "https://github.com/OHDSI/StudyAgent/blob/489aabd9ab7141fa322a2d13d4212b2477c15903/mcp_server/study_agent_mcp/server.py"
+      ]
+    }
+  },
+  {
+    "id": "RWE-0263",
+    "name": "Slash OHDSI Strategus Assistant",
+    "category": "Trials & Study Design",
+    "summary": "R and agent integration for constructing and running OHDSI Strategus analyses.",
+    "capabilities": [
+      "Guide incidence and CohortMethod analysis workflows",
+      "Support phenotype acquisition, checkpoints and resumable study execution"
+    ],
+    "limitation": "Not a standalone MCP server. Requires an appropriate OHDSI environment and review of cohort definitions, database permissions and statistical design.",
+    "kind": "R package + agent integration",
+    "access": "See pinned project setup; external data access may require credentials.",
+    "tags": [
+      "Trials",
+      "R package + agent integration"
+    ],
+    "workflowFit": [
+      "Trials & Study Design",
+      "Source inspection and research preparation"
+    ],
+    "added": "Sep 7, 2026",
+    "checked": "Sep 7, 2026",
+    "status": "Static source and documentation reviewed",
+    "runtime": "Not independently runtime tested by registry",
+    "repository": "OHDSI/SlashOhdsiStrategusAssistant",
+    "website": "https://github.com/OHDSI/SlashOhdsiStrategusAssistant",
+    "packages": "See pinned project manifest and setup documentation",
+    "url": "https://github.com/OHDSI/SlashOhdsiStrategusAssistant",
+    "verification": {
+      "reviewedAt": "2026-09-07",
+      "repositoryStatus": "available",
+      "commit": "84d16bef6b7bb08810820ddf2da79f3022e33497",
+      "pushedAt": "2026-09-05T16:15:35Z",
+      "stars": 1,
+      "license": "Not specified",
+      "sources": [
+        "https://github.com/OHDSI/SlashOhdsiStrategusAssistant/blob/84d16bef6b7bb08810820ddf2da79f3022e33497/DESCRIPTION",
+        "https://github.com/OHDSI/SlashOhdsiStrategusAssistant/blob/84d16bef6b7bb08810820ddf2da79f3022e33497/README.md"
+      ]
+    }
+  },
+  {
+    "id": "RWE-0264",
+    "name": "Biomedical Terminology Service",
+    "category": "OMOP & terminology",
+    "summary": "Self-hosted terminology service with REST, GraphQL, FHIR and MCP interfaces.",
+    "capabilities": [
+      "Search terminology concepts and mappings",
+      "Expose semantic terminology access through multiple interfaces"
+    ],
+    "limitation": "Vocabulary datasets and licenses are separate from server code. Check versions, mapping relationships and local indexing before using concepts in phenotypes.",
+    "kind": "Terminology service + MCP interface",
+    "access": "See pinned project setup; external data access may require credentials.",
+    "tags": [
+      "OMOP",
+      "Terminology service + MCP interface"
+    ],
+    "workflowFit": [
+      "OMOP & terminology",
+      "Source inspection and research preparation"
+    ],
+    "added": "Sep 7, 2026",
+    "checked": "Sep 7, 2026",
+    "status": "Static source and documentation reviewed",
+    "runtime": "Not independently runtime tested by registry",
+    "repository": "Firefox2100/biomedical-terminology-service",
+    "website": "https://github.com/Firefox2100/biomedical-terminology-service",
+    "packages": "See pinned project manifest and setup documentation",
+    "url": "https://github.com/Firefox2100/biomedical-terminology-service",
+    "verification": {
+      "reviewedAt": "2026-09-07",
+      "repositoryStatus": "available",
+      "commit": "951933b574cb90f745108ba8a58bc73fd9ef944f",
+      "pushedAt": "2026-08-28T12:37:29Z",
+      "stars": 0,
+      "license": "MIT",
+      "sources": [
+        "https://github.com/Firefox2100/biomedical-terminology-service/blob/951933b574cb90f745108ba8a58bc73fd9ef944f/README.md",
+        "https://github.com/Firefox2100/biomedical-terminology-service/blob/951933b574cb90f745108ba8a58bc73fd9ef944f/pyproject.toml",
+        "https://github.com/Firefox2100/biomedical-terminology-service/blob/951933b574cb90f745108ba8a58bc73fd9ef944f/src/bioterms/mcp_api/tool.py"
+      ]
+    }
+  },
+  {
+    "id": "RWE-0265",
+    "name": "LangCare MCP FHIR",
+    "category": "Clinical Data & Interoperability",
+    "summary": "Go MCP connector exposing generic FHIR operations across configured backends.",
+    "capabilities": [
+      "Read and search FHIR resources",
+      "Create and update resources through supported backend adapters"
+    ],
+    "limitation": "Contains write operations. Endpoint compatibility, patient authorization and privacy controls must be configured and verified; no compliance certification is implied.",
+    "kind": "MCP server",
+    "access": "Configured GCP, Epic, Cerner or other supported FHIR backend; applicable SMART credentials.",
+    "tags": [
+      "Clinical Data",
+      "MCP server"
+    ],
+    "workflowFit": [
+      "Clinical Data & Interoperability",
+      "Source inspection and research preparation"
+    ],
+    "added": "Sep 7, 2026",
+    "checked": "Sep 7, 2026",
+    "status": "Static source and documentation reviewed",
+    "runtime": "Not independently runtime tested by registry",
+    "repository": "mosaic-care/langcare-mcp-fhir",
+    "website": "https://github.com/mosaic-care/langcare-mcp-fhir",
+    "packages": "See pinned project manifest and setup documentation",
+    "url": "https://github.com/mosaic-care/langcare-mcp-fhir",
+    "verification": {
+      "reviewedAt": "2026-09-07",
+      "repositoryStatus": "available",
+      "commit": "430598bb5a76619ef55fa34fb1fd90c65f3d4783",
+      "pushedAt": "2026-09-06T19:23:05Z",
+      "stars": 0,
+      "license": "MIT",
+      "sources": [
+        "https://github.com/mosaic-care/langcare-mcp-fhir/blob/430598bb5a76619ef55fa34fb1fd90c65f3d4783/README.md",
+        "https://github.com/mosaic-care/langcare-mcp-fhir/blob/430598bb5a76619ef55fa34fb1fd90c65f3d4783/package.json",
+        "https://github.com/mosaic-care/langcare-mcp-fhir/blob/430598bb5a76619ef55fa34fb1fd90c65f3d4783/server.json",
+        "https://github.com/mosaic-care/langcare-mcp-fhir/blob/430598bb5a76619ef55fa34fb1fd90c65f3d4783/cma/skills/care-coordination/care-gaps/SKILL.md",
+        "https://github.com/mosaic-care/langcare-mcp-fhir/blob/430598bb5a76619ef55fa34fb1fd90c65f3d4783/cma/skills/care-coordination/discharge-planning/SKILL.md",
+        "https://github.com/mosaic-care/langcare-mcp-fhir/blob/430598bb5a76619ef55fa34fb1fd90c65f3d4783/cma/skills/care-coordination/follow-up-tasks/SKILL.md"
+      ]
+    }
+  },
+  {
+    "id": "RWE-0266",
+    "name": "M4 Clinical Research",
+    "category": "Clinical Data & Interoperability",
+    "summary": "Clinical-research toolkit for querying structured records and notes in supported research datasets.",
+    "capabilities": [
+      "Explore MIMIC, eICU or configured custom data",
+      "Use Python and agent workflows for tabular and note-based analyses"
+    ],
+    "limitation": "Dataset licenses and access approvals apply separately. Review generated queries and code, note handling and cohort definitions; results are not clinically validated.",
+    "kind": "Research toolkit + agent/MCP integration",
+    "access": "See pinned project setup; external data access may require credentials.",
+    "tags": [
+      "Clinical Data",
+      "Research toolkit + agent/MCP integration"
+    ],
+    "workflowFit": [
+      "Clinical Data & Interoperability",
+      "Source inspection and research preparation"
+    ],
+    "added": "Sep 7, 2026",
+    "checked": "Sep 7, 2026",
+    "status": "Static source and documentation reviewed",
+    "runtime": "Not independently runtime tested by registry",
+    "repository": "hannesill/m4",
+    "website": "https://github.com/hannesill/m4",
+    "packages": "See pinned project manifest and setup documentation",
+    "url": "https://github.com/hannesill/m4",
+    "verification": {
+      "reviewedAt": "2026-09-07",
+      "repositoryStatus": "available",
+      "commit": "6ed55907679157e3dff46e99da487bb969c04a9c",
+      "pushedAt": "2026-07-28T17:25:24Z",
+      "stars": 43,
+      "license": "MIT",
+      "sources": [
+        "https://github.com/hannesill/m4/blob/6ed55907679157e3dff46e99da487bb969c04a9c/README.md",
+        "https://github.com/hannesill/m4/blob/6ed55907679157e3dff46e99da487bb969c04a9c/pyproject.toml",
+        "https://github.com/hannesill/m4/blob/6ed55907679157e3dff46e99da487bb969c04a9c/benchmark/tasks/apsiii/mimic-apsiii-24h-raw/skills-decoy/sofa-score/SKILL.md",
+        "https://github.com/hannesill/m4/blob/6ed55907679157e3dff46e99da487bb969c04a9c/benchmark/tasks/apsiii/mimic-apsiii-24h-raw/skills-rawsql/mimic-apsiii-24h-raw/SKILL.md",
+        "https://github.com/hannesill/m4/blob/6ed55907679157e3dff46e99da487bb969c04a9c/benchmark/tasks/apsiii/mimic-apsiii-24h-raw/skills/apsiii-score/SKILL.md"
+      ]
+    }
+  },
+  {
+    "id": "RWE-0267",
+    "name": "Trends MCP",
+    "category": "Literature & Evidence Synthesis",
+    "summary": "Configurable trend-source aggregator with PubMed and FDA device-source connectors.",
+    "capabilities": [
+      "Retrieve PubMed abstracts and supported FDA device records",
+      "Configure source definitions for ongoing evidence discovery"
+    ],
+    "limitation": "Only biomedical source connectors are in scope here. Coverage is not an exhaustive review; configuration tools write local settings and may require restart.",
+    "kind": "MCP server",
+    "access": "See pinned project setup; external data access may require credentials.",
+    "tags": [
+      "Literature",
+      "MCP server"
+    ],
+    "workflowFit": [
+      "Literature & Evidence Synthesis",
+      "Source inspection and research preparation"
+    ],
+    "added": "Sep 7, 2026",
+    "checked": "Sep 7, 2026",
+    "status": "Static source and documentation reviewed",
+    "runtime": "Not independently runtime tested by registry",
+    "repository": "salwks/mcp-techTrend",
+    "website": "https://github.com/salwks/mcp-techTrend",
+    "packages": "See pinned project manifest and setup documentation",
+    "url": "https://github.com/salwks/mcp-techTrend",
+    "verification": {
+      "reviewedAt": "2026-09-07",
+      "repositoryStatus": "available",
+      "commit": "de0d00f995e19cc3d2486870f85ca067bc5679ce",
+      "pushedAt": "2026-05-20T22:57:02Z",
+      "stars": 5,
+      "license": "MIT",
+      "sources": [
+        "https://github.com/salwks/mcp-techTrend/blob/de0d00f995e19cc3d2486870f85ca067bc5679ce/README.md",
+        "https://github.com/salwks/mcp-techTrend/blob/de0d00f995e19cc3d2486870f85ca067bc5679ce/pyproject.toml"
+      ]
+    }
+  }
+]

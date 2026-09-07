@@ -1,0 +1,72 @@
+[
+  {
+    "id": "RWE-0257",
+    "name": "DAG Studio WebMCP",
+    "kind": "WebMCP + remote MCP bridge",
+    "category": "Causal Inference & Analytics",
+    "summary": "Shared causal DAG canvas where a researcher and an agent inspect, edit, analyze, and simulate the same graph through nine predefined tools.",
+    "tags": ["Live DAG canvas", "Adjustment sets", "WebMCP"],
+    "added": "Sep 6, 2026",
+    "checked": "Sep 6, 2026",
+    "status": "Static documentation, tool definitions, and official registry metadata reviewed",
+    "runtime": "Not independently runtime tested by registry",
+    "repository": "Black-Swan-Causal-Labs/dag-studio-webmcp",
+    "website": "https://dag-studio-webmcp-sandbox.pages.dev",
+    "packages": "io.github.Black-Swan-Causal-Labs/dag-studio-webmcp 1.0.0",
+    "workflowFit": ["Causal-assumption review", "Adjustment-set exploration", "Study-design collaboration"],
+    "capabilities": ["Read the live DAG and make visible, undoable node and edge edits", "Analyze backdoor paths and adjustment sets; generate R or Python code", "Simulate linear Gaussian SEM data under the encoded graph assumptions"],
+    "limitation": "Causal conclusions depend on researcher-supplied assumptions. This canvas integration is distinct from dagstudio-mcp. Remote use requires Connect MCP, a custom Authorization header, and an open tab; keys expire after two hours and study content passes through a relay to the agent provider.",
+    "url": "https://github.com/Black-Swan-Causal-Labs/dag-studio-webmcp",
+    "verification": {
+      "reviewedAt": "2026-09-06",
+      "repositoryStatus": "available",
+      "pushedAt": "2026-09-07T06:11:54Z",
+      "stars": 0,
+      "license": "MIT",
+      "officialRegistryName": "io.github.Black-Swan-Causal-Labs/dag-studio-webmcp",
+      "officialRegistryVersion": "1.0.0",
+      "officialRegistryStatus": "active",
+      "sources": [
+        "https://github.com/Black-Swan-Causal-Labs/dag-studio-webmcp/blob/main/README.md",
+        "https://github.com/Black-Swan-Causal-Labs/dag-studio-webmcp/blob/main/webmcp-tools.js",
+        "https://github.com/Black-Swan-Causal-Labs/dag-studio-webmcp/blob/main/mcp-bridge/README.md",
+        "https://registry.modelcontextprotocol.io/v0.1/servers/io.github.Black-Swan-Causal-Labs%2Fdag-studio-webmcp/versions/latest"
+      ]
+    }
+  },
+  {
+    "id": "RWE-0258",
+    "name": "Study Design Diagram Studio WebMCP",
+    "kind": "WebMCP + remote MCP bridge",
+    "category": "Trials & Study Design",
+    "summary": "Shared epidemiologic study-design workspace exposing ten tools for timeline windows, study details, completeness review, and SVG schematic export.",
+    "tags": ["Study-design timelines", "Assessment windows", "WebMCP"],
+    "added": "Sep 6, 2026",
+    "checked": "Sep 6, 2026",
+    "status": "Static documentation, tool definitions, and official registry metadata reviewed",
+    "runtime": "Not independently runtime tested by registry",
+    "repository": "Black-Swan-Causal-Labs/study-design-diagram-studio",
+    "website": "https://sdds.blackswancausallabs.com",
+    "packages": "io.github.Black-Swan-Causal-Labs/sdds-webmcp 1.0.0",
+    "workflowFit": ["Protocol-to-diagram specification", "Time-zero and assessment-window review", "Study-design communication"],
+    "capabilities": ["Read and edit washout, eligibility, covariate, and follow-up windows relative to an index event", "Update study details, reorder rows, and import or clear designs with revision checks and Undo", "Check information completeness and return an SVG schematic; the manual UI also exports JSON, PDF, and editable PowerPoint"],
+    "limitation": "Completeness checks do not establish methodological validity or source accuracy, and the app does not extract PDFs. Save JSON to preserve session-only edits. Remote use requires an open tab and a temporary Authorization key; content passes through a relay. No application-source license is granted.",
+    "url": "https://github.com/Black-Swan-Causal-Labs/study-design-diagram-studio",
+    "verification": {
+      "reviewedAt": "2026-09-06",
+      "repositoryStatus": "available",
+      "pushedAt": "2026-09-07T06:18:09Z",
+      "stars": 0,
+      "license": "No application-source license granted",
+      "officialRegistryName": "io.github.Black-Swan-Causal-Labs/sdds-webmcp",
+      "officialRegistryVersion": "1.0.0",
+      "officialRegistryStatus": "active",
+      "sources": [
+        "https://github.com/Black-Swan-Causal-Labs/study-design-diagram-studio/blob/main/README.md",
+        "https://github.com/Black-Swan-Causal-Labs/study-design-diagram-studio/blob/main/lib/study/webmcp.ts",
+        "https://github.com/Black-Swan-Causal-Labs/study-design-diagram-studio/blob/main/mcp-bridge/README.md",
+        "https://registry.modelcontextprotocol.io/v0.1/servers/io.github.Black-Swan-Causal-Labs%2Fsdds-webmcp/versions/latest"
+      ]
+    }
+  }
+]

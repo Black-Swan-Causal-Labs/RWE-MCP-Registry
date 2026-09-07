@@ -8,7 +8,7 @@ The public registry is available at [black-swan-causal-labs.github.io/RWE-MCP-Re
 
 The [`public-data`](public-data) directory contains the external-facing workbook of reviewed RWE capability cards:
 
-- [`rwe-mcp-verified-capability-cards.xlsx`](public-data/rwe-mcp-verified-capability-cards.xlsx) — 130 reviewed capability cards covering study design, evidence synthesis, clinical interoperability, OMOP/terminology, pharmacovigilance, regulatory data, public health, and RWE infrastructure.
+- [`rwe-mcp-verified-capability-cards.xlsx`](public-data/rwe-mcp-verified-capability-cards.xlsx) — 177 reviewed capability cards covering study design, evidence synthesis, clinical interoperability, OMOP/terminology, pharmacovigilance, regulatory data, public health, and RWE infrastructure. The September 6, 2026 additions include DAG Studio WebMCP and Study Design Diagram Studio WebMCP, both listed in the official MCP Registry. The September 7 expansion adds 45 source-reviewed capabilities across clinical data, evidence retrieval, analytics, terminology, safety and research workflows; skills and agent integrations are labeled separately from standalone MCP servers.
 
 The workbook includes identity and static documentation review only. Inclusion does not mean that a project has passed installation, runtime, security, privacy, clinical, or methodological validation.
 
