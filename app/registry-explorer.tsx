@@ -4,6 +4,7 @@ import { useMemo, useState } from "react";
 import expansionCards from "../data/approved-expansion.json";
 import expansionCards2 from "../data/approved-expansion-2.json";
 import webmcpCards from "../data/reviewed-webmcp.json";
+import reviewedExpansionCards from "../data/reviewed-expansion-2026-09-07.json";
 
 type Entry = {
   name: string; org: string; url: string; kind: string; category: string;
@@ -52,7 +53,7 @@ export function RegistryExplorer() {
           <div className="update-stamp" aria-label="Registry update schedule">
             <strong>Updated<br />weekly</strong>
             <span>Last reviewed</span>
-            <time dateTime="2026-09-06">Sep 6, 2026</time>
+            <time dateTime="2026-09-07">Sep 7, 2026</time>
           </div>
         </div>
         <div className="signal-line" aria-hidden="true" />
@@ -116,7 +117,7 @@ const originalCards = [
   { name:"Pharmaceutical & Bioequivalence Intelligence MCP", kind:"MCP server", category:"Pharmacovigilance & safety", summary:"Multi-source pharmaceutical intelligence server for drug records, interactions, FAERS adverse events, WHO, TGA, FDA NDI, and ChEMBL context.", tags:["Drug safety","FAERS","Interactions"], added:"Jul 23, 2026", checked:"Jul 23, 2026", status:"Static implementation and documentation reviewed · caveat", runtime:"Not independently runtime tested", repository:"rootsbymenda/pharma-mcp-server", website:"GitHub", packages:"pharma-regulatory", workflowFit:["Safety-case research","Drug and interaction context","Regulatory evidence scoping"], capabilities:["Drug lookup and interaction checks","FAERS adverse-event summaries","Cross-source pharmaceutical search with source links"], limitation:"The repository describes bounded local datasets for several sources, including a small FAERS subset, so results are not comprehensive or incidence estimates. Interaction severity and management text require clinical and primary-source verification.", url:"https://github.com/rootsbymenda/pharma-mcp-server" },
 ];
 
-const prototypeCards = [...originalCards, ...expansionCards, ...expansionCards2, ...webmcpCards];
+const prototypeCards = [...originalCards, ...expansionCards, ...expansionCards2, ...webmcpCards, ...reviewedExpansionCards];
 
 function CardPrototype() {
   const [expanded, setExpanded] = useState<string | null>(null);
