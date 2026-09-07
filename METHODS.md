@@ -1,8 +1,22 @@
 # RWE MCP Registry — Search and Indexing Methods
 
-**Protocol version:** 0.4-draft
-**Last updated:** 2026-07-11
+**Protocol version:** 0.5-draft
+**Last updated:** 2026-09-07
 **Status:** Living document; revise before each search wave and record material changes.
+
+## Current release and completed September pass
+
+The catalogue contains 177 cards: the prior 130, two Black Swan WebMCP studios, and 45 inclusions from a separate 59-candidate static review (7 held, 7 excluded). This selected review pool is not the entire remaining backlog. The two studios have exact Official MCP Registry identifiers; catalogue inclusion does not imply every entry is officially listed.
+
+All 177 published URLs resolved in the September 7 availability pass. GitHub archive status and canonical redirects were recorded. These checks do not renew earlier capability-review dates. Candidate projects were not installed or runtime-tested; registry website builds are separate.
+
+The discovery pass retrieved 282 Official MCP Registry pages with 28,167 unique latest-version records. This was live pagination, not a transactionally frozen snapshot or individual review of every record. GitHub retrieval covered 20 queries capped at 30 results each, sorted by update time; exhaustive code search was not completed. Smithery covered 27 paginated queries (1,686 unique listings; 70 broad discovery matches). The Docker checkout contained 496 files and one server.yaml vocabulary match. Two curated lists and targeted web/Glama searches supported chaining. PulseMCP, MCP.so and other commercial directories were not exhaustively harvested. Source counts overlap.
+
+The full matrix, documented PopHIVE recovery control and two zero-yield expansion rounds were not completed. The exhaustive stopping rule below was **not met**. Exact recorded queries and limits are in [the public search log](public-data/search-log-2026-09-07.json); raw snapshots and unpublished candidate decisions remain in the local editorial audit.
+
+Static review includes documentation and selected implementation/tool-definition files where available. Hosted NexVigilant received documentation-only review. The current cards report specific Status and Runtime evidence rather than a provenance/maintenance tier. The gold star identifies a Black Swan Causal Labs product; it does not signify independent endorsement or validation.
+
+Historical passes below retain their original denominators and decisions; they are not current catalogue or backlog totals.
 
 ## Purpose
 
@@ -18,7 +32,7 @@ The search is designed for high recall during discovery. Relevance, provenance, 
 4. **Curated registries and catalogues:** PulseMCP, Smithery, Glama, mcp.so, awesome lists, and domain-specific skill collections.
 5. **Citation chaining:** related repositories, organization accounts, dependencies, companion servers, forks, and references discovered from screened candidates.
 
-Each run records the source, exact query or retrieval method, retrieval date, result count, and candidate disposition.
+The protocol calls for each run to record the source, exact query or retrieval method, retrieval date, result count, and candidate disposition. Completed coverage and deviations must be stated for each run.
 
 ## Discovery model
 
@@ -46,7 +60,7 @@ Searches pair at least one **technology signal** with at least one **RWE or heal
 
 ## Controlled vocabulary
 
-Terms are searched as acronyms, expanded forms, singular/plural forms, and predictable punctuation or capitalization variants where applicable.
+The vocabulary guides query construction using acronyms, expanded forms, singular/plural forms, and predictable punctuation or capitalization variants. Listing a term does not mean every corresponding query has been run.
 
 ### Core RWE, HEOR, effectiveness, and epidemiology
 
@@ -137,7 +151,7 @@ Broad terms such as `disease`, `treatment`, `FDA`, `connector`, `bias`, or `safe
 
 ## Query construction
 
-Queries are run as a reproducible matrix rather than one large Boolean expression:
+The intended query matrix, rather than one large Boolean expression, is:
 
 `technology signal × controlled-vocabulary concept block`
 
@@ -231,7 +245,7 @@ Potential research questions may be retained as internal editorial annotations, 
 
 ### Website card presentation
 
-Catalogue cards use a three-column, compact, expandable pattern rather than a separate detail page or a visual flip effect. The layout reduces to two columns on intermediate screens and one column on phones. The collapsed card supports rapid scanning and contains only the name, packaging kind, RWE category, one-sentence RWE summary, no more than three capability tags, date added, date last checked, metadata-review status, and runtime-test status. Selecting the card expands it in place using a visible button that also works with keyboard and touch input.
+Catalogue cards are compact and expandable. The collapsed card shows the name, packaging kind, RWE category, summary, capability tags, date added and latest source check. Status, Runtime and the separate capability-review date appear in the expanded details. Selecting the card expands it in place using a visible button that also works with keyboard and touch input.
 
 The expanded area remains deliberately brief. The selected design shows **RWE workflow fit** as a small set of labels, **documented capabilities** as a short list, one concise limitation, and operational source fields such as status, repository, website, and packages. Potential research questions are intentionally omitted from the public card because they can imply that a capability has been validated to answer a research question, require substantial interpretive maintenance, and are difficult to attribute correctly for heterogeneous collections. Detailed screening rationale, full provenance notes, reviewer identity, discovery queries, duplicate logic, research-question annotations, and technical audit fields remain in the underlying registry dataset rather than the public card.
 
@@ -248,25 +262,21 @@ For example, `GPTomics/bioSkills` is a broad bioinformatics skill collection. Po
 
 ### Catalogue dates and freshness
 
-The underlying registry records distinct maintenance dates:
+The current public cards distinguish:
 
-- `date_discovered`: first observed during a documented search.
-- `date_added`: approved for inclusion in the public catalogue.
-- `date_metadata_checked`: most recent review of repository, listing, package, and documentation metadata.
-- `date_runtime_validated`: most recent isolated functional test, when performed.
-- `date_status_changed`: most recent change in availability or catalogue disposition.
+- **Added**: original catalogue inclusion date.
+- **Checked**: latest source-availability check from `data/source-checks.json`, with timestamps stored in UTC. GitHub responses also retain canonical redirects and archive status.
+- **Capability review**: the card's separate `checked` field, displayed in expanded details; describes the earlier static documentation or implementation review. The workbook retains this review date.
 
-Only date added and date last checked are required on the public card. A runtime-validation date is displayed only when runtime validation has actually occurred. Absence of a runtime date must not be interpreted as failure.
-
-Freshness labels are derived from `date_metadata_checked`: **Current** for 0–35 days, **Review due** for 36–60 days, and **Overdue** after 60 days. **Unavailable** is a separate source-resolution state rather than a freshness category.
+Availability checks do not imply updated documentation review, runtime testing or methodological validation. Added dates are not overwritten by later checks. No Current/Review due/Overdue freshness badges are currently implemented. Runtime evidence is stated separately; no runtime test date is invented.
 
 ### Discovery and audit cadence
 
-A weekly discovery run searches the documented public sources for new MCP servers, skills, connectors, collections, packages, and materially changed listings. New discoveries enter a review queue, are deduplicated against canonical URLs and known aliases, and are not automatically published.
+The target is a weekly discovery run that searches the documented public sources for new MCP servers, skills, connectors, collections, packages, and materially changed listings. New discoveries enter a review queue, are deduplicated against canonical URLs and known aliases, and are not automatically published.
 
-A monthly catalogue audit reviews the entire published catalogue for repository and listing availability, redirects, archive status, package or implementation removal, material documentation changes, and freshness. The audit updates `date_metadata_checked`; unavailable or materially changed records are flagged for human review rather than silently deleted. Runtime and security testing remain separate activities and are not implied by the monthly metadata audit.
+The target monthly catalogue audit reviews the entire published catalogue for repository and listing availability, redirects, archive status, package or implementation removal, material documentation changes, and freshness. Each completed audit records the specific evidence and dates it actually checked; unavailable or materially changed records are flagged for human review rather than silently deleted. Runtime and security testing remain separate activities and are not implied by the monthly metadata audit.
 
-Publication and RWE interpretation remain human-reviewed. Automated discovery or metadata checks may identify changes, but they do not independently approve entries, generate final research-question claims, or establish methodological, security, privacy, clinical, or regulatory fitness.
+Publication and RWE interpretation require editorial review; tool-assisted review is not an independent expert-validation claim. Automated discovery or metadata checks may identify changes, but they do not independently approve entries, generate final research-question claims, or establish methodological, security, privacy, clinical, or regulatory fitness.
 
 ### Evidence ladder
 
@@ -285,20 +295,20 @@ Future assessment should record specific evidence states rather than using a sin
 11. Security review completed
 12. RWE use case evaluated by an appropriate subject-matter reviewer
 
-The current work is primarily at levels 1–3. No candidate received runtime, security, clinical, methodological, or regulatory validation during Search Wave 2.
+The historical Search Wave 2 work was primarily at levels 1–3. Later cards include static source review where documented; the ladder is an assessment framework, not a universal score. No candidate received runtime, security, clinical, methodological, or regulatory validation during Search Wave 2.
 
 ## Stopping rule
 
-A search wave is complete when all predefined queries have been run across applicable sources; the complete Official MCP Registry snapshot has been screened; two successive synonym-expansion and citation-chaining rounds produce no new eligible projects; every candidate has a recorded disposition; and known gaps are preserved as explicit null findings.
+A search wave is complete when all predefined queries have been run across applicable sources; the complete Official MCP Registry snapshot has been screened; two successive synonym-expansion and citation-chaining rounds produce no new eligible projects; every candidate has a recorded disposition; and known gaps are recorded as unsearched or incomplete coverage, not as negative findings. The September 2026 pass did not meet this stopping rule.
 
 ## Known limitations
 
 - **Public-discovery boundary:** the index cannot observe private GitHub repositories, enterprise source-control systems, internal MCP deployments, unpublished skills, access-controlled packages, or public projects that are not sufficiently indexed or documented. Absence from the registry means “not found in the searched public sources as of the index date,” not “does not exist.”
 - Registry and repository metadata can be incomplete, promotional, or stale.
-- Official MCP Registry data is in preview and may change or reset.
+- The Official MCP Registry is a changing source; pagination may span updates.
 - Code search coverage depends on authentication, indexing, and repository visibility.
-- Tiering is an editorial assessment based on public metadata unless code execution or review is explicitly recorded.
+- Public status descriptions reflect the documented review scope, not a validation tier.
 - Inclusion in the index is not security, privacy, clinical, methodological, or regulatory validation.
 - Search Wave 2 deliberately favored recall. First-stage screening excluded 32 of the 123 new candidates; the 91 provisional inclusions still require verification and may be reclassified when canonical identity, implementation, duplication, or documentation cannot be confirmed.
 - Smithery results are based on registry descriptions and require canonical-repository resolution and implementation confirmation.
-- PulseMCP remains credential-blocked, and several Mastra-listed directories remain inventoried but not exhaustively screened.
+- In the September pass, PulseMCP was not harvested because credentials were not configured; other directories remained incompletely searched.

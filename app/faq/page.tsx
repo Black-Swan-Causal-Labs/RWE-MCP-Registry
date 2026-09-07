@@ -45,6 +45,10 @@ const faqGroups = [
         answer: "Not unless a record explicitly says so. The current public batches primarily reflect identity, metadata, documentation, and implementation review. Runtime testing is a separate evidence level and must be performed in an isolated, risk-scoped environment.",
       },
       {
+        question: "What do the card dates and gold stars mean?",
+        answer: "Added is the original catalogue inclusion date. Checked is the latest source-availability check; expanded cards separately show the capability-review date. An availability check does not repeat a static review or validate tool behavior. A gold star identifies a Black Swan Causal Labs product, not an independent quality or validation rating.",
+      },
+      {
         question: "How should workflow-fit labels be interpreted?",
         answer: "Workflow-fit labels are concise editorial translations of documented capabilities. They identify a plausible role in an RWE process; they do not establish fitness for a particular study, dataset, decision, or regulatory use.",
       },
@@ -64,7 +68,7 @@ const faqGroups = [
       },
       {
         question: "How are new projects discovered?",
-        answer: "The search combines structured registries, public registry repositories, GitHub repository and code search, curated catalogues, predefined RWE terminology, and citation chaining. Each run records its sources, retrieval methods, dates, and coverage limitations.",
+        answer: "The protocol combines structured registries, GitHub, curated catalogues, predefined RWE terminology and citation chaining. Actual coverage varies: the September pass used bounded repository searches and did not complete exhaustive code or directory searches. The Methods page distinguishes planned coverage from completed work.",
       },
       {
         question: "How are duplicates, renamed projects, and unavailable sources handled?",

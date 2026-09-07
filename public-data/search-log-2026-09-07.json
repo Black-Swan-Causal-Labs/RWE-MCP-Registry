@@ -1,0 +1,152 @@
+{
+  "retrievedAt": "2026-09-07T06:21:37.290Z",
+  "scope": "Recorded discovery queries and retrieval limits; source counts overlap and are not a unique candidate total. This pass did not meet the exhaustive stopping rule.",
+  "log": [
+    {
+      "source": "Official MCP Registry",
+      "status": "complete latest-version pagination",
+      "pages": 282,
+      "count": 28167
+    },
+    {
+      "source": "GitHub repository search",
+      "query": "\"real world evidence\" MCP in:name,description,readme",
+      "status": "partial: first 30 by updated",
+      "count": 30,
+      "total": 113
+    },
+    {
+      "source": "GitHub repository search",
+      "query": "\"causal inference\" MCP in:name,description,readme",
+      "status": "partial: first 30 by updated",
+      "count": 30,
+      "total": 730
+    },
+    {
+      "source": "GitHub repository search",
+      "query": "\"target trial\" MCP in:name,description,readme",
+      "status": "complete query",
+      "count": 25,
+      "total": 25
+    },
+    {
+      "source": "GitHub repository search",
+      "query": "pharmacoepidemiology MCP in:name,description,readme",
+      "status": "complete query",
+      "count": 5,
+      "total": 5
+    },
+    {
+      "source": "GitHub repository search",
+      "query": "pharmacovigilance MCP in:name,description,readme",
+      "status": "partial: first 30 by updated",
+      "count": 30,
+      "total": 406
+    },
+    {
+      "source": "GitHub repository search",
+      "query": "FAERS MCP in:name,description,readme",
+      "status": "partial: first 30 by updated",
+      "count": 30,
+      "total": 225
+    },
+    {
+      "source": "GitHub repository search",
+      "query": "openFDA MCP in:name,description,readme",
+      "status": "partial: first 30 by updated",
+      "count": 30,
+      "total": 690
+    },
+    {
+      "source": "GitHub repository search",
+      "query": "OMOP MCP in:name,description,readme",
+      "status": "partial: first 30 by updated",
+      "count": 30,
+      "total": 214
+    },
+    {
+      "source": "GitHub repository search",
+      "query": "OHDSI MCP in:name,description,readme",
+      "status": "partial: first 30 by updated",
+      "count": 30,
+      "total": 57
+    },
+    {
+      "source": "GitHub repository search",
+      "query": "FHIR MCP in:name,description,readme",
+      "status": "partial: first 30 by updated",
+      "count": 30,
+      "total": 2127
+    },
+    {
+      "source": "GitHub repository search",
+      "query": "PubMed MCP in:name,description,readme",
+      "status": "partial: first 30 by updated",
+      "count": 30,
+      "total": 3584
+    },
+    {
+      "source": "GitHub repository search",
+      "query": "\"clinical trials\" MCP in:name,description,readme",
+      "status": "partial: first 30 by updated",
+      "count": 30,
+      "total": 1582
+    },
+    {
+      "source": "GitHub repository search",
+      "query": "\"evidence synthesis\" MCP in:name,description,readme",
+      "status": "partial: first 30 by updated",
+      "count": 30,
+      "total": 549
+    },
+    {
+      "source": "GitHub repository search",
+      "query": "\"systematic review\" MCP in:name,description,readme",
+      "status": "partial: first 30 by updated",
+      "count": 30,
+      "total": 787
+    },
+    {
+      "source": "GitHub repository search",
+      "query": "\"public health\" MCP in:name,description,readme",
+      "status": "partial: first 30 by updated",
+      "count": 30,
+      "total": 1109
+    },
+    {
+      "source": "GitHub repository search",
+      "query": "\"survival analysis\" MCP in:name,description,readme",
+      "status": "partial: first 30 by updated",
+      "count": 30,
+      "total": 338
+    },
+    {
+      "source": "GitHub repository search",
+      "query": "\"propensity score\" MCP in:name,description,readme",
+      "status": "partial: first 30 by updated",
+      "count": 30,
+      "total": 112
+    },
+    {
+      "source": "GitHub repository search",
+      "query": "HEOR MCP in:name,description,readme",
+      "status": "complete query",
+      "count": 25,
+      "total": 25
+    },
+    {
+      "source": "GitHub repository search",
+      "query": "RxNorm MCP in:name,description,readme",
+      "status": "partial: first 30 by updated",
+      "count": 30,
+      "total": 341
+    },
+    {
+      "source": "GitHub repository search",
+      "query": "CDISC MCP in:name,description,readme",
+      "status": "partial: first 30 by updated",
+      "count": 30,
+      "total": 73
+    }
+  ]
+}
