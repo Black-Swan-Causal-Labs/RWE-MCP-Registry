@@ -8,11 +8,15 @@ export const metadata: Metadata = {
 const faqGroups = [
   {
     label: "About the registry",
-    title: "What this index is—and is not.",
+    title: "Understanding the catalogue.",
     items: [
       {
         question: "What is the RWE MCP Registry?",
         answer: "A source-reviewed catalogue of MCP servers, skills, libraries, and agents that may support real-world evidence workflows. It adds an RWE interpretation layer to public project information: workflow fit, documented capabilities, limitations, operational scope, and evidence state.",
+      },
+      {
+        question: "Why are there thousands of entries, and where should I start?",
+        answer: "Start with the Core catalogue, which is the default view. The expansion gathered capability records across MCP servers, skills, libraries and components; the total was never a count of unique MCP servers. A subsequent relevance audit separated adjacent discoveries into an Archive and unresolved scope questions into Borderline review. Every entry has a reason, and the archive remains searchable without inflating the core count.",
       },
       {
         question: "Who maintains the registry?",
@@ -20,7 +24,7 @@ const faqGroups = [
       },
       {
         question: "What qualifies for inclusion?",
-        answer: "A public MCP server, connector, agent skill, library with an agent-facing interface, plugin, or orchestrated agent workflow must support an identifiable RWE, HEOR, epidemiology, public-health, evidence-synthesis, or necessary enabling activity. It must also have enough public evidence to describe its identity and function responsibly.",
+        answer: "A public MCP server, connector, agent skill, library with an agent-facing interface, plugin, or orchestrated agent workflow must support an identifiable RWE, HEOR, epidemiology, public-health, evidence-synthesis, or specific statistical or evidence-synthesis function. A merely possible health application, generic productivity function or molecular-only workflow does not qualify for the core. It must also have enough public evidence to describe its identity and function responsibly.",
       },
       {
         question: "Why might a known project be absent?",
@@ -37,6 +41,10 @@ const faqGroups = [
         answer: "No. Inclusion is not a security, privacy, clinical, methodological, regulatory, or quality certification. A project may be relevant to an RWE workflow and still require substantial technical, governance, and subject-matter review before use.",
       },
       {
+        question: "Did the relevance audit repeat every source review?",
+        answer: "No. The relevance pass individually reviewed the existing capability and limitation descriptions, with selected source follow-ups identified on the records. It did not repeat every primary-source review, install projects, or rerun the discovery campaign. Source-check, capability-review and relevance-review dates have different meanings.",
+      },
+      {
         question: "What does “statically reviewed” mean?",
         answer: "Public repository files, documentation, manifests, packages, or listings were examined without running the project. Static review can confirm documented implementation and scope, but it cannot establish that installation succeeds, tools behave as claimed, outputs are correct, or sensitive data are protected.",
       },
@@ -50,7 +58,7 @@ const faqGroups = [
       },
       {
         question: "How should workflow-fit labels be interpreted?",
-        answer: "Workflow-fit labels are concise editorial translations of documented capabilities. They identify a plausible role in an RWE process; they do not establish fitness for a particular study, dataset, decision, or regulatory use.",
+        answer: "Workflow-fit labels are concise editorial translations of documented capabilities. In the archive they preserve earlier discovery context and may not justify core inclusion. In the core, the relevance rationale identifies the retained function; they do not establish fitness for a particular study, dataset, decision, or regulatory use.",
       },
       {
         question: "How are skill collections handled?",

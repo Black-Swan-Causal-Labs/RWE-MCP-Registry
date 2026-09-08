@@ -1,0 +1,16 @@
+{
+  "asOf": "2026-09-08",
+  "totalReviewed": 6227,
+  "historicalHold": 1,
+  "counts": {
+    "Core": 4218,
+    "Archive": 2008,
+    "Borderline": 1
+  },
+  "evidenceLevels": {
+    "published-card": 6196,
+    "fresh-primary": 23,
+    "retained-primary": 8
+  },
+  "basis": "Individual relevance review of recorded capabilities and limitations, with explicitly identified source follow-ups. No new discovery stopping-rule claim and no runtime testing."
+}

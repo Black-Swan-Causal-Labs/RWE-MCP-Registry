@@ -1,5 +1,7 @@
 # Search coverage and remaining work
 
+> Historical discovery report. Current Core, Archive and Borderline decisions are recorded in the [September 8 relevance audit](relevance-audit-2026-09-08.md). The totals and stopping-rule result below use the broader inclusion boundary in force during that campaign.
+
 Campaign: 7–8 September 2026. The revised search stopping rule was **met on 8 September 2026**: rounds 17 and 18 each completed the fixed queries and meaningful source-link reviews, with no new qualifying project or component after canonical reconciliation. The final baseline contains 6,521 units. The validated registry update contains 6,227 active cards, including 6,051 new cards; its workbook has 6,228 rows including the historical held record. Publication artifacts passed the final record, reference, workbook and application checks; deployment status is tracked separately. This is a bounded process result, not exhaustive coverage of the public ecosystem.
 
 The earlier published registry contained 177 cards. Its selected update added 45 entries, held 7 and excluded 7. That was a reviewed batch, not completion of the full discovery backlog. Availability checks of published URLs were separate from capability review.

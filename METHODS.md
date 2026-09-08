@@ -1,8 +1,14 @@
 # RWE MCP Registry — Search and Indexing Methods
 
-**Protocol version:** 0.5-draft
+**Protocol version:** 0.6-draft
 **Last updated:** 2026-09-08
 **Status:** Living document; revise before each search wave and record material changes.
+
+## Current relevance boundary
+
+The [September 8 relevance audit](public-data/relevance-audit-2026-09-08.md) individually reassesses the recorded function and limitations of all 6,227 previously active cards. Core requires an explicit health-research, clinical-data, public-health, evidence-synthesis or specific statistical-method function. Generic climate/disaster feeds, molecular-only tools, productivity workflows and AI benchmarks are archived unless a distinct qualifying component is documented. Mixed records retain only the function stated in their rationale. Concrete unresolved questions are held outside core as Borderline. All IDs and source history are retained.
+
+This pass relies on published cards with identified source follow-ups; it is not a repeated primary-source review of every project. It introduces no new discovery or stopping-rule claim. The previous 18-round result below remains historical and used a broader inclusion boundary.
 
 ## Search coverage and remaining work
 

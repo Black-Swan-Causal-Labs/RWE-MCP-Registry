@@ -1,0 +1,1938 @@
+{
+  "RWE-0092": {
+    "id": "RWE-0092",
+    "decision": "Core",
+    "rationale": "bioSkills: The described trial retrieval, causal/study design or reporting method directly supports evidence and research workflows.",
+    "relevanceBasis": "Bioinformatics skill collection with an RWE-relevant clinical-biostatistics component.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/GPTomics/bioSkills"
+    ],
+    "reviewGroup": "Trials & Study Design"
+  },
+  "RWE-0114": {
+    "id": "RWE-0114",
+    "decision": "Core",
+    "rationale": "HEORAgent MCP Server: The described scholarly/biomedical retrieval or structured review function directly supports evidence discovery and synthesis.",
+    "relevanceBasis": "HEOR-oriented MCP server documenting evidence synthesis, economic modeling, HTA, RWE, and pharmacovigilance workflows.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/neptun2000/heor-agent-mcp"
+    ],
+    "reviewGroup": "Literature & Evidence Synthesis"
+  },
+  "RWE-0116": {
+    "id": "RWE-0116",
+    "decision": "Core",
+    "rationale": "paper-mcp: The described scholarly/biomedical retrieval or structured review function directly supports evidence discovery and synthesis.",
+    "relevanceBasis": "Scholarly-search server combining medical-evidence retrieval, citation exploration, and PDF/LaTeX utilities.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/MCPServings/paper-mcp"
+    ],
+    "reviewGroup": "Literature & Evidence Synthesis"
+  },
+  "RWE-0104": {
+    "id": "RWE-0104",
+    "decision": "Core",
+    "rationale": "paper-search-mcp-openai: The described scholarly/biomedical retrieval or structured review function directly supports evidence discovery and synthesis.",
+    "relevanceBasis": "Multi-source scholarly search and retrieval across PubMed, preprints, indexes, and citation services.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/adamamer20/paper-search-mcp-openai"
+    ],
+    "reviewGroup": "Literature & Evidence Synthesis"
+  },
+  "RWE-0105": {
+    "id": "RWE-0105",
+    "decision": "Core",
+    "rationale": "pubmed-mcp-smithery: The described scholarly/biomedical retrieval or structured review function directly supports evidence discovery and synthesis.",
+    "relevanceBasis": "PubMed server with keyword, MeSH, publication-count, article-detail, and PICO-oriented search tools.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/lineex/pubmed-mcp-smithery"
+    ],
+    "reviewGroup": "Literature & Evidence Synthesis"
+  },
+  "RWE-0132": {
+    "id": "RWE-0132",
+    "decision": "Core",
+    "rationale": "bq-health-mcp: Clinical concept lookup, mapping or study-standard metadata is a necessary enabler for reproducible cohort and variable definitions.",
+    "relevanceBasis": "Read-only structured exploration of a public synthetic OMOP observation table in BigQuery.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/a-xp/bq-health-mcp"
+    ],
+    "reviewGroup": "OMOP & terminology"
+  },
+  "RWE-0133": {
+    "id": "RWE-0133",
+    "decision": "Core",
+    "rationale": "OHDSI MCPs: Clinical concept lookup, mapping or study-standard metadata is a necessary enabler for reproducible cohort and variable definitions.",
+    "relevanceBasis": "Hosted reference servers for the Book of OHDSI, OMOP CDM specifications, and the OHDSI Weekly Digest.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/Leko/ohdsi-mcps"
+    ],
+    "reviewGroup": "OMOP & terminology"
+  },
+  "RWE-0134": {
+    "id": "RWE-0134",
+    "decision": "Core",
+    "rationale": "ohdsi-webapi-mcp: Clinical concept lookup, mapping or study-standard metadata is a necessary enabler for reproducible cohort and variable definitions.",
+    "relevanceBasis": "OHDSI WebAPI bridge for vocabulary discovery, cohort construction, persistence, and feasibility estimation.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/clsweeting/ohdsi-webapi-mcp"
+    ],
+    "reviewGroup": "OMOP & terminology"
+  },
+  "RWE-0136": {
+    "id": "RWE-0136",
+    "decision": "Core",
+    "rationale": "OMOP MCP Server: Clinical concept lookup, mapping or study-standard metadata is a necessary enabler for reproducible cohort and variable definitions.",
+    "relevanceBasis": "OHNLP terminology-mapping server using an LLM and OMOPHub vocabulary services.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/OHNLP/omop_mcp"
+    ],
+    "reviewGroup": "OMOP & terminology"
+  },
+  "RWE-0137": {
+    "id": "RWE-0137",
+    "decision": "Core",
+    "rationale": "OMOPHub MCP Server: Clinical concept lookup, mapping or study-standard metadata is a necessary enabler for reproducible cohort and variable definitions.",
+    "relevanceBasis": "Search, map, validate, and navigate OMOP concepts across clinical coding systems.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/OMOPHub/omophub-mcp"
+    ],
+    "reviewGroup": "OMOP & terminology"
+  },
+  "RWE-0138": {
+    "id": "RWE-0138",
+    "decision": "Core",
+    "rationale": "pyomop: Clinical concept lookup, mapping or study-standard metadata is a necessary enabler for reproducible cohort and variable definitions.",
+    "relevanceBasis": "Python OMOP toolkit with database management, FHIR import, QueryLibrary execution, and MCP interfaces.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/dermatologist/pyomop"
+    ],
+    "reviewGroup": "OMOP & terminology"
+  },
+  "RWE-0139": {
+    "id": "RWE-0139",
+    "decision": "Core",
+    "rationale": "UCSFOMOPAgent: Clinical concept lookup, mapping or study-standard metadata is a necessary enabler for reproducible cohort and variable definitions.",
+    "relevanceBasis": "Credentialed read-only access to UCSF’s de-identified OMOP CDM with schema, concept, and lab helpers.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/BaranziniLab/UCSFOMOPAgent"
+    ],
+    "reviewGroup": "OMOP & terminology"
+  },
+  "RWE-0140": {
+    "id": "RWE-0140",
+    "decision": "Core",
+    "rationale": "WebApiMcp: Clinical concept lookup, mapping or study-standard metadata is a necessary enabler for reproducible cohort and variable definitions.",
+    "relevanceBasis": "Read-oriented OHDSI WebAPI wrapper for concepts, sources, cohort definitions, and concept sets.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/schuemie/WebApiMcp"
+    ],
+    "reviewGroup": "OMOP & terminology"
+  },
+  "RWE-0141": {
+    "id": "RWE-0141",
+    "decision": "Core",
+    "rationale": "SignalBridge for openFDA: The described adverse-event, drug-safety or safety-evidence function directly supports pharmacovigilance research.",
+    "relevanceBasis": "Structured openFDA access for FAERS exploration, drug labels, listedness, and recall searches.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/Janiumang/mcp-server-openfda"
+    ],
+    "reviewGroup": "Pharmacovigilance & safety"
+  },
+  "RWE-0143": {
+    "id": "RWE-0143",
+    "decision": "Core",
+    "rationale": "PV Signal MCP Server: The described adverse-event, drug-safety or safety-evidence function directly supports pharmacovigilance research.",
+    "relevanceBasis": "Stateless PRR and ROR calculator for caller-supplied adverse-event contingency counts.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/aneesh-sayal-tkd/pharmacovigilance-mcp-server"
+    ],
+    "reviewGroup": "Pharmacovigilance & safety"
+  },
+  "RWE-0145": {
+    "id": "RWE-0145",
+    "decision": "Core",
+    "rationale": "Vigil: The described adverse-event, drug-safety or safety-evidence function directly supports pharmacovigilance research.",
+    "relevanceBasis": "Workspace adverse-event scanner using BOCPD, Poisson z-score, CUSUM, and signed FHIR outputs.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/AbhinavGupta707/Vigil"
+    ],
+    "reviewGroup": "Pharmacovigilance & safety"
+  },
+  "RWE-0146": {
+    "id": "RWE-0146",
+    "decision": "Core",
+    "rationale": "AqtaBio Research: The described health measurements, indicators or surveillance outputs have an explicit population-health or health-data role.",
+    "relevanceBasis": "Research-preview MCP for population-level, pre-etiologic zoonotic spillover-risk forecasting at 25 km resolution.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/Aqta-ai/aqtabio-research"
+    ],
+    "reviewGroup": "Public health & surveillance"
+  },
+  "RWE-0149": {
+    "id": "RWE-0149",
+    "decision": "Core",
+    "rationale": "wonder-mcp: The described health measurements, indicators or surveillance outputs have an explicit population-health or health-data role.",
+    "relevanceBasis": "CDC WONDER querying with preserved request provenance, replication code, and epidemiologic calculations.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/hesscl/wonder-mcp"
+    ],
+    "reviewGroup": "Public health & surveillance"
+  },
+  "RWE-0801": {
+    "id": "RWE-0801",
+    "decision": "Core",
+    "rationale": "DAG Studio MCP: The described trial retrieval, causal/study design or reporting method directly supports evidence and research workflows.",
+    "relevanceBasis": "Causal-DAG server for graph construction, identification checks, adjustment planning, code generation, and simulation-based bias analysis.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/Black-Swan-Causal-Labs/dagstudio-mcp"
+    ],
+    "reviewGroup": "Trials & Study Design"
+  },
+  "RWE-0802": {
+    "id": "RWE-0802",
+    "decision": "Core",
+    "rationale": "TARGET Checklist MCP: The described trial retrieval, causal/study design or reporting method directly supports evidence and research workflows.",
+    "relevanceBasis": "TARGET-guideline reporting-completeness assessment for target-trial-emulation manuscripts with evidence-linked checklist outputs.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/Black-Swan-Causal-Labs/target-mcp"
+    ],
+    "reviewGroup": "Trials & Study Design"
+  },
+  "RWE-0803": {
+    "id": "RWE-0803",
+    "decision": "Core",
+    "rationale": "AWS HealthLake MCP Server: Clinical-record access, extraction, interoperability or governance supports the documented health-data workflow; care decisions and administrative writes are outside this relevance judgment.",
+    "relevanceBasis": "AWS-maintained MCP server for discovering HealthLake datastores and managing FHIR resources and import/export jobs.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/awslabs/mcp/tree/main/src/healthlake-mcp-server"
+    ],
+    "reviewGroup": "Clinical Data & Interoperability"
+  },
+  "RWE-0804": {
+    "id": "RWE-0804",
+    "decision": "Core",
+    "rationale": "CharmHealth MCP Server: Clinical-record access, extraction, interoperability or governance supports the documented health-data workflow; care decisions and administrative writes are outside this relevance judgment.",
+    "relevanceBasis": "CharmHealth EHR connector exposing patient, encounter, laboratory, medication, messaging, and practice workflows through MCP.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/CharmHealth/charm-mcp-server"
+    ],
+    "reviewGroup": "Clinical Data & Interoperability"
+  },
+  "RWE-0805": {
+    "id": "RWE-0805",
+    "decision": "Core",
+    "rationale": "health-record-mcp: Clinical-record access, extraction, interoperability or governance supports the documented health-data workflow; care decisions and administrative writes are outside this relevance judgment.",
+    "relevanceBasis": "SMART-on-FHIR gateway that loads structured and unstructured EHR content and exposes read-oriented record analysis tools.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/jmandel/health-record-mcp"
+    ],
+    "reviewGroup": "Clinical Data & Interoperability"
+  },
+  "RWE-0806": {
+    "id": "RWE-0806",
+    "decision": "Core",
+    "rationale": "Medical Terminologies MCP: Clinical concept lookup, mapping or study-standard metadata is a necessary enabler for reproducible cohort and variable definitions.",
+    "relevanceBasis": "Unified terminology server for ICD-10/11, LOINC, MeSH, RxNorm, ATC, UMLS-related mappings, and optional SNOMED workflows.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/SidneyBissoli/medical-terminologies-mcp"
+    ],
+    "reviewGroup": "OMOP & terminology"
+  },
+  "RWE-0807": {
+    "id": "RWE-0807",
+    "decision": "Core",
+    "rationale": "MedRecPro Drug Label Server: The described drug/device/healthcare product, utilization or reimbursement records support traceable health-evidence or HEOR workflows.",
+    "relevanceBasis": "Pharmaceutical label platform with an MCP gateway over FDA Structured Product Label data and an adverse-event risk dashboard.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/chriserikbarnes/MedRecPro"
+    ],
+    "reviewGroup": "Regulatory & Product Data"
+  },
+  "RWE-0808": {
+    "id": "RWE-0808",
+    "decision": "Core",
+    "rationale": "DoWhy MCP: The described causal/statistical methods directly support observational study analysis.",
+    "relevanceBasis": "MCP interface around DoWhy-oriented causal modeling, estimation, refutation, counterfactual, and discovery workflows.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/lesong36/dowhy_mcp"
+    ],
+    "reviewGroup": "Causal Inference & Analytics"
+  },
+  "RWE-0809": {
+    "id": "RWE-0809",
+    "decision": "Core",
+    "rationale": "StatsPAI: The described causal/statistical methods directly support observational study analysis.",
+    "relevanceBasis": "Agent-oriented Python econometrics and causal-inference library covering common Stata/R-style empirical research workflows.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/brycewang-stanford/StatsPAI"
+    ],
+    "reviewGroup": "Causal Inference & Analytics"
+  },
+  "RWE-0810": {
+    "id": "RWE-0810",
+    "decision": "Core",
+    "rationale": "CDISC Library MCP Server: The described trial retrieval, causal/study design or reporting method directly supports evidence and research workflows.",
+    "relevanceBasis": "Task-oriented MCP wrapper for CDISC Library discovery, Biomedical Concepts, and SDTM Dataset Specializations.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/Cicatriiz/cdisc-library-mcp-server"
+    ],
+    "reviewGroup": "Trials & Study Design"
+  },
+  "RWE-0811": {
+    "id": "RWE-0811",
+    "decision": "Core",
+    "rationale": "CRF Annotation MCP: The described trial retrieval, causal/study design or reporting method directly supports evidence and research workflows.",
+    "relevanceBasis": "Local MCP server for extracting and querying SDTM domain and variable annotations from annotated CRF PDFs.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/vikasgaddu1/crf-annotation-mcp"
+    ],
+    "reviewGroup": "Trials & Study Design"
+  },
+  "RWE-0135": {
+    "id": "RWE-0135",
+    "decision": "Core",
+    "rationale": "omcp_kge: Clinical concept lookup, mapping or study-standard metadata is a necessary enabler for reproducible cohort and variable definitions.",
+    "relevanceBasis": "Biomedical-ontology knowledge graph with embeddings intended for OMOP MCP and agent-to-agent terminology workflows.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/fastomop/omcp_kge"
+    ],
+    "reviewGroup": "OMOP & terminology"
+  },
+  "RWE-0150": {
+    "id": "RWE-0150",
+    "decision": "Core",
+    "rationale": "RWE Life Sciences MCP: The specifically described health-data, clinical-biostatistics, research-reference or methodological component supports a concrete health-research workflow; broader collection and molecular capabilities are not approved by this relevance decision.",
+    "relevanceBasis": "Demonstration MCP tool returning aggregated cohort characteristics for a small synthetic real-world-evidence dataset.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/soundarmoorthy/mcp_rwe"
+    ],
+    "reviewGroup": "RWE Data & Analytics"
+  },
+  "RWE-0812": {
+    "id": "RWE-0812",
+    "decision": "Core",
+    "rationale": "EMA MCP: The described drug/device/healthcare product, utilization or reimbursement records support traceable health-evidence or HEOR workflows.",
+    "relevanceBasis": "Unofficial MCP wrapper for EMA public data covering medicines, documents, orphan designations, shortages, safety communications, and procedures.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/openpharma-org/ema-mcp"
+    ],
+    "reviewGroup": "Regulatory & Product Data"
+  },
+  "RWE-0813": {
+    "id": "RWE-0813",
+    "decision": "Core",
+    "rationale": "FDA MCP: The described drug/device/healthcare product, utilization or reimbursement records support traceable health-evidence or HEOR workflows.",
+    "relevanceBasis": "Unofficial FDA intelligence server combining openFDA drug data with locally cached Orange Book and Purple Book datasets.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/openpharma-org/fda-mcp"
+    ],
+    "reviewGroup": "Regulatory & Product Data"
+  },
+  "RWE-0814": {
+    "id": "RWE-0814",
+    "decision": "Core",
+    "rationale": "Claude Skills for Epidemiology Researchers: The described scholarly/biomedical retrieval or structured review function directly supports evidence discovery and synthesis.",
+    "relevanceBasis": "Two lightweight skills for structured clinical-research queries and methods-aware critical appraisal by epidemiology researchers.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/NancyNSH/Claude-Skills-for-Epidemiology-Researchers"
+    ],
+    "reviewGroup": "Literature & Evidence Synthesis"
+  },
+  "RWE-0815": {
+    "id": "RWE-0815",
+    "decision": "Core",
+    "rationale": "MediStat Table 1: The described causal/statistical methods directly support observational study analysis.",
+    "relevanceBasis": "Clinical-research skill that generates publication-oriented baseline-characteristics tables from CSV or Excel data with study-design-aware rules.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/JeonKH81/MediStat-Table1"
+    ],
+    "reviewGroup": "Causal Inference & Analytics"
+  },
+  "RWE-0816": {
+    "id": "RWE-0816",
+    "decision": "Core",
+    "rationale": "ClinicalTrials.gov MCP Server: The described trial retrieval, causal/study design or reporting method directly supports evidence and research workflows.",
+    "relevanceBasis": "ClinicalTrials.gov API v2 server for trial discovery, record and results retrieval, landscape analysis, and preliminary eligibility matching.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/cyanheads/clinicaltrialsgov-mcp-server"
+    ],
+    "reviewGroup": "Trials & Study Design"
+  },
+  "RWE-0817": {
+    "id": "RWE-0817",
+    "decision": "Core",
+    "rationale": "FHIR MCP Server (WSO2): Clinical-record access, extraction, interoperability or governance supports the documented health-data workflow; care decisions and administrative writes are outside this relevance judgment.",
+    "relevanceBasis": "General FHIR API bridge supporting SMART-on-FHIR authentication, multiple MCP transports, FHIRPath filtering, and read/write interactions.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/wso2/fhir-mcp-server"
+    ],
+    "reviewGroup": "Clinical Data & Interoperability"
+  },
+  "RWE-0818": {
+    "id": "RWE-0818",
+    "decision": "Core",
+    "rationale": "RxNorm MCP: Clinical concept lookup, mapping or study-standard metadata is a necessary enabler for reproducible cohort and variable definitions.",
+    "relevanceBasis": "Small MCP wrapper around the free NLM RxNav REST API for RxNorm medication terminology access.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/pipeworx-io/mcp-rxnorm"
+    ],
+    "reviewGroup": "OMOP & terminology"
+  },
+  "RWE-0819": {
+    "id": "RWE-0819",
+    "decision": "Core",
+    "rationale": "PubMed MCP Server (Cyanheads): The described scholarly/biomedical retrieval or structured review function directly supports evidence discovery and synthesis.",
+    "relevanceBasis": "Biomedical literature server spanning PubMed, PubMed Central, Europe PMC, MeSH, related articles, citations, and open-full-text retrieval.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/cyanheads/pubmed-mcp-server"
+    ],
+    "reviewGroup": "Literature & Evidence Synthesis"
+  },
+  "RWE-0820": {
+    "id": "RWE-0820",
+    "decision": "Core",
+    "rationale": "Pharmaceutical & Bioequivalence Intelligence MCP: The described adverse-event, drug-safety or safety-evidence function directly supports pharmacovigilance research.",
+    "relevanceBasis": "Multi-source pharmaceutical intelligence server for drug records, interactions, FAERS adverse events, WHO, TGA, FDA NDI, and ChEMBL context.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/rootsbymenda/pharma-mcp-server"
+    ],
+    "reviewGroup": "Pharmacovigilance & safety"
+  },
+  "RWE-0821": {
+    "id": "RWE-0821",
+    "decision": "Core",
+    "rationale": "openFDA Regulatory Metadata: The described drug/device/healthcare product, utilization or reimbursement records support traceable health-evidence or HEOR workflows.",
+    "relevanceBasis": "Purpose-built openFDA server for reproducible resolution of FDA drug, biologic, and device application identifiers to regulatory metadata.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/Black-Swan-Causal-Labs/openfda-mcp"
+    ],
+    "reviewGroup": "Regulatory & Product Data"
+  },
+  "RWE-0822": {
+    "id": "RWE-0822",
+    "decision": "Core",
+    "rationale": "ROBINS-I V2 MCP: The described causal/statistical methods directly support observational study analysis.",
+    "relevanceBasis": "Structured ROBINS-I V2 risk-of-bias assessment for one result from a non-randomized cohort study, with domain-level judgments and evidence traceability.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/Black-Swan-Causal-Labs/robins-i-mcp"
+    ],
+    "reviewGroup": "Causal Inference & Analytics"
+  },
+  "RWE-0823": {
+    "id": "RWE-0823",
+    "decision": "Core",
+    "rationale": "DICOM/HL7/FHIR Interoperability MCP Server: Clinical-record access, extraction, interoperability or governance supports the documented health-data workflow; care decisions and administrative writes are outside this relevance judgment.",
+    "relevanceBasis": "DICOM/HL7 healthcare interoperability MCP server for Claude",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/NyxToolsDev/dicom-hl7-mcp-server"
+    ],
+    "reviewGroup": "Clinical Data & Interoperability"
+  },
+  "RWE-0824": {
+    "id": "RWE-0824",
+    "decision": "Core",
+    "rationale": "io.ausdata/aihw-mcp: The specifically described health-data, clinical-biostatistics, research-reference or methodological component supports a concrete health-research workflow; broader collection and molecular capabilities are not approved by this relevance decision.",
+    "relevanceBasis": "Query the Australian Institute of Health and Welfare in plain English from Claude or any MCP client. Mortality (GRIM/MORT), cancer incidence, health expenditure, youth justice detention, and the public hospitals register.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/Bigred97/aihw-mcp"
+    ],
+    "reviewGroup": "Public Health & Epidemiology"
+  },
+  "RWE-0825": {
+    "id": "RWE-0825",
+    "decision": "Core",
+    "rationale": "io.fhirfly/mcp-server: Clinical-record access, extraction, interoperability or governance supports the documented health-data workflow; care decisions and administrative writes are outside this relevance judgment.",
+    "relevanceBasis": "Healthcare reference data for AI agents: providers, drugs, diagnoses, labs, codes, claims.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/FHIRfly-io/fhirfly-mcp-server"
+    ],
+    "reviewGroup": "Clinical Data & Interoperability"
+  },
+  "RWE-0826": {
+    "id": "RWE-0826",
+    "decision": "Core",
+    "rationale": "io.github.aks129/healthclaw-guardrails: Clinical-record access, extraction, interoperability or governance supports the documented health-data workflow; care decisions and administrative writes are outside this relevance judgment.",
+    "relevanceBasis": "Open-source guardrails between AI agents and FHIR clinical data — PHI redaction, immutable audit, step-up auth, tenant isolation. MCP server + OpenAI/Gemini adapters. A healthclaw.io project.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/aks129/HealthClawGuardrails"
+    ],
+    "reviewGroup": "Clinical Data & Interoperability"
+  },
+  "RWE-0827": {
+    "id": "RWE-0827",
+    "decision": "Core",
+    "rationale": "io.github.anthesiallc/meddata: The specifically described health-data, clinical-biostatistics, research-reference or methodological component supports a concrete health-research workflow; broader collection and molecular capabilities are not approved by this relevance decision.",
+    "relevanceBasis": "Drug & supplement lookup and interaction checks from free U.S. government health data.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/anthesiallc/meddata-mcp"
+    ],
+    "reviewGroup": "Biomedical & RWE Infrastructure"
+  },
+  "RWE-0828": {
+    "id": "RWE-0828",
+    "decision": "Core",
+    "rationale": "io.github.langcare/langcare-mcp-fhir: Clinical-record access, extraction, interoperability or governance supports the documented health-data workflow; care decisions and administrative writes are outside this relevance judgment.",
+    "relevanceBasis": "Enterprise-grade MCP Server for FHIR-based EMRs, designed for robust deployments in agentic AI platforms.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/langcare/langcare-mcp-fhir"
+    ],
+    "reviewGroup": "Clinical Data & Interoperability"
+  },
+  "RWE-0829": {
+    "id": "RWE-0829",
+    "decision": "Core",
+    "rationale": "io.github.SidneyBissoli/cid10-br-mcp: Clinical concept lookup, mapping or study-standard metadata is a necessary enabler for reproducible cohort and variable definitions.",
+    "relevanceBasis": "DEPRECATED - superseded by medical-terminologies-mcp (full CID-10 + 6 more terminologies, hosted at medical.sidneybissoli.com). MCP Server for Brazilian ICD-10 (DATASUS)",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/SidneyBissoli/cid10-br-mcp"
+    ],
+    "reviewGroup": "OMOP & terminology"
+  },
+  "RWE-0830": {
+    "id": "RWE-0830",
+    "decision": "Archive",
+    "rationale": "The card describes reviewable clinical chart-write governance. It does not establish research extraction, cohort construction or analysis; retained as adjacent clinical infrastructure.",
+    "relevanceBasis": "Make every AI chart write a reviewable proposal. Draft protocol for agent-initiated FHIR writes (Proposal → Decision → Commit → Audit) with web + MCP implementations and a conformance suite. Runs over Medplum, HAPI, Firely, Aidbox, or Oystehr.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/cbetz/last-ehr"
+    ],
+    "reviewGroup": "Adjacent molecular or clinical infrastructure"
+  },
+  "RWE-0831": {
+    "id": "RWE-0831",
+    "decision": "Core",
+    "rationale": "Openfda: The described drug/device/healthcare product, utilization or reimbursement records support traceable health-evidence or HEOR workflows.",
+    "relevanceBasis": "OpenFDA MCP — wraps the openFDA API (free, no auth required)",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/pipeworx-io/mcp-openfda"
+    ],
+    "reviewGroup": "Regulatory & Product Data"
+  },
+  "RWE-0832": {
+    "id": "RWE-0832",
+    "decision": "Core",
+    "rationale": "Pubmed: The described scholarly/biomedical retrieval or structured review function directly supports evidence discovery and synthesis.",
+    "relevanceBasis": "MCP server for PubMed biomedical literature search",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/pipeworx-io/mcp-pubmed"
+    ],
+    "reviewGroup": "Literature & Evidence Synthesis"
+  },
+  "RWE-0833": {
+    "id": "RWE-0833",
+    "decision": "Core",
+    "rationale": "io.github.cyanheads/cdc-health-mcp-server: The specifically described health-data, clinical-biostatistics, research-reference or methodological component supports a concrete health-research workflow; broader collection and molecular capabilities are not approved by this relevance decision.",
+    "relevanceBasis": "Search and query CDC public health data — mortality, vaccinations, surveillance, behavioral risk (Socrata SODA API) via MCP. STDIO or Streamable HTTP.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/cyanheads/cdc-health-mcp-server"
+    ],
+    "reviewGroup": "Public Health & Epidemiology"
+  },
+  "RWE-0834": {
+    "id": "RWE-0834",
+    "decision": "Core",
+    "rationale": "alldid-mcp: The described causal/statistical methods directly support observational study analysis.",
+    "relevanceBasis": "[Work In Progress] Advanced DID Model Context Protocol(MCP) server. Empower LLMs to perform rigorous Causal Inference in Stata—automating comprehensive workflows from diagnostics and parallel trends to modern staggered estimators.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/gorgeousfish/alldid-mcp"
+    ],
+    "reviewGroup": "Causal Inference & Analytics"
+  },
+  "RWE-0835": {
+    "id": "RWE-0835",
+    "decision": "Core",
+    "rationale": "aria-mcp-server: The described trial retrieval, causal/study design or reporting method directly supports evidence and research workflows.",
+    "relevanceBasis": "ARIA Clinical Research MCP Server — exposes PubMed, ClinicalTrials.gov & ISRCTN as MCP tools. Any Claude agent can search 35M+ biomedical papers and 400K+ clinical trials in real time.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/pkotecha-eng/aria-mcp-server"
+    ],
+    "reviewGroup": "Trials & Study Design"
+  },
+  "RWE-0836": {
+    "id": "RWE-0836",
+    "decision": "Core",
+    "rationale": "fhir-mcp-suite: Clinical-record access, extraction, interoperability or governance supports the documented health-data workflow; care decisions and administrative writes are outside this relevance judgment.",
+    "relevanceBasis": "Three MCP servers for clinical AI: FHIR R4 query + US Core validation, SNOMED/LOINC/ICD terminology, and drug safety reasoning via FDA labeling — composable, production-ready, Apache-2.0.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/pcmedsinge/fhir-mcp-suite"
+    ],
+    "reviewGroup": "Clinical Data & Interoperability"
+  },
+  "RWE-0837": {
+    "id": "RWE-0837",
+    "decision": "Core",
+    "rationale": "openfda-mcp-server: The described drug/device/healthcare product, utilization or reimbursement records support traceable health-evidence or HEOR workflows.",
+    "relevanceBasis": "Query FDA data on drugs, food, devices, and recalls via openFDA. STDIO or Streamable HTTP.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/cyanheads/openfda-mcp-server"
+    ],
+    "reviewGroup": "Regulatory & Product Data"
+  },
+  "RWE-0838": {
+    "id": "RWE-0838",
+    "decision": "Core",
+    "rationale": "Thoth: The described scholarly/biomedical retrieval or structured review function directly supports evidence discovery and synthesis.",
+    "relevanceBasis": "Authenticated MCP access to Thoth review drafts, discovered papers, citation-audit outputs and recorded searches.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/ahmedEid1/thoth"
+    ],
+    "reviewGroup": "Literature & Evidence Synthesis"
+  },
+  "RWE-0839": {
+    "id": "RWE-0839",
+    "decision": "Core",
+    "rationale": "Ebi Ols: The specifically described health-data, clinical-biostatistics, research-reference or methodological component supports a concrete health-research workflow; broader collection and molecular capabilities are not approved by this relevance decision.",
+    "relevanceBasis": "EBI Ontology Lookup Service — 250+ biomedical ontologies",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/pipeworx-io/mcp-ebi-ols"
+    ],
+    "reviewGroup": "Biomedical & RWE Infrastructure"
+  },
+  "RWE-0840": {
+    "id": "RWE-0840",
+    "decision": "Archive",
+    "rationale": "Disease–gene–variant knowledge-graph exploration is adjacent biomedical discovery; the described component does not establish an outcomes, cohort or evidence-synthesis workflow.",
+    "relevanceBasis": "Monarch biomedical knowledge graph — diseases, phenotypes, genes, variants",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/pipeworx-io/mcp-monarch-initiative"
+    ],
+    "reviewGroup": "Adjacent molecular or clinical infrastructure"
+  },
+  "RWE-0841": {
+    "id": "RWE-0841",
+    "decision": "Core",
+    "rationale": "io.github.pubspro/pharma-mcp: The described adverse-event, drug-safety or safety-evidence function directly supports pharmacovigilance research.",
+    "relevanceBasis": "MCP server for clinical and pharmaceutical data — ClinicalTrials.gov, PubMed, FDA drug labels, FAERS adverse events, and ICH guidelines. No API keys required.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/pubspro/pharma-mcp"
+    ],
+    "reviewGroup": "Pharmacovigilance & safety"
+  },
+  "RWE-0842": {
+    "id": "RWE-0842",
+    "decision": "Core",
+    "rationale": "Ncbi Eutils: The described scholarly/biomedical retrieval or structured review function directly supports evidence discovery and synthesis.",
+    "relevanceBasis": "NCBI E-utilities — federated Entrez search/fetch (PubMed/Gene/Nucleotide/…)",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/pipeworx-io/mcp-ncbi-eutils"
+    ],
+    "reviewGroup": "Literature & Evidence Synthesis"
+  },
+  "RWE-0843": {
+    "id": "RWE-0843",
+    "decision": "Core",
+    "rationale": "The specific Public Health component implements CDC surveillance retrieval and WHO health-indicator tools. Its repository-root cybersecurity description was incorrectly attributed to this card.",
+    "relevanceBasis": "Selected main.ts implements three CDC/WHO retrieval tools. Repository-root NIH/FDA claims are not the implemented component scope; dataset definitions, truncation and live behavior remain unverified.",
+    "evidenceLevel": "fresh-primary",
+    "evidenceRefs": [
+      "https://github.com/martc03/gov-mcp-servers/blob/ff74ed77b648cdb5178348886da43c7ec7981902/servers/public-health-mcp/src/main.ts"
+    ],
+    "reviewGroup": "Component scope needs clarification"
+  },
+  "RWE-0844": {
+    "id": "RWE-0844",
+    "decision": "Core",
+    "rationale": "com.medplum/mcp: Clinical-record access, extraction, interoperability or governance supports the documented health-data workflow; care decisions and administrative writes are outside this relevance judgment.",
+    "relevanceBasis": "Medplum MCP interface for authorized access to FHIR clinical resources.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/medplum/medplum"
+    ],
+    "reviewGroup": "Clinical Data & Interoperability"
+  },
+  "RWE-0845": {
+    "id": "RWE-0845",
+    "decision": "Core",
+    "rationale": "Retained only for its Academic Research component: PubMed, OpenAlex, Crossref and citation-graph retrieval support evidence discovery. Other commercial scrapers are outside scope.",
+    "relevanceBasis": "Specific scholarly-search tool list in the component documentation.",
+    "evidenceLevel": "fresh-primary",
+    "evidenceRefs": [
+      "https://github.com/themineworks/mcp-servers/blob/main/servers/academic-research-mcp.md"
+    ],
+    "reviewGroup": "Component scope needs clarification"
+  },
+  "RWE-0846": {
+    "id": "RWE-0846",
+    "decision": "Core",
+    "rationale": "Data Aggregator: The described scholarly/biomedical retrieval or structured review function directly supports evidence discovery and synthesis.",
+    "relevanceBasis": "Unified research-data acquisition MCP — search & fetch datasets across Zenodo, DataCite, NCBI omics (GEO/SRA/BioProject), and literature (PubMed/OpenAIRE) behind one normalized model.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/musharna/data-aggregator-mcp"
+    ],
+    "reviewGroup": "Literature & Evidence Synthesis"
+  },
+  "RWE-0847": {
+    "id": "RWE-0847",
+    "decision": "Core",
+    "rationale": "Fda Devices: The described drug/device/healthcare product, utilization or reimbursement records support traceable health-evidence or HEOR workflows.",
+    "relevanceBasis": "FDA medical-device regulatory intelligence from keyless openFDA datasets.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/pipeworx-io/mcp-fda-devices"
+    ],
+    "reviewGroup": "Regulatory & Product Data"
+  },
+  "RWE-0848": {
+    "id": "RWE-0848",
+    "decision": "Core",
+    "rationale": "Find Research Papers: The described scholarly/biomedical retrieval or structured review function directly supports evidence discovery and synthesis.",
+    "relevanceBasis": "MCP server for scientific grounding: search arXiv, OpenAlex, Crossref, Semantic Scholar, PubMed — references/citations from paywalled journals via public metadata",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/surendranb/find-research-papers-mcp"
+    ],
+    "reviewGroup": "Literature & Evidence Synthesis"
+  },
+  "RWE-0849": {
+    "id": "RWE-0849",
+    "decision": "Archive",
+    "rationale": "The card describes a federated genomics/variant gateway without a scoped RWE or clinical-outcomes method. Clinical-sounding source names do not establish that role.",
+    "relevanceBasis": "MCP gateway federating 21 biomedical MCP servers — gnomAD, ClinVar, HPO, UniProt, Ensembl VEP, PanelApp and more — behind one Streamable-HTTP endpoint, with collision-free namespaced tools and BM25 tool search.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/berntpopp/genefoundry-router"
+    ],
+    "reviewGroup": "Adjacent molecular or clinical infrastructure"
+  },
+  "RWE-0850": {
+    "id": "RWE-0850",
+    "decision": "Core",
+    "rationale": "io.github.cyanheads/medical-codes-mcp-server: Clinical concept lookup, mapping or study-standard metadata is a necessary enabler for reproducible cohort and variable definitions.",
+    "relevanceBasis": "Decode, search, validate, and crosswalk US medical codes — ICD-10-CM, ICD-10-PCS, HCPCS Level II, RxNorm — over a bundled offline index via MCP. STDIO or Streamable HTTP.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/cyanheads/medical-codes-mcp-server"
+    ],
+    "reviewGroup": "OMOP & terminology"
+  },
+  "RWE-0851": {
+    "id": "RWE-0851",
+    "decision": "Core",
+    "rationale": "Retained for documented PubMed, Europe PMC and other scholarly-search tools. Molecular modeling and the wider AI-scientist ecosystem do not independently qualify.",
+    "relevanceBasis": "Named literature-search integration in the publisher README.",
+    "evidenceLevel": "fresh-primary",
+    "evidenceRefs": [
+      "https://github.com/mims-harvard/ToolUniverse/blob/main/README.md"
+    ],
+    "reviewGroup": "Component scope needs clarification"
+  },
+  "RWE-0852": {
+    "id": "RWE-0852",
+    "decision": "Core",
+    "rationale": "io.github.nickjlamb/pubcrawl: The described drug/device/healthcare product, utilization or reimbursement records support traceable health-evidence or HEOR workflows.",
+    "relevanceBasis": "MCP server giving AI assistants verifiable access to PubMed, Europe PMC, US/UK drug labelling, and ClinicalTrials.gov. Built by PharmaTools.AI.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/nickjlamb/pubcrawl"
+    ],
+    "reviewGroup": "Regulatory & Product Data"
+  },
+  "RWE-0853": {
+    "id": "RWE-0853",
+    "decision": "Core",
+    "rationale": "io.github.rubatoyd/scienceon-mcp: The described scholarly/biomedical retrieval or structured review function directly supports evidence discovery and synthesis.",
+    "relevanceBasis": "KISTI ScienceON OpenAPI 문헌 검색·메타데이터 수집기 — MCP 서버 + CLI (bring your own API key)",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/rubatoyd/scienceON-mcp"
+    ],
+    "reviewGroup": "Literature & Evidence Synthesis"
+  },
+  "RWE-0854": {
+    "id": "RWE-0854",
+    "decision": "Core",
+    "rationale": "Patsnap Patent & Literature Search: The described scholarly/biomedical retrieval or structured review function directly supports evidence discovery and synthesis.",
+    "relevanceBasis": "Search global patents across WIPO, EPO, USPTO, CNIPA, JPO, KIPO and other authorities, together with scientific literature from PubMed, arXiv, Nature, Science and other major sources using natural-language, semantic, keyword and structured search.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/patsnap/patent-literature-search-mcp"
+    ],
+    "reviewGroup": "Literature & Evidence Synthesis"
+  },
+  "RWE-0855": {
+    "id": "RWE-0855",
+    "decision": "Core",
+    "rationale": "io.github.wei-ai-lab/clinical-trial-design: The described trial retrieval, causal/study design or reporting method directly supports evidence and research workflows.",
+    "relevanceBasis": "Claude Code plugin & MCP server for Phase 2/3 clinical trial design. 9 tools: single-primary (binary/continuous/PH+NPH survival), multi-hypothesis (co-primary, multi-population, Maurer-Bretz). Backed by gsDesign, gsDesign2, graphicalMCP. Word/PDF reporting, Monte-Carlo verification, 176-case benchmark corpus.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/wei-ai-lab/clinical-trial-design"
+    ],
+    "reviewGroup": "Trials & Study Design"
+  },
+  "RWE-0856": {
+    "id": "RWE-0856",
+    "decision": "Core",
+    "rationale": "K01 Synthetic Health Data: Clinical-record access, extraction, interoperability or governance supports the documented health-data workflow; care decisions and administrative writes are outside this relevance judgment.",
+    "relevanceBasis": "MCP server for generating and querying privacy-preserving synthetic health data. FHIR-compliant, differentially private.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/K01labs/k01-mcp-server"
+    ],
+    "reviewGroup": "Clinical Data & Interoperability"
+  },
+  "RWE-0857": {
+    "id": "RWE-0857",
+    "decision": "Archive",
+    "rationale": "A biomedical identifier-prefix registry is general biomedical infrastructure; the card does not identify a necessary clinical coding or outcomes-research workflow.",
+    "relevanceBasis": "Bioregistry — meta-registry of biomedical identifier prefixes",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/pipeworx-io/mcp-bioregistry"
+    ],
+    "reviewGroup": "Adjacent molecular or clinical infrastructure"
+  },
+  "RWE-0858": {
+    "id": "RWE-0858",
+    "decision": "Core",
+    "rationale": "Clinicaltables: Clinical concept lookup, mapping or study-standard metadata is a necessary enabler for reproducible cohort and variable definitions.",
+    "relevanceBasis": "NIH Clinical Tables: ICD-10/9, RxTerms, LOINC, NPI, conditions search. Keyless.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/pipeworx-io/mcp-clinicaltables"
+    ],
+    "reviewGroup": "OMOP & terminology"
+  },
+  "RWE-0859": {
+    "id": "RWE-0859",
+    "decision": "Core",
+    "rationale": "Europepmc: The described scholarly/biomedical retrieval or structured review function directly supports evidence discovery and synthesis.",
+    "relevanceBasis": "Europe PubMed Central — biomedical literature search and full text",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/pipeworx-io/mcp-europepmc"
+    ],
+    "reviewGroup": "Literature & Evidence Synthesis"
+  },
+  "RWE-0212": {
+    "id": "RWE-0212",
+    "decision": "Core",
+    "rationale": "AEHRC FHIR Tools: Clinical-record access, extraction, interoperability or governance supports the documented health-data workflow; care decisions and administrative writes are outside this relevance judgment.",
+    "relevanceBasis": "FHIR tools by Australian e-Health Research Centre (CSIRO) for health data interoperability.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/aehrc/mcp-fhir-tools"
+    ],
+    "reviewGroup": "Clinical Data & Interoperability"
+  },
+  "RWE-0213": {
+    "id": "RWE-0213",
+    "decision": "Core",
+    "rationale": "AgentCare MCP: Clinical-record access, extraction, interoperability or governance supports the documented health-data workflow; care decisions and administrative writes are outside this relevance judgment.",
+    "relevanceBasis": "Healthcare tools and prompts for interacting with FHIR data and medical resources on EMRs like Cerner and Epic.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/Kartha-AI/agentcare-mcp"
+    ],
+    "reviewGroup": "Clinical Data & Interoperability"
+  },
+  "RWE-0248": {
+    "id": "RWE-0248",
+    "decision": "Core",
+    "rationale": "Apple Health MCP: The specifically described health-data, clinical-biostatistics, research-reference or methodological component supports a concrete health-research workflow; broader collection and molecular capabilities are not approved by this relevance decision.",
+    "relevanceBasis": "Query Apple Health data with SQL and natural language via DuckDB for consumer and population health workflows.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/neiltron/apple-health-mcp"
+    ],
+    "reviewGroup": "Public Health & Epidemiology"
+  },
+  "RWE-0215": {
+    "id": "RWE-0215",
+    "decision": "Core",
+    "rationale": "Azure FHIR MCP Server: Clinical-record access, extraction, interoperability or governance supports the documented health-data workflow; care decisions and administrative writes are outside this relevance judgment.",
+    "relevanceBasis": "Azure Health Data Services FHIR MCP server for cloud-native health data integration.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/erikhoward/azure-fhir-mcp-server"
+    ],
+    "reviewGroup": "Clinical Data & Interoperability"
+  },
+  "RWE-0230": {
+    "id": "RWE-0230",
+    "decision": "Core",
+    "rationale": "BioMCP: The described scholarly/biomedical retrieval or structured review function directly supports evidence discovery and synthesis.",
+    "relevanceBasis": "Clinical trials, genomics, PubMed, and variant annotation in Rust for biomedical research workflows.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/genomoncology/biomcp"
+    ],
+    "reviewGroup": "Literature & Evidence Synthesis"
+  },
+  "RWE-0231": {
+    "id": "RWE-0231",
+    "decision": "Core",
+    "rationale": "BioPortal MCP: Clinical concept lookup, mapping or study-standard metadata is a necessary enabler for reproducible cohort and variable definitions.",
+    "relevanceBasis": "Search and retrieve ontology terms across the NCBO BioPortal library of 1,000+ biomedical ontologies for terminology mapping and annotation.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/ncbo/bioportal-mcp"
+    ],
+    "reviewGroup": "OMOP & terminology"
+  },
+  "RWE-0232": {
+    "id": "RWE-0232",
+    "decision": "Core",
+    "rationale": "bioRxiv MCP: The described scholarly/biomedical retrieval or structured review function directly supports evidence discovery and synthesis.",
+    "relevanceBasis": "bioRxiv and medRxiv preprint search, recent listings, and published-version crosswalks.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/cyanheads/biorxiv-mcp-server"
+    ],
+    "reviewGroup": "Literature & Evidence Synthesis"
+  },
+  "RWE-0189": {
+    "id": "RWE-0189",
+    "decision": "Archive",
+    "rationale": "Gene, variant, chemical and taxonomy annotation is molecular research infrastructure without an explicit RWE workflow in the described scope.",
+    "relevanceBasis": "Query genes, genetic variants, drugs, and taxonomic information via the BioThings API.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/longevity-genie/biothings-mcp"
+    ],
+    "reviewGroup": "Adjacent molecular or clinical infrastructure"
+  },
+  "RWE-0217": {
+    "id": "RWE-0217",
+    "decision": "Core",
+    "rationale": "DICOM MCP Server: Clinical-record access, extraction, interoperability or governance supports the documented health-data workflow; care decisions and administrative writes are outside this relevance judgment.",
+    "relevanceBasis": "Query, read, and move medical images and reports from PACS and other DICOM-compliant systems.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/ChristianHinge/dicom-mcp"
+    ],
+    "reviewGroup": "Clinical Data & Interoperability"
+  },
+  "RWE-0193": {
+    "id": "RWE-0193",
+    "decision": "Core",
+    "rationale": "DrugBank MCP Server: The described drug/device/healthcare product, utilization or reimbursement records support traceable health-evidence or HEOR workflows.",
+    "relevanceBasis": "Access 17,430+ drugs (13,166 small molecules, 4,264 biotech) with targets, enzymes, metabolic pathways, interactions, and regulatory data from the DrugBank Full Database.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/openpharma-org/drugbank-mcp-server"
+    ],
+    "reviewGroup": "Regulatory & Product Data"
+  },
+  "RWE-0218": {
+    "id": "RWE-0218",
+    "decision": "Core",
+    "rationale": "EHR-MCP: Clinical-record access, extraction, interoperability or governance supports the documented health-data workflow; care decisions and administrative writes are outside this relevance judgment.",
+    "relevanceBasis": "Framework-agnostic SMART-on-FHIR interoperability layer for multi-agent healthcare AI, returning typed `ClinicalContextBundle` from Epic, Cerner, and any FHIR R4 EHR.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/jsfaulkner86/ehr-mcp"
+    ],
+    "reviewGroup": "Clinical Data & Interoperability"
+  },
+  "RWE-0233": {
+    "id": "RWE-0233",
+    "decision": "Archive",
+    "rationale": "Gene-expression, single-cell and genomic module execution is adjacent bioinformatics rather than the required outcomes-research scope.",
+    "relevanceBasis": "Official GenePattern server bridging AI assistants to 200+ peer-reviewed bioinformatics modules for gene expression, single-cell, and genomic analysis.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/genepattern/genepattern-mcp"
+    ],
+    "reviewGroup": "Adjacent molecular or clinical infrastructure"
+  },
+  "RWE-0234": {
+    "id": "RWE-0234",
+    "decision": "Archive",
+    "rationale": "Variant interpretation and pathway/population-genetics exploration remain precision-medicine discovery; linked variant papers do not establish a scoped RWE analysis or general review-search component.",
+    "relevanceBasis": "Clinical genomics intelligence via ClinVar, gnomAD, Reactome, and NCBI-BLAST with variant interpretation and population genetics for precision medicine workflows.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/Eldergenix/GenomeMCP"
+    ],
+    "reviewGroup": "Adjacent molecular or clinical infrastructure"
+  },
+  "RWE-0194": {
+    "id": "RWE-0194",
+    "decision": "Core",
+    "rationale": "Health Canada DPD MCP: The described drug/device/healthcare product, utilization or reimbursement records support traceable health-evidence or HEOR workflows.",
+    "relevanceBasis": "Exposes Health Canada's Drug Product Database (~47,000 approved drugs spanning human pharmaceuticals, biologics, veterinary drugs, radiopharmaceuticals, and disinfectants) as MCP tools for Canadian drug lookup.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/wkurzatz/PharmacyMCP"
+    ],
+    "reviewGroup": "Regulatory & Product Data"
+  },
+  "RWE-0252": {
+    "id": "RWE-0252",
+    "decision": "Core",
+    "rationale": "Health Export MCP: The specifically described health-data, clinical-biostatistics, research-reference or methodological component supports a concrete health-research workflow; broader collection and molecular capabilities are not approved by this relevance decision.",
+    "relevanceBasis": "Zero-dependency Apple Health MCP server exposing 190 HealthKit metrics as JSON to any MCP client, local-first and read-only with no developer server in the path.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/PhilipAD/health-export-mcp"
+    ],
+    "reviewGroup": "Biomedical & RWE Infrastructure"
+  },
+  "RWE-0184": {
+    "id": "RWE-0184",
+    "decision": "Core",
+    "rationale": "Healthcare Billing Codes: Clinical concept lookup, mapping or study-standard metadata is a necessary enabler for reproducible cohort and variable definitions.",
+    "relevanceBasis": "CPT, ICD-10, and HCPCS billing code lookup and search for revenue cycle workflows.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/contextkits/healthcare-billing-codes"
+    ],
+    "reviewGroup": "OMOP & terminology"
+  },
+  "RWE-0195": {
+    "id": "RWE-0195",
+    "decision": "Core",
+    "rationale": "Healthcare Data Hub: The described scholarly/biomedical retrieval or structured review function directly supports evidence discovery and synthesis.",
+    "relevanceBasis": "All-in-one server for FDA drug info, PubMed, medRxiv, NCBI Bookshelf, clinical trials, ICD-10, DICOM metadata, and medical calculator.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/Cicatriiz/healthcare-mcp-public"
+    ],
+    "reviewGroup": "Literature & Evidence Synthesis"
+  },
+  "RWE-0253": {
+    "id": "RWE-0253",
+    "decision": "Core",
+    "rationale": "Healthcare Data MCP: The specifically described health-data, clinical-biostatistics, research-reference or methodological component supports a concrete health-research workflow; broader collection and molecular capabilities are not approved by this relevance decision.",
+    "relevanceBasis": "Eighteen local MCP servers for US public healthcare market intelligence spanning facilities, ownership, quality metrics, claims, workforce, research, and compliance screening.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/ajhcs/healthcare-data-mcp"
+    ],
+    "reviewGroup": "Public Health & Epidemiology"
+  },
+  "RWE-0196": {
+    "id": "RWE-0196",
+    "decision": "Core",
+    "rationale": "ICD-10 MCP: Clinical concept lookup, mapping or study-standard metadata is a necessary enabler for reproducible cohort and variable definitions.",
+    "relevanceBasis": "Offline ICD-10-CM FY2026, ICD-9-CM, and ICD-10 WHO 2019 lookup with 124K codes and 102K bidirectional GEMs crosswalk mappings; FTS5 full-text search in an embedded SQLite DB with zero network calls.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/stabgan/mcp-icd10"
+    ],
+    "reviewGroup": "OMOP & terminology"
+  },
+  "RWE-0235": {
+    "id": "RWE-0235",
+    "decision": "Core",
+    "rationale": "M3 MIMIC MCP: The specifically described health-data, clinical-biostatistics, research-reference or methodological component supports a concrete health-research workflow; broader collection and molecular capabilities are not approved by this relevance decision.",
+    "relevanceBasis": "Query MIMIC-IV medical data via natural language for clinical research.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/rafiattrach/m3"
+    ],
+    "reviewGroup": "RWE Data & Analytics"
+  },
+  "RWE-0221": {
+    "id": "RWE-0221",
+    "decision": "Core",
+    "rationale": "MCP FHIR Patient Index: Clinical-record access, extraction, interoperability or governance supports the documented health-data workflow; care decisions and administrative writes are outside this relevance judgment.",
+    "relevanceBasis": "Master patient index (MPI) on Rails 8 with conformant FHIR R4 API, MCP server, and admin web UI for patient CRUD; English/US-only and dev-stage with explicit security caveats requiring credential regeneration and SOC 2 hardening before production deployment.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/Shaumik-Ashraf/mcp-fhir-patient-index"
+    ],
+    "reviewGroup": "Clinical Data & Interoperability"
+  },
+  "RWE-0236": {
+    "id": "RWE-0236",
+    "decision": "Core",
+    "rationale": "MCP Simple PubMed: The described scholarly/biomedical retrieval or structured review function directly supports evidence discovery and synthesis.",
+    "relevanceBasis": "Popular standalone PubMed MCP server for biomedical literature search.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/andybrandt/mcp-simple-pubmed"
+    ],
+    "reviewGroup": "Literature & Evidence Synthesis"
+  },
+  "RWE-0199": {
+    "id": "RWE-0199",
+    "decision": "Core",
+    "rationale": "MCP-LOINC: Clinical concept lookup, mapping or study-standard metadata is a necessary enabler for reproducible cohort and variable definitions.",
+    "relevanceBasis": "LOINC API wrapper for medical terminology standardization and lab code lookup.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/Kryzo/mcp-Loinc"
+    ],
+    "reviewGroup": "OMOP & terminology"
+  },
+  "RWE-0185": {
+    "id": "RWE-0185",
+    "decision": "Core",
+    "rationale": "Medicaid MCP Server: Clinical concept lookup, mapping or study-standard metadata is a necessary enabler for reproducible cohort and variable definitions.",
+    "relevanceBasis": "Medicaid public data access including NADAC drug pricing (1.5M NDCs), Federal Upper Limits, state formularies, and drug rebate program data via data.medicaid.gov.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/openpharma-org/medicaid-mcp-server"
+    ],
+    "reviewGroup": "OMOP & terminology"
+  },
+  "RWE-0202": {
+    "id": "RWE-0202",
+    "decision": "Core",
+    "rationale": "Retained for explicit severity, risk and outcome instruments such as SOFA and modified Rankin Scale that can define study variables. General bedside decision support is outside this retained scope.",
+    "relevanceBasis": "Publisher documents calculator schemas and named clinical measurement instruments; formulas and research use were not independently validated.",
+    "evidenceLevel": "fresh-primary",
+    "evidenceRefs": [
+      "https://github.com/u9401066/medical-calc-mcp/blob/main/README.md"
+    ],
+    "reviewGroup": "Component scope needs clarification"
+  },
+  "RWE-0237": {
+    "id": "RWE-0237",
+    "decision": "Core",
+    "rationale": "Medical MCPs: The described drug/device/healthcare product, utilization or reimbursement records support traceable health-evidence or HEOR workflows.",
+    "relevanceBasis": "100+ unified tools across 14 biomedical APIs including Reactome, KEGG, UniProt, OMIM, ChEMBL, and OpenFDA.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/pascalwhoop/medical-mcps"
+    ],
+    "reviewGroup": "Regulatory & Product Data"
+  },
+  "RWE-0238": {
+    "id": "RWE-0238",
+    "decision": "Core",
+    "rationale": "Medical Research MCP Suite: The described scholarly/biomedical retrieval or structured review function directly supports evidence discovery and synthesis.",
+    "relevanceBasis": "Cross-database medical research intelligence unifying ClinicalTrials.gov, PubMed, and FDA with AI analysis.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/ezhou89/medical-research-mcp-suite"
+    ],
+    "reviewGroup": "Literature & Evidence Synthesis"
+  },
+  "RWE-0203": {
+    "id": "RWE-0203",
+    "decision": "Core",
+    "rationale": "Medical-MCP: The described scholarly/biomedical retrieval or structured review function directly supports evidence discovery and synthesis.",
+    "relevanceBasis": "Comprehensive medical information from FDA, WHO, PubMed, RxNorm, and Google Scholar.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/JamesANZ/medical-mcp"
+    ],
+    "reviewGroup": "Literature & Evidence Synthesis"
+  },
+  "RWE-0186": {
+    "id": "RWE-0186",
+    "decision": "Core",
+    "rationale": "Medicare MCP: The described drug/device/healthcare product, utilization or reimbursement records support traceable health-evidence or HEOR workflows.",
+    "relevanceBasis": "CMS Medicare provider services, prescriber data, hospital utilization, drug spending, and Part B ASP pricing via the Socrata API with quarterly automated updates.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/openpharma-org/medicare-mcp"
+    ],
+    "reviewGroup": "Regulatory & Product Data"
+  },
+  "RWE-0223": {
+    "id": "RWE-0223",
+    "decision": "Core",
+    "rationale": "Momentum FHIR MCP Server: Clinical-record access, extraction, interoperability or governance supports the documented health-data workflow; care decisions and administrative writes are outside this relevance judgment.",
+    "relevanceBasis": "Natural language interface for healthcare data that eliminates weeks of FHIR learning and prevents LLM hallucination of medical codes.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/the-momentum/fhir-mcp-server"
+    ],
+    "reviewGroup": "Clinical Data & Interoperability"
+  },
+  "RWE-0187": {
+    "id": "RWE-0187",
+    "decision": "Core",
+    "rationale": "NPI Providers MCP: Clinical concept lookup, mapping or study-standard metadata is a necessary enabler for reproducible cohort and variable definitions.",
+    "relevanceBasis": "US provider lookup through the NPPES NPI Registry with NUCC taxonomy resolution.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/cyanheads/npi-providers-mcp-server"
+    ],
+    "reviewGroup": "OMOP & terminology"
+  },
+  "RWE-0239": {
+    "id": "RWE-0239",
+    "decision": "Archive",
+    "rationale": "The stated purpose is drug-target discovery and genetic association lookup, without a clinical-outcomes or epidemiologic workflow.",
+    "relevanceBasis": "Official Open Targets server exposing the Platform GraphQL API for target-disease associations, drug-target evidence, and genetic associations to support drug discovery and target identification.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/opentargets/platform-mcp"
+    ],
+    "reviewGroup": "Adjacent molecular or clinical infrastructure"
+  },
+  "RWE-0225": {
+    "id": "RWE-0225",
+    "decision": "Core",
+    "rationale": "Orthanc DICOM MCP: Clinical-record access, extraction, interoperability or governance supports the documented health-data workflow; care decisions and administrative writes are outside this relevance judgment.",
+    "relevanceBasis": "DICOM MCP with Orthanc PACS integration, radiology report generation, FHIR ImagingStudy, and mini-RIS.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/sscotti/dicom-mcp"
+    ],
+    "reviewGroup": "Clinical Data & Interoperability"
+  },
+  "RWE-0208": {
+    "id": "RWE-0208",
+    "decision": "Core",
+    "rationale": "Pharmacogenomics MCP: The described scholarly/biomedical retrieval or structured review function directly supports evidence discovery and synthesis.",
+    "relevanceBasis": "Real-time pharmacogenomics across ClinVar variant pathogenicity, PharmGKB drug-gene interactions with CPIC/DPWG dosing guidelines, gnomAD population frequencies, Open Targets drug-target-disease associations, and ClinicalTrials.gov.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/Julius-Schmidt/mcp-pharmacogenomics"
+    ],
+    "reviewGroup": "Literature & Evidence Synthesis"
+  },
+  "RWE-0255": {
+    "id": "RWE-0255",
+    "decision": "Core",
+    "rationale": "PopHIVE MCP Server: The specifically described health-data, clinical-biostatistics, research-reference or methodological component supports a concrete health-research workflow; broader collection and molecular capabilities are not approved by this relevance decision.",
+    "relevanceBasis": "Yale PopHIVE population health data for community health analysis and value-based care.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/Cicatriiz/pophive-mcp-server"
+    ],
+    "reviewGroup": "Public Health & Epidemiology"
+  },
+  "RWE-0240": {
+    "id": "RWE-0240",
+    "decision": "Core",
+    "rationale": "Retained only for the documented mcp-epic component: patient demographics, diagnoses, observations and medication retrieval from an authorized FHIR endpoint. The wider molecular platform and synthetic demonstrations do not independently qualify.",
+    "relevanceBasis": "The component README enumerates four FHIR retrieval tools and separates the real endpoint from EPIC_DRY_RUN and mcp-mockepic. De-identification and production-readiness claims remain unvalidated.",
+    "evidenceLevel": "fresh-primary",
+    "evidenceRefs": [
+      "https://github.com/lynnlangit/precision-medicine-mcp/blob/main/servers/mcp-epic/README.md"
+    ],
+    "reviewGroup": "Component scope needs clarification"
+  },
+  "RWE-0241": {
+    "id": "RWE-0241",
+    "decision": "Archive",
+    "rationale": "Protein structure and confidence analysis serves molecular research and drug discovery, without an explicit RWE function.",
+    "relevanceBasis": "Protein structure analysis via MCP for research and drug discovery workflows.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/Augmented-Nature/AlphaFold-MCP-Server"
+    ],
+    "reviewGroup": "Adjacent molecular or clinical infrastructure"
+  },
+  "RWE-0242": {
+    "id": "RWE-0242",
+    "decision": "Core",
+    "rationale": "PubMed MCP: The described scholarly/biomedical retrieval or structured review function directly supports evidence discovery and synthesis.",
+    "relevanceBasis": "Advanced PubMed search with citation export (BibTeX, APA, MLA), author search, journal analysis, and article comparison.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/chrismannina/pubmed-mcp"
+    ],
+    "reviewGroup": "Literature & Evidence Synthesis"
+  },
+  "RWE-0226": {
+    "id": "RWE-0226",
+    "decision": "Core",
+    "rationale": "Quiquemz FHIR MCP: Clinical-record access, extraction, interoperability or governance supports the documented health-data workflow; care decisions and administrative writes are outside this relevance judgment.",
+    "relevanceBasis": "C# FHIR R4 MCP server with CRUD, search, transactions, and Azure FHIR Server support.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/quiquemz/fhir-mcp-server"
+    ],
+    "reviewGroup": "Clinical Data & Interoperability"
+  },
+  "RWE-0243": {
+    "id": "RWE-0243",
+    "decision": "Archive",
+    "rationale": "Biological pathway search and gene-list enrichment do not establish a patient-outcomes or epidemiologic method.",
+    "relevanceBasis": "Official Reactome MCP server exposing 40+ tools for pathway search, enrichment analysis, ID mapping, species/disease annotation, and biological pathway data export.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/reactome/reactome-mcp"
+    ],
+    "reviewGroup": "Adjacent molecular or clinical infrastructure"
+  },
+  "RWE-0211": {
+    "id": "RWE-0211",
+    "decision": "Core",
+    "rationale": "SNOMED CT MCP: Clinical-record access, extraction, interoperability or governance supports the documented health-data workflow; care decisions and administrative writes are outside this relevance judgment.",
+    "relevanceBasis": "SNOMED CT concept lookup via FHIR R4 terminology server for clinical coding.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/eigenbau/mcp-snomed-ct"
+    ],
+    "reviewGroup": "Clinical Data & Interoperability"
+  },
+  "RWE-0245": {
+    "id": "RWE-0245",
+    "decision": "Core",
+    "rationale": "TealFlow MCP: The described trial retrieval, causal/study design or reporting method directly supports evidence and research workflows.",
+    "relevanceBasis": "Teal module/dataset discovery, requirements inspection and clinical Shiny application code generation.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/Appsilon/TealFlowMCP"
+    ],
+    "reviewGroup": "Trials & Study Design"
+  },
+  "RWE-0256": {
+    "id": "RWE-0256",
+    "decision": "Core",
+    "rationale": "WHO GHO MCP: The specifically described health-data, clinical-biostatistics, research-reference or methodological component supports a concrete health-research workflow; broader collection and molecular capabilities are not approved by this relevance decision.",
+    "relevanceBasis": "WHO Global Health Observatory indicators by country, region, year, and demographic.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/cyanheads/who-gho-mcp-server"
+    ],
+    "reviewGroup": "Public Health & Epidemiology"
+  },
+  "RWE-0216": {
+    "id": "RWE-0216",
+    "decision": "Core",
+    "rationale": "CDS Hooks FHIR MCP: Clinical-record access, extraction, interoperability or governance supports the documented health-data workflow; care decisions and administrative writes are outside this relevance judgment.",
+    "relevanceBasis": "FHIR R4 MCP with 17 tools including CDS Hooks integration (patient-view, order-select/sign, encounter-start/discharge), FHIR Consent checking, AuditEvent logging, RBAC, and multi-persona output for clinician/patient/admin contexts.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/mj991218/mcp-fhir"
+    ],
+    "reviewGroup": "Clinical Data & Interoperability"
+  },
+  "RWE-0219": {
+    "id": "RWE-0219",
+    "decision": "Core",
+    "rationale": "Epic FHIR MCP Server: Clinical-record access, extraction, interoperability or governance supports the documented health-data workflow; care decisions and administrative writes are outside this relevance judgment.",
+    "relevanceBasis": "Production-ready Epic FHIR R4 connector with OAuth2 Backend Systems Flow + JWT authentication, supporting both stdio (Claude Desktop) and Streamable HTTP transports for web clients.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/albertorb/mcp-server-fhir"
+    ],
+    "reviewGroup": "Clinical Data & Interoperability"
+  },
+  "RWE-0197": {
+    "id": "RWE-0197",
+    "decision": "Core",
+    "rationale": "Japan Healthcare MCP: The described drug/device/healthcare product, utilization or reimbursement records support traceable health-evidence or HEOR workflows.",
+    "relevanceBasis": "Local-first TypeScript monorepo and MCP server for Japanese healthcare reference data (drug master, reimbursement and medical fee codes, PMDA) with SQLite storage, source attribution, synthetic sample data, and CLI/REST companions.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/chinahamu/japan-healthcare-mcp"
+    ],
+    "reviewGroup": "Regulatory & Product Data"
+  },
+  "RWE-0198": {
+    "id": "RWE-0198",
+    "decision": "Core",
+    "rationale": "Lab Results Analyzer MCP: Clinical-record access, extraction, interoperability or governance supports the documented health-data workflow; care decisions and administrative writes are outside this relevance judgment.",
+    "relevanceBasis": "FHIR-based lab-results retrieval, trend analysis, abnormal flagging, and patient-friendly summary generation across 20+ reference-range-backed common lab tests; built on Prompt Opinion's scoped-token FHIR context.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/JuanM94/mcp-lab-analyzer"
+    ],
+    "reviewGroup": "Clinical Data & Interoperability"
+  },
+  "RWE-0209": {
+    "id": "RWE-0209",
+    "decision": "Core",
+    "rationale": "Pipeworx Medical Codes MCP: Clinical concept lookup, mapping or study-standard metadata is a necessary enabler for reproducible cohort and variable definitions.",
+    "relevanceBasis": "Keyless ICD-10, LOINC, and RxTerms clinical-term search via the Pipeworx hosted gateway or self-hosted; distinct from the offline cyanheads Medical Codes MCP under Revenue Cycle Management.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/pipeworx-io/mcp-medical-codes"
+    ],
+    "reviewGroup": "OMOP & terminology"
+  },
+  "RWE-0244": {
+    "id": "RWE-0244",
+    "decision": "Archive",
+    "rationale": "RNA sequence search, structure diagrams and sequence exports are molecular research capabilities without a documented RWE role.",
+    "relevanceBasis": "Official RNAcentral server for non-coding RNA search, sequence mapping, genomic analysis, and metadata retrieval across the consolidated ncRNA database; published on PyPI.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/RNAcentral/rnacentral-mcp-server"
+    ],
+    "reviewGroup": "Adjacent molecular or clinical infrastructure"
+  },
+  "RWE-0227": {
+    "id": "RWE-0227",
+    "decision": "Core",
+    "rationale": "Secure FHIR MCP: Clinical-record access, extraction, interoperability or governance supports the documented health-data workflow; care decisions and administrative writes are outside this relevance judgment.",
+    "relevanceBasis": "HIPAA-hardened FHIR MCP with PHI masking, break-glass access, OWASP security, and audit logging.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/xSoVx/fhir-mcp"
+    ],
+    "reviewGroup": "Clinical Data & Interoperability"
+  },
+  "RWE-0257": {
+    "id": "RWE-0257",
+    "decision": "Core",
+    "rationale": "DAG Studio WebMCP: The described causal/statistical methods directly support observational study analysis.",
+    "relevanceBasis": "Shared causal DAG canvas where a researcher and an agent inspect, edit, analyze, and simulate the same graph through nine predefined tools.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/Black-Swan-Causal-Labs/dag-studio-webmcp"
+    ],
+    "reviewGroup": "Causal Inference & Analytics"
+  },
+  "RWE-0258": {
+    "id": "RWE-0258",
+    "decision": "Core",
+    "rationale": "Study Design Diagram Studio WebMCP: The described trial retrieval, causal/study design or reporting method directly supports evidence and research workflows.",
+    "relevanceBasis": "Shared epidemiologic study-design workspace exposing ten tools for timeline windows, study details, completeness review, and SVG schematic export.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/Black-Swan-Causal-Labs/study-design-diagram-studio"
+    ],
+    "reviewGroup": "Trials & Study Design"
+  },
+  "RWE-0010": {
+    "id": "RWE-0010",
+    "decision": "Core",
+    "rationale": "Tebra MCP Server: Clinical-record access, extraction, interoperability or governance supports the documented health-data workflow; care decisions and administrative writes are outside this relevance judgment.",
+    "relevanceBasis": "Connects agents to Tebra clinical and practice records through SOAP and FHIR interfaces.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/jamesrosing/tebra-mcp-server"
+    ],
+    "reviewGroup": "Clinical Data & Interoperability"
+  },
+  "RWE-0021": {
+    "id": "RWE-0021",
+    "decision": "Core",
+    "rationale": "Healthcare FHIR MCP (CSOAI): Clinical-record access, extraction, interoperability or governance supports the documented health-data workflow; care decisions and administrative writes are outside this relevance judgment.",
+    "relevanceBasis": "FHIR connector exposing clinical resource queries and workflow operations.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/CSOAI-ORG/healthcare-fhir-mcp"
+    ],
+    "reviewGroup": "Clinical Data & Interoperability"
+  },
+  "RWE-0090": {
+    "id": "RWE-0090",
+    "decision": "Core",
+    "rationale": "Withings MCP: Clinical-record access, extraction, interoperability or governance supports the documented health-data workflow; care decisions and administrative writes are outside this relevance judgment.",
+    "relevanceBasis": "Retrieves account-level Withings measurements and wearable time series.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/akutishevsky/withings-mcp"
+    ],
+    "reviewGroup": "Clinical Data & Interoperability"
+  },
+  "RWE-0004": {
+    "id": "RWE-0004",
+    "decision": "Archive",
+    "rationale": "ENCODE experiment retrieval and functional-genomics workflows are adjacent discovery infrastructure, not an explicit outcomes-research capability.",
+    "relevanceBasis": "Combines ENCODE MCP tools with bioinformatics skills for functional-genomics research.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/ammawla/encode-toolkit"
+    ],
+    "reviewGroup": "Adjacent molecular or clinical infrastructure"
+  },
+  "RWE-0249": {
+    "id": "RWE-0249",
+    "decision": "Core",
+    "rationale": "Apple Health MCP Server (Momentum): Clinical-record access, extraction, interoperability or governance supports the documented health-data workflow; care decisions and administrative writes are outside this relevance judgment.",
+    "relevanceBasis": "Queries imported Apple Health export data using a local DuckDB workflow.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/the-momentum/apple-health-mcp-server"
+    ],
+    "reviewGroup": "Clinical Data & Interoperability"
+  },
+  "RWE-0192": {
+    "id": "RWE-0192",
+    "decision": "Core",
+    "rationale": "DaktariTB MCP: Clinical-record access, extraction, interoperability or governance supports the documented health-data workflow; care decisions and administrative writes are outside this relevance judgment.",
+    "relevanceBasis": "Connects TB and HIV clinical workflows to FHIR records and associated care operations.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/its-kios09/daktaritb-mcp"
+    ],
+    "reviewGroup": "Clinical Data & Interoperability"
+  },
+  "RWE-0250": {
+    "id": "RWE-0250",
+    "decision": "Core",
+    "rationale": "Google Health MCP (davidmosiah): Clinical-record access, extraction, interoperability or governance supports the documented health-data workflow; care decisions and administrative writes are outside this relevance judgment.",
+    "relevanceBasis": "Local connector to Google Health API data from supported Fitbit and Pixel Watch accounts.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/davidmosiah/google-health-mcp"
+    ],
+    "reviewGroup": "Clinical Data & Interoperability"
+  },
+  "RWE-0200": {
+    "id": "RWE-0200",
+    "decision": "Core",
+    "rationale": "MedAdapt Content Server: The described scholarly/biomedical retrieval or structured review function directly supports evidence discovery and synthesis.",
+    "relevanceBasis": "Retrieves and caches medical literature and textbook content alongside user-provided documents.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/ryoureddy/medadapt-content-server"
+    ],
+    "reviewGroup": "Literature & Evidence Synthesis"
+  },
+  "RWE-0205": {
+    "id": "RWE-0205",
+    "decision": "Core",
+    "rationale": "NCCN Guidelines MCP: The described scholarly/biomedical retrieval or structured review function directly supports evidence discovery and synthesis.",
+    "relevanceBasis": "Searches a guideline index and retrieves NCCN PDF content for evidence-reference workflows.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/gscfwid/NCCN_guidelines_MCP"
+    ],
+    "reviewGroup": "Literature & Evidence Synthesis"
+  },
+  "RWE-0206": {
+    "id": "RWE-0206",
+    "decision": "Core",
+    "rationale": "NexOnco MCP: The described scholarly/biomedical retrieval or structured review function directly supports evidence discovery and synthesis.",
+    "relevanceBasis": "Retrieves structured cancer-variant evidence from CIViC.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/Nexgene-Research/nexonco-mcp"
+    ],
+    "reviewGroup": "Literature & Evidence Synthesis"
+  },
+  "RWE-0207": {
+    "id": "RWE-0207",
+    "decision": "Core",
+    "rationale": "OncoFiles: Clinical-record access, extraction, interoperability or governance supports the documented health-data workflow; care decisions and administrative writes are outside this relevance judgment.",
+    "relevanceBasis": "Organizes patient-provided oncology documents and longitudinal records with research lookups.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/peter-fusek/oncofiles"
+    ],
+    "reviewGroup": "Clinical Data & Interoperability"
+  },
+  "RWE-0247": {
+    "id": "RWE-0247",
+    "decision": "Core",
+    "rationale": "Apple Health Export MCP: Clinical-record access, extraction, interoperability or governance supports the documented health-data workflow; care decisions and administrative writes are outside this relevance judgment.",
+    "relevanceBasis": "Imports Apple Health ZIP exports into SQLite for local metric exploration.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/burakdirin/apple-health-export-mcp"
+    ],
+    "reviewGroup": "Clinical Data & Interoperability"
+  },
+  "RWE-0190": {
+    "id": "RWE-0190",
+    "decision": "Core",
+    "rationale": "CareTrace MCP: Clinical-record access, extraction, interoperability or governance supports the documented health-data workflow; care decisions and administrative writes are outside this relevance judgment.",
+    "relevanceBasis": "Experimental clinical-text pipeline for entity extraction, FHIR bundle generation and timeline reconstruction.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/jefftrojan/caretrace-mcp"
+    ],
+    "reviewGroup": "Clinical Data & Interoperability"
+  },
+  "RWE-0251": {
+    "id": "RWE-0251",
+    "decision": "Core",
+    "rationale": "Google Health MCP (akshaygoyal): Clinical-record access, extraction, interoperability or governance supports the documented health-data workflow; care decisions and administrative writes are outside this relevance judgment.",
+    "relevanceBasis": "Self-hosted remote MCP connector for Google Health account measurements.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/akshaygoyal/google-health-mcp"
+    ],
+    "reviewGroup": "Clinical Data & Interoperability"
+  },
+  "RWE-0204": {
+    "id": "RWE-0204",
+    "decision": "Archive",
+    "rationale": "The documented tools classify chest X-rays and retrieve similar images. They do not establish a study cohort, validated research phenotype or patient-outcome analysis workflow.",
+    "relevanceBasis": "Publisher tool list is image classification, similarity indexing and model status; prospective research use alone is insufficient.",
+    "evidenceLevel": "fresh-primary",
+    "evidenceRefs": [
+      "https://github.com/u9401066/medvision-mcp/blob/main/README.md"
+    ],
+    "reviewGroup": "Component scope needs clarification"
+  },
+  "RWE-0224": {
+    "id": "RWE-0224",
+    "decision": "Core",
+    "rationale": "Open Dental MCP: Clinical-record access, extraction, interoperability or governance supports the documented health-data workflow; care decisions and administrative writes are outside this relevance judgment.",
+    "relevanceBasis": "Connects agents to Open Dental patient and procedure records.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/sanjibani/open-dental-mcp"
+    ],
+    "reviewGroup": "Clinical Data & Interoperability"
+  },
+  "RWE-0254": {
+    "id": "RWE-0254",
+    "decision": "Core",
+    "rationale": "Oura MCP Server (Schimmilab): Clinical-record access, extraction, interoperability or governance supports the documented health-data workflow; care decisions and administrative writes are outside this relevance judgment.",
+    "relevanceBasis": "Retrieves Oura sleep, activity and related wearable measurements for personal longitudinal analysis.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/Schimmilab/oura-mcp-server"
+    ],
+    "reviewGroup": "Clinical Data & Interoperability"
+  },
+  "RWE-0124": {
+    "id": "RWE-0124",
+    "decision": "Core",
+    "rationale": "AIGroup Econ MCP: The described causal/statistical methods directly support observational study analysis.",
+    "relevanceBasis": "Exposes statistical and econometric analysis tools relevant to observational research.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/jackdark425/aigroup-econ-mcp"
+    ],
+    "reviewGroup": "Causal Inference & Analytics"
+  },
+  "RWE-0160": {
+    "id": "RWE-0160",
+    "decision": "Core",
+    "rationale": "AlterLab Academic Skills: The specifically described health-data, clinical-biostatistics, research-reference or methodological component supports a concrete health-research workflow; broader collection and molecular capabilities are not approved by this relevance decision.",
+    "relevanceBasis": "Academic skill collection with statistical-analysis, survival and clinical-research components.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/AlterLab-IEU/AlterLab-Academic-Skills"
+    ],
+    "reviewGroup": "Biomedical & RWE Infrastructure"
+  },
+  "RWE-0164": {
+    "id": "RWE-0164",
+    "decision": "Core",
+    "rationale": "Retained for documented medical-literature retrieval, DICOM study retrieval and structured extraction of radiology findings and measurements. AI diagnostic inference, report polish and patient communications are outside the retained scope.",
+    "relevanceBasis": "Publisher README tool and skill tables identify pubmed_search, DICOM query/retrieval, and radiology-report extraction; no diagnostic or runtime claims validated.",
+    "evidenceLevel": "fresh-primary",
+    "evidenceRefs": [
+      "https://github.com/aizech/clinical-skills/blob/main/README.md"
+    ],
+    "reviewGroup": "Biomedical & RWE Infrastructure"
+  },
+  "RWE-0169": {
+    "id": "RWE-0169",
+    "decision": "Core",
+    "rationale": "ClinicalAI MCP: The specifically described health-data, clinical-biostatistics, research-reference or methodological component supports a concrete health-research workflow; broader collection and molecular capabilities are not approved by this relevance decision.",
+    "relevanceBasis": "Collection of clinical MCP components for evidence, terminology, drugs and calculations.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/OpenClinicalAI/clinicalai-mcp"
+    ],
+    "reviewGroup": "Biomedical & RWE Infrastructure"
+  },
+  "RWE-0176": {
+    "id": "RWE-0176",
+    "decision": "Core",
+    "rationale": "ClinicalTrials MCP Server (JackKuo666): The described trial retrieval, causal/study design or reporting method directly supports evidence and research workflows.",
+    "relevanceBasis": "Queries ClinicalTrials.gov and supports local trial-result exports.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/JackKuo666/ClinicalTrials-MCP-Server"
+    ],
+    "reviewGroup": "Trials & Study Design"
+  },
+  "RWE-0178": {
+    "id": "RWE-0178",
+    "decision": "Core",
+    "rationale": "Drug Pipeline MCP: The described adverse-event, drug-safety or safety-evidence function directly supports pharmacovigilance research.",
+    "relevanceBasis": "Combines trial, regulatory and safety-source retrieval for drug evidence exploration.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/DasClown/drug-pipeline-mcp"
+    ],
+    "reviewGroup": "Pharmacovigilance & safety"
+  },
+  "RWE-0153": {
+    "id": "RWE-0153",
+    "decision": "Core",
+    "rationale": "FDA Approvals MCP: The described drug/device/healthcare product, utilization or reimbursement records support traceable health-evidence or HEOR workflows.",
+    "relevanceBasis": "Hosted connector for FDA product, labeling, recall and safety-source searches.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/guptaprakhariitr/fda-approvals-mcp"
+    ],
+    "reviewGroup": "Regulatory & Product Data"
+  },
+  "RWE-0155": {
+    "id": "RWE-0155",
+    "decision": "Core",
+    "rationale": "FDA MCP (Limecooler): The described drug/device/healthcare product, utilization or reimbursement records support traceable health-evidence or HEOR workflows.",
+    "relevanceBasis": "Searches FDA datasets and retrieves linked regulatory document content.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/Limecooler/fda-mcp"
+    ],
+    "reviewGroup": "Regulatory & Product Data"
+  },
+  "RWE-0179": {
+    "id": "RWE-0179",
+    "decision": "Core",
+    "rationale": "Helix: The described scholarly/biomedical retrieval or structured review function directly supports evidence discovery and synthesis.",
+    "relevanceBasis": "Combines ClinicalTrials.gov, PubMed and FDA labeling retrieval with preliminary evidence ranking.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/Al1Abdullah/Helix"
+    ],
+    "reviewGroup": "Literature & Evidence Synthesis"
+  },
+  "RWE-0165": {
+    "id": "RWE-0165",
+    "decision": "Core",
+    "rationale": "LabClaw: The specifically described health-data, clinical-biostatistics, research-reference or methodological component supports a concrete health-research workflow; broader collection and molecular capabilities are not approved by this relevance decision.",
+    "relevanceBasis": "Agent skill collection spanning biomedical analysis, literature retrieval and statistical workflows.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/bilalmirza96/LabClaw"
+    ],
+    "reviewGroup": "Biomedical & RWE Infrastructure"
+  },
+  "RWE-0166": {
+    "id": "RWE-0166",
+    "decision": "Core",
+    "rationale": "Retained for its documented clinical survival-analysis workflow and R survival/Python lifelines environment. Generic messaging, code execution and molecular workflows do not independently qualify.",
+    "relevanceBasis": "The publisher gives an explicit clinical overall-survival analysis example and names survival-analysis dependencies.",
+    "evidenceLevel": "fresh-primary",
+    "evidenceRefs": [
+      "https://github.com/xjtulyc/MedgeClaw/blob/main/README.md"
+    ],
+    "reviewGroup": "Component scope needs clarification"
+  },
+  "RWE-0168": {
+    "id": "RWE-0168",
+    "decision": "Core",
+    "rationale": "Metis PH: The described scholarly/biomedical retrieval or structured review function directly supports evidence discovery and synthesis.",
+    "relevanceBasis": "Research assistant for querying a local reference library and developing epidemiologic analysis workflows.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/SVerITG/Metis_PH"
+    ],
+    "reviewGroup": "Literature & Evidence Synthesis"
+  },
+  "RWE-0159": {
+    "id": "RWE-0159",
+    "decision": "Core",
+    "rationale": "OpenFDA Semantic MCP: The described drug/device/healthcare product, utilization or reimbursement records support traceable health-evidence or HEOR workflows.",
+    "relevanceBasis": "Provides domain-oriented tools over openFDA drug and safety information.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/SuyashEkhande/OpenFDA-Semantic-MCP"
+    ],
+    "reviewGroup": "Regulatory & Product Data"
+  },
+  "RWE-0180": {
+    "id": "RWE-0180",
+    "decision": "Core",
+    "rationale": "Research Workflow Assistant: The described scholarly/biomedical retrieval or structured review function directly supports evidence discovery and synthesis.",
+    "relevanceBasis": "Agent workflow for literature work, citations and reproducible research documents.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/Intersect-Collaborations-LLC/research-workflow-assistant"
+    ],
+    "reviewGroup": "Literature & Evidence Synthesis"
+  },
+  "RWE-0131": {
+    "id": "RWE-0131",
+    "decision": "Core",
+    "rationale": "Shiranui: Clinical concept lookup, mapping or study-standard metadata is a necessary enabler for reproducible cohort and variable definitions.",
+    "relevanceBasis": "R interface and MCP tooling for CDISC Library standards metadata.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/i-akiya/Shiranui"
+    ],
+    "reviewGroup": "OMOP & terminology"
+  },
+  "RWE-0162": {
+    "id": "RWE-0162",
+    "decision": "Core",
+    "rationale": "Claude Research Skills (drkamarul): The described causal/statistical methods directly support observational study analysis.",
+    "relevanceBasis": "Research skill collection covering data preparation, R modeling and medical-research workflows.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/drkamarul/claude-skills"
+    ],
+    "reviewGroup": "Causal Inference & Analytics"
+  },
+  "RWE-0156": {
+    "id": "RWE-0156",
+    "decision": "Core",
+    "rationale": "KFDA MCP: The described drug/device/healthcare product, utilization or reimbursement records support traceable health-evidence or HEOR workflows.",
+    "relevanceBasis": "Retrieves Korean MFDS drug and related product information.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/pianovirus/kfda-mcp"
+    ],
+    "reviewGroup": "Regulatory & Product Data"
+  },
+  "RWE-0142": {
+    "id": "RWE-0142",
+    "decision": "Core",
+    "rationale": "NexVigilant Station: The described adverse-event, drug-safety or safety-evidence function directly supports pharmacovigilance research.",
+    "relevanceBasis": "Hosted service documenting pharmacovigilance source queries and signal-calculation tools.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/nexvigilant/nexvigilant-station"
+    ],
+    "reviewGroup": "Pharmacovigilance & safety"
+  },
+  "RWE-0127": {
+    "id": "RWE-0127",
+    "decision": "Core",
+    "rationale": "Research KB: The described scholarly/biomedical retrieval or structured review function directly supports evidence discovery and synthesis.",
+    "relevanceBasis": "Local research knowledge base with hybrid retrieval and assumption-oriented evidence inspection.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/brandonmbehring-dev/research-kb"
+    ],
+    "reviewGroup": "Literature & Evidence Synthesis"
+  },
+  "RWE-0259": {
+    "id": "RWE-0259",
+    "decision": "Core",
+    "rationale": "fhirHydrant: Clinical-record access, extraction, interoperability or governance supports the documented health-data workflow; care decisions and administrative writes are outside this relevance judgment.",
+    "relevanceBasis": "FHIR R4+ connector with resource inspection, terminology and optional write workflows.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/faulkj/fhirHydrant"
+    ],
+    "reviewGroup": "Clinical Data & Interoperability"
+  },
+  "RWE-0260": {
+    "id": "RWE-0260",
+    "decision": "Core",
+    "rationale": "prismAId: The described scholarly/biomedical retrieval or structured review function directly supports evidence discovery and synthesis.",
+    "relevanceBasis": "Library and MCP tools for literature-search, screening and evidence-review workflows.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/open-and-sustainable/prismaid"
+    ],
+    "reviewGroup": "Literature & Evidence Synthesis"
+  },
+  "RWE-0261": {
+    "id": "RWE-0261",
+    "decision": "Core",
+    "rationale": "Biolab MCP Server: The described scholarly/biomedical retrieval or structured review function directly supports evidence discovery and synthesis.",
+    "relevanceBasis": "Literature and trial retrieval tools with source identifiers and query-audit records.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/srikarjy/biolab-mcp-server"
+    ],
+    "reviewGroup": "Literature & Evidence Synthesis"
+  },
+  "RWE-0262": {
+    "id": "RWE-0262",
+    "decision": "Core",
+    "rationale": "OHDSI StudyAgent: The described trial retrieval, causal/study design or reporting method directly supports evidence and research workflows.",
+    "relevanceBasis": "Study-design agent harness with deterministic MCP components for OHDSI workflows.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/OHDSI/StudyAgent"
+    ],
+    "reviewGroup": "Trials & Study Design"
+  },
+  "RWE-0263": {
+    "id": "RWE-0263",
+    "decision": "Core",
+    "rationale": "Slash OHDSI Strategus Assistant: The described trial retrieval, causal/study design or reporting method directly supports evidence and research workflows.",
+    "relevanceBasis": "R and agent integration for constructing and running OHDSI Strategus analyses.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/OHDSI/SlashOhdsiStrategusAssistant"
+    ],
+    "reviewGroup": "Trials & Study Design"
+  },
+  "RWE-0264": {
+    "id": "RWE-0264",
+    "decision": "Core",
+    "rationale": "Biomedical Terminology Service: Clinical concept lookup, mapping or study-standard metadata is a necessary enabler for reproducible cohort and variable definitions.",
+    "relevanceBasis": "Self-hosted terminology service with REST, GraphQL, FHIR and MCP interfaces.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/Firefox2100/biomedical-terminology-service"
+    ],
+    "reviewGroup": "OMOP & terminology"
+  },
+  "RWE-0265": {
+    "id": "RWE-0265",
+    "decision": "Core",
+    "rationale": "LangCare MCP FHIR: Clinical-record access, extraction, interoperability or governance supports the documented health-data workflow; care decisions and administrative writes are outside this relevance judgment.",
+    "relevanceBasis": "Go MCP connector exposing generic FHIR operations across configured backends.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/mosaic-care/langcare-mcp-fhir"
+    ],
+    "reviewGroup": "Clinical Data & Interoperability"
+  },
+  "RWE-0266": {
+    "id": "RWE-0266",
+    "decision": "Core",
+    "rationale": "M4 Clinical Research: Clinical-record access, extraction, interoperability or governance supports the documented health-data workflow; care decisions and administrative writes are outside this relevance judgment.",
+    "relevanceBasis": "Clinical-research toolkit for querying structured records and notes in supported research datasets.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/hannesill/m4"
+    ],
+    "reviewGroup": "Clinical Data & Interoperability"
+  },
+  "RWE-0267": {
+    "id": "RWE-0267",
+    "decision": "Core",
+    "rationale": "Trends MCP: The described scholarly/biomedical retrieval or structured review function directly supports evidence discovery and synthesis.",
+    "relevanceBasis": "Configurable trend-source aggregator with PubMed and FDA device-source connectors.",
+    "evidenceLevel": "published-card",
+    "evidenceRefs": [
+      "https://github.com/salwks/mcp-techTrend"
+    ],
+    "reviewGroup": "Literature & Evidence Synthesis"
+  }
+}

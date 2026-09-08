@@ -1,0 +1,50 @@
+{
+  "RWE-0843": {
+    "category": "Public Health & Epidemiology",
+    "summary": "Public-health component implementing CDC Socrata queries and WHO Global Health Observatory indicator retrieval.",
+    "capabilities": [
+      "Query CDC Socrata datasets with filters and pagination",
+      "Retrieve WHO health indicators by country and year",
+      "Browse WHO indicator definitions"
+    ],
+    "limitation": "Selected source implements three CDC/WHO tools, despite conflicting repository-root and example-dataset descriptions. CDC pages are capped at 200 with offset; WHO indicator responses are capped at 200 without pagination. Verify dataset IDs, currency, coverage and definitions. No runtime testing.",
+    "primarySourceURLs": [
+      "https://github.com/martc03/gov-mcp-servers/blob/ff74ed77b648cdb5178348886da43c7ec7981902/servers/public-health-mcp/src/main.ts"
+    ]
+  },
+  "RWE-0845": {
+    "summary": "Academic Research component for scholarly search, publication metadata and citation chaining across PubMed, OpenAlex, Crossref, arXiv and OpenCitations.",
+    "primarySourceURLs": [
+      "https://github.com/themineworks/mcp-servers/blob/main/servers/academic-research-mcp.md"
+    ]
+  },
+  "RWE-0851": {
+    "summary": "Scientific-tool gateway with a documented scholarly-search component spanning PubMed, Europe PMC and other literature sources.",
+    "capabilities": [
+      "Search documented scholarly literature sources",
+      "Connect research agents through MCP tool selection",
+      "Access broader scientific tools outside the retained literature scope"
+    ]
+  },
+  "RWE-0202": {
+    "summary": "Clinical-calculator server documenting severity, risk and outcome instruments, retained for structured research-variable calculation.",
+    "capabilities": [
+      "Discover calculator schemas and cited formula references",
+      "Calculate documented severity and risk scores",
+      "Calculate named outcome instruments including modified Rankin Scale"
+    ],
+    "limitation": "Retained scope is research-variable measurement, not clinical recommendations. Formula implementation, input definitions and suitability for each study require independent validation."
+  },
+  "RWE-0240": {
+    "summary": "Precision Medicine platform retained for its specific mcp-epic FHIR clinical-data retrieval component.",
+    "capabilities": [
+      "Retrieve patient demographics and conditions from an authorized Epic FHIR endpoint",
+      "Retrieve observations filtered by category or LOINC code",
+      "Retrieve medication orders by status"
+    ],
+    "limitation": "Real endpoint access requires local hospital credentials. EPIC_DRY_RUN and mcp-mockepic return synthetic data. De-identification and production-readiness claims were not independently validated; the broader molecular and clinical decision-support tools are outside this retained scope.",
+    "primarySourceURLs": [
+      "https://github.com/lynnlangit/precision-medicine-mcp/blob/main/servers/mcp-epic/README.md"
+    ]
+  }
+}

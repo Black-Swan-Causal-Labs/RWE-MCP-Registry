@@ -3122,5 +3122,9 @@
     "finalCanonicalUnits": 6521,
     "scope": "Revised source-specific search process; does not complete original unamended matrix or prove exhaustive ecosystem coverage."
   },
-  "publicationStatus": "Validated publication artifacts; deployment status is tracked separately."
+  "publicationStatus": "Validated publication artifacts; deployment status is tracked separately.",
+  "subsequentRelevanceAudit": {
+    "report": "relevance-audit-2026-09-08.json",
+    "note": "Historical discovery totals and stopping-rule result below use the broader inclusion boundary then in force; use the subsequent relevance audit for current core decisions."
+  }
 }

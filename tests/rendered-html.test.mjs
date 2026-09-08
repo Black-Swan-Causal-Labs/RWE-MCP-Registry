@@ -32,6 +32,11 @@ test("server-renders the public registry catalogue", async () => {
   assert.match(html, /A source-reviewed catalogue of MCP servers/);
   assert.match(html, /aria-label="Reviewed registry catalogue"/);
   assert.match(html, /Updated<br\/>weekly/);
+  assert.match(html, /Core catalogue/);
+  assert.match(html, /Discovery archive/);
+  assert.match(html, /Borderline review/);
+  assert.match(html, /aria-pressed="true"[^>]*>Core catalogue/);
+  assert.doesNotMatch(html, /<strong>MedVision MCP/);
   assert.match(html, /HEORAgent MCP Server/);
   assert.match(html, /OMOPHub MCP Server/);
   assert.match(html, /SignalBridge for openFDA/);
