@@ -217,37 +217,6 @@
     "url": "https://github.com/anthesiallc/meddata-mcp"
   },
   {
-    "name": "io.github.CSOAI-ORG/clinical-trials-ai-mcp",
-    "kind": "MCP server",
-    "category": "Trials & Study Design",
-    "summary": "Search clinical trials, evaluate eligibility, compare trials, and retrieve endpoint data. Uses a reference database for demonstration purposes.",
-    "tags": [
-      "Clinical trials",
-      "Study design",
-      "Protocol evidence"
-    ],
-    "added": "Aug 11, 2026",
-    "checked": "Aug 11, 2026",
-    "status": "Static documentation and registry metadata reviewed",
-    "runtime": "Not independently runtime tested by registry",
-    "repository": "CSOAI-ORG/clinical-trials-ai-mcp",
-    "website": "Official MCP Registry",
-    "packages": "io.github.CSOAI-ORG/clinical-trials-ai-mcp 1.0.9",
-    "workflowFit": [
-      "Trial landscape review",
-      "Protocol and design support",
-      "External evidence context"
-    ],
-    "capabilities": [
-      "Search or structure documented trial information",
-      "Retrieve study records or design inputs",
-      "Support protocol-oriented comparison and evidence review"
-    ],
-    "limitation": "Trial records and automated design outputs may be incomplete, outdated, selectively reported, or method-dependent. Protocol decisions, eligibility judgments, and calculations require primary-record and statistical review.",
-    "favorite": false,
-    "url": "https://github.com/CSOAI-ORG/clinical-trials-ai-mcp"
-  },
-  {
     "name": "io.github.langcare/langcare-mcp-fhir",
     "kind": "MCP server",
     "category": "Clinical Data & Interoperability",

@@ -1,0 +1,3126 @@
+{
+  "title": "Search coverage and remaining work",
+  "asOf": "2026-09-08T19:09:19.740718+00:00",
+  "draft": false,
+  "publicReady": true,
+  "originalProtocolComplete": false,
+  "stoppingRuleMet": true,
+  "consecutiveZeroNewEligibleRounds": 2,
+  "baselinePublishedCards": 177,
+  "definitions": {
+    "query": "A recorded source-specific search expression; retries and partitions are not additional planned queries.",
+    "observation": "A returned record or file occurrence; repeats across queries/sources are retained.",
+    "individualReview": "A documented assessment of a specified primary page, README, instruction component or selected implementation; it is not necessarily a full code audit.",
+    "canonicalUnit": "A reconciled project/component identity, which can group multiple source observations.",
+    "publicCard": "A published presentation unit; its total is not obtained by summing eligible source rows or component observations."
+  },
+  "preExpansionCoverage": {
+    "githubRepository": {
+      "planned": 277,
+      "statuses": {
+        "inherited-complete": 125,
+        "complete": 152
+      },
+      "pages": 700,
+      "observations": 51103,
+      "incompleteResultPages": 0,
+      "pageSequenceGaps": 0
+    },
+    "githubCode": {
+      "planned": 16,
+      "statuses": {
+        "complete": 16
+      },
+      "observations": 53965,
+      "rows": [
+        {
+          "index": 246,
+          "status": "complete",
+          "query": "\"real-world evidence\" filename:SKILL.md",
+          "records": 764,
+          "evidenceSha256": "3b15968d0421e6c302be2dda5599ce064a34b96fce8a8270c2b20eaf764d7d51",
+          "partitionCount": 1,
+          "pageLogCount": 8
+        },
+        {
+          "index": 247,
+          "status": "complete",
+          "query": "\"health economics\" filename:SKILL.md",
+          "records": 436,
+          "evidenceSha256": "03d3da268fb9658bed22b2f34472a536de194536785dece99101ba831bf6f5ae",
+          "partitionCount": 1,
+          "pageLogCount": 5
+        },
+        {
+          "index": 248,
+          "status": "complete",
+          "query": "\"pharmacoepidemiology\" filename:SKILL.md",
+          "records": 49,
+          "evidenceSha256": "a20d3a299e8313788a0699dfba609d9401f94e9c1cbba3b09a7d1a2af91b7404",
+          "partitionCount": 1,
+          "pageLogCount": 1
+        },
+        {
+          "index": 249,
+          "status": "complete",
+          "query": "\"causal inference\" filename:SKILL.md",
+          "records": 5383,
+          "evidenceSha256": "ee5e4b30cc9af7fcc5085fcfefdc0cfae77fd8e8859c3fb056447d5c6e1e90b5",
+          "partitionCount": 29,
+          "pageLogCount": 0
+        },
+        {
+          "index": 250,
+          "status": "complete",
+          "query": "\"target trial\" filename:SKILL.md",
+          "records": 148,
+          "evidenceSha256": "17f27fe95c79a3ce053f24bd2cdec9fa4306af84b19ce11047b13552d1e911ed",
+          "partitionCount": 1,
+          "pageLogCount": 2
+        },
+        {
+          "index": 251,
+          "status": "complete",
+          "query": "\"evidence synthesis\" filename:SKILL.md",
+          "records": 2506,
+          "evidenceSha256": "7f39d8660afedc223f5bf921ab9c193d30df33d681eda64b79f267db9f049923",
+          "partitionCount": 13,
+          "pageLogCount": 0
+        },
+        {
+          "index": 252,
+          "status": "complete",
+          "query": "\"systematic review\" filename:SKILL.md",
+          "records": 10440,
+          "evidenceSha256": "7aaafc45b5bc357fe206fdf09d6b0b8e18bd494f8bae4d193c3ba85ab9da5640",
+          "partitionCount": 35,
+          "pageLogCount": 0
+        },
+        {
+          "index": 253,
+          "status": "complete",
+          "query": "\"OMOP\" filename:SKILL.md",
+          "records": 3921,
+          "evidenceSha256": "9a926a93b7a6a1ec534537db973955dabc1244a92dee793541613b2bf02ddf2b",
+          "partitionCount": 15,
+          "pageLogCount": 0
+        },
+        {
+          "index": 254,
+          "status": "complete",
+          "query": "\"OHDSI\" filename:SKILL.md",
+          "records": 53,
+          "evidenceSha256": "570c86a849c20767b0cd92c825ce8f23edecc9bb3f5d658d6cc8178fdec302a6",
+          "partitionCount": 1,
+          "pageLogCount": 1
+        },
+        {
+          "index": 255,
+          "status": "complete",
+          "query": "\"FHIR\" filename:SKILL.md",
+          "records": 2546,
+          "evidenceSha256": "f4d29b58a21ceba6606902976fc79fbf68d26bbc77a66e1d5aa87f9a363bb99b",
+          "partitionCount": 13,
+          "pageLogCount": 0
+        },
+        {
+          "index": 256,
+          "status": "complete",
+          "query": "\"PubMed\" filename:SKILL.md",
+          "records": 12753,
+          "evidenceSha256": "06831fc0a329d1b5355c6b4739742b2b1770b241d1bce16b4e116290b9686b71",
+          "partitionCount": 45,
+          "pageLogCount": 0
+        },
+        {
+          "index": 257,
+          "status": "complete",
+          "query": "\"clinical trial\" filename:SKILL.md",
+          "records": 9984,
+          "evidenceSha256": "28c2eb14ffcd5558c35c2b4c061b472c32f5e787c6497b4e8deccd355c53dd29",
+          "partitionCount": 35,
+          "pageLogCount": 0
+        },
+        {
+          "index": 258,
+          "status": "complete",
+          "query": "\"pharmacovigilance\" filename:SKILL.md",
+          "records": 641,
+          "evidenceSha256": "94865eed6aaa52f41fe91c0f3bf317e659ca775f0d794d5231d8a94affc9ad6d",
+          "partitionCount": 1,
+          "pageLogCount": 8
+        },
+        {
+          "index": 259,
+          "status": "complete",
+          "query": "\"record linkage\" filename:SKILL.md",
+          "records": 93,
+          "evidenceSha256": "a1f566b32f2183036136274dc837e08cc2f182393dfd64007cb4494fd3e78924",
+          "partitionCount": 1,
+          "pageLogCount": 1
+        },
+        {
+          "index": 260,
+          "status": "complete",
+          "query": "\"epidemiology\" filename:SKILL.md",
+          "records": 3251,
+          "evidenceSha256": "999607398ea7b548d7ea896fb21729c2659e10a80034c2efa30d4dec56f6d6cd",
+          "partitionCount": 17,
+          "pageLogCount": 0
+        },
+        {
+          "index": 261,
+          "status": "complete",
+          "query": "\"biostatistics\" filename:SKILL.md",
+          "records": 997,
+          "evidenceSha256": "d7215077584a9abe6c052471025392b5d928fa4b95fc17f414514c740df84208",
+          "partitionCount": 9,
+          "pageLogCount": 0
+        }
+      ],
+      "limitation": "Sharded code logs retain file-size partitions and resulting items, but omit per-page records; completion is collector-reported, not independently page-by-page verifiable. Indexed code size limit 393216 bytes; index coverage is not repository coverage."
+    },
+    "smithery": {
+      "queries": 214,
+      "statuses": {
+        "complete": 214
+      },
+      "pages": 389,
+      "unclosedPagination": [],
+      "uniqueServers": 4925,
+      "limitation": "Vocabulary-query pagination, not full unfiltered directory enumeration."
+    },
+    "indexedDirectories": {
+      "plannedQueries": 48,
+      "completedQueries": 48,
+      "batches": {
+        "fulfilled": 12
+      },
+      "missing": [],
+      "domains": {
+        "glama.ai": 16,
+        "pulsemcp.com": 16,
+        "mcp.so": 16
+      },
+      "limitation": "Search-engine indexed results only; no complete directory enumeration, no result-pagination exhaustion claim. Glama API unavailable without key; PulseMCP and MCP.so directory-wide access not established."
+    },
+    "officialMCPRegistry": {
+      "latestVersionRecords": 28167,
+      "reportedPages": 282,
+      "reviewBoundary": "Live latest-version pagination, not transactionally frozen; metadata negatives were automated and not all records individually reviewed."
+    },
+    "docker": {
+      "checkoutFiles": 496,
+      "reviewBoundary": "Retained repository snapshot screened locally; files are not distinct servers and this is not live global directory enumeration."
+    }
+  },
+  "historicalQueryAttempts": {
+    "statusCounts": {
+      "complete": 284,
+      "error": 19,
+      "interrupted": 2,
+      "incomplete": 9,
+      "inherited-complete": 195,
+      "interrupted-for-prospective-scope-amendment": 1
+    },
+    "unsuccessfulOrInterruptedAttempts": [
+      {
+        "query": "MCP \"QALY\" in:name,description,readme",
+        "status": "error",
+        "retainedObservations": 28208,
+        "interpretation": "Historical unsuccessful or interrupted attempt retained; later revised query completion does not complete this original query."
+      },
+      {
+        "query": "MCP \"epidemiology\" in:name,description,readme",
+        "status": "error",
+        "retainedObservations": 100,
+        "interpretation": "Historical unsuccessful or interrupted attempt retained; later revised query completion does not complete this original query."
+      },
+      {
+        "query": "MCP \"public health\" in:name,description,readme",
+        "status": "error",
+        "retainedObservations": 220,
+        "interpretation": "Historical unsuccessful or interrupted attempt retained; later revised query completion does not complete this original query."
+      },
+      {
+        "query": "MCP \"surveillance\" in:name,description,readme",
+        "status": "error",
+        "retainedObservations": 392,
+        "interpretation": "Historical unsuccessful or interrupted attempt retained; later revised query completion does not complete this original query."
+      },
+      {
+        "query": "MCP \"adverse event\" in:name,description,readme",
+        "status": "error",
+        "retainedObservations": 200,
+        "interpretation": "Historical unsuccessful or interrupted attempt retained; later revised query completion does not complete this original query."
+      },
+      {
+        "query": "MCP \"signal detection\" in:name,description,readme",
+        "status": "error",
+        "retainedObservations": 800,
+        "interpretation": "Historical unsuccessful or interrupted attempt retained; later revised query completion does not complete this original query."
+      },
+      {
+        "query": "MCP \"E2B\" in:name,description,readme",
+        "status": "error",
+        "retainedObservations": 5,
+        "interpretation": "Historical unsuccessful or interrupted attempt retained; later revised query completion does not complete this original query."
+      },
+      {
+        "query": "MCP \"PASS\" in:name,description,readme",
+        "status": "error",
+        "retainedObservations": 100,
+        "interpretation": "Historical unsuccessful or interrupted attempt retained; later revised query completion does not complete this original query."
+      },
+      {
+        "query": "MCP \"EMA\" in:name,description,readme",
+        "status": "error",
+        "retainedObservations": 3351,
+        "interpretation": "Historical unsuccessful or interrupted attempt retained; later revised query completion does not complete this original query."
+      },
+      {
+        "query": "MCP \"ICH\" in:name,description,readme",
+        "status": "error",
+        "retainedObservations": 24,
+        "interpretation": "Historical unsuccessful or interrupted attempt retained; later revised query completion does not complete this original query."
+      },
+      {
+        "query": "MCP \"labeling\" in:name,description,readme",
+        "status": "error",
+        "retainedObservations": 200,
+        "interpretation": "Historical unsuccessful or interrupted attempt retained; later revised query completion does not complete this original query."
+      },
+      {
+        "query": "MCP \"biologic\" in:name,description,readme",
+        "status": "error",
+        "retainedObservations": 293,
+        "interpretation": "Historical unsuccessful or interrupted attempt retained; later revised query completion does not complete this original query."
+      },
+      {
+        "query": "MCP \"medical device\" in:name,description,readme",
+        "status": "error",
+        "retainedObservations": 170,
+        "interpretation": "Historical unsuccessful or interrupted attempt retained; later revised query completion does not complete this original query."
+      },
+      {
+        "query": "MCP \"recall\" in:name,description,readme",
+        "status": "error",
+        "retainedObservations": 6507,
+        "interpretation": "Historical unsuccessful or interrupted attempt retained; later revised query completion does not complete this original query."
+      },
+      {
+        "query": "MCP \"REMS\" in:name,description,readme",
+        "status": "error",
+        "retainedObservations": 0,
+        "interpretation": "Historical unsuccessful or interrupted attempt retained; later revised query completion does not complete this original query."
+      },
+      {
+        "query": "MCP \"EHR\" in:name,description,readme",
+        "status": "error",
+        "retainedObservations": 3,
+        "interpretation": "Historical unsuccessful or interrupted attempt retained; later revised query completion does not complete this original query."
+      },
+      {
+        "query": "MCP \"claims\" in:name,description,readme",
+        "status": "error",
+        "retainedObservations": 199,
+        "interpretation": "Historical unsuccessful or interrupted attempt retained; later revised query completion does not complete this original query."
+      },
+      {
+        "query": "MCP \"dispensing\" in:name,description,readme",
+        "status": "error",
+        "retainedObservations": 100,
+        "interpretation": "Historical unsuccessful or interrupted attempt retained; later revised query completion does not complete this original query."
+      },
+      {
+        "query": "MCP \"laboratory\" in:name,description,readme",
+        "status": "error",
+        "retainedObservations": 344,
+        "interpretation": "Historical unsuccessful or interrupted attempt retained; later revised query completion does not complete this original query."
+      },
+      {
+        "query": "MCP \"WHO\" in:name,description,readme",
+        "status": "interrupted",
+        "retainedObservations": 11250,
+        "interpretation": "Historical unsuccessful or interrupted attempt retained; later revised query completion does not complete this original query."
+      },
+      {
+        "query": "\"causal inference\" filename:SKILL.md",
+        "status": "incomplete",
+        "retainedObservations": 752,
+        "interpretation": "Historical unsuccessful or interrupted attempt retained; later revised query completion does not complete this original query."
+      },
+      {
+        "query": "\"evidence synthesis\" filename:SKILL.md",
+        "status": "incomplete",
+        "retainedObservations": 553,
+        "interpretation": "Historical unsuccessful or interrupted attempt retained; later revised query completion does not complete this original query."
+      },
+      {
+        "query": "\"systematic review\" filename:SKILL.md",
+        "status": "incomplete",
+        "retainedObservations": 1000,
+        "interpretation": "Historical unsuccessful or interrupted attempt retained; later revised query completion does not complete this original query."
+      },
+      {
+        "query": "\"OMOP\" filename:SKILL.md",
+        "status": "incomplete",
+        "retainedObservations": 809,
+        "interpretation": "Historical unsuccessful or interrupted attempt retained; later revised query completion does not complete this original query."
+      },
+      {
+        "query": "\"FHIR\" filename:SKILL.md",
+        "status": "incomplete",
+        "retainedObservations": 580,
+        "interpretation": "Historical unsuccessful or interrupted attempt retained; later revised query completion does not complete this original query."
+      },
+      {
+        "query": "\"PubMed\" filename:SKILL.md",
+        "status": "incomplete",
+        "retainedObservations": 1000,
+        "interpretation": "Historical unsuccessful or interrupted attempt retained; later revised query completion does not complete this original query."
+      },
+      {
+        "query": "\"clinical trial\" filename:SKILL.md",
+        "status": "incomplete",
+        "retainedObservations": 852,
+        "interpretation": "Historical unsuccessful or interrupted attempt retained; later revised query completion does not complete this original query."
+      },
+      {
+        "query": "\"epidemiology\" filename:SKILL.md",
+        "status": "incomplete",
+        "retainedObservations": 706,
+        "interpretation": "Historical unsuccessful or interrupted attempt retained; later revised query completion does not complete this original query."
+      },
+      {
+        "query": "\"biostatistics\" filename:SKILL.md",
+        "status": "incomplete",
+        "retainedObservations": 997,
+        "interpretation": "Historical unsuccessful or interrupted attempt retained; later revised query completion does not complete this original query."
+      },
+      {
+        "query": "MCP \"PASS\" in:name,description,readme",
+        "status": "interrupted",
+        "retainedObservations": 8859,
+        "interpretation": "Historical unsuccessful or interrupted attempt retained; later revised query completion does not complete this original query."
+      },
+      {
+        "query": "MCP \"tokenization\" \"health\" in:name,description,readme",
+        "status": "interrupted-for-prospective-scope-amendment",
+        "retainedObservations": 22921,
+        "interpretation": "Historical unsuccessful or interrupted attempt retained; later revised query completion does not complete this original query."
+      }
+    ],
+    "note": "Superseded intermediate batches are retained for audit but not added again to final candidate totals."
+  },
+  "protocolChanges": [
+    {
+      "version": "September completion supplement 2 — precision amendment",
+      "rationale": "Repository search WHO returned 98,921 matches including ordinary prose; QALY returned code-quality repositories without literal QALY in the inspected control README. Generic protocol and engineering terms similarly require explicit health-research context. Original results and failures are retained. Amendment made after observing retrieval precision, not prespecified at initial search.",
+      "changes": [
+        {
+          "originalIndex": 14,
+          "originalQuery": "MCP \"QALY\" in:name,description,readme",
+          "replacements": [
+            "MCP \"quality-adjusted life year\" in:name,description,readme",
+            "MCP \"quality adjusted life year\" in:name,description,readme"
+          ],
+          "reason": "Disambiguate an acronym/homonym or require a health-research context for generic software/method wording."
+        },
+        {
+          "originalIndex": 89,
+          "originalQuery": "MCP \"WHO\" in:name,description,readme",
+          "replacements": [
+            "MCP \"World Health Organization\" in:name,description,readme",
+            "MCP \"WHO GHO\" in:name,description,readme"
+          ],
+          "reason": "Disambiguate an acronym/homonym or require a health-research context for generic software/method wording."
+        },
+        {
+          "originalIndex": 98,
+          "originalQuery": "MCP \"CDM\" in:name,description,readme",
+          "replacements": [
+            "MCP \"common data model\" in:name,description,readme"
+          ],
+          "reason": "Disambiguate an acronym/homonym or require a health-research context for generic software/method wording."
+        },
+        {
+          "originalIndex": 103,
+          "originalQuery": "MCP \"ADaM\" in:name,description,readme",
+          "replacements": [
+            "MCP \"analysis data model\" in:name,description,readme",
+            "MCP \"CDISC ADaM\" in:name,description,readme"
+          ],
+          "reason": "Disambiguate an acronym/homonym or require a health-research context for generic software/method wording."
+        },
+        {
+          "originalIndex": 115,
+          "originalQuery": "MCP \"tokenization\" in:name,description,readme",
+          "replacements": [
+            "MCP \"tokenization\" \"health\" in:name,description,readme",
+            "MCP \"tokenization\" \"medical\" in:name,description,readme"
+          ],
+          "reason": "Disambiguate an acronym/homonym or require a health-research context for generic software/method wording."
+        },
+        {
+          "originalIndex": 125,
+          "originalQuery": "MCP \"entity resolution\" in:name,description,readme",
+          "replacements": [
+            "MCP \"entity resolution\" \"health\" in:name,description,readme",
+            "MCP \"entity resolution\" \"medical\" in:name,description,readme"
+          ],
+          "reason": "Disambiguate an acronym/homonym or require a health-research context for generic software/method wording."
+        },
+        {
+          "originalIndex": 126,
+          "originalQuery": "MCP \"deduplication\" in:name,description,readme",
+          "replacements": [
+            "MCP \"deduplication\" \"health\" in:name,description,readme",
+            "MCP \"deduplication\" \"medical\" in:name,description,readme"
+          ],
+          "reason": "Disambiguate an acronym/homonym or require a health-research context for generic software/method wording."
+        },
+        {
+          "originalIndex": 127,
+          "originalQuery": "MCP \"interoperability\" in:name,description,readme",
+          "replacements": [
+            "MCP \"interoperability\" \"health\" in:name,description,readme",
+            "MCP \"interoperability\" \"medical\" in:name,description,readme"
+          ],
+          "reason": "Disambiguate an acronym/homonym or require a health-research context for generic software/method wording."
+        },
+        {
+          "originalIndex": 128,
+          "originalQuery": "MCP \"ETL\" in:name,description,readme",
+          "replacements": [
+            "MCP \"ETL\" \"health\" in:name,description,readme",
+            "MCP \"ETL\" \"medical\" in:name,description,readme"
+          ],
+          "reason": "Disambiguate an acronym/homonym or require a health-research context for generic software/method wording."
+        },
+        {
+          "originalIndex": 130,
+          "originalQuery": "MCP \"data integration\" in:name,description,readme",
+          "replacements": [
+            "MCP \"data integration\" \"health\" in:name,description,readme",
+            "MCP \"data integration\" \"medical\" in:name,description,readme"
+          ],
+          "reason": "Disambiguate an acronym/homonym or require a health-research context for generic software/method wording."
+        },
+        {
+          "originalIndex": 131,
+          "originalQuery": "MCP \"identity resolution\" in:name,description,readme",
+          "replacements": [
+            "MCP \"identity resolution\" \"health\" in:name,description,readme",
+            "MCP \"identity resolution\" \"medical\" in:name,description,readme"
+          ],
+          "reason": "Disambiguate an acronym/homonym or require a health-research context for generic software/method wording."
+        },
+        {
+          "originalIndex": 132,
+          "originalQuery": "MCP \"crosswalk\" in:name,description,readme",
+          "replacements": [
+            "MCP \"crosswalk\" \"health\" in:name,description,readme",
+            "MCP \"crosswalk\" \"medical\" in:name,description,readme"
+          ],
+          "reason": "Disambiguate an acronym/homonym or require a health-research context for generic software/method wording."
+        },
+        {
+          "originalIndex": 154,
+          "originalQuery": "MCP \"sensitivity analysis\" in:name,description,readme",
+          "replacements": [
+            "MCP \"sensitivity analysis\" \"health\" in:name,description,readme",
+            "MCP \"sensitivity analysis\" \"medical\" in:name,description,readme"
+          ],
+          "reason": "Disambiguate an acronym/homonym or require a health-research context for generic software/method wording."
+        },
+        {
+          "originalIndex": 155,
+          "originalQuery": "MCP \"selection bias\" in:name,description,readme",
+          "replacements": [
+            "MCP \"selection bias\" \"health\" in:name,description,readme",
+            "MCP \"selection bias\" \"medical\" in:name,description,readme"
+          ],
+          "reason": "Disambiguate an acronym/homonym or require a health-research context for generic software/method wording."
+        },
+        {
+          "originalIndex": 156,
+          "originalQuery": "MCP \"information bias\" in:name,description,readme",
+          "replacements": [
+            "MCP \"information bias\" \"health\" in:name,description,readme",
+            "MCP \"information bias\" \"medical\" in:name,description,readme"
+          ],
+          "reason": "Disambiguate an acronym/homonym or require a health-research context for generic software/method wording."
+        },
+        {
+          "originalIndex": 160,
+          "originalQuery": "MCP \"DAG\" in:name,description,readme",
+          "replacements": [
+            "MCP \"causal DAG\" in:name,description,readme",
+            "MCP \"causal graph\" in:name,description,readme"
+          ],
+          "reason": "Disambiguate an acronym/homonym or require a health-research context for generic software/method wording."
+        },
+        {
+          "originalIndex": 177,
+          "originalQuery": "MCP \"protocol\" in:name,description,readme",
+          "replacements": [
+            "MCP \"study protocol\" in:name,description,readme",
+            "MCP \"research protocol\" in:name,description,readme"
+          ],
+          "reason": "Disambiguate an acronym/homonym or require a health-research context for generic software/method wording."
+        },
+        {
+          "originalIndex": 179,
+          "originalQuery": "MCP \"Table 1\" in:name,description,readme",
+          "replacements": [
+            "MCP \"baseline characteristics\" in:name,description,readme",
+            "MCP \"Table 1 clinical\" in:name,description,readme"
+          ],
+          "reason": "Disambiguate an acronym/homonym or require a health-research context for generic software/method wording."
+        },
+        {
+          "originalIndex": 206,
+          "originalQuery": "MCP \"treatment\" in:name,description,readme",
+          "replacements": [
+            "MCP \"treatment\" \"health\" in:name,description,readme",
+            "MCP \"treatment\" \"medical\" in:name,description,readme"
+          ],
+          "reason": "Disambiguate an acronym/homonym or require a health-research context for generic software/method wording."
+        },
+        {
+          "originalIndex": 207,
+          "originalQuery": "MCP \"therapy\" in:name,description,readme",
+          "replacements": [
+            "MCP \"therapy\" \"health\" in:name,description,readme",
+            "MCP \"therapy\" \"medical\" in:name,description,readme"
+          ],
+          "reason": "Disambiguate an acronym/homonym or require a health-research context for generic software/method wording."
+        },
+        {
+          "originalIndex": 210,
+          "originalQuery": "MCP \"device\" in:name,description,readme",
+          "replacements": [
+            "MCP \"device\" \"health\" in:name,description,readme",
+            "MCP \"device\" \"medical\" in:name,description,readme"
+          ],
+          "reason": "Disambiguate an acronym/homonym or require a health-research context for generic software/method wording."
+        },
+        {
+          "originalIndex": 212,
+          "originalQuery": "MCP \"exposure\" in:name,description,readme",
+          "replacements": [
+            "MCP \"exposure\" \"health\" in:name,description,readme",
+            "MCP \"exposure\" \"medical\" in:name,description,readme"
+          ],
+          "reason": "Disambiguate an acronym/homonym or require a health-research context for generic software/method wording."
+        },
+        {
+          "originalIndex": 213,
+          "originalQuery": "MCP \"intervention\" in:name,description,readme",
+          "replacements": [
+            "MCP \"intervention\" \"health\" in:name,description,readme",
+            "MCP \"intervention\" \"medical\" in:name,description,readme"
+          ],
+          "reason": "Disambiguate an acronym/homonym or require a health-research context for generic software/method wording."
+        }
+      ]
+    },
+    {
+      "version": "September completion supplement 3 — remaining homonyms",
+      "rationale": "PASS retrieval is dominated by ordinary software pass/fail wording, with thousands of partial records. Resolve PASS and prospectively disambiguate PRISMA (also a software ORM), and any unfinished generic labeling, recall, claims or diagnostic queries. This is a post-start amendment, not an initial prespecification. Completed broad queries remain unchanged. Earlier observations are retained for screening.",
+      "changes": [
+        {
+          "originalIndex": 46,
+          "replacedQuery": "MCP \"PASS\" in:name,description,readme",
+          "replacements": [
+            "MCP \"post-authorization safety study\" in:name,description,readme",
+            "MCP \"post-authorisation safety study\" in:name,description,readme",
+            "MCP \"postauthorization safety study\" in:name,description,readme",
+            "MCP \"PASS pharmacovigilance\" in:name,description,readme"
+          ],
+          "reason": "Resolve ordinary-word/acronym ambiguity; retain all earlier retrievals as supplementary observations."
+        },
+        {
+          "originalIndex": 58,
+          "replacedQuery": "MCP \"labeling\" in:name,description,readme",
+          "replacements": [
+            "MCP \"drug labeling\" in:name,description,readme",
+            "MCP \"medical device labeling\" in:name,description,readme"
+          ],
+          "reason": "Resolve ordinary-word/acronym ambiguity; retain all earlier retrievals as supplementary observations."
+        },
+        {
+          "originalIndex": 63,
+          "replacedQuery": "MCP \"recall\" in:name,description,readme",
+          "replacements": [
+            "MCP \"FDA recall\" in:name,description,readme",
+            "MCP \"drug recall\" in:name,description,readme",
+            "MCP \"food recall\" in:name,description,readme"
+          ],
+          "reason": "Resolve ordinary-word/acronym ambiguity; retain all earlier retrievals as supplementary observations."
+        },
+        {
+          "originalIndex": 71,
+          "replacedQuery": "MCP \"claims\" in:name,description,readme",
+          "replacements": [
+            "MCP \"health insurance claims\" in:name,description,readme",
+            "MCP \"medical claims\" in:name,description,readme"
+          ],
+          "reason": "Resolve ordinary-word/acronym ambiguity; retain all earlier retrievals as supplementary observations."
+        },
+        {
+          "originalIndex": 174,
+          "replacedQuery": "MCP \"PRISMA\" in:name,description,readme",
+          "replacements": [
+            "MCP \"PRISMA systematic review\" in:name,description,readme",
+            "MCP \"Preferred Reporting Items for Systematic Reviews\" in:name,description,readme"
+          ],
+          "reason": "Resolve ordinary-word/acronym ambiguity; retain all earlier retrievals as supplementary observations."
+        },
+        {
+          "originalIndex": 211,
+          "replacedQuery": "MCP \"diagnostic\" in:name,description,readme",
+          "replacements": [
+            "MCP \"medical diagnostic\" in:name,description,readme",
+            "MCP \"clinical diagnostic\" in:name,description,readme"
+          ],
+          "reason": "Resolve ordinary-word/acronym ambiguity; retain all earlier retrievals as supplementary observations."
+        }
+      ]
+    },
+    {
+      "version": "September completion supplement 4 — research-specific repository discovery",
+      "rationale": "A precision check on MCP tokenization health returned about 90,200 hits; three retrieved READMEs lacked literal tokenization while containing MCP and health. Remaining repository discovery now searches name, description and topics to identify packages advertising a relevant capability, while preserving completed broader queries, all partial observations, skill code searches and citation chaining. This changes README-only coverage and is not retrospective completion of the original matrix.",
+      "changes": [
+        {
+          "id": "115-a1",
+          "term": "tokenization",
+          "priorQuery": "MCP \"tokenization\" \"health\" in:name,description,readme",
+          "query": "MCP \"tokenization\" \"health\" in:name,description,topics"
+        },
+        {
+          "id": "115-a2",
+          "term": "tokenization",
+          "priorQuery": "MCP \"tokenization\" \"medical\" in:name,description,readme",
+          "query": "MCP \"tokenization\" \"medical\" in:name,description,topics"
+        },
+        {
+          "id": "116",
+          "term": "privacy-preserving tokenization",
+          "priorQuery": "MCP \"privacy-preserving tokenization\" in:name,description,readme",
+          "query": "MCP \"privacy-preserving tokenization\" in:name,description,topics"
+        },
+        {
+          "id": "117",
+          "term": "patient token",
+          "priorQuery": "MCP \"patient token\" in:name,description,readme",
+          "query": "MCP \"patient token\" in:name,description,topics"
+        },
+        {
+          "id": "118",
+          "term": "record linkage",
+          "priorQuery": "MCP \"record linkage\" in:name,description,readme",
+          "query": "MCP \"record linkage\" in:name,description,topics"
+        },
+        {
+          "id": "119",
+          "term": "data linkage",
+          "priorQuery": "MCP \"data linkage\" in:name,description,readme",
+          "query": "MCP \"data linkage\" in:name,description,topics"
+        },
+        {
+          "id": "120",
+          "term": "probabilistic linkage",
+          "priorQuery": "MCP \"probabilistic linkage\" in:name,description,readme",
+          "query": "MCP \"probabilistic linkage\" in:name,description,topics"
+        },
+        {
+          "id": "121",
+          "term": "deterministic linkage",
+          "priorQuery": "MCP \"deterministic linkage\" in:name,description,readme",
+          "query": "MCP \"deterministic linkage\" in:name,description,topics"
+        },
+        {
+          "id": "122",
+          "term": "privacy-preserving record linkage",
+          "priorQuery": "MCP \"privacy-preserving record linkage\" in:name,description,readme",
+          "query": "MCP \"privacy-preserving record linkage\" in:name,description,topics"
+        },
+        {
+          "id": "123",
+          "term": "PPRL",
+          "priorQuery": "MCP \"PPRL\" in:name,description,readme",
+          "query": "MCP \"PPRL\" in:name,description,topics"
+        },
+        {
+          "id": "124",
+          "term": "patient matching",
+          "priorQuery": "MCP \"patient matching\" in:name,description,readme",
+          "query": "MCP \"patient matching\" in:name,description,topics"
+        },
+        {
+          "id": "125-a1",
+          "term": "entity resolution",
+          "priorQuery": "MCP \"entity resolution\" \"health\" in:name,description,readme",
+          "query": "MCP \"entity resolution\" \"health\" in:name,description,topics"
+        },
+        {
+          "id": "125-a2",
+          "term": "entity resolution",
+          "priorQuery": "MCP \"entity resolution\" \"medical\" in:name,description,readme",
+          "query": "MCP \"entity resolution\" \"medical\" in:name,description,topics"
+        },
+        {
+          "id": "126-a1",
+          "term": "deduplication",
+          "priorQuery": "MCP \"deduplication\" \"health\" in:name,description,readme",
+          "query": "MCP \"deduplication\" \"health\" in:name,description,topics"
+        },
+        {
+          "id": "126-a2",
+          "term": "deduplication",
+          "priorQuery": "MCP \"deduplication\" \"medical\" in:name,description,readme",
+          "query": "MCP \"deduplication\" \"medical\" in:name,description,topics"
+        },
+        {
+          "id": "127-a1",
+          "term": "interoperability",
+          "priorQuery": "MCP \"interoperability\" \"health\" in:name,description,readme",
+          "query": "MCP \"interoperability\" \"health\" in:name,description,topics"
+        },
+        {
+          "id": "127-a2",
+          "term": "interoperability",
+          "priorQuery": "MCP \"interoperability\" \"medical\" in:name,description,readme",
+          "query": "MCP \"interoperability\" \"medical\" in:name,description,topics"
+        },
+        {
+          "id": "128-a1",
+          "term": "ETL",
+          "priorQuery": "MCP \"ETL\" \"health\" in:name,description,readme",
+          "query": "MCP \"ETL\" \"health\" in:name,description,topics"
+        },
+        {
+          "id": "128-a2",
+          "term": "ETL",
+          "priorQuery": "MCP \"ETL\" \"medical\" in:name,description,readme",
+          "query": "MCP \"ETL\" \"medical\" in:name,description,topics"
+        },
+        {
+          "id": "129",
+          "term": "data harmonization",
+          "priorQuery": "MCP \"data harmonization\" in:name,description,readme",
+          "query": "MCP \"data harmonization\" in:name,description,topics"
+        },
+        {
+          "id": "130-a1",
+          "term": "data integration",
+          "priorQuery": "MCP \"data integration\" \"health\" in:name,description,readme",
+          "query": "MCP \"data integration\" \"health\" in:name,description,topics"
+        },
+        {
+          "id": "130-a2",
+          "term": "data integration",
+          "priorQuery": "MCP \"data integration\" \"medical\" in:name,description,readme",
+          "query": "MCP \"data integration\" \"medical\" in:name,description,topics"
+        },
+        {
+          "id": "131-a1",
+          "term": "identity resolution",
+          "priorQuery": "MCP \"identity resolution\" \"health\" in:name,description,readme",
+          "query": "MCP \"identity resolution\" \"health\" in:name,description,topics"
+        },
+        {
+          "id": "131-a2",
+          "term": "identity resolution",
+          "priorQuery": "MCP \"identity resolution\" \"medical\" in:name,description,readme",
+          "query": "MCP \"identity resolution\" \"medical\" in:name,description,topics"
+        },
+        {
+          "id": "132-a1",
+          "term": "crosswalk",
+          "priorQuery": "MCP \"crosswalk\" \"health\" in:name,description,readme",
+          "query": "MCP \"crosswalk\" \"health\" in:name,description,topics"
+        },
+        {
+          "id": "132-a2",
+          "term": "crosswalk",
+          "priorQuery": "MCP \"crosswalk\" \"medical\" in:name,description,readme",
+          "query": "MCP \"crosswalk\" \"medical\" in:name,description,topics"
+        },
+        {
+          "id": "133",
+          "term": "study design",
+          "priorQuery": "MCP \"study design\" in:name,description,readme",
+          "query": "MCP \"study design\" in:name,description,topics"
+        },
+        {
+          "id": "134",
+          "term": "observational study",
+          "priorQuery": "MCP \"observational study\" in:name,description,readme",
+          "query": "MCP \"observational study\" in:name,description,topics"
+        },
+        {
+          "id": "135",
+          "term": "causal inference",
+          "priorQuery": "MCP \"causal inference\" in:name,description,readme",
+          "query": "MCP \"causal inference\" in:name,description,topics"
+        },
+        {
+          "id": "136",
+          "term": "target trial",
+          "priorQuery": "MCP \"target trial\" in:name,description,readme",
+          "query": "MCP \"target trial\" in:name,description,topics"
+        },
+        {
+          "id": "137",
+          "term": "target trial emulation",
+          "priorQuery": "MCP \"target trial emulation\" in:name,description,readme",
+          "query": "MCP \"target trial emulation\" in:name,description,topics"
+        },
+        {
+          "id": "138",
+          "term": "estimand",
+          "priorQuery": "MCP \"estimand\" in:name,description,readme",
+          "query": "MCP \"estimand\" in:name,description,topics"
+        },
+        {
+          "id": "139",
+          "term": "g-methods",
+          "priorQuery": "MCP \"g-methods\" in:name,description,readme",
+          "query": "MCP \"g-methods\" in:name,description,topics"
+        },
+        {
+          "id": "140",
+          "term": "g-formula",
+          "priorQuery": "MCP \"g-formula\" in:name,description,readme",
+          "query": "MCP \"g-formula\" in:name,description,topics"
+        },
+        {
+          "id": "141",
+          "term": "g-computation",
+          "priorQuery": "MCP \"g-computation\" in:name,description,readme",
+          "query": "MCP \"g-computation\" in:name,description,topics"
+        },
+        {
+          "id": "142",
+          "term": "g-estimation",
+          "priorQuery": "MCP \"g-estimation\" in:name,description,readme",
+          "query": "MCP \"g-estimation\" in:name,description,topics"
+        },
+        {
+          "id": "143",
+          "term": "marginal structural model",
+          "priorQuery": "MCP \"marginal structural model\" in:name,description,readme",
+          "query": "MCP \"marginal structural model\" in:name,description,topics"
+        },
+        {
+          "id": "144",
+          "term": "inverse probability weighting",
+          "priorQuery": "MCP \"inverse probability weighting\" in:name,description,readme",
+          "query": "MCP \"inverse probability weighting\" in:name,description,topics"
+        },
+        {
+          "id": "145",
+          "term": "time-varying confounding",
+          "priorQuery": "MCP \"time-varying confounding\" in:name,description,readme",
+          "query": "MCP \"time-varying confounding\" in:name,description,topics"
+        },
+        {
+          "id": "146",
+          "term": "confounding",
+          "priorQuery": "MCP \"confounding\" in:name,description,readme",
+          "query": "MCP \"confounding\" in:name,description,topics"
+        },
+        {
+          "id": "147",
+          "term": "unmeasured confounding",
+          "priorQuery": "MCP \"unmeasured confounding\" in:name,description,readme",
+          "query": "MCP \"unmeasured confounding\" in:name,description,topics"
+        },
+        {
+          "id": "148",
+          "term": "confounding by indication",
+          "priorQuery": "MCP \"confounding by indication\" in:name,description,readme",
+          "query": "MCP \"confounding by indication\" in:name,description,topics"
+        },
+        {
+          "id": "149",
+          "term": "propensity score",
+          "priorQuery": "MCP \"propensity score\" in:name,description,readme",
+          "query": "MCP \"propensity score\" in:name,description,topics"
+        },
+        {
+          "id": "150",
+          "term": "difference-in-differences",
+          "priorQuery": "MCP \"difference-in-differences\" in:name,description,readme",
+          "query": "MCP \"difference-in-differences\" in:name,description,topics"
+        },
+        {
+          "id": "151",
+          "term": "instrumental variable",
+          "priorQuery": "MCP \"instrumental variable\" in:name,description,readme",
+          "query": "MCP \"instrumental variable\" in:name,description,topics"
+        },
+        {
+          "id": "152",
+          "term": "negative control",
+          "priorQuery": "MCP \"negative control\" in:name,description,readme",
+          "query": "MCP \"negative control\" in:name,description,topics"
+        },
+        {
+          "id": "153",
+          "term": "quantitative bias analysis",
+          "priorQuery": "MCP \"quantitative bias analysis\" in:name,description,readme",
+          "query": "MCP \"quantitative bias analysis\" in:name,description,topics"
+        },
+        {
+          "id": "154-a1",
+          "term": "sensitivity analysis",
+          "priorQuery": "MCP \"sensitivity analysis\" \"health\" in:name,description,readme",
+          "query": "MCP \"sensitivity analysis\" \"health\" in:name,description,topics"
+        },
+        {
+          "id": "154-a2",
+          "term": "sensitivity analysis",
+          "priorQuery": "MCP \"sensitivity analysis\" \"medical\" in:name,description,readme",
+          "query": "MCP \"sensitivity analysis\" \"medical\" in:name,description,topics"
+        },
+        {
+          "id": "155-a1",
+          "term": "selection bias",
+          "priorQuery": "MCP \"selection bias\" \"health\" in:name,description,readme",
+          "query": "MCP \"selection bias\" \"health\" in:name,description,topics"
+        },
+        {
+          "id": "155-a2",
+          "term": "selection bias",
+          "priorQuery": "MCP \"selection bias\" \"medical\" in:name,description,readme",
+          "query": "MCP \"selection bias\" \"medical\" in:name,description,topics"
+        },
+        {
+          "id": "156-a1",
+          "term": "information bias",
+          "priorQuery": "MCP \"information bias\" \"health\" in:name,description,readme",
+          "query": "MCP \"information bias\" \"health\" in:name,description,topics"
+        },
+        {
+          "id": "156-a2",
+          "term": "information bias",
+          "priorQuery": "MCP \"information bias\" \"medical\" in:name,description,readme",
+          "query": "MCP \"information bias\" \"medical\" in:name,description,topics"
+        },
+        {
+          "id": "157",
+          "term": "misclassification",
+          "priorQuery": "MCP \"misclassification\" in:name,description,readme",
+          "query": "MCP \"misclassification\" in:name,description,topics"
+        },
+        {
+          "id": "158",
+          "term": "immortal time bias",
+          "priorQuery": "MCP \"immortal time bias\" in:name,description,readme",
+          "query": "MCP \"immortal time bias\" in:name,description,topics"
+        },
+        {
+          "id": "159",
+          "term": "collider bias",
+          "priorQuery": "MCP \"collider bias\" in:name,description,readme",
+          "query": "MCP \"collider bias\" in:name,description,topics"
+        },
+        {
+          "id": "160-a1",
+          "term": "DAG",
+          "priorQuery": "MCP \"causal DAG\" in:name,description,readme",
+          "query": "MCP \"causal DAG\" in:name,description,topics"
+        },
+        {
+          "id": "160-a2",
+          "term": "DAG",
+          "priorQuery": "MCP \"causal graph\" in:name,description,readme",
+          "query": "MCP \"causal graph\" in:name,description,topics"
+        },
+        {
+          "id": "161",
+          "term": "adjustment set",
+          "priorQuery": "MCP \"adjustment set\" in:name,description,readme",
+          "query": "MCP \"adjustment set\" in:name,description,topics"
+        },
+        {
+          "id": "162",
+          "term": "self-controlled case series",
+          "priorQuery": "MCP \"self-controlled case series\" in:name,description,readme",
+          "query": "MCP \"self-controlled case series\" in:name,description,topics"
+        },
+        {
+          "id": "163",
+          "term": "case-crossover",
+          "priorQuery": "MCP \"case-crossover\" in:name,description,readme",
+          "query": "MCP \"case-crossover\" in:name,description,topics"
+        },
+        {
+          "id": "164",
+          "term": "new-user design",
+          "priorQuery": "MCP \"new-user design\" in:name,description,readme",
+          "query": "MCP \"new-user design\" in:name,description,topics"
+        },
+        {
+          "id": "165",
+          "term": "active comparator",
+          "priorQuery": "MCP \"active comparator\" in:name,description,readme",
+          "query": "MCP \"active comparator\" in:name,description,topics"
+        },
+        {
+          "id": "166",
+          "term": "clinical trial",
+          "priorQuery": "MCP \"clinical trial\" in:name,description,readme",
+          "query": "MCP \"clinical trial\" in:name,description,topics"
+        },
+        {
+          "id": "167",
+          "term": "ClinicalTrials.gov",
+          "priorQuery": "MCP \"ClinicalTrials.gov\" in:name,description,readme",
+          "query": "MCP \"ClinicalTrials.gov\" in:name,description,topics"
+        },
+        {
+          "id": "168",
+          "term": "literature search",
+          "priorQuery": "MCP \"literature search\" in:name,description,readme",
+          "query": "MCP \"literature search\" in:name,description,topics"
+        },
+        {
+          "id": "169",
+          "term": "PubMed",
+          "priorQuery": "MCP \"PubMed\" in:name,description,readme",
+          "query": "MCP \"PubMed\" in:name,description,topics"
+        },
+        {
+          "id": "170",
+          "term": "systematic review",
+          "priorQuery": "MCP \"systematic review\" in:name,description,readme",
+          "query": "MCP \"systematic review\" in:name,description,topics"
+        },
+        {
+          "id": "171",
+          "term": "scoping review",
+          "priorQuery": "MCP \"scoping review\" in:name,description,readme",
+          "query": "MCP \"scoping review\" in:name,description,topics"
+        },
+        {
+          "id": "172",
+          "term": "meta-analysis",
+          "priorQuery": "MCP \"meta-analysis\" in:name,description,readme",
+          "query": "MCP \"meta-analysis\" in:name,description,topics"
+        },
+        {
+          "id": "173",
+          "term": "evidence synthesis",
+          "priorQuery": "MCP \"evidence synthesis\" in:name,description,readme",
+          "query": "MCP \"evidence synthesis\" in:name,description,topics"
+        },
+        {
+          "id": "174-b1",
+          "term": "PRISMA",
+          "priorQuery": "MCP \"PRISMA systematic review\" in:name,description,readme",
+          "query": "MCP \"PRISMA systematic review\" in:name,description,topics"
+        },
+        {
+          "id": "174-b2",
+          "term": "PRISMA",
+          "priorQuery": "MCP \"Preferred Reporting Items for Systematic Reviews\" in:name,description,readme",
+          "query": "MCP \"Preferred Reporting Items for Systematic Reviews\" in:name,description,topics"
+        },
+        {
+          "id": "175",
+          "term": "citation verification",
+          "priorQuery": "MCP \"citation verification\" in:name,description,readme",
+          "query": "MCP \"citation verification\" in:name,description,topics"
+        },
+        {
+          "id": "176",
+          "term": "evidence grading",
+          "priorQuery": "MCP \"evidence grading\" in:name,description,readme",
+          "query": "MCP \"evidence grading\" in:name,description,topics"
+        },
+        {
+          "id": "177-a1",
+          "term": "protocol",
+          "priorQuery": "MCP \"study protocol\" in:name,description,readme",
+          "query": "MCP \"study protocol\" in:name,description,topics"
+        },
+        {
+          "id": "177-a2",
+          "term": "protocol",
+          "priorQuery": "MCP \"research protocol\" in:name,description,readme",
+          "query": "MCP \"research protocol\" in:name,description,topics"
+        },
+        {
+          "id": "178",
+          "term": "statistical analysis plan",
+          "priorQuery": "MCP \"statistical analysis plan\" in:name,description,readme",
+          "query": "MCP \"statistical analysis plan\" in:name,description,topics"
+        },
+        {
+          "id": "179-a1",
+          "term": "Table 1",
+          "priorQuery": "MCP \"baseline characteristics\" in:name,description,readme",
+          "query": "MCP \"baseline characteristics\" in:name,description,topics"
+        },
+        {
+          "id": "179-a2",
+          "term": "Table 1",
+          "priorQuery": "MCP \"Table 1 clinical\" in:name,description,readme",
+          "query": "MCP \"Table 1 clinical\" in:name,description,topics"
+        },
+        {
+          "id": "180",
+          "term": "survival analysis",
+          "priorQuery": "MCP \"survival analysis\" in:name,description,readme",
+          "query": "MCP \"survival analysis\" in:name,description,topics"
+        },
+        {
+          "id": "181",
+          "term": "time-to-event",
+          "priorQuery": "MCP \"time-to-event\" in:name,description,readme",
+          "query": "MCP \"time-to-event\" in:name,description,topics"
+        },
+        {
+          "id": "182",
+          "term": "disease",
+          "priorQuery": "MCP \"disease\" in:name,description,readme",
+          "query": "MCP \"disease\" in:name,description,topics"
+        },
+        {
+          "id": "183",
+          "term": "chronic disease",
+          "priorQuery": "MCP \"chronic disease\" in:name,description,readme",
+          "query": "MCP \"chronic disease\" in:name,description,topics"
+        },
+        {
+          "id": "184",
+          "term": "infectious disease",
+          "priorQuery": "MCP \"infectious disease\" in:name,description,readme",
+          "query": "MCP \"infectious disease\" in:name,description,topics"
+        },
+        {
+          "id": "185",
+          "term": "communicable disease",
+          "priorQuery": "MCP \"communicable disease\" in:name,description,readme",
+          "query": "MCP \"communicable disease\" in:name,description,topics"
+        },
+        {
+          "id": "186",
+          "term": "autoimmune",
+          "priorQuery": "MCP \"autoimmune\" in:name,description,readme",
+          "query": "MCP \"autoimmune\" in:name,description,topics"
+        },
+        {
+          "id": "187",
+          "term": "immune-mediated",
+          "priorQuery": "MCP \"immune-mediated\" in:name,description,readme",
+          "query": "MCP \"immune-mediated\" in:name,description,topics"
+        },
+        {
+          "id": "188",
+          "term": "cardiovascular",
+          "priorQuery": "MCP \"cardiovascular\" in:name,description,readme",
+          "query": "MCP \"cardiovascular\" in:name,description,topics"
+        },
+        {
+          "id": "189",
+          "term": "oncology",
+          "priorQuery": "MCP \"oncology\" in:name,description,readme",
+          "query": "MCP \"oncology\" in:name,description,topics"
+        },
+        {
+          "id": "190",
+          "term": "cancer",
+          "priorQuery": "MCP \"cancer\" in:name,description,readme",
+          "query": "MCP \"cancer\" in:name,description,topics"
+        },
+        {
+          "id": "191",
+          "term": "diabetes",
+          "priorQuery": "MCP \"diabetes\" in:name,description,readme",
+          "query": "MCP \"diabetes\" in:name,description,topics"
+        },
+        {
+          "id": "192",
+          "term": "metabolic",
+          "priorQuery": "MCP \"metabolic\" in:name,description,readme",
+          "query": "MCP \"metabolic\" in:name,description,topics"
+        },
+        {
+          "id": "193",
+          "term": "respiratory",
+          "priorQuery": "MCP \"respiratory\" in:name,description,readme",
+          "query": "MCP \"respiratory\" in:name,description,topics"
+        },
+        {
+          "id": "194",
+          "term": "neurologic",
+          "priorQuery": "MCP \"neurologic\" in:name,description,readme",
+          "query": "MCP \"neurologic\" in:name,description,topics"
+        },
+        {
+          "id": "195",
+          "term": "psychiatric",
+          "priorQuery": "MCP \"psychiatric\" in:name,description,readme",
+          "query": "MCP \"psychiatric\" in:name,description,topics"
+        },
+        {
+          "id": "196",
+          "term": "renal",
+          "priorQuery": "MCP \"renal\" in:name,description,readme",
+          "query": "MCP \"renal\" in:name,description,topics"
+        },
+        {
+          "id": "197",
+          "term": "hepatic",
+          "priorQuery": "MCP \"hepatic\" in:name,description,readme",
+          "query": "MCP \"hepatic\" in:name,description,topics"
+        },
+        {
+          "id": "198",
+          "term": "rare disease",
+          "priorQuery": "MCP \"rare disease\" in:name,description,readme",
+          "query": "MCP \"rare disease\" in:name,description,topics"
+        },
+        {
+          "id": "199",
+          "term": "maternal",
+          "priorQuery": "MCP \"maternal\" in:name,description,readme",
+          "query": "MCP \"maternal\" in:name,description,topics"
+        },
+        {
+          "id": "200",
+          "term": "pediatric",
+          "priorQuery": "MCP \"pediatric\" in:name,description,readme",
+          "query": "MCP \"pediatric\" in:name,description,topics"
+        },
+        {
+          "id": "201",
+          "term": "geriatric",
+          "priorQuery": "MCP \"geriatric\" in:name,description,readme",
+          "query": "MCP \"geriatric\" in:name,description,topics"
+        },
+        {
+          "id": "202",
+          "term": "pregnancy",
+          "priorQuery": "MCP \"pregnancy\" in:name,description,readme",
+          "query": "MCP \"pregnancy\" in:name,description,topics"
+        },
+        {
+          "id": "203",
+          "term": "vaccine",
+          "priorQuery": "MCP \"vaccine\" in:name,description,readme",
+          "query": "MCP \"vaccine\" in:name,description,topics"
+        },
+        {
+          "id": "204",
+          "term": "vaccination",
+          "priorQuery": "MCP \"vaccination\" in:name,description,readme",
+          "query": "MCP \"vaccination\" in:name,description,topics"
+        },
+        {
+          "id": "205",
+          "term": "immunization",
+          "priorQuery": "MCP \"immunization\" in:name,description,readme",
+          "query": "MCP \"immunization\" in:name,description,topics"
+        },
+        {
+          "id": "206-a1",
+          "term": "treatment",
+          "priorQuery": "MCP \"treatment\" \"health\" in:name,description,readme",
+          "query": "MCP \"treatment\" \"health\" in:name,description,topics"
+        },
+        {
+          "id": "206-a2",
+          "term": "treatment",
+          "priorQuery": "MCP \"treatment\" \"medical\" in:name,description,readme",
+          "query": "MCP \"treatment\" \"medical\" in:name,description,topics"
+        },
+        {
+          "id": "207-a1",
+          "term": "therapy",
+          "priorQuery": "MCP \"therapy\" \"health\" in:name,description,readme",
+          "query": "MCP \"therapy\" \"health\" in:name,description,topics"
+        },
+        {
+          "id": "207-a2",
+          "term": "therapy",
+          "priorQuery": "MCP \"therapy\" \"medical\" in:name,description,readme",
+          "query": "MCP \"therapy\" \"medical\" in:name,description,topics"
+        },
+        {
+          "id": "208",
+          "term": "medication",
+          "priorQuery": "MCP \"medication\" in:name,description,readme",
+          "query": "MCP \"medication\" in:name,description,topics"
+        },
+        {
+          "id": "209",
+          "term": "drug",
+          "priorQuery": "MCP \"drug\" in:name,description,readme",
+          "query": "MCP \"drug\" in:name,description,topics"
+        },
+        {
+          "id": "210-a1",
+          "term": "device",
+          "priorQuery": "MCP \"device\" \"health\" in:name,description,readme",
+          "query": "MCP \"device\" \"health\" in:name,description,topics"
+        },
+        {
+          "id": "210-a2",
+          "term": "device",
+          "priorQuery": "MCP \"device\" \"medical\" in:name,description,readme",
+          "query": "MCP \"device\" \"medical\" in:name,description,topics"
+        },
+        {
+          "id": "211-b1",
+          "term": "diagnostic",
+          "priorQuery": "MCP \"medical diagnostic\" in:name,description,readme",
+          "query": "MCP \"medical diagnostic\" in:name,description,topics"
+        },
+        {
+          "id": "211-b2",
+          "term": "diagnostic",
+          "priorQuery": "MCP \"clinical diagnostic\" in:name,description,readme",
+          "query": "MCP \"clinical diagnostic\" in:name,description,topics"
+        },
+        {
+          "id": "212-a1",
+          "term": "exposure",
+          "priorQuery": "MCP \"exposure\" \"health\" in:name,description,readme",
+          "query": "MCP \"exposure\" \"health\" in:name,description,topics"
+        },
+        {
+          "id": "212-a2",
+          "term": "exposure",
+          "priorQuery": "MCP \"exposure\" \"medical\" in:name,description,readme",
+          "query": "MCP \"exposure\" \"medical\" in:name,description,topics"
+        },
+        {
+          "id": "213-a1",
+          "term": "intervention",
+          "priorQuery": "MCP \"intervention\" \"health\" in:name,description,readme",
+          "query": "MCP \"intervention\" \"health\" in:name,description,topics"
+        },
+        {
+          "id": "213-a2",
+          "term": "intervention",
+          "priorQuery": "MCP \"intervention\" \"medical\" in:name,description,readme",
+          "query": "MCP \"intervention\" \"medical\" in:name,description,topics"
+        },
+        {
+          "id": "214",
+          "term": "real-world evidence",
+          "priorQuery": "\"agent skill\" \"real-world evidence\" in:name,description,readme",
+          "query": "\"agent skill\" \"real-world evidence\" in:name,description,topics"
+        },
+        {
+          "id": "215",
+          "term": "real-world evidence",
+          "priorQuery": "\"agent-facing\" \"real-world evidence\" in:name,description,readme",
+          "query": "\"agent-facing\" \"real-world evidence\" in:name,description,topics"
+        },
+        {
+          "id": "216",
+          "term": "health economics",
+          "priorQuery": "\"agent skill\" \"health economics\" in:name,description,readme",
+          "query": "\"agent skill\" \"health economics\" in:name,description,topics"
+        },
+        {
+          "id": "217",
+          "term": "health economics",
+          "priorQuery": "\"agent-facing\" \"health economics\" in:name,description,readme",
+          "query": "\"agent-facing\" \"health economics\" in:name,description,topics"
+        },
+        {
+          "id": "218",
+          "term": "pharmacoepidemiology",
+          "priorQuery": "\"agent skill\" \"pharmacoepidemiology\" in:name,description,readme",
+          "query": "\"agent skill\" \"pharmacoepidemiology\" in:name,description,topics"
+        },
+        {
+          "id": "219",
+          "term": "pharmacoepidemiology",
+          "priorQuery": "\"agent-facing\" \"pharmacoepidemiology\" in:name,description,readme",
+          "query": "\"agent-facing\" \"pharmacoepidemiology\" in:name,description,topics"
+        },
+        {
+          "id": "220",
+          "term": "causal inference",
+          "priorQuery": "\"agent skill\" \"causal inference\" in:name,description,readme",
+          "query": "\"agent skill\" \"causal inference\" in:name,description,topics"
+        },
+        {
+          "id": "221",
+          "term": "causal inference",
+          "priorQuery": "\"agent-facing\" \"causal inference\" in:name,description,readme",
+          "query": "\"agent-facing\" \"causal inference\" in:name,description,topics"
+        },
+        {
+          "id": "222",
+          "term": "target trial",
+          "priorQuery": "\"agent skill\" \"target trial\" in:name,description,readme",
+          "query": "\"agent skill\" \"target trial\" in:name,description,topics"
+        },
+        {
+          "id": "223",
+          "term": "target trial",
+          "priorQuery": "\"agent-facing\" \"target trial\" in:name,description,readme",
+          "query": "\"agent-facing\" \"target trial\" in:name,description,topics"
+        },
+        {
+          "id": "224",
+          "term": "evidence synthesis",
+          "priorQuery": "\"agent skill\" \"evidence synthesis\" in:name,description,readme",
+          "query": "\"agent skill\" \"evidence synthesis\" in:name,description,topics"
+        },
+        {
+          "id": "225",
+          "term": "evidence synthesis",
+          "priorQuery": "\"agent-facing\" \"evidence synthesis\" in:name,description,readme",
+          "query": "\"agent-facing\" \"evidence synthesis\" in:name,description,topics"
+        },
+        {
+          "id": "226",
+          "term": "systematic review",
+          "priorQuery": "\"agent skill\" \"systematic review\" in:name,description,readme",
+          "query": "\"agent skill\" \"systematic review\" in:name,description,topics"
+        },
+        {
+          "id": "227",
+          "term": "systematic review",
+          "priorQuery": "\"agent-facing\" \"systematic review\" in:name,description,readme",
+          "query": "\"agent-facing\" \"systematic review\" in:name,description,topics"
+        },
+        {
+          "id": "228",
+          "term": "OMOP",
+          "priorQuery": "\"agent skill\" \"OMOP\" in:name,description,readme",
+          "query": "\"agent skill\" \"OMOP\" in:name,description,topics"
+        },
+        {
+          "id": "229",
+          "term": "OMOP",
+          "priorQuery": "\"agent-facing\" \"OMOP\" in:name,description,readme",
+          "query": "\"agent-facing\" \"OMOP\" in:name,description,topics"
+        },
+        {
+          "id": "230",
+          "term": "OHDSI",
+          "priorQuery": "\"agent skill\" \"OHDSI\" in:name,description,readme",
+          "query": "\"agent skill\" \"OHDSI\" in:name,description,topics"
+        },
+        {
+          "id": "231",
+          "term": "OHDSI",
+          "priorQuery": "\"agent-facing\" \"OHDSI\" in:name,description,readme",
+          "query": "\"agent-facing\" \"OHDSI\" in:name,description,topics"
+        },
+        {
+          "id": "232",
+          "term": "FHIR",
+          "priorQuery": "\"agent skill\" \"FHIR\" in:name,description,readme",
+          "query": "\"agent skill\" \"FHIR\" in:name,description,topics"
+        },
+        {
+          "id": "233",
+          "term": "FHIR",
+          "priorQuery": "\"agent-facing\" \"FHIR\" in:name,description,readme",
+          "query": "\"agent-facing\" \"FHIR\" in:name,description,topics"
+        },
+        {
+          "id": "234",
+          "term": "PubMed",
+          "priorQuery": "\"agent skill\" \"PubMed\" in:name,description,readme",
+          "query": "\"agent skill\" \"PubMed\" in:name,description,topics"
+        },
+        {
+          "id": "235",
+          "term": "PubMed",
+          "priorQuery": "\"agent-facing\" \"PubMed\" in:name,description,readme",
+          "query": "\"agent-facing\" \"PubMed\" in:name,description,topics"
+        },
+        {
+          "id": "236",
+          "term": "clinical trial",
+          "priorQuery": "\"agent skill\" \"clinical trial\" in:name,description,readme",
+          "query": "\"agent skill\" \"clinical trial\" in:name,description,topics"
+        },
+        {
+          "id": "237",
+          "term": "clinical trial",
+          "priorQuery": "\"agent-facing\" \"clinical trial\" in:name,description,readme",
+          "query": "\"agent-facing\" \"clinical trial\" in:name,description,topics"
+        },
+        {
+          "id": "238",
+          "term": "pharmacovigilance",
+          "priorQuery": "\"agent skill\" \"pharmacovigilance\" in:name,description,readme",
+          "query": "\"agent skill\" \"pharmacovigilance\" in:name,description,topics"
+        },
+        {
+          "id": "239",
+          "term": "pharmacovigilance",
+          "priorQuery": "\"agent-facing\" \"pharmacovigilance\" in:name,description,readme",
+          "query": "\"agent-facing\" \"pharmacovigilance\" in:name,description,topics"
+        },
+        {
+          "id": "240",
+          "term": "record linkage",
+          "priorQuery": "\"agent skill\" \"record linkage\" in:name,description,readme",
+          "query": "\"agent skill\" \"record linkage\" in:name,description,topics"
+        },
+        {
+          "id": "241",
+          "term": "record linkage",
+          "priorQuery": "\"agent-facing\" \"record linkage\" in:name,description,readme",
+          "query": "\"agent-facing\" \"record linkage\" in:name,description,topics"
+        },
+        {
+          "id": "242",
+          "term": "epidemiology",
+          "priorQuery": "\"agent skill\" \"epidemiology\" in:name,description,readme",
+          "query": "\"agent skill\" \"epidemiology\" in:name,description,topics"
+        },
+        {
+          "id": "243",
+          "term": "epidemiology",
+          "priorQuery": "\"agent-facing\" \"epidemiology\" in:name,description,readme",
+          "query": "\"agent-facing\" \"epidemiology\" in:name,description,topics"
+        },
+        {
+          "id": "244",
+          "term": "biostatistics",
+          "priorQuery": "\"agent skill\" \"biostatistics\" in:name,description,readme",
+          "query": "\"agent skill\" \"biostatistics\" in:name,description,topics"
+        },
+        {
+          "id": "245",
+          "term": "biostatistics",
+          "priorQuery": "\"agent-facing\" \"biostatistics\" in:name,description,readme",
+          "query": "\"agent-facing\" \"biostatistics\" in:name,description,topics"
+        }
+      ]
+    }
+  ],
+  "rounds": [
+    {
+      "round": 1,
+      "status": "Closed positive-yield expansion round; not a zero-new round",
+      "searches": {
+        "githubRepositoryQueries": 60,
+        "repositoryPages": 17,
+        "githubCodeQueries": 20,
+        "codeObservations": 1627,
+        "newDistinctCodeBlobsReviewed": 229,
+        "smitheryQueries": 20,
+        "smitheryPages": 40,
+        "indexedQueries": 60,
+        "indexedPages": 51
+      },
+      "linkRoleObservations": 3073,
+      "canonicalComparison": {
+        "previousEligibleOrHistoricalUnits": 5652,
+        "currentEligibleOrHistoricalUnits": 5755,
+        "newCanonicalUnits": 117,
+        "newCanonicalUnitsWithExplicitEligibleReviews": 117,
+        "newProjectIdentities": 107,
+        "removedOrRegroupedCanonicalUnits": 14,
+        "netUnitChange": 103,
+        "newByUnitType": {
+          "project": 85,
+          "instruction component": 18,
+          "declared component": 14
+        }
+      },
+      "comparisonBoundary": "117 new canonical units and107 new project identities include identity/alias reconciliation and are not publication-card counts. Round2 baseline amendment removed provisional OpenTaskRelay approval without adding a discovery."
+    },
+    {
+      "round": 2,
+      "status": "Closed positive-yield expansion round; not a zero-new round",
+      "searches": {
+        "githubRepositoryQueries": 60,
+        "repositoryPages": 11,
+        "repositoryZeroResultQueries": 49,
+        "smitheryQueries": 20,
+        "smitheryPages": 40,
+        "indexedQueries": 60,
+        "indexedPages": 75,
+        "directoryIdentityObservations": 455,
+        "githubCodeQueries": 20,
+        "codeObservations": 2924,
+        "newDistinctCodeBlobsReviewed": 646
+      },
+      "primaryReviewCheckpoint": {
+        "rootRepositoryRows": 24,
+        "agentBRepositoryRows": 45,
+        "agentBRepositoryDecisions": {
+          "Eligible": 30,
+          "Exclude": 12,
+          "Hold": 3
+        },
+        "agentBHostedPageDecisions": {
+          "Eligible": 1,
+          "Exclude": 2
+        },
+        "combinedRootAndAgentRepositoryRows": 71
+      },
+      "canonicalNoveltyFinal": {
+        "previousUnits": 5755,
+        "currentUnits": 5867,
+        "newCanonicalUnits": 112,
+        "newProjectIdentities": 109,
+        "removedOrRegroupedUnits": 0,
+        "netChange": 112
+      },
+      "zeroNewEligible": false,
+      "codeDecisions": {
+        "Eligible": 42,
+        "DiscoveredNotSeparatelyApproved": 313,
+        "Exclude": 278,
+        "Hold": 9,
+        "Duplicate": 4
+      },
+      "codeTerminalSourcesClosed": 42,
+      "codeExternalUrlObservations": 26,
+      "agentBLinkObservations": 601,
+      "retainedSnapshotScreen": {
+        "phrases": 20,
+        "officialRecords": 28167,
+        "officialMatches": 0,
+        "dockerTrackedFiles": 569,
+        "dockerMatches": 0,
+        "method": "Automated normalized phrase screen of retained snapshots; not fresh live enumeration. Historical initial checkout count496 uses a different recorded denominator."
+      }
+    },
+    {
+      "round": 3,
+      "status": "Closed positive-yield expansion round; not a zero-new round",
+      "searches": {
+        "githubRepositoryQueries": 60,
+        "repositoryNonemptyPages": 20,
+        "repositoryUniqueIdentities": 317,
+        "smitheryQueries": 20,
+        "smitheryPages": 39,
+        "smitheryUniqueIdentities": 1912,
+        "smitheryNewIdentities": 48,
+        "indexedQueries": 60,
+        "indexedFocalPages": 103,
+        "indexedFocalHTTP200": 97,
+        "indexedFocalHTTP404": 4,
+        "indexedFocalHTTP403": 2,
+        "directoryIdentityObservations": 461,
+        "githubCodeQueries": 20,
+        "codeObservations": 3944,
+        "exactPriorBlobObservations": 3515,
+        "novelCodeObservations": 429,
+        "novelDistinctCodeBodies": 254
+      },
+      "directoryDispositions": {
+        "PriorIdentityReconciliation": 142,
+        "ScopeContextNegatives": 231,
+        "PrimaryReviewQueue": 67,
+        "Navigation": 21
+      },
+      "primaryRepositoryDecisions": {
+        "Eligible": 31,
+        "Exclude": 26,
+        "Hold": 7,
+        "Duplicate": 2,
+        "DiscoveryCollection": 1
+      },
+      "repositoryLaneDispositions": {
+        "Eligible": 55,
+        "Exclude": 218,
+        "Hold": 19,
+        "Duplicate": 23,
+        "DiscoveryCollection": 2
+      },
+      "repositoryLaneReviewBoundary": "Includes153 explicit human-skill homonyms and other conventional/industrial scope screens;317 dispositions are not317 full primary-text reviews. Eligible records use individual retained primary documents.",
+      "hostedPrimaryEligible": 2,
+      "hostedScope": "Hex analytical workspace interface and newly recovered Olyport MMWR bibliographic component. Olyport metadata schemas inspected without executing data tools.",
+      "smitheryDispositions": {
+        "MetadataScopeNegatives": 47,
+        "HexPrimaryReconciliation": 1
+      },
+      "linkedPrimaryDispositions": {
+        "Eligible": 7,
+        "Exclude": 2,
+        "Hold": 2,
+        "Duplicate": 2
+      },
+      "codeBodyDispositions": {
+        "Eligible": 32,
+        "DiscoveredNotSeparatelyApproved": 119,
+        "Exclude": 76,
+        "Hold": 24,
+        "Duplicate": 2,
+        "DiscoveryCollection": 1
+      },
+      "codeReviewBoundary": "254 distinct source bodies include purpose screens, exact-copy/family reconciliation and bounded workflow review; not254 full manual implementation reviews. Merged root31 is not counted twice.",
+      "separateLatticeDirectoryFollowup": {
+        "entries": 52,
+        "linkedArchivedVariants": 53,
+        "Exclude": 51,
+        "Hold": 1,
+        "Eligible": 0
+      },
+      "originComponentFollowup": {
+        "Assigned": 11,
+        "Eligible": 9,
+        "Duplicate": 1,
+        "Hold": 1,
+        "Pending": 0,
+        "NewRepositories": 0,
+        "ExternalURLs": 0
+      },
+      "codeEligibleSourcesWithLinksClosed": 32,
+      "codeOutgoingURLObservations": 24,
+      "nonGitLinkRoleObservations": 1334,
+      "nonGitMetadataURLObservationsWithinTotal": 702,
+      "linkReviewBoundary": "702 GitHub tree/blob API URLs are provenance metadata, not discovered project pages. Remaining entries include repeated upstream APIs, same-provider docs, assets and methodological publications; URL-role closure is not full-page inspection. GitHub links separately reconciled.",
+      "canonicalNoveltyFinal": {
+        "previousUnits": 5867,
+        "currentUnits": 6002,
+        "newCanonicalUnits": 135,
+        "newProjectIdentities": 121,
+        "removedOrRegroupedUnits": 0,
+        "netChange": 135
+      },
+      "zeroNewEligible": false
+    },
+    {
+      "round": 4,
+      "status": "Closed positive-yield expansion round; not a zero-new round",
+      "searches": {
+        "githubRepositoryQueries": 60,
+        "repositoryPages": 86,
+        "repositoryRawObservations": 7058,
+        "repositoryUniqueIdentities": 6239,
+        "smitheryQueries": 20,
+        "smitheryPages": 40,
+        "smitheryRawObservations": 3393,
+        "smitheryUniqueIdentities": 1902,
+        "smitheryNewIdentities": 47,
+        "indexedQueries": 60,
+        "indexedFocalPages": 55,
+        "indexedFocalHTTP200": 54,
+        "indexedFocalHTTP404": 1,
+        "directoryIdentityObservations": 463,
+        "githubCodeQueries": 20,
+        "codeObservations": 1735,
+        "exactPriorBlobObservations": 1558,
+        "novelCodeObservations": 177,
+        "novelDistinctCodeBodies": 115
+      },
+      "repositoryLaneDispositions": {
+        "Eligible": 126,
+        "Exclude": 6076,
+        "Hold": 18,
+        "Duplicate": 17,
+        "DiscoveryCollection": 2
+      },
+      "repositoryReviewLevels": {
+        "IndividualDispositions": 240,
+        "AutomatedMetadataNegatives": 5993,
+        "AutomatedCanonicalMatches": 6
+      },
+      "repositoryReviewBoundary": "6239 dispositions are not6239 individual source reviews. QALY stemming produced many QA homonyms; explicit two-axis metadata screens remain labeled automated. All promoted eligible components have primary-source documentation review.",
+      "primaryRepositoryDecisions": {
+        "Eligible": 43,
+        "Exclude": 11,
+        "Hold": 6,
+        "Duplicate": 1
+      },
+      "smitheryDispositions": {
+        "Eligible": 1,
+        "Exclude": 45,
+        "Hold": 1
+      },
+      "codeBodyDispositions": {
+        "Eligible": 26,
+        "DiscoveredNotSeparatelyApproved": 59,
+        "Exclude": 16,
+        "Hold": 12,
+        "Duplicate": 2
+      },
+      "codeReviewBoundary": "115 distinct new code bodies have purpose, exact-body, family or bounded component review; not115 complete implementation audits. Origin3 is merged and not counted twice.",
+      "linkClosure": "All promoted primary sources and scoped outgoing links closed. Same-project docs, conventional APIs, assets and publications have URL-role dispositions, not new project approvals. PyPI bibsleuth was separately reviewed as a narrow LLM-assisted citation-audit CLI.",
+      "canonicalNoveltyFinal": {
+        "previousUnits": 6002,
+        "currentUnits": 6227,
+        "newCanonicalUnits": 227,
+        "newProjectIdentities": 206,
+        "removedOrRegroupedUnits": 2,
+        "netChange": 225
+      },
+      "zeroNewEligible": false
+    },
+    {
+      "round": 5,
+      "status": "Closed positive fixed-union round after full-terminal-page code pagination correction",
+      "searches": {
+        "githubRepositoryQueries": 240,
+        "repositoryPages": 134,
+        "repositoryRawObservations": 7439,
+        "repositoryUniqueIdentities": 6602,
+        "smitheryQueries": 80,
+        "smitheryPages": 160,
+        "smitheryRawObservations": 13452,
+        "smitheryUniqueIdentities": 3647,
+        "smitheryNewIdentities": 3,
+        "indexedQueries": 240,
+        "indexedFocalPages": 250,
+        "indexedFocalHTTP200": 240,
+        "indexedFocalHTTP404": 5,
+        "indexedFocalHTTP403": 5,
+        "directoryIdentityObservations": 1383,
+        "githubCodeQueries": 80
+      },
+      "repositoryReviewBoundary": "6597 prior identity matches plus five new-identity dispositions: four excluded and one exact-body/canonical duplicate. No new primary eligibility.",
+      "smitheryDispositions": {
+        "Exclude": 2,
+        "Hold": 1
+      },
+      "directoryReviewBoundary": "543 prior canonical matches,821 prior directory scope dispositions,19 novel linked identities. Four primary documents excluded;14 contextual scope/support negatives and one encoded prior identity.",
+      "codeSummary": {
+        "plannedQueries": 80,
+        "completedQueries": 80,
+        "uniqueObservations": 8394,
+        "exactPriorBlobObservations": 8316,
+        "novelObservations": 78,
+        "novelDistinctBodies": 73,
+        "pendingBodies": 0,
+        "distinctBodyDecisions": {
+          "Discovered component within reviewed collection; not separately approved": 31,
+          "Exclude": 27,
+          "Hold": 6,
+          "Eligible": 7,
+          "Excluded": 1,
+          "Duplicate": 1
+        },
+        "eligibleDistinctBodies": 7
+      },
+      "nonGitURLRoles": {
+        "Observations": 25694,
+        "ExactOrAutomatedDirectoryRoleRows": 25317,
+        "IndividualContextRows": 377,
+        "AdditionalRootTerminalRows": 30
+      },
+      "canonicalNoveltyFinal": {
+        "previousUnits": 6227,
+        "currentUnits": 6234,
+        "newCanonicalUnits": 7,
+        "newProjectIdentities": 4,
+        "removedOrRegroupedUnits": 0,
+        "netChange": 7
+      },
+      "zeroNewEligible": false
+    },
+    {
+      "round": 6,
+      "status": "Closed positive fixed-union round",
+      "searches": {
+        "githubRepositoryQueries": 240,
+        "repositoryPages": 318,
+        "repositoryRawObservations": 7440,
+        "repositoryUniqueIdentities": 6603,
+        "smitheryQueries": 80,
+        "smitheryPages": 160,
+        "smitheryUniqueIdentities": 3648,
+        "indexedQueries": 240,
+        "indexedFocalPages": 249,
+        "indexedFocalHTTP200": 239,
+        "indexedFocalHTTP404": 5,
+        "indexedFocalHTTP403": 5,
+        "githubCodeQueries": 80
+      },
+      "directoryReviewBoundary": "1391 identity observations:533 prior canonical matches,829 prior directory dispositions,29 novel. Ten primary reviews yielded2 eligible,4 held and4 excluded;19 additional contextual negatives. These are not1391 new primary reviews.",
+      "hostedPrimaryScope": "One newly eligible hosted component: Agentic-RL paper inventory and scholarly-passage retrieval. No task execution/scoring approval.",
+      "repositoryDecisions": {
+        "Duplicate": 6601,
+        "Exclude": 2
+      },
+      "smitheryDecisions": {
+        "Exclude": 2,
+        "Eligible": 1
+      },
+      "codeSummary": {
+        "plannedQueries": 80,
+        "completedQueries": 80,
+        "uniqueObservations": 8391,
+        "exactPriorBlobObservations": 8386,
+        "novelObservations": 5,
+        "novelDistinctBodies": 5,
+        "pendingBodies": 0,
+        "distinctBodyDecisions": {
+          "Discovered component within reviewed collection; not separately approved": 4,
+          "Eligible — scoped FHIR instruction component": 1
+        },
+        "eligibleDistinctBodies": 1,
+        "totalPages": 216
+      },
+      "nonGitURLRoles": {
+        "Observations": 32919,
+        "ExactOrAutomatedDirectoryRows": 32918,
+        "IndividualFocalContextRows": 1,
+        "TerminalOrSelectedSourceRows": 63
+      },
+      "canonicalNoveltyFinal": {
+        "previousUnits": 6234,
+        "currentUnits": 6238,
+        "newCanonicalUnits": 4,
+        "newProjectIdentities": 4,
+        "removedOrRegroupedUnits": 0,
+        "netChange": 4
+      },
+      "zeroNewEligible": false
+    },
+    {
+      "round": 7,
+      "status": "Closed positive fixed-union round",
+      "searches": {
+        "githubRepositoryQueries": 240,
+        "repositoryPages": 318,
+        "repositoryRawObservations": 7440,
+        "repositoryUniqueIdentities": 6603,
+        "smitheryQueries": 80,
+        "smitheryPages": 160,
+        "smitheryUniqueIdentities": 3648,
+        "indexedQueries": 240,
+        "indexedFocalPages": 253,
+        "indexedFocalHTTP200": 243,
+        "indexedFocalHTTP404": 5,
+        "indexedFocalHTTP403": 5,
+        "githubCodeQueries": 80
+      },
+      "directoryReviewBoundary": "1,401 identity observations: 542 prior canonical matches, 846 prior directory dispositions and 13 novel. Five primary reviews yielded four eligible and one excluded; eight additional contextual negatives. These are not 1,401 new primary reviews.",
+      "hostedPrimaryScope": "No new Smithery identities or primary hosted review queue.",
+      "repositoryDecisions": {
+        "Duplicate": 6603
+      },
+      "smitheryDecisions": {},
+      "codeSummary": {
+        "totalPages": 216,
+        "plannedQueries": 80,
+        "completedQueries": 80,
+        "uniqueObservations": 8392,
+        "exactPriorBlobObservations": 8388,
+        "novelObservations": 4,
+        "novelDistinctBodies": 4,
+        "pendingBodies": 0,
+        "distinctBodyDecisions": {
+          "Discovered component within reviewed collection; not separately approved": 2,
+          "Exclude": 1,
+          "Eligible — scoped research planning instruction": 1
+        },
+        "eligibleDistinctBodies": 1
+      },
+      "nonGitURLRoles": {
+        "Observations": 34527,
+        "ExactOrAutomatedDirectoryRows": 34527,
+        "IndividualFocalContextRows": 0,
+        "TerminalOrSelectedSourceRows": 27
+      },
+      "canonicalNoveltyFinal": {
+        "previousUnits": 6238,
+        "currentUnits": 6338,
+        "newCanonicalUnits": 100,
+        "newProjectIdentities": 100,
+        "removedOrRegroupedUnits": 0,
+        "netChange": 100
+      },
+      "zeroNewEligible": false,
+      "projectLinkedFamilyFollowup": {
+        "catalogueRepositories": 1345,
+        "cataloguePages": 14,
+        "priorAdapterMatches": 76,
+        "alreadyReviewedThisRound": 2,
+        "individualPrimaryReviews": 118,
+        "Eligible": 95,
+        "Exclude": 22,
+        "Hold": 1,
+        "boundedScreenNegatives": 1149,
+        "sourceLinkObservationsClosed": 725,
+        "scope": "Official statistical and national open-data packs only; no whole gateway approval."
+      }
+    },
+    {
+      "round": 8,
+      "status": "Closed positive fixed-union round",
+      "searches": {
+        "repositoryQueries": 240,
+        "repositoryPages": 318,
+        "repositoryRawObservations": 7442,
+        "repositoryUniqueIdentities": 6604,
+        "smitheryQueries": 80,
+        "smitheryPages": 160,
+        "smitheryUniqueIdentities": 3650
+      },
+      "indexedLane": {
+        "queriesExecuted": 240,
+        "focalPages": 252,
+        "focalPageHTTP": {
+          "200": 242,
+          "404": 5,
+          "403": 5
+        },
+        "linkedIdentities": 1382,
+        "canonicalPriorReferences": 543,
+        "priorDirectoryOnly": 816,
+        "novelLinkedIdentities": 23,
+        "newPrimaryReviews": 2,
+        "newPrimaryDecisions": {
+          "Eligible": 1,
+          "Excluded": 1
+        },
+        "novelDirectoryScreens": 21,
+        "additionalProjectLinkPrimaryReviews": 21,
+        "additionalProjectLinkEligibleObservations": 14,
+        "pendingReviews": 0,
+        "pendingLinks": 0
+      },
+      "codeSummary": {
+        "totalPages": 216,
+        "plannedQueries": 80,
+        "completedQueries": 80,
+        "uniqueObservations": 8403,
+        "exactPriorBlobObservations": 8384,
+        "novelObservations": 19,
+        "novelDistinctBodies": 19,
+        "pendingBodies": 0,
+        "distinctBodyDecisions": {
+          "Duplicate reviewed instruction body": 1,
+          "Hold": 1,
+          "Discovered component within reviewed collection; not separately approved": 3,
+          "Exclude": 10,
+          "Duplicate": 3,
+          "Duplicate — revised existing reviewed component": 1
+        },
+        "eligibleDistinctBodies": 0
+      },
+      "sourceReviewScope": "Two initial indexed primaries (one eligible, one excluded), plus 21 scoped linked primary reviews (14 eligible, three held, two excluded, two duplicates). Smithery six new listings yielded five exclusions and one new component in a prior hosted project. No new code approval.",
+      "canonicalNoveltyFinal": {
+        "previousUnits": 6338,
+        "currentUnits": 6354,
+        "newCanonicalUnits": 16,
+        "newProjectIdentities": 14,
+        "removedOrRegroupedUnits": 0,
+        "netChange": 16
+      },
+      "zeroNewEligible": false,
+      "nonGitURLRoleObservations": 34489,
+      "rawFocalURLObservations": 35802,
+      "novelComponentWithinKnownProjects": [
+        "Agentic RL method-facet retrieval",
+        "Alpha Sophia query playbook"
+      ],
+      "pendingPrimaryAndLinks": 0
+    },
+    {
+      "round": 9,
+      "status": "Closed positive fixed-union round",
+      "searches": {
+        "repositoryQueries": 240,
+        "repositoryPages": 318,
+        "repositoryRawObservations": 7442,
+        "repositoryUniqueIdentities": 6604,
+        "smitheryQueries": 80,
+        "smitheryPages": 160,
+        "smitheryUniqueIdentities": 3653
+      },
+      "indexedLane": {
+        "queriesExecuted": 240,
+        "focalPages": 246,
+        "focalPageHTTP": {
+          "200": 236,
+          "404": 5,
+          "403": 5
+        },
+        "linkedIdentities": 1372,
+        "canonicalPriorReferences": 544,
+        "priorDirectoryOnly": 813,
+        "novelLinkedIdentities": 15,
+        "newPrimaryReviews": 2,
+        "newPrimaryDecisions": {
+          "Eligible": 1,
+          "Duplicate": 1
+        },
+        "novelDirectoryScreens": 13,
+        "additionalProjectLinkPrimaryReviews": 8,
+        "additionalProjectLinkEligibleObservations": 4,
+        "pendingReviews": 0,
+        "pendingLinks": 0
+      },
+      "codeSummary": {
+        "totalPages": 216,
+        "plannedQueries": 80,
+        "completedQueries": 80,
+        "uniqueObservations": 8405,
+        "exactPriorBlobObservations": 8403,
+        "novelObservations": 2,
+        "novelDistinctBodies": 2,
+        "pendingBodies": 0,
+        "distinctBodyDecisions": {
+          "Discovered component within reviewed source collection; not separately approved": 1,
+          "Discovery collection — catalogue revision, not component approval": 1
+        },
+        "eligibleDistinctBodies": 0
+      },
+      "sourceReviewScope": "Two initial indexed primaries (one eligible, one historical duplicate), plus eight linked primary reviews (four eligible, four excluded). Narrow approvals cover HUC12 lookup, queue simulation and comparison, a limited emergency-department demo, Weibull summaries and AnyLogic model preparation. Source-derived limitations constrain existing SimPy presentation without adding a unit.",
+      "canonicalNoveltyFinal": {
+        "previousUnits": 6354,
+        "currentUnits": 6359,
+        "newCanonicalUnits": 5,
+        "newProjectIdentities": 5,
+        "removedOrRegroupedUnits": 0,
+        "netChange": 5
+      },
+      "zeroNewEligible": false,
+      "nonGitURLRoleObservations": 34027,
+      "rawFocalURLObservations": 35245,
+      "pendingPrimaryAndLinks": 0
+    },
+    {
+      "round": 10,
+      "status": "Closed positive fixed-union round",
+      "searches": {
+        "repositoryQueries": 240,
+        "repositoryPages": 318,
+        "repositoryRawObservations": 7441,
+        "repositoryUniqueIdentities": 6603,
+        "smitheryQueries": 80,
+        "smitheryPages": 160,
+        "smitheryUniqueIdentities": 3653
+      },
+      "indexedLane": {
+        "queriesExecuted": 240,
+        "focalPages": 242,
+        "focalPageHTTP": {
+          "200": 232,
+          "404": 5,
+          "403": 5
+        },
+        "linkedIdentities": 1349,
+        "canonicalPriorReferences": 531,
+        "priorDirectoryOnly": 795,
+        "novelLinkedIdentities": 23,
+        "novelDirectoryScreens": 18,
+        "pendingReviews": 0,
+        "pendingLinks": 0
+      },
+      "codeSummary": {
+        "totalPages": 218,
+        "plannedQueries": 80,
+        "completedQueries": 80,
+        "uniqueObservations": 8404,
+        "exactPriorBlobObservations": 8403,
+        "novelObservations": 1,
+        "novelDistinctBodies": 1,
+        "pendingBodies": 0,
+        "distinctBodyDecisions": {
+          "Eligible": 1
+        },
+        "eligibleDistinctBodies": 1
+      },
+      "editorialRecordDenominators": {
+        "initialRepositoryPrimaryReviews": 4,
+        "initialIntegrationDirectoryIdentityReview": 1,
+        "additionalProjectPrimaryReviews": 19,
+        "additionalDirectoryPurposeScreens": 3,
+        "unavailableCollectionMetadataDispositions": 1,
+        "sameProjectLinkedSkillContextReviews": 3,
+        "StallComponentDispositionsInOneExistingProject": 32
+      },
+      "editorialRecordsExcludingMainCode": 63,
+      "editorialRecordDecisionsExcludingMainCode": {
+        "Eligible": 32,
+        "Exclude": 19,
+        "Hold": 9,
+        "Duplicate": 2,
+        "Discovery collection": 1
+      },
+      "sourceReviewScope": "Four initial repository reviews and one integration-directory identity review, followed by19 additional project reviews, three directory-purpose screens, one unavailable collection metadata disposition, three same-project skill/context reviews and32 exact Stall component dispositions. Polyform is one hosted project with67 contract screens, not67 primary projects. Main code adds one independently reviewed instruction body.",
+      "canonicalNoveltyFinal": {
+        "previousUnits": 6359,
+        "currentUnits": 6392,
+        "newCanonicalUnits": 33,
+        "newProjectIdentities": 13,
+        "removedOrRegroupedUnits": 0,
+        "netChange": 33
+      },
+      "zeroNewEligible": false,
+      "nonGitURLRoleObservations": 33574,
+      "rawFocalURLObservations": 34675,
+      "pendingPrimaryAndLinks": 0,
+      "unavailableSourceNote": "One newly linked dynamic community registry failed two metadata retrieval attempts and is held unavailable, not described as inspected. Curated wrappers independently reviewed."
+    },
+    {
+      "round": 11,
+      "status": "Closed positive fixed-union round",
+      "searches": {
+        "repositoryQueries": 240,
+        "repositoryPages": 318,
+        "repositoryRawObservations": 7442,
+        "repositoryUniqueIdentities": 6604,
+        "smitheryQueries": 80,
+        "smitheryPages": 160,
+        "smitheryRawObservations": 13454,
+        "smitheryUniqueIdentities": 3653
+      },
+      "indexedLane": {
+        "queriesExecuted": 240,
+        "focalPages": 250,
+        "focalPageHTTP": {
+          "200": 240,
+          "404": 5,
+          "403": 5
+        },
+        "linkedIdentities": 1369,
+        "canonicalPriorReferences": 523,
+        "priorDirectoryOnly": 777,
+        "novelLinkedIdentities": 69,
+        "initialEditorialRecords": 12,
+        "initialEditorialDecisions": {
+          "Exclude": 2,
+          "Eligible": 6,
+          "Hold": 1,
+          "Discovery collection": 2,
+          "Duplicate": 1
+        },
+        "novelDirectoryScreens": 57
+      },
+      "codeSummary": {
+        "totalPages": 218,
+        "plannedQueries": 80,
+        "completedQueries": 80,
+        "uniqueObservations": 8403,
+        "exactPriorBlobObservations": 8403,
+        "novelDistinctBodies": 0,
+        "eligibleDistinctBodies": 0
+      },
+      "sourceChainDenominators": {
+        "Minia": {
+          "catalogueRecords": 1678,
+          "individualContracts": 188,
+          "decisions": {
+            "Eligible": 2,
+            "Hold": 132,
+            "Exclude": 53,
+            "Duplicate": 1
+          }
+        },
+        "StackResolve": {
+          "profiles": 416,
+          "contextScreens": 383,
+          "primaryReviews": 33,
+          "primaryDecisions": {
+            "Eligible": 19,
+            "Exclude": 7,
+            "Hold": 2,
+            "Duplicate": 5
+          },
+          "linkedComponentReviews": 9,
+          "linkedDecisions": {
+            "Eligible": 4,
+            "Exclude": 2,
+            "Hold": 1,
+            "Duplicate": 2
+          }
+        },
+        "Zinin": {
+          "reviewedComponentRecords": 25,
+          "Eligible": 21,
+          "Hold": 4
+        },
+        "OtherApify": {
+          "primaryReviews": 39,
+          "Eligible": 21,
+          "Exclude": 17,
+          "Duplicate": 1
+        }
+      },
+      "sourceChainBoundary": "Selected source and method contracts are distinct from project or public-card counts. Automatic platform recommendation widgets are navigation, not authored README links or a recursive platform census. No blanket approval of catalogues or providers.",
+      "canonicalNoveltyFinal": {
+        "previousUnits": 6392,
+        "currentUnits": 6467,
+        "newCanonicalUnits": 75,
+        "newProjectIdentities": 66,
+        "removedOrRegroupedUnits": 0,
+        "netChange": 75
+      },
+      "zeroNewEligible": false,
+      "nonGitFocalURLRoleObservations": 35799,
+      "rawFocalURLObservations": 36968,
+      "pendingPrimaryAndLinks": 0
+    },
+    {
+      "round": 12,
+      "status": "Closed positive fixed-union round",
+      "indexedLane": {
+        "queriesExecuted": 240,
+        "focalPages": 248,
+        "focalPageHTTP": {
+          "200": 238,
+          "404": 5,
+          "403": 5
+        },
+        "linkedIdentities": 1380,
+        "canonicalPriorReferences": 536,
+        "priorDirectoryOnly": 844,
+        "novelLinkedIdentities": 0,
+        "newEligible": 0
+      },
+      "rawFocalURLObservations": 35523,
+      "nonGitURLObservations": 34348,
+      "nonGitNewNormalizedURLs": 10,
+      "nonGitNewPrimaryPromotions": 0,
+      "nonGitPending": 0,
+      "officialRetainedSnapshotMatches": 5,
+      "dockerRetainedSnapshotMatches": 0,
+      "overallZeroNewEligible": false,
+      "canonicalComparisonPending": false,
+      "canonicalNoveltyFinal": {
+        "previousUnits": 6467,
+        "currentUnits": 6473,
+        "newCanonicalUnits": 6,
+        "newProjectIdentities": 1,
+        "removedOrRegroupedUnits": 0,
+        "netChange": 6
+      },
+      "repositoryLane": {
+        "repositoryQueries": 240,
+        "repositoryPages": 318,
+        "repositoryRawObservations": 7439,
+        "repositoryUniqueIdentities": 6602,
+        "smitheryQueries": 80,
+        "smitheryPages": 160,
+        "smitheryRawObservations": 13454,
+        "smitheryUniqueIdentities": 3653
+      },
+      "codeLane": {
+        "queries": 80,
+        "actualPages": 217,
+        "observations": 8403,
+        "exactPriorObservations": 8401,
+        "newBodies": 2,
+        "bodyDecisions": {
+          "Eligible": 1,
+          "Exclude": 1
+        },
+        "linkedGuides": 6,
+        "linkedGuideDecisions": {
+          "Eligible": 5,
+          "Hold": 1
+        },
+        "pending": 0,
+        "runtimeTested": false
+      }
+    },
+    {
+      "round": 13,
+      "status": "Closed positive fixed-union round",
+      "searches": {
+        "repositoryQueries": 240,
+        "repositoryPages": 318,
+        "repositoryRawObservations": 7439,
+        "repositoryUniqueIdentities": 6602,
+        "smitheryQueries": 80,
+        "smitheryPages": 160,
+        "smitheryRawObservations": 13456,
+        "smitheryUniqueIdentities": 3662
+      },
+      "indexedLane": {
+        "queries": 240,
+        "focalPages": 249,
+        "HTTP": {
+          "200": 239,
+          "404": 5,
+          "403": 5
+        },
+        "linkedIdentities": 1360,
+        "canonicalPrior": 528,
+        "directoryPrior": 820,
+        "novelIdentities": 12,
+        "novelDispositions": {
+          "secondaryPurposeExclusions": 11,
+          "primaryExclusions": 1
+        }
+      },
+      "nonGitURLObservations": 34534,
+      "rawFocalURLObservations": 35755,
+      "codeLane": {
+        "queries": 80,
+        "pages": 213,
+        "observations": 8046,
+        "priorExact": 8045,
+        "novelBodies": 1,
+        "Exclude": 1,
+        "Eligible": 0
+      },
+      "hostedPrimary": {
+        "newEligible": 1,
+        "scope": "Kinetic preference-study preparation and account-owned respondent-data/stored-result access only; no proprietary estimation or health-utility validation.",
+        "linksClosed": 298
+      },
+      "smitheryComponentReconciliation": "Patsnap Landscape eight retrieval tools overlap prior patent retrieval scope; distinct endpoint/tool names do not create a new qualifying method. Duplicate, no eligible unit.",
+      "canonicalNoveltyFinal": {
+        "previousUnits": 6473,
+        "currentUnits": 6474,
+        "newCanonicalUnits": 1,
+        "newProjectIdentities": 1,
+        "removedOrRegroupedUnits": 0,
+        "netChange": 1
+      },
+      "pending": 0,
+      "overallZeroNewEligible": false
+    },
+    {
+      "round": 14,
+      "status": "Closed positive fixed-union round",
+      "searches": {
+        "repositoryQueries": 240,
+        "repositoryPages": 318,
+        "repositoryRawObservations": 7442,
+        "repositoryUniqueIdentities": 6604,
+        "smitheryQueries": 80,
+        "smitheryPages": 160,
+        "smitheryRawObservations": 13454,
+        "smitheryUniqueIdentities": 3653
+      },
+      "indexedLane": {
+        "queries": 240,
+        "pages": 253,
+        "HTTP": {
+          "200": 243,
+          "404": 5,
+          "403": 5
+        },
+        "linkedIdentities": 1382,
+        "canonicalPrior": 529,
+        "directoryPrior": 841,
+        "novelIdentities": 12,
+        "primaryEligible": 4,
+        "secondaryScopeExclusions": 8
+      },
+      "sourceChain": {
+        "hostedPrimaryReviews": 2,
+        "hostedEligible": 1,
+        "hostedExcluded": 1,
+        "sameContractPackagingDuplicate": 1,
+        "nonGitURLObservations": 35123,
+        "rawURLObservations": 36474,
+        "additionalHostedURLRoles": 362,
+        "pending": 0
+      },
+      "codeLane": {
+        "queries": 80,
+        "actualPages": 217,
+        "observations": 8403,
+        "exactPriorObservations": 8402,
+        "changedDistinctBodies": 1,
+        "changedBodyDecision": "Duplicate of revised existing RoB 2 component after full-body/diff review; no expanded approval",
+        "newEligible": 0,
+        "pending": 0
+      },
+      "canonicalNoveltyFinal": {
+        "previousUnits": 6474,
+        "currentUnits": 6479,
+        "newCanonicalUnits": 5,
+        "newProjectIdentities": 5,
+        "removedOrRegroupedUnits": 0,
+        "netChange": 5
+      },
+      "overallZeroNewEligible": false
+    },
+    {
+      "round": 15,
+      "status": "Closed positive fixed-union round",
+      "searches": {
+        "repositoryQueries": 240,
+        "repositoryPages": 318,
+        "repositoryRawObservations": 7442,
+        "repositoryUniqueIdentities": 6604,
+        "smitheryQueries": 80,
+        "smitheryPages": 160,
+        "smitheryRawObservations": 13454,
+        "smitheryUniqueIdentities": 3652,
+        "smitheryRecoveredTimeouts": 1
+      },
+      "indexedLane": {
+        "queries": 240,
+        "pages": 254,
+        "HTTP": {
+          "200": 244,
+          "404": 5,
+          "403": 5
+        },
+        "initialTimeouts": 6,
+        "recoveredOnRetry": 6,
+        "twoTimeoutsAfterHTTP200Headers": true,
+        "linkedIdentities": 1387,
+        "canonicalPrior": 533,
+        "directoryPrior": 848,
+        "novelIdentities": 6,
+        "initialPrimaryProjects": 6,
+        "initialComponentRows": 15,
+        "initialDecisions": {
+          "Eligible": 4,
+          "Hold": 7,
+          "Exclude": 4
+        }
+      },
+      "sourceChain": {
+        "additionalPrimaryProjects": 1,
+        "manifestModules": 72,
+        "selectedModuleFamilies": 32,
+        "contextOnlyModules": 40,
+        "componentRows": 46,
+        "decisions": {
+          "Eligible": 25,
+          "Hold": 17,
+          "Exclude": 2,
+          "Duplicate": 1,
+          "Discovery": 1
+        },
+        "allInitialAndLinkedSourceRows": 61,
+        "allDecisions": {
+          "Eligible": 29,
+          "Hold": 24,
+          "Exclude": 6,
+          "Duplicate": 1,
+          "Discovery": 1
+        },
+        "rawFocalURLObservations": 36671,
+        "nonGitURLObservations": 35317,
+        "functionalDeduplication": "MJSP catalogue list/search/detail renamed wrapper reconciled to SINESP; no extra qualifying unit.",
+        "pending": 0
+      },
+      "codeLane": {
+        "queries": 80,
+        "actualPages": 214,
+        "observations": 8182,
+        "exactPriorObservations": 8182,
+        "novelDistinctBodies": 0,
+        "newEligible": 0,
+        "pending": 0
+      },
+      "canonicalNoveltyFinal": {
+        "previousUnits": 6479,
+        "currentUnits": 6508,
+        "newCanonicalUnits": 29,
+        "newProjectIdentities": 4,
+        "removedOrRegroupedUnits": 0,
+        "netChange": 29
+      },
+      "overallZeroNewEligible": false
+    },
+    {
+      "round": 16,
+      "status": "Closed positive fixed-union round",
+      "searches": {
+        "repositoryQueries": 240,
+        "repositoryPages": 318,
+        "repositoryRawObservations": 7443,
+        "repositoryUniqueIdentities": 6605,
+        "smitheryQueries": 80,
+        "smitheryPages": 160,
+        "smitheryRawObservations": 13453,
+        "smitheryUniqueIdentities": 3654
+      },
+      "indexedLane": {
+        "queries": 240,
+        "pages": 255,
+        "HTTP": {
+          "200": 245,
+          "403": 5,
+          "404": 5
+        },
+        "initialFailedFetches": 1,
+        "recoveredOnRetry": 1,
+        "linkedIdentities": 1391,
+        "canonicalPrior": 537,
+        "directoryPrior": 845,
+        "novelIdentities": 9,
+        "initialPrimaryReviews": 3,
+        "initialPrimaryExcluded": 3,
+        "secondaryPurposeExcluded": 6,
+        "rawFocalURLObservations": 36851,
+        "nonGitURLObservations": 35494
+      },
+      "sourceChain": {
+        "newOpenDataQueryComponent": 1,
+        "selectedPublisherPrimaryRows": 14,
+        "selectedPublisherDecisions": {
+          "Eligible": 6,
+          "Hold": 1,
+          "Exclude": 6,
+          "Discovery": 1
+        },
+        "publisherActingToolsCatalogueContextRows": 39,
+        "broaderPublisherInventoryCards": 312,
+        "broaderPublisherInventoryDecisions": {
+          "Exclude": 261,
+          "Hold": 38,
+          "PlannedDiscovery": 10,
+          "PartialReferralDiscovery": 3
+        },
+        "broaderInventoryEligible": 0,
+        "denominatorNote": "Catalogue contexts and missing-contract Holds are not individual implementation tests or public-card counts. Partial exact-tool referrals add no approvals.",
+        "pending": 0
+      },
+      "smitheryPrimaryDecisions": {
+        "Eligible": 2,
+        "Exclude": 1
+      },
+      "codeLane": {
+        "queries": 80,
+        "actualPages": 203,
+        "observations": 8180,
+        "exactPriorObservations": 8170,
+        "novelDistinctBodies": 10,
+        "decisions": {
+          "Eligible": 1,
+          "Duplicate": 8,
+          "Exclude": 1
+        },
+        "separateLinkedRows": 10,
+        "linkedDecisions": {
+          "Eligible": 3,
+          "Duplicate": 4,
+          "SupportingContext": 3
+        },
+        "pending": 0
+      },
+      "canonicalNoveltyFinal": {
+        "previousUnits": 6508,
+        "currentUnits": 6521,
+        "newCanonicalUnits": 13,
+        "newProjectIdentities": 5,
+        "removedOrRegroupedUnits": 0,
+        "netChange": 13
+      },
+      "overallZeroNewEligible": false
+    },
+    {
+      "round": 17,
+      "status": "First closed zero-yield fixed-union round",
+      "searches": {
+        "repositoryQueries": 240,
+        "repositoryPages": 318,
+        "repositoryRawObservations": 7443,
+        "repositoryUniqueIdentities": 6605,
+        "smitheryQueries": 80,
+        "smitheryPages": 160,
+        "smitheryRawObservations": 13453,
+        "smitheryUniqueIdentities": 3654
+      },
+      "indexedLane": {
+        "queries": 240,
+        "pages": 256,
+        "HTTP": {
+          "200": 246,
+          "403": 5,
+          "404": 5
+        },
+        "fetchErrors": 0,
+        "linkedIdentityObservations": 1407,
+        "canonicalPrior": 541,
+        "directoryPrior": 849,
+        "novelIdentityObservations": 17,
+        "secondaryPurposeExclusions": 10,
+        "internalDirectoryParserArtifacts": 3,
+        "primaryReviews": 4,
+        "primaryDecisions": {
+          "Exclude": 2,
+          "Hold": 2
+        },
+        "rawFocalURLObservations": 37662,
+        "nonGitURLObservations": 36290,
+        "pending": 0
+      },
+      "codeLane": {
+        "queries": 80,
+        "actualPages": 217,
+        "observations": 8411,
+        "exactPriorObservations": 8409,
+        "novelDistinctBodies": 2,
+        "decisions": {
+          "Exclude": 1,
+          "Duplicate": 1
+        },
+        "retainedRetryErrors": 61,
+        "allRetriesResolved": true,
+        "actualTerminalBoundariesComplete": true,
+        "pending": 0
+      },
+      "canonicalNoveltyFinal": {
+        "previousUnits": 6521,
+        "currentUnits": 6521,
+        "newCanonicalUnits": 0,
+        "newProjectIdentities": 0,
+        "removedOrRegroupedUnits": 0,
+        "netChange": 0
+      },
+      "overallZeroNewEligible": true,
+      "consecutiveZeroRounds": 1,
+      "stoppingRuleMet": false
+    },
+    {
+      "round": 18,
+      "status": "Second successive closed zero-yield fixed-union round",
+      "searches": {
+        "repositoryQueries": 240,
+        "repositoryPages": 318,
+        "repositoryRawObservations": 7443,
+        "repositoryUniqueIdentities": 6605,
+        "smitheryQueries": 80,
+        "smitheryPages": 160,
+        "smitheryRawObservations": 13455,
+        "smitheryUniqueIdentities": 3666
+      },
+      "smitheryNewListingDecisions": {
+        "Exclude": 3
+      },
+      "indexedLane": {
+        "queries": 240,
+        "pages": 255,
+        "HTTP": {
+          "200": 245,
+          "403": 5,
+          "404": 5
+        },
+        "fetchErrors": 0,
+        "linkedIdentityObservations": 1404,
+        "canonicalPrior": 541,
+        "directoryPrior": 852,
+        "novelIdentityObservations": 11,
+        "secondaryContextRows": 7,
+        "internalDirectoryParserArtifactsWithinContextRows": 1,
+        "promotedSourceReviews": 4,
+        "promotedDecisions": {
+          "Exclude": 3,
+          "Hold": 1
+        },
+        "additionalSiblingReview": {
+          "decision": "Exclude",
+          "evidenceLevel": "Complete secondary README; declared primary unavailable",
+          "alsoInInitialContextSet": true
+        },
+        "repeatPrimaryReconciliation": {
+          "decision": "Duplicate",
+          "scope": "Full Libgen README diff: prior scholarly scope unchanged; remote read disabled by default unless explicitly enabled"
+        },
+        "rawFocalURLObservations": 37581,
+        "nonGitURLObservations": 36015,
+        "pending": 0
+      },
+      "codeLane": {
+        "queries": 80,
+        "actualPages": 217,
+        "observations": 8412,
+        "exactPriorObservations": 8410,
+        "novelDistinctBodies": 2,
+        "decisions": {
+          "Exclude": 1,
+          "Duplicate": 1
+        },
+        "retainedRetryErrors": 26,
+        "allRetriesResolved": true,
+        "actualTerminalBoundariesComplete": true,
+        "pacingAmendment": "Runtime request pacing and Retry-After handling changed without changing the fixed query plan; rate headers retained.",
+        "linkedSourceDispositions": {
+          "Hold": 2,
+          "SupportingContext": 1
+        },
+        "sourceScope": "Held exporter record-reconciliation defects and recursive citation-crawl resumption/failure defects retained; seven graph source blobs pinned and independently checked. No execution or new approval.",
+        "pending": 0
+      },
+      "canonicalNoveltyFinal": {
+        "previousUnits": 6521,
+        "currentUnits": 6521,
+        "newCanonicalUnits": 0,
+        "newProjectIdentities": 0,
+        "removedOrRegroupedUnits": 0,
+        "netChange": 0
+      },
+      "overallZeroNewEligible": true,
+      "consecutiveZeroRounds": 2,
+      "stoppingRuleMet": true
+    }
+  ],
+  "reviewBoundaries": [
+    "Automated metadata, homonym, body-copy, URL-role and asset/provider screens are labeled; their negatives are not manual primary-source reviews.",
+    "Discovered but unreviewed components within collections are not approved.",
+    "Eligible research-enabling and adjacent scientific components are distinguished from direct RWE workflows.",
+    "No candidate code was installed or runtime-tested; documentation and selected static implementation review do not establish statistical validity.",
+    "Publication counts must use final reconciled cards; stale intermediate ledgers and imported copies must not be double-counted."
+  ],
+  "remainingWork": [
+    "Original unamended Cartesian matrix remains incomplete.",
+    "Source access, retained snapshot dates, repository corpus cutoff and earlier code-log audit gap limit coverage.",
+    "Ongoing maintenance requires future dated discovery and review; no exhaustive inventory is claimed."
+  ],
+  "sourceIntegrity": [
+    {
+      "label": "Pre-expansion coverage audit",
+      "sha256": "658fb66840261e82af2d0d53e2cc30d41c0ad4df088119d0ca63f98e5c70dc1d"
+    },
+    {
+      "label": "Historical query status ledger",
+      "sha256": "0388c284e0c12aab76016599cff63a4c05c328b397621ca19c0b12d17ab969eb"
+    },
+    {
+      "label": "Protocol amendment4",
+      "sha256": "9c302592aa36dd2b2c383b5313853428eba44b41e21333dc9f7cd818f0fbbde3"
+    },
+    {
+      "label": "Round1 web lane summary",
+      "sha256": "ec8381849edf103f8ad501adec0e47b04ff231cbd49dbe0d1e03215a803be6ee"
+    },
+    {
+      "label": "Round1 code lane summary",
+      "sha256": "660f9d8e2aef7e82ebe27e30397bf1fed37ea31c8890d04e61d820783d03c941"
+    },
+    {
+      "label": "Round2 amended baseline manifest",
+      "sha256": "7ad956c14567d6605d4eaf4f32c375ca1f78cf5f40bc7443fdea0072643f1065"
+    },
+    {
+      "label": "Round2 repository and Smithery progress",
+      "sha256": "74f590b826258c0b3db607e165390f83969f9f1c8291314eda7b15d8958e4113"
+    },
+    {
+      "label": "Closed round2 and round3 baseline",
+      "sha256": "c4c9df773c42cc2e98fb7e80a27afca1552d1018d1a0bbedcfd7b5a98adfb543"
+    },
+    {
+      "label": "Round3 frozen canonical comparison",
+      "sha256": "9fc99ba7b1b7e0fba55fb522ffe00cbcb13298edb3e0affe08e47a41a1f777da"
+    },
+    {
+      "label": "Round3 indexed source coverage",
+      "sha256": "6fcb22cb041ead48f5bf3d7542ebd984622c770db9a0552bd6e9d07b2eceb4a2"
+    },
+    {
+      "label": "Round3 repository and Smithery closure",
+      "sha256": "b643a05874ec09556ecb46a9aea231c3f1aab99dfe506b1944397685c76b2041"
+    },
+    {
+      "label": "Round3 code source review",
+      "sha256": "cd918699a5f9d41c6cbd98f6895a2dfc851624fd4420ed29ab2aa12f39ed46d0"
+    },
+    {
+      "label": "Round4 canonical freeze and comparison",
+      "sha256": "587c7344d588bf530cda98da7ca6dfc5f7c2029434a17296826af9fd677a3c55"
+    },
+    {
+      "label": "Round4 indexed source coverage",
+      "sha256": "560debc7eadf8847aea9d97cd57e4b5a902735dcf0986283427aed0c005ad03e"
+    },
+    {
+      "label": "Round4 repository and Smithery closure",
+      "sha256": "9f1f40b7f758158404ec533d3da466045d63303f32a3487a1fbf8e9a5de62dd8"
+    },
+    {
+      "label": "Round4 code review",
+      "sha256": "6f8f2bdf898ec9b906b77ac515c3c424c3deb40b2a92d6ee054dc47029c1eb92"
+    },
+    {
+      "label": "Round5 frozen comparison",
+      "sha256": "6b7cf501749e3d7b0dd8edd19397d21d7200e45d118b6263b62f7bbc90b06e58"
+    },
+    {
+      "label": "Published workbook git-history verification",
+      "sha256": "b8c6165df6b3ef7278332a18e2b5b9468843bec8c7d2a719c686c073e4a45a17"
+    },
+    {
+      "label": "Round6 frozen comparison",
+      "sha256": "9bcbc60ef46142138d34f6848581654bca4604c309c699c1d9b2b42e6b04b1fe"
+    },
+    {
+      "label": "Round7 closure metadata amendment",
+      "sha256": "7682177ddad8af52fb36dc5a238b17d9970f0336b6d907765592bc6fb034e092"
+    },
+    {
+      "label": "Historical workbook value preservation",
+      "sha256": "101578e991fc1706fdb0e7b93e945c599149ec81fa93c974318adaeeef90ed1d"
+    },
+    {
+      "label": "Round7 frozen comparison",
+      "sha256": "25637f42e5eaad04a3181234d6ebb4307befe584e2c343b0bfef9b65c781aa8f"
+    },
+    {
+      "label": "Round8 frozen comparison",
+      "sha256": "44b1a7b344aef9c8499a9703c6f6b5f5ab32abef5d0f236b92b480d114c709fa"
+    },
+    {
+      "label": "Round9 frozen comparison",
+      "sha256": "2d24907093a00558db6ee48fe21f2615d6dc96b51fc0f2b805e5743d7e775dab"
+    },
+    {
+      "label": "Round10 frozen comparison",
+      "sha256": "9623bf5f3056c375b5a743df05d3a2d7c2f65572dff7e85cfbf5e01af80503bd"
+    },
+    {
+      "label": "Round 11 frozen comparison",
+      "sha256": "91d6ae0ab55a24a13074f44f6dc5cbb8ca86cb206f262ae8c45e93070afd9e85"
+    },
+    {
+      "label": "Round 12 frozen comparison",
+      "sha256": "48da80037a3cece665cc5bbb374e156fa496d85fafff7efdedf1be0a67580630"
+    },
+    {
+      "label": "Closed round 13 canonical baseline",
+      "sha256": "91a9faba7074ef5851182957bb6c4b282bc69d1a603263bef937b8b6bc022a66"
+    },
+    {
+      "label": "Closed round 14 canonical baseline",
+      "sha256": "8b8044770337330e1510c4c53d1e867afcc358a4ddc3b723b42331594ed375e5"
+    },
+    {
+      "label": "Closed round 15 canonical baseline",
+      "sha256": "b03bc0e3736ab5fce874739d38c4e37407f5b3bef99c8f415efa96f7447de6ef"
+    },
+    {
+      "label": "Closed round 16 canonical baseline",
+      "sha256": "bfd74a6668c555b775bb3130df2f45a4109d11d9cd49c420b9dd7d0f0dae32d1"
+    },
+    {
+      "label": "Closed round17 canonical baseline and first zero comparison",
+      "sha256": "b314ff7c3c155b2383bced427095ee08d7ccd1f0bf630cea0b8498ba1c3692bd"
+    },
+    {
+      "label": "Final closed round18 comparison and revised stopping evidence",
+      "sha256": "614c4ac0e0b971e531ac1a327ac74a106dc2e4b4f890eb02c7f7f3988c154b9b"
+    }
+  ],
+  "recoveryControl": {
+    "result": "PopHIVE MCP wrapper recovered in recorded expansion query batch",
+    "wrapperRepository": "Cicatriiz/pophive-mcp-server",
+    "batchQueries": [
+      {
+        "source": "Indexed directory search",
+        "query": "\"population health surveillance\" (MCP OR agent OR skill)",
+        "domains": [
+          "glama.ai"
+        ],
+        "group": "public_health"
+      },
+      {
+        "source": "Indexed directory search",
+        "query": "\"population health surveillance\" (MCP OR agent OR skill)",
+        "domains": [
+          "pulsemcp.com"
+        ],
+        "group": "public_health"
+      },
+      {
+        "source": "Indexed directory search",
+        "query": "\"population health surveillance\" (MCP OR agent OR skill)",
+        "domains": [
+          "mcp.so"
+        ],
+        "group": "public_health"
+      },
+      {
+        "source": "Indexed directory search",
+        "query": "\"syndromic surveillance\" (MCP OR agent OR skill)",
+        "domains": [
+          "glama.ai"
+        ],
+        "group": "public_health"
+      }
+    ],
+    "attribution": "Batch contains four queries; do not attribute result to one query. Recovery of wrapper does not establish completion of formal original-project recovery control.",
+    "sourceSha256": "c83fe665797246d60a924c7ab48f2c7773645bf88c98ddc93e27b0e6f13bfcbd"
+  },
+  "nextRound": {
+    "round": null,
+    "finalBaselineSnapshot": 19,
+    "baselineFrozen": true,
+    "baselineCanonicalUnits": 6521,
+    "status": "No further round required by the revised stopping rule; final publication checks remain separate."
+  },
+  "priorPublicationDenominators": {
+    "siteRegistryHistoricalEntries": 177,
+    "publishedDownloadWorkbookEntries": 177,
+    "olderLocalTemplateEntries": 28,
+    "note": "GitHub revision 223ade8 and deployed-site revision 4a581099bfbd5edf3bfc70e3605b4b3e794fb3d7 each contain 177 workbook records. The older local 28-record template is not the prior published download.",
+    "preservationCheck": "All 177 historical records across 25 input columns matched the published workbook after ISO/serial date normalization; older local template supplied formatting only."
+  },
+  "consecutiveZeroRounds": 2,
+  "campaignLocalDates": {
+    "start": "2026-09-07",
+    "endAsOfDraft": "2026-09-08",
+    "timezone": "America/Los_Angeles",
+    "sourceRetrievalTimestampsPreserved": true
+  },
+  "coverageTimeBoundaries": {
+    "repositoryPartitionCorpusCutoff": "2026-09-07",
+    "freshQueryDate": "2026-09-08",
+    "repositoryLimitation": "Fresh September 8 queries retained the fixed repository partition corpus cutoff of September 7; they do not cover newly created repositories after that cutoff.",
+    "officialRegistryHarvestLogUTC": "2026-09-07T06:21:37.290Z",
+    "officialLimitation": "Original paginated harvest was not a transactional snapshot. Later rounds rescreen retained bytes, not a fresh live inventory.",
+    "dockerCommit": "8c773729f13f036da8c909be503fe433923a9aa2",
+    "dockerCommitTimestamp": "2026-08-21T09:07:30-04:00",
+    "dockerLimitation": "Retained checkout screened repeatedly; commit date is not a claim of fresh inventory retrieval.",
+    "otherLaneScope": "The repository creation-date cutoff is lane-specific. Smithery, code and indexed-directory lanes have their own recorded search rules and retrieval dates."
+  },
+  "publicationDraftValidation": {
+    "baselineSnapshotRound": 19,
+    "status": "Final publication artifacts validated on September 8, 2026",
+    "newCards": 6051,
+    "retainedActiveHistoricalCards": 176,
+    "activeCards": 6227,
+    "workbookRowsIncludingHeld": 6228,
+    "historicalUpdatedCards": 13,
+    "heldHistoricalCards": 1,
+    "approvedReviewReferencesCovered": 6410,
+    "previousNewCardIDsPreserved": 6051,
+    "validation": "All25 workbook fields match expected records; final changed-row/header/end views checked; all6410 approved references covered; all6051 existing new-card keys and IDs preserved; application production build and2server-rendered checks pass; lint0errors."
+  },
+  "auditRepairs": [
+    {
+      "issue": "Two freeze-helper copies retained old web-summary assertion references.",
+      "resolution": "Correct contemporary closure summaries had been inspected manually and hashed in the immutable manifests. Subsequent direct checks reconfirmed 240 relevant queries and no pending reviews or links; next helper corrected before execution.",
+      "canonicalOutcomeChanged": false,
+      "frozenBytesChanged": false
+    },
+    {
+      "issue": "A shared computation-only limitation was applied too broadly to a publisher metadata-feed card, and declared unavailable repository URLs were used as some hosted cards’ main links.",
+      "resolution": "Before publication, presentation was corrected against the reviewed developers/OpenAPI sources: selected static metadata feeds require no API key and do not run the computational model path; hosted primary URLs replace unavailable declared repository links. Original attribution, frozen records and stable card keys remain retained.",
+      "canonicalOutcomeChanged": false,
+      "frozenBytesChanged": false,
+      "cardKeysChanged": false,
+      "evidenceHashes": [
+        "506a488b728e365743419da6f82d689bb8be65585c1576626ecbafca2c49d7a9",
+        "d13bcb5849a60ce67af12f2c23ba26e30b09ca45ce293835a7dcec35ab15bb26"
+      ]
+    }
+  ],
+  "stoppingEvidence": {
+    "rounds": [
+      17,
+      18
+    ],
+    "lastClosedRound": 18,
+    "allQueriesAndMeaningfulSourceLinksClosed": true,
+    "newCanonicalUnits": [
+      0,
+      0
+    ],
+    "removedCanonicalUnits": [
+      0,
+      0
+    ],
+    "finalCanonicalUnits": 6521,
+    "scope": "Revised source-specific search process; does not complete original unamended matrix or prove exhaustive ecosystem coverage."
+  },
+  "publicationStatus": "Validated publication artifacts; deployment status is tracked separately."
+}

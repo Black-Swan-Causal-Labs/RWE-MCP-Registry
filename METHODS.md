@@ -1,22 +1,24 @@
 # RWE MCP Registry — Search and Indexing Methods
 
 **Protocol version:** 0.5-draft
-**Last updated:** 2026-09-07
+**Last updated:** 2026-09-08
 **Status:** Living document; revise before each search wave and record material changes.
 
-## Current release and completed September pass
+## Search coverage and remaining work
 
-The catalogue contains 177 cards: the prior 130, two Black Swan WebMCP studios, and 45 inclusions from a separate 59-candidate static review (7 held, 7 excluded). This selected review pool is not the entire remaining backlog. The two studios have exact Official MCP Registry identifiers; catalogue inclusion does not imply every entry is officially listed.
+The earlier published catalogue contained 177 cards, including 45 inclusions from a selected 59-candidate review (7 held and 7 excluded). That selected batch did not complete discovery. The September continuation uses a revised source-specific plan and records individual review, automatic screening, component reconciliation and publication grouping separately.
 
-All 177 published URLs resolved in the September 7 availability pass. GitHub archive status and canonical redirects were recorded. These checks do not renew earlier capability-review dates. Candidate projects were not installed or runtime-tested; registry website builds are separate.
+Read the [current coverage report](public-data/search-coverage-2026-09-07.md) and [machine-readable audit](public-data/search-coverage-2026-09-07.json) for actual query counts, expansion-round outcomes, historical failures and remaining limits. The original broad matrix below was not completed in its unamended form. Prospective amendments narrowed unfinished repository queries to names, descriptions and topics; completed broad searches and partial observations remain in the audit.
 
-The discovery pass retrieved 282 Official MCP Registry pages with 28,167 unique latest-version records. This was live pagination, not a transactionally frozen snapshot or individual review of every record. GitHub retrieval covered 20 queries capped at 30 results each, sorted by update time; exhaustive code search was not completed. Smithery covered 27 paginated queries (1,686 unique listings; 70 broad discovery matches). The Docker checkout contained 496 files and one server.yaml vocabulary match. Two curated lists and targeted web/Glama searches supported chaining. PulseMCP, MCP.so and other commercial directories were not exhaustively harvested. Source counts overlap.
+The continuation completed 18 expansion rounds. Rounds 17 and 18 each closed the fixed queries, terminal-page checks, promoted reviews and meaningful project links with no new qualifying project or component after canonical reconciliation. The revised stopping criterion was met on September 8, 2026. This bounded process result does not complete the original unamended Cartesian matrix or establish an exhaustive inventory of a changing public ecosystem.
 
-The full matrix, documented PopHIVE recovery control and two zero-yield expansion rounds were not completed. The exhaustive stopping rule below was **not met**. Exact recorded queries and limits are in [the public search log](public-data/search-log-2026-09-07.json); raw snapshots and unpublished candidate decisions remain in the local editorial audit.
+Published entry RWE-0115 is held after a stronger static source review identified a hard-coded simulated trial database and an invalid randomization heuristic. Its original ID remains in the workbook with the correction. Availability checks and capability reviews remain distinct; a URL resolving successfully does not validate its capabilities.
 
-Static review includes documentation and selected implementation/tool-definition files where available. Hosted NexVigilant received documentation-only review. The current cards report specific Status and Runtime evidence rather than a provenance/maintenance tier. The gold star identifies a Black Swan Causal Labs product; it does not signify independent endorsement or validation.
+The continuation campaign began September 7, 2026. New-card and specifically updated component check dates record final editorial reconciliation, with individual source retrieval times retained in the audit. Unchanged historical records keep their original dates.
 
-Historical passes below retain their original denominators and decisions; they are not current catalogue or backlog totals.
+Static review covers identified documentation and selected implementation/tool-definition files. Candidate programs were not installed or executed, and analytical correctness, clinical suitability, security and privacy were not independently validated. The gold star identifies a Black Swan Causal Labs product; it does not signify independent endorsement or validation.
+
+Historical passes below retain their original denominators and decisions. They are not current catalogue or backlog totals. The workbook and new-card JSON carry source references and component-specific limitations.
 
 ## Purpose
 
@@ -169,6 +171,8 @@ Examples:
 
 Known projects that the strategy must recover are retained as positive controls. PopHIVE is the initial positive control. Failure to recover a control triggers synonym, source, or query-logic review before screening begins.
 
+In the recorded continuation, a PopHIVE wrapper was recovered in a four-query batch. This does not establish exact single-query attribution or completion of the formal original-project control.
+
 ## Screening decisions
 
 - Include — direct RWE
@@ -265,7 +269,7 @@ For example, `GPTomics/bioSkills` is a broad bioinformatics skill collection. Po
 The current public cards distinguish:
 
 - **Added**: original catalogue inclusion date.
-- **Checked**: latest source-availability check from `data/source-checks.json`, with timestamps stored in UTC. GitHub responses also retain canonical redirects and archive status.
+- **Checked**: the latest stated source check. Historical cards may show source availability from `data/source-checks.json`; continuation cards record completion of editorial source review and reconciliation. Source timestamps remain in UTC; GitHub responses retain canonical redirects and archive status.
 - **Capability review**: the card's separate `checked` field, displayed in expanded details; describes the earlier static documentation or implementation review. The workbook retains this review date.
 
 Availability checks do not imply updated documentation review, runtime testing or methodological validation. Added dates are not overwritten by later checks. No Current/Review due/Overdue freshness badges are currently implemented. Runtime evidence is stated separately; no runtime test date is invented.
@@ -299,9 +303,13 @@ The historical Search Wave 2 work was primarily at levels 1–3. Later cards inc
 
 ## Stopping rule
 
-A search wave is complete when all predefined queries have been run across applicable sources; the complete Official MCP Registry snapshot has been screened; two successive synonym-expansion and citation-chaining rounds produce no new eligible projects; every candidate has a recorded disposition; and known gaps are recorded as unsearched or incomplete coverage, not as negative findings. The September 2026 pass did not meet this stopping rule.
+**Historical original rule:** A search wave is complete when all predefined queries have been run across applicable sources; the complete Official MCP Registry snapshot has been screened; two successive synonym-expansion and citation-chaining rounds produce no new eligible projects; every candidate has a recorded disposition; and known gaps are recorded as unsearched or incomplete coverage, not as negative findings. The original September batch did not meet this stopping rule. The continuation report records the revised search plan, completed rounds and whether its stopping condition was met.
+
+**Current revised rule:** All planned queries in the revised source-specific plan, their terminal-page checks, promoted candidate reviews and meaningful project links must close. Two successive fresh alternative-term and project-link rounds must yield no new qualifying project or scoped component after canonical reconciliation. A new component within an existing project resets the counter. Partial lanes and unresolved links are not zero rounds. The original unamended Cartesian matrix remains incomplete; the dated report records the actual stopping status.
 
 ## Known limitations
+
+GitHub repository partition searches retained a corpus cutoff of 7 September 2026. Later run dates do not extend that lane’s repository creation-date boundary; other source lanes retain their separately recorded search rules and dates. Later Official Registry and Docker phrase screens reuse retained source bytes rather than new live inventories. Their retrieval/version dates and unavailable-source limits are recorded in the coverage report.
 
 - **Public-discovery boundary:** the index cannot observe private GitHub repositories, enterprise source-control systems, internal MCP deployments, unpublished skills, access-controlled packages, or public projects that are not sufficiently indexed or documented. Absence from the registry means “not found in the searched public sources as of the index date,” not “does not exist.”
 - Registry and repository metadata can be incomplete, promotional, or stale.
@@ -311,4 +319,4 @@ A search wave is complete when all predefined queries have been run across appli
 - Inclusion in the index is not security, privacy, clinical, methodological, or regulatory validation.
 - Search Wave 2 deliberately favored recall. First-stage screening excluded 32 of the 123 new candidates; the 91 provisional inclusions still require verification and may be reclassified when canonical identity, implementation, duplication, or documentation cannot be confirmed.
 - Smithery results are based on registry descriptions and require canonical-repository resolution and implementation confirmation.
-- In the September pass, PulseMCP was not harvested because credentials were not configured; other directories remained incompletely searched.
+- In the original September pass, PulseMCP was not harvested because credentials were not configured. The continuation uses indexed directory discovery and records access failures; it does not claim full directory enumeration.

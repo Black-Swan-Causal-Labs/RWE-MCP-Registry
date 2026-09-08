@@ -42,11 +42,11 @@ const faqGroups = [
       },
       {
         question: "Have the listed projects been installed or runtime-tested?",
-        answer: "Not unless a record explicitly says so. The current public batches primarily reflect identity, metadata, documentation, and implementation review. Runtime testing is a separate evidence level and must be performed in an isolated, risk-scoped environment.",
+        answer: "No candidate projects were installed, invoked or runtime-tested in this continuation. Cards record identity, metadata, documentation or selected implementation review. Any earlier runtime evidence must be stated explicitly in its record; inclusion does not establish that a tool works correctly.",
       },
       {
         question: "What do the card dates and gold stars mean?",
-        answer: "Added is the original catalogue inclusion date. Checked is the latest source-availability check; expanded cards separately show the capability-review date. An availability check does not repeat a static review or validate tool behavior. A gold star identifies a Black Swan Causal Labs product, not an independent quality or validation rating.",
+        answer: "Added is the original catalogue inclusion date. Checked records the latest stated source check: historical cards may show an availability check, while continuation cards record completion of editorial source review and reconciliation. Expanded cards separately show the capability-review date. An availability check does not renew that review or validate tool behavior. A gold star identifies a Black Swan Causal Labs product, not an independent quality or validation rating.",
       },
       {
         question: "How should workflow-fit labels be interpreted?",
@@ -68,7 +68,7 @@ const faqGroups = [
       },
       {
         question: "How are new projects discovered?",
-        answer: "The protocol combines structured registries, GitHub, curated catalogues, predefined RWE terminology and citation chaining. Actual coverage varies: the September pass used bounded repository searches and did not complete exhaustive code or directory searches. The Methods page distinguishes planned coverage from completed work.",
+        answer: "The protocol combines structured registries, GitHub repository and code searches, curated catalogues, predefined RWE terminology and links from discovered projects. The September continuation expanded the search under a revised source-specific plan. Ranked directory searches, unavailable sources and the original uncompleted broad query matrix remain coverage limits. The Methods page and coverage report distinguish completed searches, automated screening and individual source reviews.",
       },
       {
         question: "How are duplicates, renamed projects, and unavailable sources handled?",

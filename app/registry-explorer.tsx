@@ -1,10 +1,13 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import expansionCards from "../data/approved-expansion.json";
 import expansionCards2 from "../data/approved-expansion-2.json";
 import webmcpCards from "../data/reviewed-webmcp.json";
 import reviewedExpansionCards from "../data/reviewed-expansion-2026-09-07.json";
+import searchCompletionCount from "../data/search-completion-count.json";
+import baselineCardUpdates from "../data/baseline-card-updates.json";
+import baselineCardIds from "../data/baseline-card-ids.json";
 import sourceChecks from "../data/source-checks.json";
 
 const latestSourceChecks: Record<string, { checkedAt: string; available: boolean }> = sourceChecks;
@@ -56,7 +59,7 @@ export function RegistryExplorer() {
           <div className="update-stamp" aria-label="Registry update schedule">
             <strong>Updated<br />weekly</strong>
             <span>Last reviewed</span>
-            <time dateTime="2026-09-07">Sep 7, 2026</time>
+            <time dateTime={searchCompletionCount.asOfISO}>{formatDate(searchCompletionCount.asOfISO)}</time>
           </div>
         </div>
         <div className="signal-line" aria-hidden="true" />
@@ -68,6 +71,7 @@ export function RegistryExplorer() {
         <aside className="coverage-note" aria-label="Registry coverage boundary">
           <p><strong>This index covers publicly discoverable work only.</strong> Private repositories, internal enterprise servers, unpublished skills, and public projects that are not registered, indexed, or documented cannot be observed. An absent capability means “not found in the searched public sources,” not “does not exist.”</p>
           <a href={`${basePath}/methods/#coverage`}>How coverage is defined ↗</a>
+          <p><strong>Correction, September 7:</strong> Clinical Trials AI MCP (RWE-0115) is now held because its implementation uses simulated trial records. Its history remains in the workbook. <a href={`${basePath}/methods/#corrections`}>Read the source finding ↗</a></p>
         </aside>
 
       </section>
@@ -120,27 +124,71 @@ const originalCards = [
   { name:"Pharmaceutical & Bioequivalence Intelligence MCP", kind:"MCP server", category:"Pharmacovigilance & safety", summary:"Multi-source pharmaceutical intelligence server for drug records, interactions, FAERS adverse events, WHO, TGA, FDA NDI, and ChEMBL context.", tags:["Drug safety","FAERS","Interactions"], added:"Jul 23, 2026", checked:"Jul 23, 2026", status:"Static implementation and documentation reviewed · caveat", runtime:"Not independently runtime tested", repository:"rootsbymenda/pharma-mcp-server", website:"GitHub", packages:"pharma-regulatory", workflowFit:["Safety-case research","Drug and interaction context","Regulatory evidence scoping"], capabilities:["Drug lookup and interaction checks","FAERS adverse-event summaries","Cross-source pharmaceutical search with source links"], limitation:"The repository describes bounded local datasets for several sources, including a small FAERS subset, so results are not comprehensive or incidence estimates. Interaction severity and management text require clinical and primary-source verification.", url:"https://github.com/rootsbymenda/pharma-mcp-server" },
 ];
 
-const prototypeCards = [...originalCards, ...expansionCards, ...expansionCards2, ...webmcpCards, ...reviewedExpansionCards];
+type CapabilityCard = {
+  name: string; kind: string; category: string; summary: string; tags: string[];
+  added: string; checked: string; status: string; runtime: string;
+  repository: string; website: string; packages: string; workflowFit: string[];
+  capabilities: string[]; limitation: string; url: string; favorite?: boolean;
+  primarySourceURLs?: string[];
+  id?: string;
+};
+
+const baselineUpdatesByUrl = new Map(baselineCardUpdates.map(row => [row.matchUrl.toLowerCase(), row.update]));
+const historicalIds: Record<string, string> = baselineCardIds;
+const prototypeCards: CapabilityCard[] = [...originalCards, ...expansionCards, ...expansionCards2, ...webmcpCards, ...reviewedExpansionCards].map(card => ({ ...card, id: historicalIds[card.url.toLowerCase()], ...baselineUpdatesByUrl.get(card.url.toLowerCase()) }));
+const makeSearchableCards = (cards: CapabilityCard[]) => cards.map(card => ({
+  card,
+  key: `${card.url}::${card.name}`,
+  searchText: [card.id, card.name, card.repository, card.packages, card.url, card.kind, card.category, card.summary, card.status, ...card.tags, ...card.workflowFit, ...card.capabilities].join(" ").toLowerCase(),
+}));
+const cataloguePageSize = 60;
+function latestCheckLabel(card: CapabilityCard) {
+  const availabilityCheck = latestSourceChecks[card.url]?.checkedAt;
+  return availabilityCheck && Date.parse(availabilityCheck) > Date.parse(card.checked)
+    ? formatDate(availabilityCheck.slice(0, 10))
+    : card.checked;
+}
 
 function CardPrototype() {
+  const [allCards, setAllCards] = useState<CapabilityCard[]>(prototypeCards);
+  const [loadState, setLoadState] = useState<"loading" | "ready" | "error">("loading");
+  const [retry, setRetry] = useState(0);
+  useEffect(() => {
+    const controller = new AbortController();
+    const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+    fetch(`${basePath}/data/reviewed-search-completion-2026-09-07.json`, { signal: controller.signal })
+      .then(response => { if (!response.ok) throw new Error("Catalogue unavailable"); return response.json(); })
+      .then((cards: CapabilityCard[]) => {
+        if (!Array.isArray(cards) || cards.length !== searchCompletionCount.entries) throw new Error("Incomplete catalogue");
+        setAllCards([...prototypeCards, ...cards]);
+        setLoadState("ready");
+      })
+      .catch(() => { if (!controller.signal.aborted) setLoadState("error"); });
+    return () => controller.abort();
+  }, [retry]);
+  const searchableCards = useMemo(() => makeSearchableCards(allCards), [allCards]);
+  const catalogueCategories = useMemo(() => [...new Set(allCards.map(card => card.category))], [allCards]);
   const [expanded, setExpanded] = useState<string | null>(null);
   const [query, setQuery] = useState("");
   const [category, setCategory] = useState("All categories");
-  const categories = useMemo(() => [...new Set(prototypeCards.map(card => card.category))], []);
-  const results = useMemo(() => prototypeCards.filter(card => {
+  const [visibleCount, setVisibleCount] = useState(cataloguePageSize);
+  const results = useMemo(() => {
     const needle = query.trim().toLowerCase();
-    const haystack = [card.name, card.kind, card.category, card.summary, card.status, ...card.tags, ...card.workflowFit, ...card.capabilities].join(" ").toLowerCase();
-    return (!needle || haystack.includes(needle)) && (category === "All categories" || card.category === category);
-  }), [query, category]);
+    return searchableCards.filter(({ card, searchText }) => (!needle || searchText.includes(needle)) && (category === "All categories" || card.category === category));
+  }, [query, category, searchableCards]);
   return <section className="card-prototype" aria-label="Reviewed registry catalogue">
-    <div className="review-controls"><label className="search-box"><span aria-hidden="true">⌕</span><input value={query} onChange={e => setQuery(e.target.value)} placeholder="Search ‘FAERS’, ‘PubMed’, ‘OMOP’…" aria-label="Search reviewed catalogue" /></label><label><span>Category</span><select value={category} onChange={e => setCategory(e.target.value)}>{["All categories", ...categories].map(option => <option key={option}>{option}</option>)}</select></label></div>
-    <div className="prototype-list">{results.map((card) => { const open = expanded === card.name; return <article className={`prototype-card ${open ? "is-open" : ""}`} key={card.name}>
-      <button className="prototype-summary" onClick={() => setExpanded(open ? null : card.name)} aria-expanded={open}>
+    <div className="review-controls"><label className="search-box"><span aria-hidden="true">⌕</span><input disabled={loadState !== "ready"} value={query} onChange={e => { setQuery(e.target.value); setVisibleCount(cataloguePageSize); }} placeholder="Search ‘FAERS’, ‘PubMed’, ‘OMOP’…" aria-label="Search reviewed catalogue" /></label><label><span>Category</span><select disabled={loadState !== "ready"} value={category} onChange={e => { setCategory(e.target.value); setVisibleCount(cataloguePageSize); }}>{["All categories", ...catalogueCategories].map(option => <option key={option}>{option}</option>)}</select></label></div>
+    {loadState === "loading" && <p role="status">Loading the full catalogue of {(prototypeCards.length + searchCompletionCount.entries).toLocaleString()} entries…</p>}
+    {loadState === "error" && <p role="alert">The additional catalogue entries could not be loaded. <button onClick={() => { setLoadState("loading"); setRetry(value => value + 1); }}>Retry</button></p>}
+    <p className="catalogue-count" role="status">Showing {Math.min(visibleCount, results.length).toLocaleString()} of {results.length.toLocaleString()} matching entries</p>
+    <div className="prototype-list">{results.slice(0, visibleCount).map(({ card, key }) => { const open = expanded === key; return <article className={`prototype-card ${open ? "is-open" : ""}`} key={key}>
+      <button className="prototype-summary" onClick={() => setExpanded(open ? null : key)} aria-expanded={open}>
         <div><span className="prototype-type">{card.kind} · {card.category}</span><strong>{card.name} {"favorite" in card && card.favorite ? <span className="favorite-star" title="Black Swan Causal Labs product" aria-label="Black Swan Causal Labs product">★</span> : null}</strong><p>{card.summary}</p><div className="tags">{card.tags.map(tag => <span key={tag}>{tag}</span>)}</div></div>
-        <div className="prototype-freshness"><span>Added {card.added}</span><span title="Latest source availability check; capability review date is shown in details">Checked {latestSourceChecks[card.url] ? formatDate(latestSourceChecks[card.url].checkedAt.slice(0, 10)) : card.checked}</span><b>{open ? "Close −" : "View RWE uses +"}</b></div>
+        <div className="prototype-freshness"><span>Added {card.added}</span><span title="Latest stated source check; the separate capability review date is shown in details">Checked {latestCheckLabel(card)}</span><b>{open ? "Close −" : "View RWE uses +"}</b></div>
       </button>
-      {open && <div className="prototype-details"><div className="capability-panel"><span>RWE workflow fit</span><div className="workflow-tags">{card.workflowFit.map(item => <b key={item}>{item}</b>)}</div><span>Documented capabilities</span><ul>{card.capabilities.map(capability => <li key={capability}>{capability}</li>)}</ul><p><b>Limitation</b> {card.limitation}</p></div><dl><div><dt>Capability review</dt><dd>{card.checked}</dd></div><div><dt>Status</dt><dd>{card.status}</dd></div><div><dt>Runtime</dt><dd>{card.runtime}</dd></div><div><dt>Repository</dt><dd>{card.repository}</dd></div><div><dt>Website</dt><dd>{card.website}</dd></div><div><dt>Packages</dt><dd>{card.packages}</dd></div></dl><a className="prototype-link" href={card.url} target={card.url === "#" ? undefined : "_blank"} rel="noreferrer">Open source ↗</a></div>}
+      {open && <div className="prototype-details"><div className="capability-panel"><span>RWE workflow fit</span><div className="workflow-tags">{card.workflowFit.map(item => <b key={item}>{item}</b>)}</div><span>Documented capabilities</span><ul>{card.capabilities.map(capability => <li key={capability}>{capability}</li>)}</ul><p><b>Limitation</b> {card.limitation}</p></div><dl>{card.id && <div><dt>Registry ID</dt><dd>{card.id}</dd></div>}<div><dt>Capability review</dt><dd>{card.checked}</dd></div><div><dt>Status</dt><dd>{card.status}</dd></div><div><dt>Runtime</dt><dd>{card.runtime}</dd></div><div><dt>Repository</dt><dd>{card.repository}</dd></div><div><dt>Website</dt><dd>{card.website}</dd></div><div><dt>Packages</dt><dd>{card.packages}</dd></div></dl>{card.primarySourceURLs && card.primarySourceURLs.length > 0 && <div className="reviewed-sources"><strong>Reviewed sources</strong><ul>{card.primarySourceURLs.map((url, index) => <li key={url}><a href={url} target="_blank" rel="noreferrer">Source {index + 1} ↗</a></li>)}</ul></div>}<a className="prototype-link" href={card.url} target={card.url === "#" ? undefined : "_blank"} rel="noreferrer">Open source ↗</a></div>}
     </article>; })}</div>
+    {visibleCount < results.length && <div className="catalogue-more"><button onClick={() => setVisibleCount(count => count + cataloguePageSize)}>Show {Math.min(cataloguePageSize, results.length - visibleCount)} more entries</button></div>}
     {!results.length && <div className="empty"><span>∅</span><h3>No reviewed match.</h3><p>Try a broader source, method, or workflow term.</p><button onClick={() => { setQuery(""); setCategory("All categories"); }}>Clear filters</button></div>}
   </section>;
 }

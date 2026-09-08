@@ -1,0 +1,203 @@
+[
+  {
+    "matchUrl": "https://github.com/medplum/medplum",
+    "update": {
+      "checked": "Sep 8, 2026",
+      "runtime": "Not runtime tested",
+      "primarySourceURLs": [
+        "https://www.medplum.com/docs/ai/mcp",
+        "https://github.com/medplum/medplum",
+        "https://github.com/medplum/medplum-mcp-server"
+      ],
+      "id": "RWE-0844",
+      "status": "Static source review · selected component follow-up",
+      "limitation": "The older standalone proxy is archived. This review concerns the built-in Medplum interface; source authorization, write permissions and data handling require separate validation.",
+      "summary": "Medplum MCP interface for authorized access to FHIR clinical resources.",
+      "capabilities": [
+        "Access authorized FHIR resources through Medplum’s built-in MCP interface"
+      ]
+    }
+  },
+  {
+    "matchUrl": "https://github.com/drkamarul/claude-skills",
+    "update": {
+      "checked": "Sep 8, 2026",
+      "runtime": "Not runtime tested",
+      "primarySourceURLs": [
+        "https://github.com/drkamarul/claude-skills/blob/55daeb6d8fcbfe2c96d2806d7e0838cb3c3ebd46/quarto-skill/SKILL.md",
+        "https://api.github.com/repos/drkamarul/claude-skills/git/blobs/5d57170ad6aedeb038233b1985d6412edd8cae42"
+      ],
+      "id": "RWE-0162",
+      "status": "Static source review · selected component follow-up",
+      "limitation": "Some search guidance favors recent English open-access and highly cited work. Those selection rules require explicit protocol justification and can introduce bias. Authoring guidance only; linked references and rendering were not tested, and illustrative results are not evidence."
+    }
+  },
+  {
+    "matchUrl": "https://github.com/Black-Swan-Causal-Labs/robins-i-mcp",
+    "update": {
+      "checked": "Sep 8, 2026",
+      "runtime": "Not runtime tested",
+      "primarySourceURLs": [
+        "https://github.com/Black-Swan-Causal-Labs/robins-i-mcp/blob/main/README.md",
+        "https://github.com/Black-Swan-Causal-Labs/robins-i-mcp"
+      ],
+      "id": "RWE-0822",
+      "status": "Static source review · selected component follow-up",
+      "limitation": "ROBINS-I judgments depend on a correctly specified result, target trial, confounding context, evidence base, and expert interpretation. Structured prompts do not make the assessment objective or validate the underlying study. Draft 2025 follow-up/cohort variant only. Algorithm transcription and model signalling answers require methodological verification and human ratification; record integrity is not assessment accuracy; export loses some V2 distinctions."
+    }
+  },
+  {
+    "matchUrl": "https://github.com/Appsilon/TealFlowMCP",
+    "update": {
+      "checked": "Sep 8, 2026",
+      "runtime": "Not runtime tested",
+      "primarySourceURLs": [
+        "https://github.com/Appsilon/TealFlowMCP/blob/1e2b752559c844f5fac29d4c7a0a97969e551239/LICENSE",
+        "https://github.com/Appsilon/TealFlowMCP/blob/1e2b752559c844f5fac29d4c7a0a97969e551239/README.md",
+        "https://github.com/Appsilon/TealFlowMCP/blob/1e2b752559c844f5fac29d4c7a0a97969e551239/pyproject.toml",
+        "https://github.com/Appsilon/TealFlowMCP/blob/1e2b752559c844f5fac29d4c7a0a97969e551239/tealflow_mcp/server.py",
+        "https://github.com/Appsilon/TealFlowMCP"
+      ],
+      "id": "RWE-0245",
+      "status": "Static source review · selected component follow-up",
+      "limitation": "Generated R applications require validation; tool default may include sample values, so schema-only privacy must not be assumed.",
+      "summary": "Teal module/dataset discovery, requirements inspection and clinical Shiny application code generation.",
+      "capabilities": [
+        "Teal module/dataset discovery, requirements inspection and clinical Shiny application code generation."
+      ]
+    }
+  },
+  {
+    "matchUrl": "https://github.com/CSOAI-ORG/healthcare-fhir-mcp",
+    "update": {
+      "checked": "Sep 8, 2026",
+      "runtime": "Not runtime tested",
+      "primarySourceURLs": [
+        "https://github.com/CSOAI-ORG/healthcare-fhir-mcp"
+      ],
+      "id": "RWE-0021",
+      "status": "Static source review · selected component follow-up",
+      "limitation": "Source review does not substantiate compliance claims. Metering middleware fails open and is not a patient-data authorization boundary; enforce access at the FHIR service. Read/write separation must be explicit. Basic range/shape checks are not clinical validation; endpoint authorization and pagination/coverage require independent checks. Historical RWE-0021 identity retained.",
+      "capabilities": [
+        "Query clinical resources from a configured FHIR endpoint; separate write tool creates Observation resources."
+      ]
+    }
+  },
+  {
+    "matchUrl": "https://github.com/lesong36/dowhy_mcp",
+    "update": {
+      "checked": "Sep 8, 2026",
+      "runtime": "Not runtime tested",
+      "primarySourceURLs": [
+        "https://github.com/lesong36/dowhy_mcp/blob/main/README.md",
+        "https://github.com/lesong36/dowhy_mcp",
+        "https://api.github.com/repos/lesong36/dowhy_mcp/readme"
+      ],
+      "id": "RWE-0808",
+      "status": "Static source review · selected component follow-up",
+      "limitation": "Repository documentation makes broad methodological claims and also records incomplete DoWhy feature coverage. Correct identification, estimator choice, diagnostics, and numerical behavior require method-level testing against known analyses. 42-tool documentation makes broad claims; baseline caveat about incomplete coverage persists. Referenced dowhy-mcp-v2 404 is not this available repository."
+    }
+  },
+  {
+    "matchUrl": "https://github.com/ahmedEid1/thoth",
+    "update": {
+      "checked": "Sep 8, 2026",
+      "runtime": "Not runtime tested",
+      "primarySourceURLs": [
+        "https://github.com/ahmedEid1/thoth"
+      ],
+      "id": "RWE-0838",
+      "status": "Static source review · selected component follow-up",
+      "limitation": "The MCP reads workflow outputs; it does not itself expose the complete review execution workflow. Author-reported evaluation is incomplete and discovery/screening remain under calibration; no exhaustive-search or verified-faithfulness claim is adopted.",
+      "summary": "Authenticated MCP access to Thoth review drafts, discovered papers, citation-audit outputs and recorded searches.",
+      "capabilities": [
+        "Read account-scoped review and citation-audit outputs",
+        "Retrieve discovered-paper and search-query records"
+      ]
+    }
+  },
+  {
+    "matchUrl": "https://github.com/MCPServings/paper-mcp",
+    "update": {
+      "checked": "Sep 8, 2026",
+      "runtime": "Not runtime tested",
+      "primarySourceURLs": [
+        "https://github.com/MCPServings/paper-mcp"
+      ],
+      "id": "RWE-0116",
+      "status": "Static source review · selected component follow-up",
+      "limitation": "Coverage, evidence-grading logic, full-text licensing, credentials, and citation accuracy require separate testing; some optional utilities use external services. Canonical MCPServings/paper-mcp README documents multi-corpus arXiv/Semantic Scholar/OpenAlex retrieval, full text and citation graphs. Deduplication and ranking are approximate; source coverage is not a completed systematic review."
+    }
+  },
+  {
+    "matchUrl": "https://github.com/neptun2000/heor-agent-mcp",
+    "update": {
+      "checked": "Sep 8, 2026",
+      "runtime": "Not runtime tested",
+      "primarySourceURLs": [
+        "https://github.com/neptun2000/heor-agent-mcp/blob/master/README.md",
+        "https://github.com/neptun2000/heor-agent-mcp",
+        "https://api.github.com/repos/neptun2000/heor-agent-mcp/readme"
+      ],
+      "id": "RWE-0114",
+      "status": "Static source review · selected component follow-up",
+      "limitation": "The broad, decision-grade tool surface requires tool-by-tool runtime and methodological validation. Outputs are not substitutes for independent HEOR or regulatory review. Current README says45tools44sources but retains28-tool heading and older directory says7/41; version-bound documentation only. Method-level numerical, bias assessment and regulator-compliance claims unvalidated."
+    }
+  },
+  {
+    "matchUrl": "https://github.com/SVerITG/Metis_PH",
+    "update": {
+      "checked": "Sep 8, 2026",
+      "runtime": "Not runtime tested",
+      "primarySourceURLs": [
+        "https://github.com/SVerITG/Metis_PH/blob/main/README.md",
+        "https://github.com/SVerITG/Metis_PH",
+        "https://api.github.com/repos/SVerITG/Metis_PH/readme"
+      ],
+      "id": "RWE-0168",
+      "status": "Static source review · selected component follow-up",
+      "limitation": "Evidence coverage depends on the supplied corpus. External model calls may transmit research content; generated methodological assertions need expert and source review. Current PH README largely shares generic Metis product identity; avoid two unrelated entries. BM/CL coming-soon editions remain held; broader Metis OS vision incomplete."
+    }
+  },
+  {
+    "matchUrl": "https://github.com/jackdark425/aigroup-econ-mcp",
+    "update": {
+      "checked": "Sep 8, 2026",
+      "runtime": "Not runtime tested",
+      "primarySourceURLs": [
+        "https://github.com/jackdark425/aigroup-econ-mcp/blob/main/README.md",
+        "https://github.com/jackdark425/aigroup-econ-mcp",
+        "https://api.github.com/repos/jackdark425/aigroup-econ-mcp/readme"
+      ],
+      "id": "RWE-0124",
+      "status": "Static source review · selected component follow-up",
+      "limitation": "Method availability is source-reviewed only. Check estimands, identification assumptions, diagnostics, uncertainty and implementation-specific behavior before relying on estimates. Research methods infrastructure; estimator assumptions and numeric correctness not independently tested, some ML tools need native xgboost dependencies."
+    }
+  },
+  {
+    "matchUrl": "https://github.com/cyanheads/who-gho-mcp-server",
+    "update": {
+      "primarySourceURLs": [
+        "https://github.com/cyanheads/who-gho-mcp-server/blob/main/README.md",
+        "https://who-gho.caseyjhand.com/mcp",
+        "https://github.com/cyanheads/who-gho-mcp-server"
+      ],
+      "limitation": "Reporting delay, suppression, revisions, changing definitions, geographic comparability, and ecological inference can affect interpretation. Results require dataset-specific denominator and provenance checks. Country-level estimates and missingness require source interpretation; no individual or causal inference established.",
+      "runtime": "Not runtime tested",
+      "checked": "Sep 8, 2026"
+    }
+  },
+  {
+    "matchUrl": "https://github.com/cyanheads/npi-providers-mcp-server",
+    "update": {
+      "primarySourceURLs": [
+        "https://github.com/cyanheads/npi-providers-mcp-server/blob/main/README.md",
+        "https://npi-providers.caseyjhand.com/mcp",
+        "https://github.com/cyanheads/npi-providers-mcp-server"
+      ],
+      "limitation": "Automated code lookup or mapping can omit descendants, include inappropriate concepts, or obscure local meaning. Vocabulary versions, licensing, hierarchy behavior, and study-specific concept sets require expert adjudication. Provider registry data is not credential verification, service availability or patient-outcome evidence; no runtime test.",
+      "runtime": "Not runtime tested",
+      "checked": "Sep 8, 2026"
+    }
+  }
+]

@@ -1,0 +1,35 @@
+[
+  {
+    "name": "io.github.CSOAI-ORG/clinical-trials-ai-mcp",
+    "kind": "MCP server",
+    "category": "Trials & Study Design",
+    "summary": "Fixed reference-data trial-tool demonstration; not a clinical-trial registry evidence source.",
+    "tags": [
+      "Clinical trials",
+      "Study design",
+      "Protocol evidence"
+    ],
+    "added": "Aug 11, 2026",
+    "checked": "Sep 7, 2026",
+    "status": "Held after static implementation review",
+    "runtime": "Not independently runtime tested by registry",
+    "repository": "CSOAI-ORG/clinical-trials-ai-mcp",
+    "website": "Official MCP Registry",
+    "packages": "io.github.CSOAI-ORG/clinical-trials-ai-mcp 1.0.9",
+    "workflowFit": [
+      "Trial landscape review",
+      "Protocol and design support",
+      "External evidence context"
+    ],
+    "capabilities": [
+      "Search, compare and display hardcoded demonstration trial records"
+    ],
+    "limitation": "Trial tools use a simulated TRIALS_DB rather than live registry retrieval. NCT-formatted identifiers and current timestamps do not establish source provenance or currency. Randomization inferred from arm count is unsupported.",
+    "favorite": false,
+    "url": "https://github.com/CSOAI-ORG/clinical-trials-ai-mcp",
+    "id": "RWE-0115",
+    "disposition": "Hold",
+    "reviewSource": "https://github.com/CSOAI-ORG/clinical-trials-ai-mcp/blob/093c257877004e91b8aed3f85ae49e7e4ad9c120/server.py",
+    "history": "Previously published; approval superseded on September 7, 2026. Original ID and inclusion date retained."
+  }
+]
