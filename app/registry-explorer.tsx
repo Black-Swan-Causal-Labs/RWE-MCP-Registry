@@ -11,6 +11,7 @@ import relevanceCorrections from "../data/relevance-card-corrections.json";
 import baselineCardUpdates from "../data/baseline-card-updates.json";
 import baselineCardIds from "../data/baseline-card-ids.json";
 import sourceChecks from "../data/source-checks.json";
+import { resourceTypes, resourceTypeBuckets } from "../data/resource-types.mjs";
 
 const latestSourceChecks: Record<string, { checkedAt: string; available: boolean }> = sourceChecks;
 
@@ -143,6 +144,7 @@ const scopedCorrections: Record<string, Partial<CapabilityCard>> = relevanceCorr
 const prototypeCards: CapabilityCard[] = [...originalCards, ...expansionCards, ...expansionCards2, ...webmcpCards, ...reviewedExpansionCards].map(card => ({ ...card, id: historicalIds[card.url.toLowerCase()], ...baselineUpdatesByUrl.get(card.url.toLowerCase()), ...scopedCorrections[historicalIds[card.url.toLowerCase()]], relevance: historicalRelevanceById[historicalIds[card.url.toLowerCase()]] }));
 const makeSearchableCards = (cards: CapabilityCard[]) => cards.map(card => ({
   card,
+  resourceTypes: resourceTypeBuckets(card.kind),
   key: card.id ?? `${card.url}::${card.name}`,
   searchText: [card.id, card.name, card.repository, card.packages, card.url, card.kind, card.category, card.summary, card.status, card.relevance?.rationale, ...card.tags, ...card.workflowFit, ...card.capabilities].join(" ").toLowerCase(),
 }));
@@ -176,13 +178,14 @@ function CardPrototype() {
   const [expanded, setExpanded] = useState<string | null>(null);
   const [query, setQuery] = useState("");
   const [category, setCategory] = useState("All categories");
+  const [resourceType, setResourceType] = useState("All resource types");
   const [visibleCount, setVisibleCount] = useState(cataloguePageSize);
   const results = useMemo(() => {
     const needle = query.trim().toLowerCase();
-    return searchableCards.filter(({ card, searchText }) => card.relevance?.decision === "Core" && (!needle || searchText.includes(needle)) && (category === "All categories" || card.category === category));
-  }, [query, category, searchableCards]);
+    return searchableCards.filter(({ card, searchText, resourceTypes: types }) => (resourceType === "All resource types" || types.includes(resourceType)) && card.relevance?.decision === "Core" && (!needle || searchText.includes(needle)) && (category === "All categories" || card.category === category));
+  }, [query, category, resourceType, searchableCards]);
   return <section className="card-prototype" aria-label="Reviewed registry catalogue">
-    <div className="review-controls"><label className="search-box"><span aria-hidden="true">⌕</span><input disabled={loadState !== "ready"} value={query} onChange={e => { setQuery(e.target.value); setVisibleCount(cataloguePageSize); }} placeholder="Search ‘FAERS’, ‘PubMed’, ‘OMOP’…" aria-label="Search reviewed catalogue" /></label><label><span>Category</span><select disabled={loadState !== "ready"} value={category} onChange={e => { setCategory(e.target.value); setVisibleCount(cataloguePageSize); }}>{["All categories", ...catalogueCategories].map(option => <option key={option}>{option}</option>)}</select></label></div>
+    <div className="review-controls"><label className="search-box"><span aria-hidden="true">⌕</span><input disabled={loadState !== "ready"} value={query} onChange={e => { setQuery(e.target.value); setVisibleCount(cataloguePageSize); }} placeholder="Search ‘FAERS’, ‘PubMed’, ‘OMOP’…" aria-label="Search reviewed catalogue" /></label><label className="catalogue-select"><span>Resource type</span><select aria-label="Resource type" disabled={loadState !== "ready"} value={resourceType} onChange={e => { setResourceType(e.target.value); setVisibleCount(cataloguePageSize); }}>{["All resource types", ...resourceTypes].map(option => <option key={option}>{option}</option>)}</select></label><label className="catalogue-select"><span>RWE category</span><select disabled={loadState !== "ready"} value={category} onChange={e => { setCategory(e.target.value); setVisibleCount(cataloguePageSize); }}>{["All categories", ...catalogueCategories].map(option => <option key={option}>{option}</option>)}</select></label></div>
     {loadState === "loading" && <p role="status">Loading the catalogue…</p>}
     {loadState === "error" && <p role="alert">The additional catalogue entries could not be loaded. <button onClick={() => { setLoadState("loading"); setRetry(value => value + 1); }}>Retry</button></p>}
     <p className="catalogue-count" role="status">Showing {Math.min(visibleCount, results.length).toLocaleString()} of {results.length.toLocaleString()} matching entries</p>
@@ -194,7 +197,7 @@ function CardPrototype() {
       {open && <div className="prototype-details"><div className="capability-panel"><span>Documented capabilities</span><ul>{card.capabilities.map(capability => <li key={capability}>{capability}</li>)}</ul><div className="workflow-section"><span>Workflow fit</span><div className="workflow-tags">{card.workflowFit.map(item => <b key={item}>{item}</b>)}</div></div><p><b>Limitation</b> {card.limitation}</p></div><dl>{card.id && <div><dt>Registry ID</dt><dd>{card.id}</dd></div>}<div><dt>Relevance review</dt><dd>{relevanceSummary.asOf} · {card.relevance?.evidenceLevel === "published-card" ? "Recorded capability and limitation review" : "Source follow-up reviewed"}</dd></div><div><dt>Capability review</dt><dd>{card.checked}</dd></div><div><dt>Status</dt><dd>{card.status}</dd></div><div><dt>Runtime</dt><dd>{card.runtime}</dd></div><div><dt>Repository</dt><dd>{card.repository}</dd></div><div><dt>Website</dt><dd>{card.website}</dd></div><div><dt>Packages</dt><dd>{card.packages}</dd></div></dl>{card.relevance?.evidenceLevel !== "published-card" && card.relevance?.evidenceRefs && <div className="reviewed-sources"><strong>Relevance review sources</strong><ul>{card.relevance.evidenceRefs.map((url, index) => <li key={url}><a href={url} target="_blank" rel="noreferrer">Follow-up source {index + 1} ↗</a></li>)}</ul></div>}{card.primarySourceURLs && card.primarySourceURLs.length > 0 && <div className="reviewed-sources"><strong>Reviewed sources</strong><ul>{card.primarySourceURLs.map((url, index) => <li key={url}><a href={url} target="_blank" rel="noreferrer">Source {index + 1} ↗</a></li>)}</ul></div>}<a className="prototype-link" href={card.url} target={card.url === "#" ? undefined : "_blank"} rel="noreferrer">Open source ↗</a></div>}
     </article>; })}</div>
     {visibleCount < results.length && <div className="catalogue-more"><button onClick={() => setVisibleCount(count => count + cataloguePageSize)}>Show {Math.min(cataloguePageSize, results.length - visibleCount)} more entries</button></div>}
-    {!results.length && <div className="empty"><span>∅</span><h3>No reviewed match.</h3><p>Try a broader source, method, or workflow term.</p><button onClick={() => { setQuery(""); setCategory("All categories"); }}>Clear filters</button></div>}
+    {!results.length && <div className="empty"><span>∅</span><h3>No reviewed match.</h3><p>Try a broader source, method, or workflow term.</p><button onClick={() => { setQuery(""); setCategory("All categories"); setResourceType("All resource types"); setVisibleCount(cataloguePageSize); }}>Clear filters</button></div>}
   </section>;
 }
 

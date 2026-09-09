@@ -34,6 +34,8 @@ test("server-renders the public registry catalogue", async () => {
   assert.match(html, /Updated<br\/>weekly/);
   assert.doesNotMatch(html, /class="relevance-views"|aria-label="Catalogue scope"/);
   assert.doesNotMatch(html, /<strong>MedVision MCP/);
+  assert.match(html, /aria-label="Resource type"/);
+  assert.match(html, /Skills &amp; collections/);
   assert.match(html, /HEORAgent MCP Server/);
   assert.match(html, /OMOPHub MCP Server/);
   assert.match(html, /SignalBridge for openFDA/);
@@ -55,4 +57,7 @@ test("server-renders the public methods page", async () => {
   assert.match(html, /Controlled vocabulary/);
   assert.match(html, /Published-entry correction/);
   assert.match(html, /hardcoded simulated database/);
+  assert.match(html, /relevance-audit-2026-09-08\.pdf/);
+  assert.match(html, /search-coverage-2026-09-07\.pdf/);
+  assert.doesNotMatch(html, /href="[^"]+\.md"/);
 });

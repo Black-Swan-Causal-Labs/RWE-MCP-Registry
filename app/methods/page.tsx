@@ -31,7 +31,7 @@ export default function MethodsPage() {
       <p><strong>Borderline:</strong> a concrete unresolved component or scope question. These entries remain outside the core until resolved.</p>
       <p>The relevance audit evaluates the recorded capabilities and limitations, with source follow-up where identified. It is not a new primary-source inspection of every project. Each card records its decision rationale and review basis. Earlier source-review dates and caveats are retained.</p>
       <p>{relevanceSummary.counts.Core.toLocaleString()} core · {relevanceSummary.counts.Archive.toLocaleString()} archived · {relevanceSummary.counts.Borderline.toLocaleString()} borderline. One earlier source-quality hold remains separately recorded.</p>
-      <p><a href={`${basePath}/public-data/relevance-audit-2026-09-08.md`}>Read the relevance audit and borderline themes ↗</a></p></div>
+      <p><a href={`${basePath}/public-data/relevance-audit-2026-09-08.pdf`} download>Download the relevance audit (PDF) ↓</a></p></div>
     </section>
 
     <section className="protocol" id="protocol">
@@ -79,7 +79,7 @@ export default function MethodsPage() {
         <p>Search observations, primary-source reviews, canonical projects, components and public cards have different denominators. Automated scope screens, exact-copy reconciliation and individual source inspections are labeled separately. Approval of a component does not approve every sibling in its repository or collection.</p>
         <h3>Download the registry</h3><p><a href={`${basePath}/public-data/rwe-mcp-verified-capability-cards.xlsx`}>Core, archive and borderline workbook ↗</a> · <a href={`${basePath}/data/core-catalogue.json`}>Core catalogue data as JSON ↗</a></p>
         <h3>Audit record</h3><p>Historical errors, interruptions and incomplete attempts remain recorded. Successful revised searches do not retrospectively complete the original expressions. The public audit contains sanitized queries, dispositions and source references; retained raw source bodies are not republished.</p>
-        <p><a href={`${basePath}/public-data/search-coverage-2026-09-07.md`}>Read the search coverage report ↗</a> · <a href={`${basePath}/public-data/search-coverage-2026-09-07.json`}>Download the coverage audit ↗</a></p>
+        <p><a href={`${basePath}/public-data/search-coverage-2026-09-07.pdf`} download>Download the search coverage report (PDF) ↓</a> · <a href={`${basePath}/public-data/search-coverage-2026-09-07.json`}>Coverage audit data (JSON) ↗</a></p>
       </div>
     </section>
 
