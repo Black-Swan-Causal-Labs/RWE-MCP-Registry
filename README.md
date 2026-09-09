@@ -4,20 +4,27 @@ A source-reviewed catalogue of MCP servers, skills, libraries, and agents for re
 
 The public registry is available at [black-swan-causal-labs.github.io/RWE-MCP-Registry](https://black-swan-causal-labs.github.io/RWE-MCP-Registry/) with weekly discovery and monthly catalogue audits as maintenance targets. Recorded check and review dates identify work actually completed.
 
+## Browse the catalogue
+
+The website shows **4,218 core capability records** as of the September 8, 2026 relevance audit. Search by source, method or workflow, then combine the **Resource type** and **RWE category** filters. Resource types include MCP servers and components, skills and collections, agents and workflows, research tools and libraries, benchmarks, and other interfaces. Hybrid entries appear under each applicable type; these groups are not mutually exclusive counts of unique servers.
+
+Expand a card to see documented capabilities, workflow fit, limitations, review dates and source links. The **2,008 archived records**, **one borderline record**, and **one historical hold** remain in the workbook rather than the website catalogue.
+
 ## Public dataset
 
-The [`public-data`](public-data) directory contains the reviewed capability workbook and dated coverage reports:
+The repository contains the reviewed capability workbook, dated reports and supporting data. The Methods page offers Black Swan Causal Labs-branded PDFs for reading and downloading:
 
 - [`rwe-mcp-verified-capability-cards.xlsx`](public-data/rwe-mcp-verified-capability-cards.xlsx) — the catalogue and discovery archive on separate sheets, with a small borderline-review sheet, stable IDs, scoped capabilities, limitations and primary sources. The historical RWE-0115 record is retained as a hold and excluded from active website cards. This expands the previously published 177-record workbook.
 - [`reviewed-search-completion-2026-09-07.json`](data/reviewed-search-completion-2026-09-07.json) — new capability cards from the September continuation. Every card now carries a relevance decision. Current core, archive and borderline counts are in [`relevance-summary.json`](data/relevance-summary.json); the expansion count is a historical data-loading denominator, not the core total.
-- [`search-coverage-2026-09-07.md`](public-data/search-coverage-2026-09-07.md) and its [structured audit](public-data/search-coverage-2026-09-07.json) — searches, review outcomes, amendments and stopping-rule status.
+- [Relevance audit (PDF)](public-data/relevance-audit-2026-09-08.pdf) — core inclusion rules, review limitations and borderline questions. The [Markdown source](public-data/relevance-audit-2026-09-08.md) and [structured decisions](public-data/relevance-audit-2026-09-08.json) remain available for maintenance and analysis.
+- [Search coverage report (PDF)](public-data/search-coverage-2026-09-07.pdf) — the complete historical campaign, review outcomes, amendments and stopping-rule status. Its [Markdown source](public-data/search-coverage-2026-09-07.md) and [structured audit](public-data/search-coverage-2026-09-07.json) retain the underlying record.
 - [`search-log-2026-09-07.json`](public-data/search-log-2026-09-07.json) — the earlier bounded pass, retained as historical evidence.
 
 Inclusion records static documentation or selected source-component review. It does not establish installation, runtime, security, privacy, clinical or methodological validation. Collections are scoped to reviewed components; an included component does not approve its held or excluded siblings.
 
 ## Relevance review
 
-The [September 8 relevance audit](public-data/relevance-audit-2026-09-08.md) reassesses all 6,227 previously active capability records and separates Core, Archive and Borderline. It is an individual review of recorded capabilities and limitations, with selected source follow-ups identified in the audit, not a repeated primary-source audit of every project. The website shows only Core; archive and borderline records remain in the Excel workbook. The total counts records across servers, skills, components and workflows, not unique MCP servers. All 6,228 workbook IDs, including the historical hold, remain available.
+The [September 8 relevance audit](public-data/relevance-audit-2026-09-08.pdf) reassesses all 6,227 previously active capability records and separates Core, Archive and Borderline. It is an individual review of recorded capabilities and limitations, with selected source follow-ups identified in the audit, not a repeated primary-source audit of every project. The website shows only Core; archive and borderline records remain in the Excel workbook. The total counts records across servers, skills, components and workflows, not unique MCP servers. All 6,228 workbook IDs, including the historical hold, remain available.
 
 ## Search coverage and remaining work
 
@@ -70,6 +77,18 @@ To verify the public GitHub Pages static build (the deployment workflow runs thi
 ```bash
 GITHUB_PAGES=true NEXT_PUBLIC_BASE_PATH=/RWE-MCP-Registry npx next build
 ```
+
+## Branded report template
+
+Both downloadable reports use the shared [Black Swan report template](docs/report-template.md): the existing wordmark, cream and teal styling, consistent headings, clickable references and page numbering. The [report builder](scripts/build_reports.py) reads the retained Markdown sources and writes matching PDFs to `public-data` and `public/public-data`.
+
+To regenerate the reports in a Python environment with ReportLab installed:
+
+```bash
+python3 scripts/build_reports.py
+```
+
+Review the rendered PDF pages before publication. Preserve the distinction between historical discovery totals and current relevance decisions when updating report content.
 
 ## Suggest an addition
 
