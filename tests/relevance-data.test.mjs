@@ -26,6 +26,10 @@ test('adjacent disaster discoveries remain available outside core',()=>{
  assert.equal(historical['RWE-0204'].decision,'Archive');
  assert.equal(historical['RWE-0843'].decision,'Core');
 });
-test('download and browser copies use the identical audit and capability dataset',()=>{
- for(const [a,b] of [['public-data/relevance-audit-2026-09-08.json','public/public-data/relevance-audit-2026-09-08.json'],['data/reviewed-search-completion-2026-09-07.json','public/data/reviewed-search-completion-2026-09-07.json']]) assert.deepEqual(read(a),read(b));
+test('website data contains only core records while the audit and workbook retain the full history',()=>{
+ const browser=read('public/data/core-catalogue.json');
+ assert.deepEqual(browser,expanded.filter(c=>c.relevance.decision==='Core'));
+ assert.equal(browser.length+Object.values(historical).filter(r=>r.decision==='Core').length,summary.counts.Core);
+ assert.equal(fs.existsSync(new URL('../public/data/reviewed-search-completion-2026-09-07.json',import.meta.url)),false);
+ assert.equal(fs.existsSync(new URL('../public/public-data/relevance-audit-2026-09-08.json',import.meta.url)),false);
 });

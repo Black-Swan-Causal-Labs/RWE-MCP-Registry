@@ -17,7 +17,7 @@ Inclusion records static documentation or selected source-component review. It d
 
 ## Relevance review
 
-The [September 8 relevance audit](public-data/relevance-audit-2026-09-08.md) reassesses all 6,227 previously active capability records and separates Core, Archive and Borderline. It is an individual review of recorded capabilities and limitations, with selected source follow-ups identified in the audit, not a repeated primary-source audit of every project. The website opens to Core. The total counts records across servers, skills, components and workflows, not unique MCP servers. All 6,228 workbook IDs, including the historical hold, remain available.
+The [September 8 relevance audit](public-data/relevance-audit-2026-09-08.md) reassesses all 6,227 previously active capability records and separates Core, Archive and Borderline. It is an individual review of recorded capabilities and limitations, with selected source follow-ups identified in the audit, not a repeated primary-source audit of every project. The website shows only Core; archive and borderline records remain in the Excel workbook. The total counts records across servers, skills, components and workflows, not unique MCP servers. All 6,228 workbook IDs, including the historical hold, remain available.
 
 ## Search coverage and remaining work
 

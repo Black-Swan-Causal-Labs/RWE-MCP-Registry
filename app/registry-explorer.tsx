@@ -5,7 +5,6 @@ import expansionCards from "../data/approved-expansion.json";
 import expansionCards2 from "../data/approved-expansion-2.json";
 import webmcpCards from "../data/reviewed-webmcp.json";
 import reviewedExpansionCards from "../data/reviewed-expansion-2026-09-07.json";
-import searchCompletionCount from "../data/search-completion-count.json";
 import relevanceSummary from "../data/relevance-summary.json";
 import historicalRelevance from "../data/historical-relevance.json";
 import relevanceCorrections from "../data/relevance-card-corrections.json";
@@ -57,7 +56,7 @@ export function RegistryExplorer() {
         <div className="hero-grid">
           <div>
             <h1>The RWE<br /><i>MCP Registry</i></h1>
-            <p className="lede">A source-reviewed catalogue of MCP servers, skills, libraries, and agents for real-world evidence workflows, with a separate archive of adjacent discoveries.</p>
+            <p className="lede">A source-reviewed catalogue of MCP servers, skills, libraries, and agents for real-world evidence workflows.</p>
           </div>
           <div className="update-stamp" aria-label="Registry update schedule">
             <strong>Updated<br />weekly</strong>
@@ -156,38 +155,35 @@ function latestCheckLabel(card: CapabilityCard) {
 }
 
 function CardPrototype() {
-  const [allCards, setAllCards] = useState<CapabilityCard[]>(prototypeCards);
+  const [allCards, setAllCards] = useState<CapabilityCard[]>(prototypeCards.filter(card => card.relevance?.decision === "Core"));
   const [loadState, setLoadState] = useState<"loading" | "ready" | "error">("loading");
   const [retry, setRetry] = useState(0);
   useEffect(() => {
     const controller = new AbortController();
     const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
-    fetch(`${basePath}/data/reviewed-search-completion-2026-09-07.json`, { signal: controller.signal })
+    fetch(`${basePath}/data/core-catalogue.json`, { signal: controller.signal })
       .then(response => { if (!response.ok) throw new Error("Catalogue unavailable"); return response.json(); })
       .then((cards: CapabilityCard[]) => {
-        if (!Array.isArray(cards) || cards.length !== searchCompletionCount.entries || cards.some(card => !card.id || !["Core", "Archive", "Borderline"].includes(card.relevance?.decision ?? "")) || new Set(cards.map(card => card.id)).size !== cards.length) throw new Error("Incomplete catalogue");
-        setAllCards([...prototypeCards, ...cards]);
+        if (!Array.isArray(cards) || cards.length !== relevanceSummary.counts.Core - prototypeCards.filter(card => card.relevance?.decision === "Core").length || cards.some(card => !card.id || card.relevance?.decision !== "Core") || new Set(cards.map(card => card.id)).size !== cards.length) throw new Error("Incomplete catalogue");
+        setAllCards([...prototypeCards.filter(card => card.relevance?.decision === "Core"), ...cards]);
         setLoadState("ready");
       })
       .catch(() => { if (!controller.signal.aborted) setLoadState("error"); });
     return () => controller.abort();
   }, [retry]);
   const searchableCards = useMemo(() => makeSearchableCards(allCards), [allCards]);
-  const [view, setView] = useState<"Core" | "Archive" | "Borderline">("Core");
-  const catalogueCategories = useMemo(() => [...new Set(allCards.filter(card => card.relevance?.decision === view).map(card => card.category))], [allCards, view]);
+  const catalogueCategories = useMemo(() => [...new Set(allCards.filter(card => card.relevance?.decision === "Core").map(card => card.category))], [allCards]);
   const [expanded, setExpanded] = useState<string | null>(null);
   const [query, setQuery] = useState("");
   const [category, setCategory] = useState("All categories");
   const [visibleCount, setVisibleCount] = useState(cataloguePageSize);
   const results = useMemo(() => {
     const needle = query.trim().toLowerCase();
-    return searchableCards.filter(({ card, searchText }) => card.relevance?.decision === view && (!needle || searchText.includes(needle)) && (category === "All categories" || card.category === category));
-  }, [query, category, searchableCards, view]);
+    return searchableCards.filter(({ card, searchText }) => card.relevance?.decision === "Core" && (!needle || searchText.includes(needle)) && (category === "All categories" || card.category === category));
+  }, [query, category, searchableCards]);
   return <section className="card-prototype" aria-label="Reviewed registry catalogue">
-    <div className="relevance-views" aria-label="Catalogue scope">{(["Core", "Archive", "Borderline"] as const).map(value => <button key={value} aria-pressed={view === value} onClick={() => { setView(value); setCategory("All categories"); setVisibleCount(cataloguePageSize); setExpanded(null); }}>{value === "Core" ? "Core catalogue" : value === "Archive" ? "Discovery archive" : "Borderline review"} <span>{relevanceSummary.counts[value].toLocaleString()}</span></button>)}</div>
-    <p className="relevance-explanation">{view === "Core" ? "Tools with an explicit health-research role or a specific statistical or evidence-synthesis function. Relevance is separate from methodological or runtime validation." : view === "Archive" ? "Adjacent discoveries preserved for reference. A possible downstream health application was not sufficient for core inclusion." : "Entries with a specific unresolved scope question. These are outside the core catalogue until that question is settled."} <a href={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/methods/#relevance`}>Read the relevance audit ↗</a></p>
     <div className="review-controls"><label className="search-box"><span aria-hidden="true">⌕</span><input disabled={loadState !== "ready"} value={query} onChange={e => { setQuery(e.target.value); setVisibleCount(cataloguePageSize); }} placeholder="Search ‘FAERS’, ‘PubMed’, ‘OMOP’…" aria-label="Search reviewed catalogue" /></label><label><span>Category</span><select disabled={loadState !== "ready"} value={category} onChange={e => { setCategory(e.target.value); setVisibleCount(cataloguePageSize); }}>{["All categories", ...catalogueCategories].map(option => <option key={option}>{option}</option>)}</select></label></div>
-    {loadState === "loading" && <p role="status">Loading the catalogue and discovery archive…</p>}
+    {loadState === "loading" && <p role="status">Loading the catalogue…</p>}
     {loadState === "error" && <p role="alert">The additional catalogue entries could not be loaded. <button onClick={() => { setLoadState("loading"); setRetry(value => value + 1); }}>Retry</button></p>}
     <p className="catalogue-count" role="status">Showing {Math.min(visibleCount, results.length).toLocaleString()} of {results.length.toLocaleString()} matching entries</p>
     <div className="prototype-list">{results.slice(0, visibleCount).map(({ card, key }) => { const open = expanded === key; return <article className={`prototype-card ${open ? "is-open" : ""}`} key={key}>
@@ -195,10 +191,10 @@ function CardPrototype() {
         <div><span className="prototype-type">{card.kind} · {card.category}</span><strong>{card.name} {"favorite" in card && card.favorite ? <span className="favorite-star" title="Black Swan Causal Labs product" aria-label="Black Swan Causal Labs product">★</span> : null}</strong><p>{card.relevance?.rationale ?? card.summary}</p><div className="tags">{card.tags.map(tag => <span key={tag}>{tag}</span>)}</div></div>
         <div className="prototype-freshness"><span>Added {card.added}</span><span title="Latest stated source check; the separate capability review date is shown in details">Checked {latestCheckLabel(card)}</span><b>{open ? "Close −" : "View details +"}</b></div>
       </button>
-      {open && <div className="prototype-details"><div className="capability-panel"><p className="relevance-rationale"><b>{card.relevance?.decision === "Core" ? "Core relevance" : card.relevance?.decision === "Archive" ? "Why archived" : "Question to resolve"}</b> {card.relevance?.rationale}</p><p><b>Recorded capability summary</b> {card.summary}</p><span>Recorded workflow tags</span><div className="workflow-tags">{card.workflowFit.map(item => <b key={item}>{item}</b>)}</div><span>Documented capabilities</span><ul>{card.capabilities.map(capability => <li key={capability}>{capability}</li>)}</ul><p><b>Limitation</b> {card.limitation}</p></div><dl>{card.id && <div><dt>Registry ID</dt><dd>{card.id}</dd></div>}<div><dt>Relevance review</dt><dd>{relevanceSummary.asOf} · {card.relevance?.evidenceLevel === "published-card" ? "Recorded capability and limitation review" : "Source follow-up reviewed"}</dd></div><div><dt>Capability review</dt><dd>{card.checked}</dd></div><div><dt>Status</dt><dd>{card.status}</dd></div><div><dt>Runtime</dt><dd>{card.runtime}</dd></div><div><dt>Repository</dt><dd>{card.repository}</dd></div><div><dt>Website</dt><dd>{card.website}</dd></div><div><dt>Packages</dt><dd>{card.packages}</dd></div></dl>{card.relevance?.evidenceLevel !== "published-card" && card.relevance?.evidenceRefs && <div className="reviewed-sources"><strong>Relevance review sources</strong><ul>{card.relevance.evidenceRefs.map((url, index) => <li key={url}><a href={url} target="_blank" rel="noreferrer">Follow-up source {index + 1} ↗</a></li>)}</ul></div>}{card.primarySourceURLs && card.primarySourceURLs.length > 0 && <div className="reviewed-sources"><strong>Reviewed sources</strong><ul>{card.primarySourceURLs.map((url, index) => <li key={url}><a href={url} target="_blank" rel="noreferrer">Source {index + 1} ↗</a></li>)}</ul></div>}<a className="prototype-link" href={card.url} target={card.url === "#" ? undefined : "_blank"} rel="noreferrer">Open source ↗</a></div>}
+      {open && <div className="prototype-details"><div className="capability-panel"><span>Documented capabilities</span><ul>{card.capabilities.map(capability => <li key={capability}>{capability}</li>)}</ul><div className="workflow-section"><span>Workflow fit</span><div className="workflow-tags">{card.workflowFit.map(item => <b key={item}>{item}</b>)}</div></div><p><b>Limitation</b> {card.limitation}</p></div><dl>{card.id && <div><dt>Registry ID</dt><dd>{card.id}</dd></div>}<div><dt>Relevance review</dt><dd>{relevanceSummary.asOf} · {card.relevance?.evidenceLevel === "published-card" ? "Recorded capability and limitation review" : "Source follow-up reviewed"}</dd></div><div><dt>Capability review</dt><dd>{card.checked}</dd></div><div><dt>Status</dt><dd>{card.status}</dd></div><div><dt>Runtime</dt><dd>{card.runtime}</dd></div><div><dt>Repository</dt><dd>{card.repository}</dd></div><div><dt>Website</dt><dd>{card.website}</dd></div><div><dt>Packages</dt><dd>{card.packages}</dd></div></dl>{card.relevance?.evidenceLevel !== "published-card" && card.relevance?.evidenceRefs && <div className="reviewed-sources"><strong>Relevance review sources</strong><ul>{card.relevance.evidenceRefs.map((url, index) => <li key={url}><a href={url} target="_blank" rel="noreferrer">Follow-up source {index + 1} ↗</a></li>)}</ul></div>}{card.primarySourceURLs && card.primarySourceURLs.length > 0 && <div className="reviewed-sources"><strong>Reviewed sources</strong><ul>{card.primarySourceURLs.map((url, index) => <li key={url}><a href={url} target="_blank" rel="noreferrer">Source {index + 1} ↗</a></li>)}</ul></div>}<a className="prototype-link" href={card.url} target={card.url === "#" ? undefined : "_blank"} rel="noreferrer">Open source ↗</a></div>}
     </article>; })}</div>
     {visibleCount < results.length && <div className="catalogue-more"><button onClick={() => setVisibleCount(count => count + cataloguePageSize)}>Show {Math.min(cataloguePageSize, results.length - visibleCount)} more entries</button></div>}
-    {!results.length && <div className="empty"><span>∅</span><h3>{view === "Borderline" && relevanceSummary.counts.Borderline === 0 ? "No unresolved relevance questions." : "No reviewed match."}</h3><p>{view === "Borderline" && relevanceSummary.counts.Borderline === 0 ? "This pass left no entries awaiting a scope decision." : "Try a broader source, method, or workflow term, or another catalogue view."}</p><button onClick={() => { setQuery(""); setCategory("All categories"); }}>Clear filters</button></div>}
+    {!results.length && <div className="empty"><span>∅</span><h3>No reviewed match.</h3><p>Try a broader source, method, or workflow term.</p><button onClick={() => { setQuery(""); setCategory("All categories"); }}>Clear filters</button></div>}
   </section>;
 }
 

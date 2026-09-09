@@ -16,7 +16,7 @@ const faqGroups = [
       },
       {
         question: "Why are there thousands of entries, and where should I start?",
-        answer: "Start with the Core catalogue, which is the default view. The expansion gathered capability records across MCP servers, skills, libraries and components; the total was never a count of unique MCP servers. A subsequent relevance audit separated adjacent discoveries into an Archive and unresolved scope questions into Borderline review. Every entry has a reason, and the archive remains searchable without inflating the core count.",
+        answer: "The website displays the Core catalogue. The expansion gathered capability records across MCP servers, skills, libraries and components; the total was never a count of unique MCP servers. A subsequent relevance audit separated adjacent discoveries and unresolved scope questions into dedicated Excel sheets. Those records are kept out of the website catalogue.",
       },
       {
         question: "Who maintains the registry?",
