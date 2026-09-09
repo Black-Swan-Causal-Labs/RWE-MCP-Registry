@@ -1497,47 +1497,49 @@
   },
   {
     "id": "RWE-0255",
-    "name": "PopHIVE MCP Server",
+    "name": "PopHIVE MCP Server (official)",
     "kind": "MCP server",
     "category": "Public Health & Epidemiology",
-    "summary": "Yale PopHIVE population health data for community health analysis and value-based care.",
+    "summary": "Official PopHIVE read-only MCP access to US population-health surveillance data.",
     "tags": [
       "Public health",
       "Population data",
       "Surveillance"
     ],
     "added": "Aug 25, 2026",
-    "checked": "Aug 25, 2026",
-    "status": "Static documentation and repository metadata reviewed",
+    "checked": "Sep 8, 2026",
+    "status": "Official MCP documentation reviewed",
     "runtime": "Not independently runtime tested by registry",
-    "repository": "Cicatriiz/pophive-mcp-server",
-    "website": "GitHub",
-    "packages": "Source repository",
+    "repository": "PopHIVE/Ingest (data repository; MCP implementation source not identified)",
+    "website": "PopHIVE official MCP documentation",
+    "packages": "Hosted MCP: https://mcp.pophive.org/mcp",
     "workflowFit": [
       "Population-health surveillance",
       "Burden and trend description",
       "External context for RWE studies"
     ],
     "capabilities": [
-      "Google Health Trends: Population behavior and symptom search patterns",
-      "comparestates: Compare health metrics across multiple states with statistical analysis",
-      "timeseriesanalysis: Analyze trends over time with aggregation options"
+      "Disease status, trends, geographic rankings, and vaccination coverage",
+      "Comparisons across places or surveillance sources",
+      "Dataset discovery and raw-data access with provenance and caveats"
     ],
-    "limitation": "Reporting delay, suppression, revisions, changing definitions, geographic comparability, and ecological inference can affect interpretation. Results require dataset-specific denominator and provenance checks.",
-    "url": "https://github.com/Cicatriiz/pophive-mcp-server",
+    "limitation": "US aggregate surveillance data; coverage, freshness, suppression, and source terms vary. Custom calculations require independent checking. Official server implementation source was not identified.",
+    "url": "https://www.pophive.org/docs/mcp",
     "verification": {
-      "reviewedAt": "2026-08-25",
-      "repositoryStatus": "available",
-      "pushedAt": "2025-07-29",
-      "stars": 23,
-      "forks": 13,
-      "license": "MIT",
-      "defaultBranch": "main",
+      "reviewedAt": "2026-09-08",
       "sources": [
-        "https://github.com/Cicatriiz/pophive-mcp-server/blob/main/README.md",
-        "https://github.com/Cicatriiz/pophive-mcp-server"
-      ]
-    }
+        "https://www.pophive.org/docs/mcp",
+        "https://github.com/PopHIVE/Ingest"
+      ],
+      "implementationEvidence": "Official documentation reviewed; server implementation source not identified",
+      "transport": "Streamable HTTP",
+      "authentication": "None required per official documentation",
+      "endpoint": "https://mcp.pophive.org/mcp"
+    },
+    "primarySourceURLs": [
+      "https://www.pophive.org/docs/mcp",
+      "https://github.com/PopHIVE/Ingest"
+    ]
   },
   {
     "id": "RWE-0240",

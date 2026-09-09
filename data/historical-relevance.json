@@ -1245,11 +1245,12 @@
   "RWE-0255": {
     "id": "RWE-0255",
     "decision": "Core",
-    "rationale": "PopHIVE MCP Server: The specifically described health-data, clinical-biostatistics, research-reference or methodological component supports a concrete health-research workflow; broader collection and molecular capabilities are not approved by this relevance decision.",
-    "relevanceBasis": "Yale PopHIVE population health data for community health analysis and value-based care.",
-    "evidenceLevel": "published-card",
+    "rationale": "Official PopHIVE surveillance tools support population-health trends, geographic comparisons, and external context for RWE studies.",
+    "relevanceBasis": "Official PopHIVE read-only MCP access to US population-health surveillance data.",
+    "evidenceLevel": "fresh-primary",
     "evidenceRefs": [
-      "https://github.com/Cicatriiz/pophive-mcp-server"
+      "https://www.pophive.org/docs/mcp",
+      "https://github.com/PopHIVE/Ingest"
     ],
     "reviewGroup": "Public Health & Epidemiology"
   },

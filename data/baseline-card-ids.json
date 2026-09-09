@@ -174,5 +174,6 @@
   "https://github.com/firefox2100/biomedical-terminology-service": "RWE-0264",
   "https://github.com/mosaic-care/langcare-mcp-fhir": "RWE-0265",
   "https://github.com/hannesill/m4": "RWE-0266",
-  "https://github.com/salwks/mcp-techtrend": "RWE-0267"
+  "https://github.com/salwks/mcp-techtrend": "RWE-0267",
+  "https://www.pophive.org/docs/mcp": "RWE-0255"
 }
