@@ -60,7 +60,7 @@ export function RegistryExplorer() {
             <p className="lede">A source-reviewed catalogue of MCP servers, skills, libraries, and agents for real-world evidence workflows.</p>
           </div>
           <div className="update-stamp" aria-label="Registry update schedule">
-            <strong>Updated<br />weekly</strong>
+            <strong>Updated<br />monthly</strong>
             <span>Relevance reviewed</span>
             <time dateTime={relevanceSummary.asOf}>{formatDate(relevanceSummary.asOf)}</time>
           </div>
