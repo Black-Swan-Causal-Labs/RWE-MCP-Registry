@@ -1,8 +1,18 @@
 # RWE MCP Registry — Search and Indexing Methods
 
-**Protocol version:** 0.6-draft
-**Last updated:** 2026-09-08
+**Protocol version:** 0.7-draft
+**Last updated:** 2026-10-12
 **Status:** Living document; revise before each search wave and record material changes.
+
+## October 12 discovery refresh
+
+The [October refresh report](public-data/search-refresh-2026-10-12.md) and [structured audit](public-data/search-refresh-2026-10-12.json) record a new discovery wave under the current relevance boundary. The prospective run plan used 32 health/method concepts paired with MCP and skill signals in GitHub names, descriptions and topics, restricted to public, non-fork repositories pushed since September 7. All 64 searches reached short/empty terminal result pages without reported incomplete results. The overlap is intentional; September creation-date restrictions are not carried into this wave.
+
+The Official MCP Registry lane completed the live `/v0.1/servers` feed with `version=latest`, `updated_since=2026-09-07T00:00:00Z` and `limit=100`, reaching its terminal cursor after 216 pages and 21,514 update observations. This includes deletion metadata and is a delta feed, not a new full inventory. Thirty-two current Smithery vocabulary searches reached their terminal pagination. Twenty ranked indexed-directory searches covered Glama, PulseMCP, MCP.so, MCP Market, MCP Repository and LobeHub. The current Awesome Healthcare MCP Servers README was also retained as a discovery source. These non-GitHub lanes have no repository-push date restriction.
+
+Automatic metadata screens are distinct from primary documentation review. Existing canonical repositories and endpoint aliases were reconciled before new-card counts. The adjudicated publication adds 62 Core capability records, IDs RWE-6914 through RWE-6975. Seventeen candidates were excluded, five were reconciled to existing identities, and 88 remain held outside the catalogue for first-party identity, distinctness or component/implementation follow-up. Held discovery candidates are separate from the historical Borderline record. The website and workbook now contain 4,280 Core records; historical archive, Borderline and hold counts are unchanged.
+
+New-card review covers repository metadata and primary documentation, with source URLs, retrieval timestamps, README blob IDs and text hashes retained. It does not inspect every implementation file or establish runtime, numerical, security, clinical or privacy validation. Older card dates are unchanged. No new GitHub code-search lane, full README-index matrix, full Docker inventory, whole-catalogue capability re-review, exhaustive coverage or two-round no-novelty result is claimed. The historical September campaign below retains its original denominators and stopping-rule boundary.
 
 ## Current relevance boundary
 

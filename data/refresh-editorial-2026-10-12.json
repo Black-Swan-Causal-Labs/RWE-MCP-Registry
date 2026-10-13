@@ -1,0 +1,498 @@
+[
+  [
+    "aeternifrigus/mcp-tools-server",
+    "MCP Statistics Tools",
+    "MCP server",
+    "Causal Inference & Analytics",
+    "Provides Kaplan-Meier survival estimation, a two-group log-rank test, paired sample comparisons and distribution-drift statistics.",
+    "Documentation describes local statistical functions and in-process tests; transport interoperability and numerical correctness were not independently tested."
+  ],
+  [
+    "ahsanmandhar-ui/pubmed-mcp",
+    "PubMed MCP (Ahsan)",
+    "MCP server",
+    "Literature & Evidence Synthesis",
+    "Searches PubMed and retrieves normalized article records or original NCBI XML with explicit missingness and retrieval provenance.",
+    "Search logging supports reproducibility but does not establish complete review coverage. Missing abstracts, provider limits and retraction metadata require checking."
+  ],
+  [
+    "andreoss/fhir-mcp",
+    "FHIR MCP (Andreoss)",
+    "MCP server",
+    "Clinical Data & Interoperability",
+    "Exposes FHIR read, search and operation interfaces backed by a local DuckDB store, with configurable remote-system integration.",
+    "Local storage is distinct from a connected clinical backend. Writes are configurable; deployment authorization, backend compatibility and data protection were not verified."
+  ],
+  [
+    "anshux1/vitalis-mcp",
+    "Vitalis MCP — literature and synthetic FHIR",
+    "MCP server",
+    "Clinical Data & Interoperability",
+    "Documents PubMed retrieval and synthetic FHIR patient, condition, medication, observation and encounter workflows.",
+    "Retain literature retrieval and synthetic clinical-data operations only. Triage, medication reconciliation, referral and treatment outputs are not independently assessed clinical capabilities."
+  ],
+  [
+    "arhancanli/drug-label-mcp",
+    "Drug Label MCP",
+    "MCP server",
+    "Regulatory & Product Data",
+    "Retrieves FDA medication-label passages with section headings, manufacturer/version context and links to DailyMed.",
+    "Label text is product- and version-specific. Retrieval does not establish comprehensive interaction coverage or patient-specific safety advice."
+  ],
+  [
+    "Bayer-Group/ascent-epi-demo",
+    "ASCeNT Epidemiology Demo",
+    "MCP server & agent workflow",
+    "Public Health & Epidemiology",
+    "Demonstrates natural-language epidemiology queries, patient-cohort construction and SQL over a local warehouse with synthetic OMOP and non-OMOP data.",
+    "The distributed patients and clinical codes are generated. This is a demonstration, not access to Bayer patient data or evidence of valid epidemiologic estimates; an external model API is required."
+  ],
+  [
+    "beenlouis/mychart-mcp",
+    "MyChart Care Record Connector",
+    "MCP server",
+    "Clinical Data & Interoperability",
+    "Documents read-only retrieval of a patient's own Epic MyChart clinical records through patient-authorized SMART on FHIR access.",
+    "Independent personal-use connector. Health-system registration, refresh-token handling, attachment access and production privacy controls were not independently verified."
+  ],
+  [
+    "bellawang2024/chronic-disease-risk-skills",
+    "Chronic Disease Risk Skills",
+    "Agent skill collection",
+    "Public Health & Epidemiology",
+    "Packages chronic-disease prediction workflows using public NHIS, BRFSS and NHANES survey data with training, inference and provenance documentation.",
+    "Models concern survey-defined outcomes and dataset-specific populations. Reported cross-validation is the author's evidence; survey-design handling, temporal prediction and external clinical validity were not independently checked."
+  ],
+  [
+    "BerkayCelk/pubmed-mcp",
+    "PubMed MCP (BerkayCelk)",
+    "MCP server",
+    "Literature & Evidence Synthesis",
+    "Documents biomedical search and retrieval across PubMed and Europe PMC, with MeSH, citation, full-text and clinical-trial tools.",
+    "Only documented literature/trial retrieval is included. Provider coverage, available full text and external-service access can differ; no live results were tested."
+  ],
+  [
+    "Black-Swan-Causal-Labs/nhanes-mcp",
+    "NHANES MCP",
+    "MCP server",
+    "Public Health & Epidemiology",
+    "Documents NHANES file and variable discovery, analysis-dataset assembly and survey-weighted estimation with cycle-pooling and reliability guidance.",
+    "Maintainer-owned product. Weight selection, subsample eligibility, pooled-cycle definitions and statistical outputs need study-specific review; no independent numerical or runtime validation was performed."
+  ],
+  [
+    "burhananis/appraise-ai-claude-skill",
+    "APPRAISE-AI Research Appraisal Skill",
+    "Agent skill",
+    "Literature & Evidence Synthesis",
+    "Structures quality appraisal of medical-AI studies using APPRAISE-AI domains, multiple model ratings and a human lead reviewer.",
+    "Model ratings are not independent human reviewers or proof of instrument validity. Review requires the study's full reporting and qualified adjudication."
+  ],
+  [
+    "cndoin/med-biostat-skill",
+    "Medical Biostatistics Skill — scoped methods",
+    "Agent skill collection",
+    "Causal Inference & Analytics",
+    "Documents observational propensity-score methods, mediation, difference-in-differences, survival analysis, competing risks, imputation and meta-analysis workflows.",
+    "Scope is the named clinical-statistics and causal-method components; molecular-only siblings are not included. Packaged calculations and methodological assumptions were not independently validated."
+  ],
+  [
+    "coffeemilktea/hl7-v2-fhir-mcp-server",
+    "HL7 v2 to FHIR Mapping MCP",
+    "MCP server",
+    "Clinical Data & Interoperability",
+    "Documents field and code mappings from HL7 v2.5.1 to FHIR R4 and conversion of ORM, ADT and ORU messages into transaction bundles with mapping warnings.",
+    "Coverage is limited to documented message types and mappings. The author restricts remote deployments to lab or synthetic data; conformance and preservation of clinical meaning were not tested."
+  ],
+  [
+    "CzarMich/openehr_FHIR_Modeller",
+    "openEHR and FHIR Modeller",
+    "MCP tools & research workspace",
+    "Clinical Data & Interoperability",
+    "Provides documented openEHR/FHIR modelling, validation, synthetic examples, semantic comparison and explicit mapping-proposal workflows.",
+    "Independently maintained derivative with an optional private FHIR engine. Public documentation does not establish access to every backend or clinical validity of generated mappings."
+  ],
+  [
+    "drvvek/faers_mcp",
+    "FAERS Pharmacovigilance MCP",
+    "MCP server",
+    "Pharmacovigilance & safety",
+    "Documents openFDA adverse-event case retrieval, ROR/PRR, empirical-Bayes signal scores and stratified exploratory signal screening.",
+    "Spontaneous reports do not establish incidence or causality. Empirical-Bayes priors, stratification and derived estimates were not independently checked; source limits and reporting biases remain material."
+  ],
+  [
+    "fabianigual/causal-inference-skill",
+    "Causal Inference Skill (Fabianigual)",
+    "Agent skill",
+    "Causal Inference & Analytics",
+    "Guides estimand definition, identification assumptions, power and sensitivity analysis, with documented difference-in-differences and propensity-score examples.",
+    "Instructional method support rather than an autonomous validated estimator. Complex timing, dependence, confounding and identification questions require an appropriate study-specific analysis."
+  ],
+  [
+    "fabianofilho/radar-papers-mcp",
+    "Radar Papers MCP",
+    "MCP server",
+    "Literature & Evidence Synthesis",
+    "Monitors configured topics in PubMed and medRxiv, stores DOI-deduplicated records locally and documents local-model summaries.",
+    "Monitoring is not a comprehensive systematic search. Preprints and published articles differ, DOI deduplication can miss records, and generated summaries need verification."
+  ],
+  [
+    "gopipamulapati/drug-safety-mcp",
+    "Drug Safety MCP",
+    "MCP server & agent workflow",
+    "Pharmacovigilance & safety",
+    "Documents FDA label, FAERS and recall retrieval through structured MCP tools and a LangGraph tool-discovery workflow.",
+    "Label-derived interactions and spontaneous reports are not a patient-specific safety assessment. Offline fixtures and author tests do not establish live-source completeness or clinical correctness."
+  ],
+  [
+    "herzleben/pubmed-slr-screening",
+    "PubMed SLR Screening Workflow",
+    "Agent workflow & skills",
+    "Literature & Evidence Synthesis",
+    "Implements a documented Claude Code workflow for PubMed search, screening and study-characteristics extraction with a static review report.",
+    "Author explicitly limits this TrialMind-inspired reimplementation to teaching and method validation. It does not substitute for a completed, independently adjudicated systematic review."
+  ],
+  [
+    "ishnags/pubmed-rag-chatbot",
+    "PubMed Diabetes Evidence Retrieval Agent",
+    "Research agent",
+    "Literature & Evidence Synthesis",
+    "Documents retrieval of PubMed abstracts for diabetes-treatment questions and cited answers using a local or hosted vector index.",
+    "Abstract-grounded generated answers may omit full-text eligibility and limitations. Retrieval, citation support and treatment claims were not independently validated."
+  ],
+  [
+    "jasonrwise/trial-cohort-builder",
+    "TrialBridge Cohort Builder",
+    "MCP server",
+    "Trials & Study Design",
+    "Retrieves ClinicalTrials.gov protocols, maps eligibility criteria and queries a HAPI FHIR store to generate candidate-patient screening evidence.",
+    "Distributed patient data are synthetic. Eligibility mapping, de-identification claims and screening scores were not independently validated; candidate matching is not an enrollment decision."
+  ],
+  [
+    "JC-SYSU/pubmed-surfing",
+    "PubMed Surfing",
+    "MCP server",
+    "Literature & Evidence Synthesis",
+    "Documents structured PubMed search, batch abstracts, identifier conversion, related-article retrieval, citation formatting and journal metadata.",
+    "A local MCP process still retrieves from external providers. Search completeness, identifier matching and journal metadata were not tested against live sources."
+  ],
+  [
+    "jhlee0619/local-citation-verifier",
+    "Local Citation Verifier",
+    "Research tool & agent skill",
+    "Literature & Evidence Synthesis",
+    "Checks BibTeX, RIS and MEDLINE references against scholarly identifiers and metadata, including PubMed and Crossref, while retaining uncertain matches for review.",
+    "Bibliographic agreement does not establish that an article supports a scientific claim. Provider access, ambiguous records and author/title matching need verification."
+  ],
+  [
+    "KangWang42/EpiAgentKit",
+    "EpiAgentKit — epidemiology workflow",
+    "Agent skill collection",
+    "Public Health & Epidemiology",
+    "Documents epidemiology and biostatistics study-design, analysis-plan and reproducible R/Python analysis workflows for Claude Code and Codex.",
+    "Only the documented epidemiology, study-design and statistical workflows are included. Writing and presentation components do not independently qualify; instructions cannot establish correct estimands or analysis results."
+  ],
+  [
+    "krlz-dev/fhir-mcp-server",
+    "Minimal FHIR MCP (Krlz)",
+    "MCP server",
+    "Clinical Data & Interoperability",
+    "Documents patient search, observation retrieval and patient resources against a HAPI FHIR R4 server using MCP tools, resources and prompts.",
+    "Small interoperability example with an in-memory test suite. Authenticated clinical deployment, complete FHIR resource coverage and live compatibility were not verified."
+  ],
+  [
+    "LAHutchins91/papers-mcp",
+    "Papers by Ouroboros",
+    "MCP server",
+    "Literature & Evidence Synthesis",
+    "Documents multi-source scholarly search including PubMed, identifier-based paper retrieval, citation-graph navigation and bibliography formatting.",
+    "Hosted retrieval coverage and access may change. A returned identifier does not demonstrate relevance, methodological quality or support for a generated claim."
+  ],
+  [
+    "LaMatemaga/med-research-digest-agentic",
+    "Medical Research Digest Workflow",
+    "Agent workflow",
+    "Literature & Evidence Synthesis",
+    "Documents a configurable clinical-literature surveillance pipeline using PubMed MCP retrieval and ClinicalTrials.gov cross-checks.",
+    "Digest generation is scoped to documented retrieval and trial cross-checking. Physician-profile filtering and generated summaries do not establish complete systematic-review coverage."
+  ],
+  [
+    "LiamDGray/medplum-mcp",
+    "Medplum MCP (LiamDGray)",
+    "MCP server",
+    "Clinical Data & Interoperability",
+    "Documents FHIR R4 EHR access with structured outputs, configurable write restrictions, compact responses and audit-record interfaces.",
+    "Security, compliance and determinism are author claims, not registry certifications. Public mock/sandbox descriptions do not establish a deployed hospital integration."
+  ],
+  [
+    "marcsalot/fhir-mcp",
+    "FHIR MCP (Marcsalot)",
+    "MCP server",
+    "Clinical Data & Interoperability",
+    "Documents read-only patient, medication, condition, encounter, observation and allergy retrieval with compact FHIR R4 summaries and search normalization.",
+    "Author describes synthetic test-server patients only. Summary compression, name/lab matching, audit controls and SMART access were not independently validated."
+  ],
+  [
+    "masa-med-ai/typesafe-screening-mcp",
+    "TypeSafe Literature Screening MCP",
+    "MCP server",
+    "Literature & Evidence Synthesis",
+    "Searches PubMed or accepts supplied records and uses a typed decision model to return title/abstract screening probabilities and inclusion categories.",
+    "Requires the documented model service and credentials. Probabilities and automated screening thresholds are not independently calibrated for the user's review and do not replace adjudication."
+  ],
+  [
+    "Maxciev/PubMed-Literature-Review",
+    "PubMed Literature Review Skill",
+    "Agent skill",
+    "Literature & Evidence Synthesis",
+    "Documents a PICO-framed PubMed literature-search and synthesis workflow with DOI/PMID-linked Word output.",
+    "Instruction-based synthesis must preserve executed searches and human eligibility decisions. Citations and generated interpretation require checking against the original papers."
+  ],
+  [
+    "mwaseem75/hl7fhirgen",
+    "HL7 FHIR Generator",
+    "MCP server & agent skill",
+    "Clinical Data & Interoperability",
+    "Documents generation, validation and explanation of synthetic FHIR resources against StructureDefinition profiles, plus scoped NPHIES claim checks.",
+    "Generated examples and schema validation do not establish clinical meaning or payment eligibility. Specific implementation guides and validation engines require separate checks."
+  ],
+  [
+    "pipeworx-io/mcp-anzctr",
+    "Pipeworx ANZCTR Trial Lookup",
+    "MCP gateway component",
+    "Trials & Study Design",
+    "Documents retrieval of a full ANZCTR trial registration by ACTRN, including design, eligibility, outcomes, dates and sponsor information.",
+    "Current documented scope is identifier lookup; historical search implementation is not included. Unofficial shared-gateway adapter; no live trial call or complete international coverage verified."
+  ],
+  [
+    "pipeworx-io/mcp-eu-ctis",
+    "Pipeworx EU CTIS",
+    "MCP gateway component",
+    "Trials & Study Design",
+    "Documents EU/EEA CTIS trial search, record details, medicine-specific listings and recent authorizations.",
+    "Unofficial adapter to the public CTIS interface. Published fields, paging and authorization dates differ from results evidence; shared gateway tools are outside this component's scope."
+  ],
+  [
+    "pipeworx-io/mcp-isrctn",
+    "Pipeworx ISRCTN",
+    "MCP gateway component",
+    "Trials & Study Design",
+    "Documents ISRCTN registry search and trial-record retrieval for UK and international registered studies.",
+    "Unofficial adapter. Registry coverage, source updates, query translation and cross-registry duplicate reconciliation need checking; sibling gateway components are not approved by this record."
+  ],
+  [
+    "pipeworx-io/mcp-who-ictrp",
+    "Pipeworx WHO ICTRP",
+    "MCP gateway component",
+    "Trials & Study Design",
+    "Documents cross-registry ICTRP search and trial-registration-data retrieval with source registry and trial identifiers.",
+    "Unofficial integration. Aggregate registries can contain duplicate and delayed registrations; availability, anti-bot behavior and record completeness were not tested."
+  ],
+  [
+    "pitcany/statistical-agent-skills",
+    "Statistical Agent Skills — causal review",
+    "Agent skill collection",
+    "Causal Inference & Analytics",
+    "Documents estimand-first review of causal identification, propensity methods, overlap, experiments and Bayesian-model diagnostics.",
+    "Retain named statistical-method review components only; advertising optimization, generic production workflows and proof review are outside this inclusion. Model critique is not numerical or methodological validation."
+  ],
+  [
+    "reutavidan/zetesis-plugin",
+    "Zetesis — clinical evidence tools",
+    "MCP server & agent skills",
+    "Literature & Evidence Synthesis",
+    "Documents clinical-trial and RWE claim review with evidence retrieval from Europe PMC, ClinicalTrials.gov and openFDA, including date-bounded evidence queries.",
+    "Scope is the named health-evidence components. Hosted grading, signed-record verification, performance and privacy claims were not independently tested; other claim classes are not included."
+  ],
+  [
+    "Ruthwik10/oah-agent-gateway",
+    "OneAquaHealth Agent Gateway — health indicators",
+    "MCP server",
+    "Public Health & Epidemiology",
+    "Documents FHIR-based population-health indicator retrieval with units, source references and deterministic integrity checks alongside environmental context.",
+    "Retain population-health indicators and their linked integrity checks only. Environmental measurements alone do not establish Core relevance or human-health effects; sandbox quality claims were not independently reproduced."
+  ],
+  [
+    "SaeMind/mcp-server-for-cms-healthcare-data-tools",
+    "CMS Healthcare Data MCP",
+    "MCP server",
+    "RWE Data & Analytics",
+    "Documents parameterized queries for CMS HCC risk scores, hospital readmissions, MIPS quality and Part D utilization, with an embedded demonstration mode.",
+    "Demo data are distinct from populated production CMS tables. Database setup, freshness, denominators, API access and query correctness were not independently tested."
+  ],
+  [
+    "Seun-John/litsearch-ii",
+    "LitSearch II",
+    "MCP server",
+    "Literature & Evidence Synthesis",
+    "Documents PubMed/Europe PMC and wider scholarly search, citation chaining, open-access full text, ClinicalTrials.gov lookup and bibliography exports.",
+    "Public providers impose distinct coverage and rate limits; offline mock tests do not establish live correctness. Search ranking and deduplication do not guarantee exhaustive evidence capture."
+  ],
+  [
+    "SevKohler/FHIRconnectTools",
+    "FHIRconnect Mapping Skills",
+    "Agent skill collection",
+    "Clinical Data & Interoperability",
+    "Documents skills for drafting, linting and testing bidirectional openEHR/FHIR mappings, with path-extraction helpers and an engine test harness.",
+    "Mapping is beta and draft/testing workflows are alpha; the author reports mock-engine testing for the testing skill. Scope excludes the separate IDE plugin and assumes no clinical mapping validation."
+  ],
+  [
+    "Snailfarts24/econ-data-pipeline",
+    "Econometric Data Pipeline Skill — causal methods",
+    "Agent skill",
+    "Causal Inference & Analytics",
+    "Documents panel-data, difference-in-differences, instrumental-variable and double-machine-learning workflows with estimand, merge and provenance checks.",
+    "Retain the specific statistical-method workflow rather than generic data engineering. Identification, dependence, estimator implementation and uncertainty require study-specific review."
+  ],
+  [
+    "soma-intelligence/open-health-sync",
+    "Open Health Sync — released MCP interface",
+    "MCP server & research infrastructure",
+    "Clinical Data & Interoperability",
+    "Documents self-hosted Apple Health and Withings ingestion and read-only MCP access to normalized wearable/health records in release 0.0.2.",
+    "FHIR output and additional wearable connectors are described as future-release work and are excluded here. Device measurements, consent, normalization and backend security were not independently verified."
+  ],
+  [
+    "SpiroGanas/Clinical-Trials-MCP",
+    "Clinical Trials MCP — REDCap and eligibility SQL",
+    "MCP server",
+    "Trials & Study Design",
+    "Documents REDCap data-dictionary checks and protocol-derived OMOP eligibility SQL with criterion-to-query traceability and unresolved criteria marked for review.",
+    "SQL generation does not connect to a patient database or establish correct eligibility. Generated code, protocol extraction and REDCap compatibility require independent checking."
+  ],
+  [
+    "taehojo/reviewfast",
+    "ReviewFast Screening Skill and Tool",
+    "Agent skill & research tool",
+    "Literature & Evidence Synthesis",
+    "Documents title/abstract screening ranked by a decision model, with a statistical stopping rule and review-state handling.",
+    "Stopping guarantees depend on the sampling and relevance assumptions of the stated method. Model calibration, recall, search coverage and review-specific performance were not independently evaluated."
+  ],
+  [
+    "Tan28092006/systematic-review",
+    "Systematic Review Evidence-Packet Skill",
+    "Agent skill",
+    "Literature & Evidence Synthesis",
+    "Documents full-text claim/evidence extraction, structured classification and multi-reviewer voting packets with schema and identity checks.",
+    "Model votes are not independent human review. Synthetic fixtures verify packet structure rather than source truth; the described paper-based workflow needs review-specific validation."
+  ],
+  [
+    "teslajoy/schema_crush",
+    "Schema Crush — clinical FHIR mapping",
+    "MCP tools & research library",
+    "Clinical Data & Interoperability",
+    "Documents biomedical-column profiling and clinical FHIR schema matching using curated mappings, embeddings and optional model-assisted review.",
+    "Retain clinical schema matching, not molecular-only analyses. Suggested mappings and calibration do not establish semantic equivalence or production transformation validity."
+  ],
+  [
+    "thaohienhomes/pho-research-tools",
+    "Phở Research Tools",
+    "MCP server & agent skill",
+    "Literature & Evidence Synthesis",
+    "Documents PubMed/OpenAlex search, citation verification, retraction checking, bibliography formatting and PRISMA count/diagram tools.",
+    "A resolvable identifier does not establish claim support or evidence quality. Retraction coverage, ambiguous matches, quotas and hosted-service behavior were not tested."
+  ],
+  [
+    "tiagojct/zotero-local-mcp",
+    "Zotero Scholar MCP — health literature retrieval",
+    "MCP server component",
+    "Literature & Evidence Synthesis",
+    "Documents PubMed, Europe PMC and OpenAlex retrieval, merged searches, open-access section retrieval and citation checks with local-library matching.",
+    "Scope is the scholar retrieval component; general library administration and editing are excluded. Local Zotero access, write defaults, matching and provider completeness were not independently checked."
+  ],
+  [
+    "tjromack/biomed-evidence-mcp",
+    "Biomedical Evidence MCP Suite",
+    "MCP server collection",
+    "Literature & Evidence Synthesis",
+    "Documents shipped ClinicalTrials.gov, FDA labels/events/recalls/approvals and PubMed components with embedded corpora, refresh diagnostics and source-linked retrieval.",
+    "Embedded datasets are not complete live upstream inventories. Roadmap sources are excluded; author test counts, cross-source joins, summaries and refresh correctness were not independently verified."
+  ],
+  [
+    "triptidutta108/Random-Sampling-Propensity-Score-Matching-Skill",
+    "Sampling and Propensity Score Skill",
+    "Agent skill",
+    "Causal Inference & Analytics",
+    "Documents random/stratified sampling, binary and generalized propensity scores, overlap, balance, missingness and covariate-timing review workflows.",
+    "Instructional workflow preserves human design decisions but cannot establish exchangeability or timing from column names. Computation and sensitivity analyses require independent statistical review."
+  ],
+  [
+    "wmyung/librarian-search",
+    "Librarian Search",
+    "Agent skill & research tool",
+    "Literature & Evidence Synthesis",
+    "Documents medical-library-style PubMed, Europe PMC and trial searches, citation chaining and source-specific search logs with EndNote and methods outputs.",
+    "Reported benchmark recall is author evidence and does not transfer automatically to a new review. Provider coverage, translation and licensing constraints need checking."
+  ],
+  [
+    "wolfgangrumpf/outbreak-watch",
+    "Outbreak Watch Skill",
+    "Agent skill",
+    "Public Health & Epidemiology",
+    "Documents structured outbreak-source retrieval, incident extraction and status-labeled tracking with multilingual search sweeps and a page validator.",
+    "Compiled public reporting is not official surveillance statistics or validated outbreak detection. Source verification and incident definitions require public-health review; scheduled delivery is a workflow instruction, not a built-in data feed."
+  ],
+  [
+    "wuliRothschild/scientific-review",
+    "Scientific Review Skill",
+    "Agent skill",
+    "Literature & Evidence Synthesis",
+    "Documents PubMed-first structured searches, preprint and trial-register expansion, citation chasing, full-text verification and review audit steps.",
+    "Instructions describe an evidence-review process but do not establish complete retrieval or independent human screening. Reported reliability and model audit independence were not validated."
+  ],
+  [
+    "Xun477/thesis-retrieval",
+    "Thesis Retrieval — PubMed component",
+    "Agent skill & research tool",
+    "Literature & Evidence Synthesis",
+    "Documents multi-source scholarly retrieval including PubMed, identifier deduplication, sorting and structured exports.",
+    "Retain biomedical retrieval only. Subscription databases, screenshot/OCR fallback, journal rankings and provider credentials have separate coverage and rights constraints; no live retrieval tested."
+  ],
+  [
+    "yostboy6/medical-literature-review",
+    "Medical Research Skills",
+    "Agent skill collection",
+    "Literature & Evidence Synthesis",
+    "Documents literature search/screen/extract workflows and an oncology trial/FDA extraction scaffold with provenance templates and consistency validation.",
+    "Packaged examples are fictional and the validator checks consistency rather than source truth. The scaffold is not a collected cohort or a completed meta-analysis; human extraction and adjudication remain required."
+  ],
+  [
+    "Yashshah97/epidemiology-agent-skill",
+    "Epidemiology Disease-Modelling Skill",
+    "Agent skill & research library",
+    "Public Health & Epidemiology",
+    "Documents a local Python disease-spread modelling module with a data loader and an interface for agent invocation.",
+    "Documentation and author test claims do not establish epidemiologic adequacy. Model equations, calibration, population assumptions and predictive validity were not independently reviewed."
+  ],
+  [
+    "amos689/paper-preflight",
+    "Paper Preflight — bibliographic verification",
+    "MCP server & research tool",
+    "Literature & Evidence Synthesis",
+    "Documents reference checks for LaTeX, BibTeX and PDF inputs against scholarly metadata including PubMed, with read-only MCP access.",
+    "Bibliographic matching does not establish that a paper supports a claim. Parsing, ambiguous records and provider coverage were not independently tested."
+  ],
+  [
+    "pendingintent/cdisc-library-mcp-server",
+    "CDISC Library MCP",
+    "MCP server",
+    "OMOP & terminology",
+    "Documents retrieval of CDISC standards metadata, controlled-terminology packages, codelists and Biomedical Concepts through the CDISC Library API.",
+    "Requires a CDISC Library account/API key. Metadata retrieval does not validate a submission dataset or establish correct mapping to a study-specific CDISC standard."
+  ],
+  [
+    "mgrin/recall-radar-mcp",
+    "Recall Radar — medicine and device component",
+    "MCP server",
+    "Regulatory & Product Data",
+    "Documents FDA medicine and medical-device recall retrieval and EMA medicine-shortage lookup with source URLs and dates.",
+    "Scope excludes general household/product recall tools. The smart-display front end is simulated and has not been connected to Alexa; source freshness and live MCP outputs were not tested."
+  ],
+  [
+    "FHIR-IQ/openquality",
+    "Open Quality MCP",
+    "MCP server & research corpus",
+    "RWE Data & Analytics",
+    "Documents read-only discovery and retrieval of versioned healthcare quality-measure packages, including CQL/SQL/SQL-on-FHIR artifacts and implementation questions.",
+    "A measure corpus is distinct from a validated measure engine. Included artifacts, interpretation notes and test cases require version-specific review; execution against clinical data was not tested."
+  ]
+]

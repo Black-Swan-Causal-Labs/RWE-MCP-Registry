@@ -1,0 +1,2979 @@
+[
+  {
+    "id": "RWE-6914",
+    "name": "MCP Statistics Tools",
+    "kind": "MCP server",
+    "category": "Causal Inference & Analytics",
+    "summary": "Provides Kaplan-Meier survival estimation, a two-group log-rank test, paired sample comparisons and distribution-drift statistics.",
+    "tags": [
+      "Causal Inference & Analytics",
+      "Documentation reviewed"
+    ],
+    "added": "Oct 12, 2026",
+    "checked": "Oct 12, 2026",
+    "status": "Static documentation reviewed · scoped capability",
+    "runtime": "Not independently runtime tested",
+    "repository": "Aeternifrigus/mcp-tools-server",
+    "website": "GitHub",
+    "packages": "Only the documented components described in this card were reviewed.",
+    "workflowFit": [
+      "Causal Inference & Analytics"
+    ],
+    "capabilities": [
+      "Provides Kaplan-Meier survival estimation, a two-group log-rank test, paired sample comparisons and distribution-drift statistics."
+    ],
+    "limitation": "Documentation describes local statistical functions and in-process tests; transport interoperability and numerical correctness were not independently tested. Static documentation review only; candidate code was not installed or executed.",
+    "url": "https://github.com/Aeternifrigus/mcp-tools-server",
+    "primarySourceURLs": [
+      "https://github.com/Aeternifrigus/mcp-tools-server/blob/main/README.md"
+    ],
+    "primaryBlobSHA": "45808e46de9b4c04308a1cb1b21ed0e26f9953a7",
+    "primaryRetrievedAt": "2026-10-13T04:49:03.526058+00:00",
+    "primaryTextSHA256": "6472055b93171c8b653b2109b1b72096a3734a9b36ce36f30538964b815b04ed",
+    "license": "Not declared",
+    "repositoryLastPush": "2026-09-26T16:58:06Z",
+    "publicSourceVerified": true,
+    "publicSourceVerifiedAt": "2026-10-13T05:11:20.402049+00:00",
+    "relevance": {
+      "id": "RWE-6914",
+      "decision": "Core",
+      "rationale": "MCP Statistics Tools: Provides Kaplan-Meier survival estimation, a two-group log-rank test, paired sample comparisons and distribution-drift statistics. Inclusion is limited to this documented health-research, evidence-synthesis or specific statistical-method function.",
+      "relevanceBasis": "Provides Kaplan-Meier survival estimation, a two-group log-rank test, paired sample comparisons and distribution-drift statistics.",
+      "evidenceLevel": "fresh-primary",
+      "evidenceRefs": [
+        "https://github.com/Aeternifrigus/mcp-tools-server/blob/main/README.md"
+      ],
+      "reviewGroup": "october-discovery-refresh",
+      "reviewedAt": "2026-10-12"
+    }
+  },
+  {
+    "id": "RWE-6915",
+    "name": "PubMed MCP (Ahsan)",
+    "kind": "MCP server",
+    "category": "Literature & Evidence Synthesis",
+    "summary": "Searches PubMed and retrieves normalized article records or original NCBI XML with explicit missingness and retrieval provenance.",
+    "tags": [
+      "Literature & Evidence Synthesis",
+      "Documentation reviewed"
+    ],
+    "added": "Oct 12, 2026",
+    "checked": "Oct 12, 2026",
+    "status": "Static documentation reviewed · scoped capability",
+    "runtime": "Not independently runtime tested",
+    "repository": "ahsanmandhar-ui/pubmed-mcp",
+    "website": "GitHub",
+    "packages": "Only the documented components described in this card were reviewed.",
+    "workflowFit": [
+      "Literature & Evidence Synthesis"
+    ],
+    "capabilities": [
+      "Searches PubMed and retrieves normalized article records or original NCBI XML with explicit missingness and retrieval provenance."
+    ],
+    "limitation": "Search logging supports reproducibility but does not establish complete review coverage. Missing abstracts, provider limits and retraction metadata require checking. Static documentation review only; candidate code was not installed or executed.",
+    "url": "https://github.com/ahsanmandhar-ui/pubmed-mcp",
+    "primarySourceURLs": [
+      "https://github.com/ahsanmandhar-ui/pubmed-mcp/blob/main/README.md"
+    ],
+    "primaryBlobSHA": "366139bf034d50efee7237db02dd9d6a03785ef9",
+    "primaryRetrievedAt": "2026-10-13T04:48:33.020274+00:00",
+    "primaryTextSHA256": "ee52e6800e2f37a1336764a4886c403d6507eb6bd5f1bfa495cc47626f8d5a3b",
+    "license": "Apache-2.0",
+    "repositoryLastPush": "2026-10-05T13:49:56Z",
+    "publicSourceVerified": true,
+    "publicSourceVerifiedAt": "2026-10-13T05:11:20.387923+00:00",
+    "relevance": {
+      "id": "RWE-6915",
+      "decision": "Core",
+      "rationale": "PubMed MCP (Ahsan): Searches PubMed and retrieves normalized article records or original NCBI XML with explicit missingness and retrieval provenance. Inclusion is limited to this documented health-research, evidence-synthesis or specific statistical-method function.",
+      "relevanceBasis": "Searches PubMed and retrieves normalized article records or original NCBI XML with explicit missingness and retrieval provenance.",
+      "evidenceLevel": "fresh-primary",
+      "evidenceRefs": [
+        "https://github.com/ahsanmandhar-ui/pubmed-mcp/blob/main/README.md"
+      ],
+      "reviewGroup": "october-discovery-refresh",
+      "reviewedAt": "2026-10-12"
+    }
+  },
+  {
+    "id": "RWE-6916",
+    "name": "FHIR MCP (Andreoss)",
+    "kind": "MCP server",
+    "category": "Clinical Data & Interoperability",
+    "summary": "Exposes FHIR read, search and operation interfaces backed by a local DuckDB store, with configurable remote-system integration.",
+    "tags": [
+      "Clinical Data & Interoperability",
+      "Documentation reviewed"
+    ],
+    "added": "Oct 12, 2026",
+    "checked": "Oct 12, 2026",
+    "status": "Static documentation reviewed · scoped capability",
+    "runtime": "Not independently runtime tested",
+    "repository": "andreoss/fhir-mcp",
+    "website": "GitHub",
+    "packages": "Only the documented components described in this card were reviewed.",
+    "workflowFit": [
+      "Clinical Data & Interoperability"
+    ],
+    "capabilities": [
+      "Exposes FHIR read, search and operation interfaces backed by a local DuckDB store, with configurable remote-system integration."
+    ],
+    "limitation": "Local storage is distinct from a connected clinical backend. Writes are configurable; deployment authorization, backend compatibility and data protection were not verified. Static documentation review only; candidate code was not installed or executed.",
+    "url": "https://github.com/andreoss/fhir-mcp",
+    "primarySourceURLs": [
+      "https://github.com/andreoss/fhir-mcp/blob/master/README.adoc"
+    ],
+    "primaryBlobSHA": "9a9cd0b06e384bde2b9d09be1b61141f40c5c8c3",
+    "primaryRetrievedAt": "2026-10-13T04:48:06.277396+00:00",
+    "primaryTextSHA256": "b87f691058383eef11f91cf31d778634457387c50608d43664ff794222e9de9c",
+    "license": "Not declared",
+    "repositoryLastPush": "2026-09-15T02:14:12Z",
+    "publicSourceVerified": true,
+    "publicSourceVerifiedAt": "2026-10-13T05:11:20.373951+00:00",
+    "relevance": {
+      "id": "RWE-6916",
+      "decision": "Core",
+      "rationale": "FHIR MCP (Andreoss): Exposes FHIR read, search and operation interfaces backed by a local DuckDB store, with configurable remote-system integration. Inclusion is limited to this documented health-research, evidence-synthesis or specific statistical-method function.",
+      "relevanceBasis": "Exposes FHIR read, search and operation interfaces backed by a local DuckDB store, with configurable remote-system integration.",
+      "evidenceLevel": "fresh-primary",
+      "evidenceRefs": [
+        "https://github.com/andreoss/fhir-mcp/blob/master/README.adoc"
+      ],
+      "reviewGroup": "october-discovery-refresh",
+      "reviewedAt": "2026-10-12"
+    }
+  },
+  {
+    "id": "RWE-6917",
+    "name": "Vitalis MCP — literature and synthetic FHIR",
+    "kind": "MCP server",
+    "category": "Clinical Data & Interoperability",
+    "summary": "Documents PubMed retrieval and synthetic FHIR patient, condition, medication, observation and encounter workflows.",
+    "tags": [
+      "Clinical Data & Interoperability",
+      "Documentation reviewed"
+    ],
+    "added": "Oct 12, 2026",
+    "checked": "Oct 12, 2026",
+    "status": "Static documentation reviewed · scoped capability",
+    "runtime": "Not independently runtime tested",
+    "repository": "anshux1/vitalis-mcp",
+    "website": "GitHub",
+    "packages": "Only the documented components described in this card were reviewed.",
+    "workflowFit": [
+      "Clinical Data & Interoperability"
+    ],
+    "capabilities": [
+      "Documents PubMed retrieval and synthetic FHIR patient, condition, medication, observation and encounter workflows."
+    ],
+    "limitation": "Retain literature retrieval and synthetic clinical-data operations only. Triage, medication reconciliation, referral and treatment outputs are not independently assessed clinical capabilities. Static documentation review only; candidate code was not installed or executed.",
+    "url": "https://github.com/anshux1/vitalis-mcp",
+    "primarySourceURLs": [
+      "https://github.com/anshux1/vitalis-mcp/blob/main/README.md"
+    ],
+    "primaryBlobSHA": "de7e9c8db4d0b3aaad6ade51695190e346ea2c14",
+    "primaryRetrievedAt": "2026-10-13T04:48:05.767278+00:00",
+    "primaryTextSHA256": "3460c3ea476549f9f8dc623101055acf364ef56468ef9b1e794cc3f545e1e398",
+    "license": "Not declared",
+    "repositoryLastPush": "2026-09-07T19:40:03Z",
+    "publicSourceVerified": true,
+    "publicSourceVerifiedAt": "2026-10-13T05:11:20.376067+00:00",
+    "relevance": {
+      "id": "RWE-6917",
+      "decision": "Core",
+      "rationale": "Vitalis MCP — literature and synthetic FHIR: Documents PubMed retrieval and synthetic FHIR patient, condition, medication, observation and encounter workflows. Inclusion is limited to this documented health-research, evidence-synthesis or specific statistical-method function.",
+      "relevanceBasis": "Documents PubMed retrieval and synthetic FHIR patient, condition, medication, observation and encounter workflows.",
+      "evidenceLevel": "fresh-primary",
+      "evidenceRefs": [
+        "https://github.com/anshux1/vitalis-mcp/blob/main/README.md"
+      ],
+      "reviewGroup": "october-discovery-refresh",
+      "reviewedAt": "2026-10-12"
+    }
+  },
+  {
+    "id": "RWE-6918",
+    "name": "Drug Label MCP",
+    "kind": "MCP server",
+    "category": "Regulatory & Product Data",
+    "summary": "Retrieves FDA medication-label passages with section headings, manufacturer/version context and links to DailyMed.",
+    "tags": [
+      "Regulatory & Product Data",
+      "Documentation reviewed"
+    ],
+    "added": "Oct 12, 2026",
+    "checked": "Oct 12, 2026",
+    "status": "Static documentation reviewed · scoped capability",
+    "runtime": "Not independently runtime tested",
+    "repository": "arhancanli/drug-label-mcp",
+    "website": "GitHub",
+    "packages": "Only the documented components described in this card were reviewed.",
+    "workflowFit": [
+      "Regulatory & Product Data"
+    ],
+    "capabilities": [
+      "Retrieves FDA medication-label passages with section headings, manufacturer/version context and links to DailyMed."
+    ],
+    "limitation": "Label text is product- and version-specific. Retrieval does not establish comprehensive interaction coverage or patient-specific safety advice. Static documentation review only; candidate code was not installed or executed.",
+    "url": "https://github.com/arhancanli/drug-label-mcp",
+    "primarySourceURLs": [
+      "https://github.com/arhancanli/drug-label-mcp/blob/main/README.md"
+    ],
+    "primaryBlobSHA": "24dc97a8ab8946d45785d442095fd4f264512d45",
+    "primaryRetrievedAt": "2026-10-13T04:48:02.917594+00:00",
+    "primaryTextSHA256": "86a04e7236bcaf7b1bdfbe46763b56230ee04d40d89973dc77a861ecf434cf4f",
+    "license": "MIT",
+    "repositoryLastPush": "2026-10-10T21:17:30Z",
+    "publicSourceVerified": true,
+    "publicSourceVerifiedAt": "2026-10-13T05:11:20.452566+00:00",
+    "relevance": {
+      "id": "RWE-6918",
+      "decision": "Core",
+      "rationale": "Drug Label MCP: Retrieves FDA medication-label passages with section headings, manufacturer/version context and links to DailyMed. Inclusion is limited to this documented health-research, evidence-synthesis or specific statistical-method function.",
+      "relevanceBasis": "Retrieves FDA medication-label passages with section headings, manufacturer/version context and links to DailyMed.",
+      "evidenceLevel": "fresh-primary",
+      "evidenceRefs": [
+        "https://github.com/arhancanli/drug-label-mcp/blob/main/README.md"
+      ],
+      "reviewGroup": "october-discovery-refresh",
+      "reviewedAt": "2026-10-12"
+    }
+  },
+  {
+    "id": "RWE-6919",
+    "name": "ASCeNT Epidemiology Demo",
+    "kind": "MCP server & agent workflow",
+    "category": "Public Health & Epidemiology",
+    "summary": "Demonstrates natural-language epidemiology queries, patient-cohort construction and SQL over a local warehouse with synthetic OMOP and non-OMOP data.",
+    "tags": [
+      "Public Health & Epidemiology",
+      "Documentation reviewed"
+    ],
+    "added": "Oct 12, 2026",
+    "checked": "Oct 12, 2026",
+    "status": "Static documentation reviewed · scoped capability",
+    "runtime": "Not independently runtime tested",
+    "repository": "Bayer-Group/ascent-epi-demo",
+    "website": "GitHub",
+    "packages": "Only the documented components described in this card were reviewed.",
+    "workflowFit": [
+      "Public Health & Epidemiology"
+    ],
+    "capabilities": [
+      "Demonstrates natural-language epidemiology queries, patient-cohort construction and SQL over a local warehouse with synthetic OMOP and non-OMOP data."
+    ],
+    "limitation": "The distributed patients and clinical codes are generated. This is a demonstration, not access to Bayer patient data or evidence of valid epidemiologic estimates; an external model API is required. Static documentation review only; candidate code was not installed or executed.",
+    "url": "https://github.com/Bayer-Group/ascent-epi-demo",
+    "primarySourceURLs": [
+      "https://github.com/Bayer-Group/ascent-epi-demo/blob/main/README.md"
+    ],
+    "primaryBlobSHA": "680838c84bab2a3a2d6980b21d04380c4c4bc1ab",
+    "primaryRetrievedAt": "2026-10-13T04:47:54.806693+00:00",
+    "primaryTextSHA256": "f218e375248ce12114123cd6537f231e7c4e0aa09270d9bc256d3d2f7c0dc035",
+    "license": "BSD-3-Clause",
+    "repositoryLastPush": "2026-10-04T01:54:12Z",
+    "publicSourceVerified": true,
+    "publicSourceVerifiedAt": "2026-10-13T05:11:20.578559+00:00",
+    "relevance": {
+      "id": "RWE-6919",
+      "decision": "Core",
+      "rationale": "ASCeNT Epidemiology Demo: Demonstrates natural-language epidemiology queries, patient-cohort construction and SQL over a local warehouse with synthetic OMOP and non-OMOP data. Inclusion is limited to this documented health-research, evidence-synthesis or specific statistical-method function.",
+      "relevanceBasis": "Demonstrates natural-language epidemiology queries, patient-cohort construction and SQL over a local warehouse with synthetic OMOP and non-OMOP data.",
+      "evidenceLevel": "fresh-primary",
+      "evidenceRefs": [
+        "https://github.com/Bayer-Group/ascent-epi-demo/blob/main/README.md"
+      ],
+      "reviewGroup": "october-discovery-refresh",
+      "reviewedAt": "2026-10-12"
+    }
+  },
+  {
+    "id": "RWE-6920",
+    "name": "MyChart Care Record Connector",
+    "kind": "MCP server",
+    "category": "Clinical Data & Interoperability",
+    "summary": "Documents read-only retrieval of a patient's own Epic MyChart clinical records through patient-authorized SMART on FHIR access.",
+    "tags": [
+      "Clinical Data & Interoperability",
+      "Documentation reviewed"
+    ],
+    "added": "Oct 12, 2026",
+    "checked": "Oct 12, 2026",
+    "status": "Static documentation reviewed · scoped capability",
+    "runtime": "Not independently runtime tested",
+    "repository": "beenlouis/mychart-mcp",
+    "website": "GitHub",
+    "packages": "Only the documented components described in this card were reviewed.",
+    "workflowFit": [
+      "Clinical Data & Interoperability"
+    ],
+    "capabilities": [
+      "Documents read-only retrieval of a patient's own Epic MyChart clinical records through patient-authorized SMART on FHIR access."
+    ],
+    "limitation": "Independent personal-use connector. Health-system registration, refresh-token handling, attachment access and production privacy controls were not independently verified. Static documentation review only; candidate code was not installed or executed.",
+    "url": "https://github.com/beenlouis/mychart-mcp",
+    "primarySourceURLs": [
+      "https://github.com/beenlouis/mychart-mcp/blob/main/README.md"
+    ],
+    "primaryBlobSHA": "16602ab5d6ded882bca9249ee1f0357b3d8fe7cd",
+    "primaryRetrievedAt": "2026-10-13T04:48:10.310132+00:00",
+    "primaryTextSHA256": "92f4ab8c6c954c5a7e407e3141593c38b1893674f791869329ad271aa395bc14",
+    "license": "Not declared",
+    "repositoryLastPush": "2026-09-11T13:35:17Z",
+    "publicSourceVerified": true,
+    "publicSourceVerifiedAt": "2026-10-13T05:11:21.547367+00:00",
+    "relevance": {
+      "id": "RWE-6920",
+      "decision": "Core",
+      "rationale": "MyChart Care Record Connector: Documents read-only retrieval of a patient's own Epic MyChart clinical records through patient-authorized SMART on FHIR access. Inclusion is limited to this documented health-research, evidence-synthesis or specific statistical-method function.",
+      "relevanceBasis": "Documents read-only retrieval of a patient's own Epic MyChart clinical records through patient-authorized SMART on FHIR access.",
+      "evidenceLevel": "fresh-primary",
+      "evidenceRefs": [
+        "https://github.com/beenlouis/mychart-mcp/blob/main/README.md"
+      ],
+      "reviewGroup": "october-discovery-refresh",
+      "reviewedAt": "2026-10-12"
+    }
+  },
+  {
+    "id": "RWE-6921",
+    "name": "Chronic Disease Risk Skills",
+    "kind": "Agent skill collection",
+    "category": "Public Health & Epidemiology",
+    "summary": "Packages chronic-disease prediction workflows using public NHIS, BRFSS and NHANES survey data with training, inference and provenance documentation.",
+    "tags": [
+      "Public Health & Epidemiology",
+      "Documentation reviewed"
+    ],
+    "added": "Oct 12, 2026",
+    "checked": "Oct 12, 2026",
+    "status": "Static documentation reviewed · scoped capability",
+    "runtime": "Not independently runtime tested",
+    "repository": "bellawang2024/chronic-disease-risk-skills",
+    "website": "GitHub",
+    "packages": "Only the documented components described in this card were reviewed.",
+    "workflowFit": [
+      "Public Health & Epidemiology"
+    ],
+    "capabilities": [
+      "Packages chronic-disease prediction workflows using public NHIS, BRFSS and NHANES survey data with training, inference and provenance documentation."
+    ],
+    "limitation": "Models concern survey-defined outcomes and dataset-specific populations. Reported cross-validation is the author's evidence; survey-design handling, temporal prediction and external clinical validity were not independently checked. Static documentation review only; candidate code was not installed or executed.",
+    "url": "https://github.com/bellawang2024/chronic-disease-risk-skills",
+    "primarySourceURLs": [
+      "https://github.com/bellawang2024/chronic-disease-risk-skills/blob/main/README.md"
+    ],
+    "primaryBlobSHA": "2a6cc23b01cdac4cc5a239061510067ea217f511",
+    "primaryRetrievedAt": "2026-10-13T04:47:56.049552+00:00",
+    "primaryTextSHA256": "603ab3168921b8c76465449119d74f35d1d3185e9dae204a034c2085021c7024",
+    "license": "MIT",
+    "repositoryLastPush": "2026-09-18T08:52:54Z",
+    "publicSourceVerified": true,
+    "publicSourceVerifiedAt": "2026-10-13T05:11:20.768770+00:00",
+    "relevance": {
+      "id": "RWE-6921",
+      "decision": "Core",
+      "rationale": "Chronic Disease Risk Skills: Packages chronic-disease prediction workflows using public NHIS, BRFSS and NHANES survey data with training, inference and provenance documentation. Inclusion is limited to this documented health-research, evidence-synthesis or specific statistical-method function.",
+      "relevanceBasis": "Packages chronic-disease prediction workflows using public NHIS, BRFSS and NHANES survey data with training, inference and provenance documentation.",
+      "evidenceLevel": "fresh-primary",
+      "evidenceRefs": [
+        "https://github.com/bellawang2024/chronic-disease-risk-skills/blob/main/README.md"
+      ],
+      "reviewGroup": "october-discovery-refresh",
+      "reviewedAt": "2026-10-12"
+    }
+  },
+  {
+    "id": "RWE-6922",
+    "name": "PubMed MCP (BerkayCelk)",
+    "kind": "MCP server",
+    "category": "Literature & Evidence Synthesis",
+    "summary": "Documents biomedical search and retrieval across PubMed and Europe PMC, with MeSH, citation, full-text and clinical-trial tools.",
+    "tags": [
+      "Literature & Evidence Synthesis",
+      "Documentation reviewed"
+    ],
+    "added": "Oct 12, 2026",
+    "checked": "Oct 12, 2026",
+    "status": "Static documentation reviewed · scoped capability",
+    "runtime": "Not independently runtime tested",
+    "repository": "BerkayCelk/pubmed-mcp",
+    "website": "GitHub",
+    "packages": "Only the documented components described in this card were reviewed.",
+    "workflowFit": [
+      "Literature & Evidence Synthesis"
+    ],
+    "capabilities": [
+      "Documents biomedical search and retrieval across PubMed and Europe PMC, with MeSH, citation, full-text and clinical-trial tools."
+    ],
+    "limitation": "Only documented literature/trial retrieval is included. Provider coverage, available full text and external-service access can differ; no live results were tested. Static documentation review only; candidate code was not installed or executed.",
+    "url": "https://github.com/BerkayCelk/pubmed-mcp",
+    "primarySourceURLs": [
+      "https://github.com/BerkayCelk/pubmed-mcp/blob/main/README.md"
+    ],
+    "primaryBlobSHA": "0f4dc43f77757372e021e5f4a3ade7da026a1f55",
+    "primaryRetrievedAt": "2026-10-13T04:48:01.889777+00:00",
+    "primaryTextSHA256": "f5131c691ad104f129a8c216b79d9ff0c1806fd1095e0fba37f3b15535dd3e76",
+    "license": "MIT",
+    "repositoryLastPush": "2026-10-09T14:38:08Z",
+    "publicSourceVerified": true,
+    "publicSourceVerifiedAt": "2026-10-13T05:11:20.848399+00:00",
+    "relevance": {
+      "id": "RWE-6922",
+      "decision": "Core",
+      "rationale": "PubMed MCP (BerkayCelk): Documents biomedical search and retrieval across PubMed and Europe PMC, with MeSH, citation, full-text and clinical-trial tools. Inclusion is limited to this documented health-research, evidence-synthesis or specific statistical-method function.",
+      "relevanceBasis": "Documents biomedical search and retrieval across PubMed and Europe PMC, with MeSH, citation, full-text and clinical-trial tools.",
+      "evidenceLevel": "fresh-primary",
+      "evidenceRefs": [
+        "https://github.com/BerkayCelk/pubmed-mcp/blob/main/README.md"
+      ],
+      "reviewGroup": "october-discovery-refresh",
+      "reviewedAt": "2026-10-12"
+    }
+  },
+  {
+    "id": "RWE-6923",
+    "name": "NHANES MCP",
+    "kind": "MCP server",
+    "category": "Public Health & Epidemiology",
+    "summary": "Documents NHANES file and variable discovery, analysis-dataset assembly and survey-weighted estimation with cycle-pooling and reliability guidance.",
+    "tags": [
+      "Public Health & Epidemiology",
+      "Documentation reviewed"
+    ],
+    "added": "Oct 12, 2026",
+    "checked": "Oct 12, 2026",
+    "status": "Static documentation reviewed · scoped capability",
+    "runtime": "Not independently runtime tested",
+    "repository": "Black-Swan-Causal-Labs/nhanes-mcp",
+    "website": "GitHub",
+    "packages": "Only the documented components described in this card were reviewed.",
+    "workflowFit": [
+      "Public Health & Epidemiology"
+    ],
+    "capabilities": [
+      "Documents NHANES file and variable discovery, analysis-dataset assembly and survey-weighted estimation with cycle-pooling and reliability guidance."
+    ],
+    "limitation": "Maintainer-owned product. Weight selection, subsample eligibility, pooled-cycle definitions and statistical outputs need study-specific review; no independent numerical or runtime validation was performed. Static documentation review only; candidate code was not installed or executed.",
+    "url": "https://github.com/Black-Swan-Causal-Labs/nhanes-mcp",
+    "primarySourceURLs": [
+      "https://github.com/Black-Swan-Causal-Labs/nhanes-mcp/blob/main/README.md"
+    ],
+    "primaryBlobSHA": "6a4931d4d4775130b77257ded77a269e45bc0f02",
+    "primaryRetrievedAt": "2026-10-13T04:48:58.839700+00:00",
+    "primaryTextSHA256": "1e13271eb348b77ef71aeff3f5aece5135cfa115caf3bc8ed3fd89c8224e47f7",
+    "license": "MIT",
+    "repositoryLastPush": "2026-10-05T03:01:00Z",
+    "publicSourceVerified": true,
+    "publicSourceVerifiedAt": "2026-10-13T05:11:21.544155+00:00",
+    "favorite": true,
+    "relevance": {
+      "id": "RWE-6923",
+      "decision": "Core",
+      "rationale": "NHANES MCP: Documents NHANES file and variable discovery, analysis-dataset assembly and survey-weighted estimation with cycle-pooling and reliability guidance. Inclusion is limited to this documented health-research, evidence-synthesis or specific statistical-method function.",
+      "relevanceBasis": "Documents NHANES file and variable discovery, analysis-dataset assembly and survey-weighted estimation with cycle-pooling and reliability guidance.",
+      "evidenceLevel": "fresh-primary",
+      "evidenceRefs": [
+        "https://github.com/Black-Swan-Causal-Labs/nhanes-mcp/blob/main/README.md"
+      ],
+      "reviewGroup": "october-discovery-refresh",
+      "reviewedAt": "2026-10-12"
+    }
+  },
+  {
+    "id": "RWE-6924",
+    "name": "APPRAISE-AI Research Appraisal Skill",
+    "kind": "Agent skill",
+    "category": "Literature & Evidence Synthesis",
+    "summary": "Structures quality appraisal of medical-AI studies using APPRAISE-AI domains, multiple model ratings and a human lead reviewer.",
+    "tags": [
+      "Literature & Evidence Synthesis",
+      "Documentation reviewed"
+    ],
+    "added": "Oct 12, 2026",
+    "checked": "Oct 12, 2026",
+    "status": "Static documentation reviewed · scoped capability",
+    "runtime": "Not independently runtime tested",
+    "repository": "BurhanAnis/Appraise-AI-Claude-Skill",
+    "website": "GitHub",
+    "packages": "Only the documented components described in this card were reviewed.",
+    "workflowFit": [
+      "Literature & Evidence Synthesis"
+    ],
+    "capabilities": [
+      "Structures quality appraisal of medical-AI studies using APPRAISE-AI domains, multiple model ratings and a human lead reviewer."
+    ],
+    "limitation": "Model ratings are not independent human reviewers or proof of instrument validity. Review requires the study's full reporting and qualified adjudication. Static documentation review only; candidate code was not installed or executed.",
+    "url": "https://github.com/BurhanAnis/Appraise-AI-Claude-Skill",
+    "primarySourceURLs": [
+      "https://github.com/BurhanAnis/Appraise-AI-Claude-Skill/blob/main/README.md"
+    ],
+    "primaryBlobSHA": "db881486113e26ecc1d096c4ae0abbfe05321e6b",
+    "primaryRetrievedAt": "2026-10-13T04:48:52.093842+00:00",
+    "primaryTextSHA256": "695253499dea397bca78158889e8bc0579d2da072a3d8a5585eb44fbe23b65eb",
+    "license": "NOASSERTION",
+    "repositoryLastPush": "2026-10-12T09:40:19Z",
+    "publicSourceVerified": true,
+    "publicSourceVerifiedAt": "2026-10-13T05:11:20.955706+00:00",
+    "relevance": {
+      "id": "RWE-6924",
+      "decision": "Core",
+      "rationale": "APPRAISE-AI Research Appraisal Skill: Structures quality appraisal of medical-AI studies using APPRAISE-AI domains, multiple model ratings and a human lead reviewer. Inclusion is limited to this documented health-research, evidence-synthesis or specific statistical-method function.",
+      "relevanceBasis": "Structures quality appraisal of medical-AI studies using APPRAISE-AI domains, multiple model ratings and a human lead reviewer.",
+      "evidenceLevel": "fresh-primary",
+      "evidenceRefs": [
+        "https://github.com/BurhanAnis/Appraise-AI-Claude-Skill/blob/main/README.md"
+      ],
+      "reviewGroup": "october-discovery-refresh",
+      "reviewedAt": "2026-10-12"
+    }
+  },
+  {
+    "id": "RWE-6925",
+    "name": "Medical Biostatistics Skill — scoped methods",
+    "kind": "Agent skill collection",
+    "category": "Causal Inference & Analytics",
+    "summary": "Documents observational propensity-score methods, mediation, difference-in-differences, survival analysis, competing risks, imputation and meta-analysis workflows.",
+    "tags": [
+      "Causal Inference & Analytics",
+      "Documentation reviewed"
+    ],
+    "added": "Oct 12, 2026",
+    "checked": "Oct 12, 2026",
+    "status": "Static documentation reviewed · scoped capability",
+    "runtime": "Not independently runtime tested",
+    "repository": "cndoin/med-biostat-skill",
+    "website": "GitHub",
+    "packages": "Only the documented components described in this card were reviewed.",
+    "workflowFit": [
+      "Causal Inference & Analytics"
+    ],
+    "capabilities": [
+      "Documents observational propensity-score methods, mediation, difference-in-differences, survival analysis, competing risks, imputation and meta-analysis workflows."
+    ],
+    "limitation": "Scope is the named clinical-statistics and causal-method components; molecular-only siblings are not included. Packaged calculations and methodological assumptions were not independently validated. Static documentation review only; candidate code was not installed or executed.",
+    "url": "https://github.com/cndoin/med-biostat-skill",
+    "primarySourceURLs": [
+      "https://github.com/cndoin/med-biostat-skill/blob/main/README.md"
+    ],
+    "primaryBlobSHA": "4ea75f7b14263f145bca88ee70e8b95ee2fef42e",
+    "primaryRetrievedAt": "2026-10-13T04:48:57.335037+00:00",
+    "primaryTextSHA256": "8c0307efa5e340d0567dc0f190840a4f56d72d9687f7f351262481a4d876b9e3",
+    "license": "MIT",
+    "repositoryLastPush": "2026-10-12T00:49:27Z",
+    "publicSourceVerified": true,
+    "publicSourceVerifiedAt": "2026-10-13T05:11:20.984265+00:00",
+    "relevance": {
+      "id": "RWE-6925",
+      "decision": "Core",
+      "rationale": "Medical Biostatistics Skill — scoped methods: Documents observational propensity-score methods, mediation, difference-in-differences, survival analysis, competing risks, imputation and meta-analysis workflows. Inclusion is limited to this documented health-research, evidence-synthesis or specific statistical-method function.",
+      "relevanceBasis": "Documents observational propensity-score methods, mediation, difference-in-differences, survival analysis, competing risks, imputation and meta-analysis workflows.",
+      "evidenceLevel": "fresh-primary",
+      "evidenceRefs": [
+        "https://github.com/cndoin/med-biostat-skill/blob/main/README.md"
+      ],
+      "reviewGroup": "october-discovery-refresh",
+      "reviewedAt": "2026-10-12"
+    }
+  },
+  {
+    "id": "RWE-6926",
+    "name": "HL7 v2 to FHIR Mapping MCP",
+    "kind": "MCP server",
+    "category": "Clinical Data & Interoperability",
+    "summary": "Documents field and code mappings from HL7 v2.5.1 to FHIR R4 and conversion of ORM, ADT and ORU messages into transaction bundles with mapping warnings.",
+    "tags": [
+      "Clinical Data & Interoperability",
+      "Documentation reviewed"
+    ],
+    "added": "Oct 12, 2026",
+    "checked": "Oct 12, 2026",
+    "status": "Static documentation reviewed · scoped capability",
+    "runtime": "Not independently runtime tested",
+    "repository": "coffeemilktea/hl7-v2-fhir-mcp-server",
+    "website": "GitHub",
+    "packages": "Only the documented components described in this card were reviewed.",
+    "workflowFit": [
+      "Clinical Data & Interoperability"
+    ],
+    "capabilities": [
+      "Documents field and code mappings from HL7 v2.5.1 to FHIR R4 and conversion of ORM, ADT and ORU messages into transaction bundles with mapping warnings."
+    ],
+    "limitation": "Coverage is limited to documented message types and mappings. The author restricts remote deployments to lab or synthetic data; conformance and preservation of clinical meaning were not tested. Static documentation review only; candidate code was not installed or executed.",
+    "url": "https://github.com/coffeemilktea/hl7-v2-fhir-mcp-server",
+    "primarySourceURLs": [
+      "https://github.com/coffeemilktea/hl7-v2-fhir-mcp-server/blob/main/README.md"
+    ],
+    "primaryBlobSHA": "b90424f73e8024fa06fac83c033a9c383141cbd4",
+    "primaryRetrievedAt": "2026-10-13T04:48:09.606985+00:00",
+    "primaryTextSHA256": "d0cc1a66a26b5142784af435e8dc24c5ce879d5860413addce730d87e4ffeb92",
+    "license": "MIT",
+    "repositoryLastPush": "2026-10-07T01:08:27Z",
+    "publicSourceVerified": true,
+    "publicSourceVerifiedAt": "2026-10-13T05:11:21.238838+00:00",
+    "relevance": {
+      "id": "RWE-6926",
+      "decision": "Core",
+      "rationale": "HL7 v2 to FHIR Mapping MCP: Documents field and code mappings from HL7 v2.5.1 to FHIR R4 and conversion of ORM, ADT and ORU messages into transaction bundles with mapping warnings. Inclusion is limited to this documented health-research, evidence-synthesis or specific statistical-method function.",
+      "relevanceBasis": "Documents field and code mappings from HL7 v2.5.1 to FHIR R4 and conversion of ORM, ADT and ORU messages into transaction bundles with mapping warnings.",
+      "evidenceLevel": "fresh-primary",
+      "evidenceRefs": [
+        "https://github.com/coffeemilktea/hl7-v2-fhir-mcp-server/blob/main/README.md"
+      ],
+      "reviewGroup": "october-discovery-refresh",
+      "reviewedAt": "2026-10-12"
+    }
+  },
+  {
+    "id": "RWE-6927",
+    "name": "openEHR and FHIR Modeller",
+    "kind": "MCP tools & research workspace",
+    "category": "Clinical Data & Interoperability",
+    "summary": "Provides documented openEHR/FHIR modelling, validation, synthetic examples, semantic comparison and explicit mapping-proposal workflows.",
+    "tags": [
+      "Clinical Data & Interoperability",
+      "Documentation reviewed"
+    ],
+    "added": "Oct 12, 2026",
+    "checked": "Oct 12, 2026",
+    "status": "Static documentation reviewed · scoped capability",
+    "runtime": "Not independently runtime tested",
+    "repository": "CzarMich/openehr_FHIR_Modeller",
+    "website": "GitHub",
+    "packages": "Only the documented components described in this card were reviewed.",
+    "workflowFit": [
+      "Clinical Data & Interoperability"
+    ],
+    "capabilities": [
+      "Provides documented openEHR/FHIR modelling, validation, synthetic examples, semantic comparison and explicit mapping-proposal workflows."
+    ],
+    "limitation": "Independently maintained derivative with an optional private FHIR engine. Public documentation does not establish access to every backend or clinical validity of generated mappings. Static documentation review only; candidate code was not installed or executed.",
+    "url": "https://github.com/CzarMich/openehr_FHIR_Modeller",
+    "primarySourceURLs": [
+      "https://github.com/CzarMich/openehr_FHIR_Modeller/blob/main/README.md"
+    ],
+    "primaryBlobSHA": "85baf79b388c8f59aefff4e610bf9289019bd9ed",
+    "primaryRetrievedAt": "2026-10-13T04:48:11.044660+00:00",
+    "primaryTextSHA256": "b2319cb213069e176a86a730672b08cdb24073ef6f0eb57d0ea1f20ef167a099",
+    "license": "MIT",
+    "repositoryLastPush": "2026-10-09T08:33:54Z",
+    "publicSourceVerified": true,
+    "publicSourceVerifiedAt": "2026-10-13T05:11:21.510696+00:00",
+    "relevance": {
+      "id": "RWE-6927",
+      "decision": "Core",
+      "rationale": "openEHR and FHIR Modeller: Provides documented openEHR/FHIR modelling, validation, synthetic examples, semantic comparison and explicit mapping-proposal workflows. Inclusion is limited to this documented health-research, evidence-synthesis or specific statistical-method function.",
+      "relevanceBasis": "Provides documented openEHR/FHIR modelling, validation, synthetic examples, semantic comparison and explicit mapping-proposal workflows.",
+      "evidenceLevel": "fresh-primary",
+      "evidenceRefs": [
+        "https://github.com/CzarMich/openehr_FHIR_Modeller/blob/main/README.md"
+      ],
+      "reviewGroup": "october-discovery-refresh",
+      "reviewedAt": "2026-10-12"
+    }
+  },
+  {
+    "id": "RWE-6928",
+    "name": "FAERS Pharmacovigilance MCP",
+    "kind": "MCP server",
+    "category": "Pharmacovigilance & safety",
+    "summary": "Documents openFDA adverse-event case retrieval, ROR/PRR, empirical-Bayes signal scores and stratified exploratory signal screening.",
+    "tags": [
+      "Pharmacovigilance & safety",
+      "Documentation reviewed"
+    ],
+    "added": "Oct 12, 2026",
+    "checked": "Oct 12, 2026",
+    "status": "Static documentation reviewed · scoped capability",
+    "runtime": "Not independently runtime tested",
+    "repository": "drvvek/faers_mcp",
+    "website": "GitHub",
+    "packages": "Only the documented components described in this card were reviewed.",
+    "workflowFit": [
+      "Pharmacovigilance & safety"
+    ],
+    "capabilities": [
+      "Documents openFDA adverse-event case retrieval, ROR/PRR, empirical-Bayes signal scores and stratified exploratory signal screening."
+    ],
+    "limitation": "Spontaneous reports do not establish incidence or causality. Empirical-Bayes priors, stratification and derived estimates were not independently checked; source limits and reporting biases remain material. Static documentation review only; candidate code was not installed or executed.",
+    "url": "https://github.com/drvvek/faers_mcp",
+    "primarySourceURLs": [
+      "https://github.com/drvvek/faers_mcp/blob/master/README.md"
+    ],
+    "primaryBlobSHA": "2a7242e8b41e21b1352ab3932de308de6ffbd708",
+    "primaryRetrievedAt": "2026-10-13T04:47:56.074961+00:00",
+    "primaryTextSHA256": "6e3d10b0c173dde8c5dbad6a6810e8c9d17ebcf6c4bd02d00a5d025b3d94ccab",
+    "license": "MIT",
+    "repositoryLastPush": "2026-10-04T17:00:20Z",
+    "publicSourceVerified": true,
+    "publicSourceVerifiedAt": "2026-10-13T05:11:21.882017+00:00",
+    "relevance": {
+      "id": "RWE-6928",
+      "decision": "Core",
+      "rationale": "FAERS Pharmacovigilance MCP: Documents openFDA adverse-event case retrieval, ROR/PRR, empirical-Bayes signal scores and stratified exploratory signal screening. Inclusion is limited to this documented health-research, evidence-synthesis or specific statistical-method function.",
+      "relevanceBasis": "Documents openFDA adverse-event case retrieval, ROR/PRR, empirical-Bayes signal scores and stratified exploratory signal screening.",
+      "evidenceLevel": "fresh-primary",
+      "evidenceRefs": [
+        "https://github.com/drvvek/faers_mcp/blob/master/README.md"
+      ],
+      "reviewGroup": "october-discovery-refresh",
+      "reviewedAt": "2026-10-12"
+    }
+  },
+  {
+    "id": "RWE-6929",
+    "name": "Causal Inference Skill (Fabianigual)",
+    "kind": "Agent skill",
+    "category": "Causal Inference & Analytics",
+    "summary": "Guides estimand definition, identification assumptions, power and sensitivity analysis, with documented difference-in-differences and propensity-score examples.",
+    "tags": [
+      "Causal Inference & Analytics",
+      "Documentation reviewed"
+    ],
+    "added": "Oct 12, 2026",
+    "checked": "Oct 12, 2026",
+    "status": "Static documentation reviewed · scoped capability",
+    "runtime": "Not independently runtime tested",
+    "repository": "fabianigual/causal-inference-skill",
+    "website": "GitHub",
+    "packages": "Only the documented components described in this card were reviewed.",
+    "workflowFit": [
+      "Causal Inference & Analytics"
+    ],
+    "capabilities": [
+      "Guides estimand definition, identification assumptions, power and sensitivity analysis, with documented difference-in-differences and propensity-score examples."
+    ],
+    "limitation": "Instructional method support rather than an autonomous validated estimator. Complex timing, dependence, confounding and identification questions require an appropriate study-specific analysis. Static documentation review only; candidate code was not installed or executed.",
+    "url": "https://github.com/fabianigual/causal-inference-skill",
+    "primarySourceURLs": [
+      "https://github.com/fabianigual/causal-inference-skill/blob/main/README.md"
+    ],
+    "primaryBlobSHA": "e0bce330d88744419eccf734360cbbb21dde9fb5",
+    "primaryRetrievedAt": "2026-10-13T04:48:57.780600+00:00",
+    "primaryTextSHA256": "34b57b04d00765d8ae8c61e00ec992609805ce615d3a4367ecce0567b45bfb83",
+    "license": "Not declared",
+    "repositoryLastPush": "2026-10-12T23:03:14Z",
+    "publicSourceVerified": true,
+    "publicSourceVerifiedAt": "2026-10-13T05:11:22.219063+00:00",
+    "relevance": {
+      "id": "RWE-6929",
+      "decision": "Core",
+      "rationale": "Causal Inference Skill (Fabianigual): Guides estimand definition, identification assumptions, power and sensitivity analysis, with documented difference-in-differences and propensity-score examples. Inclusion is limited to this documented health-research, evidence-synthesis or specific statistical-method function.",
+      "relevanceBasis": "Guides estimand definition, identification assumptions, power and sensitivity analysis, with documented difference-in-differences and propensity-score examples.",
+      "evidenceLevel": "fresh-primary",
+      "evidenceRefs": [
+        "https://github.com/fabianigual/causal-inference-skill/blob/main/README.md"
+      ],
+      "reviewGroup": "october-discovery-refresh",
+      "reviewedAt": "2026-10-12"
+    }
+  },
+  {
+    "id": "RWE-6930",
+    "name": "Radar Papers MCP",
+    "kind": "MCP server",
+    "category": "Literature & Evidence Synthesis",
+    "summary": "Monitors configured topics in PubMed and medRxiv, stores DOI-deduplicated records locally and documents local-model summaries.",
+    "tags": [
+      "Literature & Evidence Synthesis",
+      "Documentation reviewed"
+    ],
+    "added": "Oct 12, 2026",
+    "checked": "Oct 12, 2026",
+    "status": "Static documentation reviewed · scoped capability",
+    "runtime": "Not independently runtime tested",
+    "repository": "fabianofilho/radar-papers-mcp",
+    "website": "GitHub",
+    "packages": "Only the documented components described in this card were reviewed.",
+    "workflowFit": [
+      "Literature & Evidence Synthesis"
+    ],
+    "capabilities": [
+      "Monitors configured topics in PubMed and medRxiv, stores DOI-deduplicated records locally and documents local-model summaries."
+    ],
+    "limitation": "Monitoring is not a comprehensive systematic search. Preprints and published articles differ, DOI deduplication can miss records, and generated summaries need verification. Static documentation review only; candidate code was not installed or executed.",
+    "url": "https://github.com/fabianofilho/radar-papers-mcp",
+    "primarySourceURLs": [
+      "https://github.com/fabianofilho/radar-papers-mcp/blob/main/README.md"
+    ],
+    "primaryBlobSHA": "a0fa99f09feb733ae6d158ea0d5ffac38780afc9",
+    "primaryRetrievedAt": "2026-10-13T04:48:40.086204+00:00",
+    "primaryTextSHA256": "baa62b7d077407edd45369562129816dc779bd908a026e5878ac704a6d71b9c6",
+    "license": "MIT",
+    "repositoryLastPush": "2026-10-11T22:58:49Z",
+    "publicSourceVerified": true,
+    "publicSourceVerifiedAt": "2026-10-13T05:11:22.217538+00:00",
+    "relevance": {
+      "id": "RWE-6930",
+      "decision": "Core",
+      "rationale": "Radar Papers MCP: Monitors configured topics in PubMed and medRxiv, stores DOI-deduplicated records locally and documents local-model summaries. Inclusion is limited to this documented health-research, evidence-synthesis or specific statistical-method function.",
+      "relevanceBasis": "Monitors configured topics in PubMed and medRxiv, stores DOI-deduplicated records locally and documents local-model summaries.",
+      "evidenceLevel": "fresh-primary",
+      "evidenceRefs": [
+        "https://github.com/fabianofilho/radar-papers-mcp/blob/main/README.md"
+      ],
+      "reviewGroup": "october-discovery-refresh",
+      "reviewedAt": "2026-10-12"
+    }
+  },
+  {
+    "id": "RWE-6931",
+    "name": "Drug Safety MCP",
+    "kind": "MCP server & agent workflow",
+    "category": "Pharmacovigilance & safety",
+    "summary": "Documents FDA label, FAERS and recall retrieval through structured MCP tools and a LangGraph tool-discovery workflow.",
+    "tags": [
+      "Pharmacovigilance & safety",
+      "Documentation reviewed"
+    ],
+    "added": "Oct 12, 2026",
+    "checked": "Oct 12, 2026",
+    "status": "Static documentation reviewed · scoped capability",
+    "runtime": "Not independently runtime tested",
+    "repository": "gopipamulapati/drug-safety-mcp",
+    "website": "GitHub",
+    "packages": "Only the documented components described in this card were reviewed.",
+    "workflowFit": [
+      "Pharmacovigilance & safety"
+    ],
+    "capabilities": [
+      "Documents FDA label, FAERS and recall retrieval through structured MCP tools and a LangGraph tool-discovery workflow."
+    ],
+    "limitation": "Label-derived interactions and spontaneous reports are not a patient-specific safety assessment. Offline fixtures and author tests do not establish live-source completeness or clinical correctness. Static documentation review only; candidate code was not installed or executed.",
+    "url": "https://github.com/gopipamulapati/drug-safety-mcp",
+    "primarySourceURLs": [
+      "https://github.com/gopipamulapati/drug-safety-mcp/blob/main/README.md"
+    ],
+    "primaryBlobSHA": "4e5c3cbd30e187374470a4442e362cbd03940851",
+    "primaryRetrievedAt": "2026-10-13T04:47:59.653634+00:00",
+    "primaryTextSHA256": "aad50a8c101cc67a222fa19252d40559815bbb7b6195828c6d95c5856966a3f5",
+    "license": "MIT",
+    "repositoryLastPush": "2026-09-30T16:40:35Z",
+    "publicSourceVerified": true,
+    "publicSourceVerifiedAt": "2026-10-13T05:11:22.173288+00:00",
+    "relevance": {
+      "id": "RWE-6931",
+      "decision": "Core",
+      "rationale": "Drug Safety MCP: Documents FDA label, FAERS and recall retrieval through structured MCP tools and a LangGraph tool-discovery workflow. Inclusion is limited to this documented health-research, evidence-synthesis or specific statistical-method function.",
+      "relevanceBasis": "Documents FDA label, FAERS and recall retrieval through structured MCP tools and a LangGraph tool-discovery workflow.",
+      "evidenceLevel": "fresh-primary",
+      "evidenceRefs": [
+        "https://github.com/gopipamulapati/drug-safety-mcp/blob/main/README.md"
+      ],
+      "reviewGroup": "october-discovery-refresh",
+      "reviewedAt": "2026-10-12"
+    }
+  },
+  {
+    "id": "RWE-6932",
+    "name": "PubMed SLR Screening Workflow",
+    "kind": "Agent workflow & skills",
+    "category": "Literature & Evidence Synthesis",
+    "summary": "Implements a documented Claude Code workflow for PubMed search, screening and study-characteristics extraction with a static review report.",
+    "tags": [
+      "Literature & Evidence Synthesis",
+      "Documentation reviewed"
+    ],
+    "added": "Oct 12, 2026",
+    "checked": "Oct 12, 2026",
+    "status": "Static documentation reviewed · scoped capability",
+    "runtime": "Not independently runtime tested",
+    "repository": "HerzLeben/pubmed-slr-screening",
+    "website": "GitHub",
+    "packages": "Only the documented components described in this card were reviewed.",
+    "workflowFit": [
+      "Literature & Evidence Synthesis"
+    ],
+    "capabilities": [
+      "Implements a documented Claude Code workflow for PubMed search, screening and study-characteristics extraction with a static review report."
+    ],
+    "limitation": "Author explicitly limits this TrialMind-inspired reimplementation to teaching and method validation. It does not substitute for a completed, independently adjudicated systematic review. Static documentation review only; candidate code was not installed or executed.",
+    "url": "https://github.com/HerzLeben/pubmed-slr-screening",
+    "primarySourceURLs": [
+      "https://github.com/HerzLeben/pubmed-slr-screening/blob/main/README.md"
+    ],
+    "primaryBlobSHA": "5337bc8d78cffec92e07dda0e154983f360bd2cf",
+    "primaryRetrievedAt": "2026-10-13T04:48:43.602001+00:00",
+    "primaryTextSHA256": "e3c01b702df5b26c297de2b3af35ba96398b3c3ce9f94844e288a972aebbbe4d",
+    "license": "MIT",
+    "repositoryLastPush": "2026-10-01T15:24:37Z",
+    "publicSourceVerified": true,
+    "publicSourceVerifiedAt": "2026-10-13T05:11:22.164944+00:00",
+    "relevance": {
+      "id": "RWE-6932",
+      "decision": "Core",
+      "rationale": "PubMed SLR Screening Workflow: Implements a documented Claude Code workflow for PubMed search, screening and study-characteristics extraction with a static review report. Inclusion is limited to this documented health-research, evidence-synthesis or specific statistical-method function.",
+      "relevanceBasis": "Implements a documented Claude Code workflow for PubMed search, screening and study-characteristics extraction with a static review report.",
+      "evidenceLevel": "fresh-primary",
+      "evidenceRefs": [
+        "https://github.com/HerzLeben/pubmed-slr-screening/blob/main/README.md"
+      ],
+      "reviewGroup": "october-discovery-refresh",
+      "reviewedAt": "2026-10-12"
+    }
+  },
+  {
+    "id": "RWE-6933",
+    "name": "PubMed Diabetes Evidence Retrieval Agent",
+    "kind": "Research agent",
+    "category": "Literature & Evidence Synthesis",
+    "summary": "Documents retrieval of PubMed abstracts for diabetes-treatment questions and cited answers using a local or hosted vector index.",
+    "tags": [
+      "Literature & Evidence Synthesis",
+      "Documentation reviewed"
+    ],
+    "added": "Oct 12, 2026",
+    "checked": "Oct 12, 2026",
+    "status": "Static documentation reviewed · scoped capability",
+    "runtime": "Not independently runtime tested",
+    "repository": "ishnags/pubmed-rag-chatbot",
+    "website": "GitHub",
+    "packages": "Only the documented components described in this card were reviewed.",
+    "workflowFit": [
+      "Literature & Evidence Synthesis"
+    ],
+    "capabilities": [
+      "Documents retrieval of PubMed abstracts for diabetes-treatment questions and cited answers using a local or hosted vector index."
+    ],
+    "limitation": "Abstract-grounded generated answers may omit full-text eligibility and limitations. Retrieval, citation support and treatment claims were not independently validated. Static documentation review only; candidate code was not installed or executed.",
+    "url": "https://github.com/ishnags/pubmed-rag-chatbot",
+    "primarySourceURLs": [
+      "https://github.com/ishnags/pubmed-rag-chatbot/blob/main/README.md"
+    ],
+    "primaryBlobSHA": "6138c965420405c091264744d9a222b052fa3663",
+    "primaryRetrievedAt": "2026-10-13T04:48:41.849543+00:00",
+    "primaryTextSHA256": "c368789327e58c91b8400f44e97a40a12792b35d6ef3404673b36243a1deeb77",
+    "license": "NOASSERTION",
+    "repositoryLastPush": "2026-10-12T12:57:53Z",
+    "publicSourceVerified": true,
+    "publicSourceVerifiedAt": "2026-10-13T05:11:22.158030+00:00",
+    "relevance": {
+      "id": "RWE-6933",
+      "decision": "Core",
+      "rationale": "PubMed Diabetes Evidence Retrieval Agent: Documents retrieval of PubMed abstracts for diabetes-treatment questions and cited answers using a local or hosted vector index. Inclusion is limited to this documented health-research, evidence-synthesis or specific statistical-method function.",
+      "relevanceBasis": "Documents retrieval of PubMed abstracts for diabetes-treatment questions and cited answers using a local or hosted vector index.",
+      "evidenceLevel": "fresh-primary",
+      "evidenceRefs": [
+        "https://github.com/ishnags/pubmed-rag-chatbot/blob/main/README.md"
+      ],
+      "reviewGroup": "october-discovery-refresh",
+      "reviewedAt": "2026-10-12"
+    }
+  },
+  {
+    "id": "RWE-6934",
+    "name": "TrialBridge Cohort Builder",
+    "kind": "MCP server",
+    "category": "Trials & Study Design",
+    "summary": "Retrieves ClinicalTrials.gov protocols, maps eligibility criteria and queries a HAPI FHIR store to generate candidate-patient screening evidence.",
+    "tags": [
+      "Trials & Study Design",
+      "Documentation reviewed"
+    ],
+    "added": "Oct 12, 2026",
+    "checked": "Oct 12, 2026",
+    "status": "Static documentation reviewed · scoped capability",
+    "runtime": "Not independently runtime tested",
+    "repository": "jasonrwise/trial-cohort-builder",
+    "website": "GitHub",
+    "packages": "Only the documented components described in this card were reviewed.",
+    "workflowFit": [
+      "Trials & Study Design"
+    ],
+    "capabilities": [
+      "Retrieves ClinicalTrials.gov protocols, maps eligibility criteria and queries a HAPI FHIR store to generate candidate-patient screening evidence."
+    ],
+    "limitation": "Distributed patient data are synthetic. Eligibility mapping, de-identification claims and screening scores were not independently validated; candidate matching is not an enrollment decision. Static documentation review only; candidate code was not installed or executed.",
+    "url": "https://github.com/jasonrwise/trial-cohort-builder",
+    "primarySourceURLs": [
+      "https://github.com/jasonrwise/trial-cohort-builder/blob/main/README.md"
+    ],
+    "primaryBlobSHA": "32750bb71a94efae08a9696c19d3771d7fea3b54",
+    "primaryRetrievedAt": "2026-10-13T04:48:14.771729+00:00",
+    "primaryTextSHA256": "684b50eada16aba92de32f91b69a8f588529ceaf754a587f3a90a6d04f49376b",
+    "license": "MIT",
+    "repositoryLastPush": "2026-10-09T19:59:17Z",
+    "publicSourceVerified": true,
+    "publicSourceVerifiedAt": "2026-10-13T05:11:22.326738+00:00",
+    "relevance": {
+      "id": "RWE-6934",
+      "decision": "Core",
+      "rationale": "TrialBridge Cohort Builder: Retrieves ClinicalTrials.gov protocols, maps eligibility criteria and queries a HAPI FHIR store to generate candidate-patient screening evidence. Inclusion is limited to this documented health-research, evidence-synthesis or specific statistical-method function.",
+      "relevanceBasis": "Retrieves ClinicalTrials.gov protocols, maps eligibility criteria and queries a HAPI FHIR store to generate candidate-patient screening evidence.",
+      "evidenceLevel": "fresh-primary",
+      "evidenceRefs": [
+        "https://github.com/jasonrwise/trial-cohort-builder/blob/main/README.md"
+      ],
+      "reviewGroup": "october-discovery-refresh",
+      "reviewedAt": "2026-10-12"
+    }
+  },
+  {
+    "id": "RWE-6935",
+    "name": "PubMed Surfing",
+    "kind": "MCP server",
+    "category": "Literature & Evidence Synthesis",
+    "summary": "Documents structured PubMed search, batch abstracts, identifier conversion, related-article retrieval, citation formatting and journal metadata.",
+    "tags": [
+      "Literature & Evidence Synthesis",
+      "Documentation reviewed"
+    ],
+    "added": "Oct 12, 2026",
+    "checked": "Oct 12, 2026",
+    "status": "Static documentation reviewed · scoped capability",
+    "runtime": "Not independently runtime tested",
+    "repository": "JC-SYSU/pubmed-surfing",
+    "website": "GitHub",
+    "packages": "Only the documented components described in this card were reviewed.",
+    "workflowFit": [
+      "Literature & Evidence Synthesis"
+    ],
+    "capabilities": [
+      "Documents structured PubMed search, batch abstracts, identifier conversion, related-article retrieval, citation formatting and journal metadata."
+    ],
+    "limitation": "A local MCP process still retrieves from external providers. Search completeness, identifier matching and journal metadata were not tested against live sources. Static documentation review only; candidate code was not installed or executed.",
+    "url": "https://github.com/JC-SYSU/pubmed-surfing",
+    "primarySourceURLs": [
+      "https://github.com/JC-SYSU/pubmed-surfing/blob/main/README.md"
+    ],
+    "primaryBlobSHA": "68d4ac9336fb55666b41b49847fa11b4e99cead4",
+    "primaryRetrievedAt": "2026-10-13T04:48:41.591790+00:00",
+    "primaryTextSHA256": "1966b72b8ff69689af0c1c65997db948da669d0aba1c7d804865d10af8462be8",
+    "license": "MIT",
+    "repositoryLastPush": "2026-09-16T06:38:27Z",
+    "publicSourceVerified": true,
+    "publicSourceVerifiedAt": "2026-10-13T05:11:22.736715+00:00",
+    "relevance": {
+      "id": "RWE-6935",
+      "decision": "Core",
+      "rationale": "PubMed Surfing: Documents structured PubMed search, batch abstracts, identifier conversion, related-article retrieval, citation formatting and journal metadata. Inclusion is limited to this documented health-research, evidence-synthesis or specific statistical-method function.",
+      "relevanceBasis": "Documents structured PubMed search, batch abstracts, identifier conversion, related-article retrieval, citation formatting and journal metadata.",
+      "evidenceLevel": "fresh-primary",
+      "evidenceRefs": [
+        "https://github.com/JC-SYSU/pubmed-surfing/blob/main/README.md"
+      ],
+      "reviewGroup": "october-discovery-refresh",
+      "reviewedAt": "2026-10-12"
+    }
+  },
+  {
+    "id": "RWE-6936",
+    "name": "Local Citation Verifier",
+    "kind": "Research tool & agent skill",
+    "category": "Literature & Evidence Synthesis",
+    "summary": "Checks BibTeX, RIS and MEDLINE references against scholarly identifiers and metadata, including PubMed and Crossref, while retaining uncertain matches for review.",
+    "tags": [
+      "Literature & Evidence Synthesis",
+      "Documentation reviewed"
+    ],
+    "added": "Oct 12, 2026",
+    "checked": "Oct 12, 2026",
+    "status": "Static documentation reviewed · scoped capability",
+    "runtime": "Not independently runtime tested",
+    "repository": "jhlee0619/local-citation-verifier",
+    "website": "GitHub",
+    "packages": "Only the documented components described in this card were reviewed.",
+    "workflowFit": [
+      "Literature & Evidence Synthesis"
+    ],
+    "capabilities": [
+      "Checks BibTeX, RIS and MEDLINE references against scholarly identifiers and metadata, including PubMed and Crossref, while retaining uncertain matches for review."
+    ],
+    "limitation": "Bibliographic agreement does not establish that an article supports a scientific claim. Provider access, ambiguous records and author/title matching need verification. Static documentation review only; candidate code was not installed or executed.",
+    "url": "https://github.com/jhlee0619/local-citation-verifier",
+    "primarySourceURLs": [
+      "https://github.com/jhlee0619/local-citation-verifier/blob/main/README.md"
+    ],
+    "primaryBlobSHA": "023514e2746e68437e214ac6b5d5c0022769deed",
+    "primaryRetrievedAt": "2026-10-13T04:48:50.473481+00:00",
+    "primaryTextSHA256": "25b9c7cb5ee777f4be563b7ed5cea17d076fc8c42113267aaf79713af5a3e206",
+    "license": "MIT",
+    "repositoryLastPush": "2026-10-11T23:49:16Z",
+    "publicSourceVerified": true,
+    "publicSourceVerifiedAt": "2026-10-13T05:11:22.939869+00:00",
+    "relevance": {
+      "id": "RWE-6936",
+      "decision": "Core",
+      "rationale": "Local Citation Verifier: Checks BibTeX, RIS and MEDLINE references against scholarly identifiers and metadata, including PubMed and Crossref, while retaining uncertain matches for review. Inclusion is limited to this documented health-research, evidence-synthesis or specific statistical-method function.",
+      "relevanceBasis": "Checks BibTeX, RIS and MEDLINE references against scholarly identifiers and metadata, including PubMed and Crossref, while retaining uncertain matches for review.",
+      "evidenceLevel": "fresh-primary",
+      "evidenceRefs": [
+        "https://github.com/jhlee0619/local-citation-verifier/blob/main/README.md"
+      ],
+      "reviewGroup": "october-discovery-refresh",
+      "reviewedAt": "2026-10-12"
+    }
+  },
+  {
+    "id": "RWE-6937",
+    "name": "EpiAgentKit — epidemiology workflow",
+    "kind": "Agent skill collection",
+    "category": "Public Health & Epidemiology",
+    "summary": "Documents epidemiology and biostatistics study-design, analysis-plan and reproducible R/Python analysis workflows for Claude Code and Codex.",
+    "tags": [
+      "Public Health & Epidemiology",
+      "Documentation reviewed"
+    ],
+    "added": "Oct 12, 2026",
+    "checked": "Oct 12, 2026",
+    "status": "Static documentation reviewed · scoped capability",
+    "runtime": "Not independently runtime tested",
+    "repository": "KangWang42/EpiAgentKit",
+    "website": "GitHub",
+    "packages": "Only the documented components described in this card were reviewed.",
+    "workflowFit": [
+      "Public Health & Epidemiology"
+    ],
+    "capabilities": [
+      "Documents epidemiology and biostatistics study-design, analysis-plan and reproducible R/Python analysis workflows for Claude Code and Codex."
+    ],
+    "limitation": "Only the documented epidemiology, study-design and statistical workflows are included. Writing and presentation components do not independently qualify; instructions cannot establish correct estimands or analysis results. Static documentation review only; candidate code was not installed or executed.",
+    "url": "https://github.com/KangWang42/EpiAgentKit",
+    "primarySourceURLs": [
+      "https://github.com/KangWang42/EpiAgentKit/blob/main/README.md"
+    ],
+    "primaryBlobSHA": "0911a6cc76421059265f8f516a2e505f588b86a5",
+    "primaryRetrievedAt": "2026-10-13T04:47:54.809641+00:00",
+    "primaryTextSHA256": "357ca31f9992f282c611a6212b84845440ca067c200e4e50dc232f9468d7b62f",
+    "license": "Not declared",
+    "repositoryLastPush": "2026-10-01T06:51:57Z",
+    "publicSourceVerified": true,
+    "publicSourceVerifiedAt": "2026-10-13T05:11:22.833014+00:00",
+    "relevance": {
+      "id": "RWE-6937",
+      "decision": "Core",
+      "rationale": "EpiAgentKit — epidemiology workflow: Documents epidemiology and biostatistics study-design, analysis-plan and reproducible R/Python analysis workflows for Claude Code and Codex. Inclusion is limited to this documented health-research, evidence-synthesis or specific statistical-method function.",
+      "relevanceBasis": "Documents epidemiology and biostatistics study-design, analysis-plan and reproducible R/Python analysis workflows for Claude Code and Codex.",
+      "evidenceLevel": "fresh-primary",
+      "evidenceRefs": [
+        "https://github.com/KangWang42/EpiAgentKit/blob/main/README.md"
+      ],
+      "reviewGroup": "october-discovery-refresh",
+      "reviewedAt": "2026-10-12"
+    }
+  },
+  {
+    "id": "RWE-6938",
+    "name": "Minimal FHIR MCP (Krlz)",
+    "kind": "MCP server",
+    "category": "Clinical Data & Interoperability",
+    "summary": "Documents patient search, observation retrieval and patient resources against a HAPI FHIR R4 server using MCP tools, resources and prompts.",
+    "tags": [
+      "Clinical Data & Interoperability",
+      "Documentation reviewed"
+    ],
+    "added": "Oct 12, 2026",
+    "checked": "Oct 12, 2026",
+    "status": "Static documentation reviewed · scoped capability",
+    "runtime": "Not independently runtime tested",
+    "repository": "krlz-dev/fhir-mcp-server",
+    "website": "GitHub",
+    "packages": "Only the documented components described in this card were reviewed.",
+    "workflowFit": [
+      "Clinical Data & Interoperability"
+    ],
+    "capabilities": [
+      "Documents patient search, observation retrieval and patient resources against a HAPI FHIR R4 server using MCP tools, resources and prompts."
+    ],
+    "limitation": "Small interoperability example with an in-memory test suite. Authenticated clinical deployment, complete FHIR resource coverage and live compatibility were not verified. Static documentation review only; candidate code was not installed or executed.",
+    "url": "https://github.com/krlz-dev/fhir-mcp-server",
+    "primarySourceURLs": [
+      "https://github.com/krlz-dev/fhir-mcp-server/blob/main/README.md"
+    ],
+    "primaryBlobSHA": "ab60a9ca42827dc9e52dc66cc4e86a5893946fe2",
+    "primaryRetrievedAt": "2026-10-13T04:48:07.624335+00:00",
+    "primaryTextSHA256": "f6558e27d679193cb98b15d0ba7824a57231fb24c4146894b7ffb2225c9cf995",
+    "license": "MIT",
+    "repositoryLastPush": "2026-09-28T20:15:54Z",
+    "publicSourceVerified": true,
+    "publicSourceVerifiedAt": "2026-10-13T05:11:23.672211+00:00",
+    "relevance": {
+      "id": "RWE-6938",
+      "decision": "Core",
+      "rationale": "Minimal FHIR MCP (Krlz): Documents patient search, observation retrieval and patient resources against a HAPI FHIR R4 server using MCP tools, resources and prompts. Inclusion is limited to this documented health-research, evidence-synthesis or specific statistical-method function.",
+      "relevanceBasis": "Documents patient search, observation retrieval and patient resources against a HAPI FHIR R4 server using MCP tools, resources and prompts.",
+      "evidenceLevel": "fresh-primary",
+      "evidenceRefs": [
+        "https://github.com/krlz-dev/fhir-mcp-server/blob/main/README.md"
+      ],
+      "reviewGroup": "october-discovery-refresh",
+      "reviewedAt": "2026-10-12"
+    }
+  },
+  {
+    "id": "RWE-6939",
+    "name": "Papers by Ouroboros",
+    "kind": "MCP server",
+    "category": "Literature & Evidence Synthesis",
+    "summary": "Documents multi-source scholarly search including PubMed, identifier-based paper retrieval, citation-graph navigation and bibliography formatting.",
+    "tags": [
+      "Literature & Evidence Synthesis",
+      "Documentation reviewed"
+    ],
+    "added": "Oct 12, 2026",
+    "checked": "Oct 12, 2026",
+    "status": "Static documentation reviewed · scoped capability",
+    "runtime": "Not independently runtime tested",
+    "repository": "LAHutchins91/papers-mcp",
+    "website": "GitHub",
+    "packages": "Only the documented components described in this card were reviewed.",
+    "workflowFit": [
+      "Literature & Evidence Synthesis"
+    ],
+    "capabilities": [
+      "Documents multi-source scholarly search including PubMed, identifier-based paper retrieval, citation-graph navigation and bibliography formatting."
+    ],
+    "limitation": "Hosted retrieval coverage and access may change. A returned identifier does not demonstrate relevance, methodological quality or support for a generated claim. Static documentation review only; candidate code was not installed or executed.",
+    "url": "https://github.com/LAHutchins91/papers-mcp",
+    "primarySourceURLs": [
+      "https://github.com/LAHutchins91/papers-mcp/blob/main/README.md"
+    ],
+    "primaryBlobSHA": "58464a97c88caa1205350f638357a700aab925a6",
+    "primaryRetrievedAt": "2026-10-13T04:48:41.146107+00:00",
+    "primaryTextSHA256": "a6cf6e8f5ac5ac401a1ddd229c0bfb16da39d370e893d689b5259e338b9dd654",
+    "license": "MIT",
+    "repositoryLastPush": "2026-10-11T15:34:31Z",
+    "publicSourceVerified": true,
+    "publicSourceVerifiedAt": "2026-10-13T05:11:24.158613+00:00",
+    "relevance": {
+      "id": "RWE-6939",
+      "decision": "Core",
+      "rationale": "Papers by Ouroboros: Documents multi-source scholarly search including PubMed, identifier-based paper retrieval, citation-graph navigation and bibliography formatting. Inclusion is limited to this documented health-research, evidence-synthesis or specific statistical-method function.",
+      "relevanceBasis": "Documents multi-source scholarly search including PubMed, identifier-based paper retrieval, citation-graph navigation and bibliography formatting.",
+      "evidenceLevel": "fresh-primary",
+      "evidenceRefs": [
+        "https://github.com/LAHutchins91/papers-mcp/blob/main/README.md"
+      ],
+      "reviewGroup": "october-discovery-refresh",
+      "reviewedAt": "2026-10-12"
+    }
+  },
+  {
+    "id": "RWE-6940",
+    "name": "Medical Research Digest Workflow",
+    "kind": "Agent workflow",
+    "category": "Literature & Evidence Synthesis",
+    "summary": "Documents a configurable clinical-literature surveillance pipeline using PubMed MCP retrieval and ClinicalTrials.gov cross-checks.",
+    "tags": [
+      "Literature & Evidence Synthesis",
+      "Documentation reviewed"
+    ],
+    "added": "Oct 12, 2026",
+    "checked": "Oct 12, 2026",
+    "status": "Static documentation reviewed · scoped capability",
+    "runtime": "Not independently runtime tested",
+    "repository": "LaMatemaga/med-research-digest-agentic",
+    "website": "GitHub",
+    "packages": "Only the documented components described in this card were reviewed.",
+    "workflowFit": [
+      "Literature & Evidence Synthesis"
+    ],
+    "capabilities": [
+      "Documents a configurable clinical-literature surveillance pipeline using PubMed MCP retrieval and ClinicalTrials.gov cross-checks."
+    ],
+    "limitation": "Digest generation is scoped to documented retrieval and trial cross-checking. Physician-profile filtering and generated summaries do not establish complete systematic-review coverage. Static documentation review only; candidate code was not installed or executed.",
+    "url": "https://github.com/LaMatemaga/med-research-digest-agentic",
+    "primarySourceURLs": [
+      "https://github.com/LaMatemaga/med-research-digest-agentic/blob/main/README.md"
+    ],
+    "primaryBlobSHA": "3f90b16ac64195a946afb617c36a36819dff2b2d",
+    "primaryRetrievedAt": "2026-10-13T04:48:29.214876+00:00",
+    "primaryTextSHA256": "340483ad9ff0514e08c0b0d222d56600d7494e41783f89afaa21c45737c1d05f",
+    "license": "Not declared",
+    "repositoryLastPush": "2026-09-18T21:53:23Z",
+    "publicSourceVerified": true,
+    "publicSourceVerifiedAt": "2026-10-13T05:11:23.085143+00:00",
+    "relevance": {
+      "id": "RWE-6940",
+      "decision": "Core",
+      "rationale": "Medical Research Digest Workflow: Documents a configurable clinical-literature surveillance pipeline using PubMed MCP retrieval and ClinicalTrials.gov cross-checks. Inclusion is limited to this documented health-research, evidence-synthesis or specific statistical-method function.",
+      "relevanceBasis": "Documents a configurable clinical-literature surveillance pipeline using PubMed MCP retrieval and ClinicalTrials.gov cross-checks.",
+      "evidenceLevel": "fresh-primary",
+      "evidenceRefs": [
+        "https://github.com/LaMatemaga/med-research-digest-agentic/blob/main/README.md"
+      ],
+      "reviewGroup": "october-discovery-refresh",
+      "reviewedAt": "2026-10-12"
+    }
+  },
+  {
+    "id": "RWE-6941",
+    "name": "Medplum MCP (LiamDGray)",
+    "kind": "MCP server",
+    "category": "Clinical Data & Interoperability",
+    "summary": "Documents FHIR R4 EHR access with structured outputs, configurable write restrictions, compact responses and audit-record interfaces.",
+    "tags": [
+      "Clinical Data & Interoperability",
+      "Documentation reviewed"
+    ],
+    "added": "Oct 12, 2026",
+    "checked": "Oct 12, 2026",
+    "status": "Static documentation reviewed · scoped capability",
+    "runtime": "Not independently runtime tested",
+    "repository": "LiamDGray/medplum-mcp",
+    "website": "GitHub",
+    "packages": "Only the documented components described in this card were reviewed.",
+    "workflowFit": [
+      "Clinical Data & Interoperability"
+    ],
+    "capabilities": [
+      "Documents FHIR R4 EHR access with structured outputs, configurable write restrictions, compact responses and audit-record interfaces."
+    ],
+    "limitation": "Security, compliance and determinism are author claims, not registry certifications. Public mock/sandbox descriptions do not establish a deployed hospital integration. Static documentation review only; candidate code was not installed or executed.",
+    "url": "https://github.com/LiamDGray/medplum-mcp",
+    "primarySourceURLs": [
+      "https://github.com/LiamDGray/medplum-mcp/blob/main/README.md"
+    ],
+    "primaryBlobSHA": "9ffb7a54328dd0b9d9eb5ac2f7270f9fa0029c10",
+    "primaryRetrievedAt": "2026-10-13T04:48:10.041735+00:00",
+    "primaryTextSHA256": "0062056327b77df18d0dc209d3c78ee1ad3c700dede44ce6bc9056e60465860b",
+    "license": "NOASSERTION",
+    "repositoryLastPush": "2026-10-05T21:14:49Z",
+    "publicSourceVerified": true,
+    "publicSourceVerifiedAt": "2026-10-13T05:11:24.284488+00:00",
+    "relevance": {
+      "id": "RWE-6941",
+      "decision": "Core",
+      "rationale": "Medplum MCP (LiamDGray): Documents FHIR R4 EHR access with structured outputs, configurable write restrictions, compact responses and audit-record interfaces. Inclusion is limited to this documented health-research, evidence-synthesis or specific statistical-method function.",
+      "relevanceBasis": "Documents FHIR R4 EHR access with structured outputs, configurable write restrictions, compact responses and audit-record interfaces.",
+      "evidenceLevel": "fresh-primary",
+      "evidenceRefs": [
+        "https://github.com/LiamDGray/medplum-mcp/blob/main/README.md"
+      ],
+      "reviewGroup": "october-discovery-refresh",
+      "reviewedAt": "2026-10-12"
+    }
+  },
+  {
+    "id": "RWE-6942",
+    "name": "FHIR MCP (Marcsalot)",
+    "kind": "MCP server",
+    "category": "Clinical Data & Interoperability",
+    "summary": "Documents read-only patient, medication, condition, encounter, observation and allergy retrieval with compact FHIR R4 summaries and search normalization.",
+    "tags": [
+      "Clinical Data & Interoperability",
+      "Documentation reviewed"
+    ],
+    "added": "Oct 12, 2026",
+    "checked": "Oct 12, 2026",
+    "status": "Static documentation reviewed · scoped capability",
+    "runtime": "Not independently runtime tested",
+    "repository": "marcsalot/fhir-mcp",
+    "website": "GitHub",
+    "packages": "Only the documented components described in this card were reviewed.",
+    "workflowFit": [
+      "Clinical Data & Interoperability"
+    ],
+    "capabilities": [
+      "Documents read-only patient, medication, condition, encounter, observation and allergy retrieval with compact FHIR R4 summaries and search normalization."
+    ],
+    "limitation": "Author describes synthetic test-server patients only. Summary compression, name/lab matching, audit controls and SMART access were not independently validated. Static documentation review only; candidate code was not installed or executed.",
+    "url": "https://github.com/marcsalot/fhir-mcp",
+    "primarySourceURLs": [
+      "https://github.com/marcsalot/fhir-mcp/blob/main/README.md"
+    ],
+    "primaryBlobSHA": "b19b7aea9855c188412349cda057ee2db66e3a16",
+    "primaryRetrievedAt": "2026-10-13T04:48:06.216296+00:00",
+    "primaryTextSHA256": "715435429e6b70f54401f61ddd2d4006be0f1ce4274ed9eca29ed4e07e51d5e3",
+    "license": "Not declared",
+    "repositoryLastPush": "2026-10-11T21:02:30Z",
+    "publicSourceVerified": true,
+    "publicSourceVerifiedAt": "2026-10-13T05:11:23.402889+00:00",
+    "relevance": {
+      "id": "RWE-6942",
+      "decision": "Core",
+      "rationale": "FHIR MCP (Marcsalot): Documents read-only patient, medication, condition, encounter, observation and allergy retrieval with compact FHIR R4 summaries and search normalization. Inclusion is limited to this documented health-research, evidence-synthesis or specific statistical-method function.",
+      "relevanceBasis": "Documents read-only patient, medication, condition, encounter, observation and allergy retrieval with compact FHIR R4 summaries and search normalization.",
+      "evidenceLevel": "fresh-primary",
+      "evidenceRefs": [
+        "https://github.com/marcsalot/fhir-mcp/blob/main/README.md"
+      ],
+      "reviewGroup": "october-discovery-refresh",
+      "reviewedAt": "2026-10-12"
+    }
+  },
+  {
+    "id": "RWE-6943",
+    "name": "TypeSafe Literature Screening MCP",
+    "kind": "MCP server",
+    "category": "Literature & Evidence Synthesis",
+    "summary": "Searches PubMed or accepts supplied records and uses a typed decision model to return title/abstract screening probabilities and inclusion categories.",
+    "tags": [
+      "Literature & Evidence Synthesis",
+      "Documentation reviewed"
+    ],
+    "added": "Oct 12, 2026",
+    "checked": "Oct 12, 2026",
+    "status": "Static documentation reviewed · scoped capability",
+    "runtime": "Not independently runtime tested",
+    "repository": "masa-med-ai/typesafe-screening-mcp",
+    "website": "GitHub",
+    "packages": "Only the documented components described in this card were reviewed.",
+    "workflowFit": [
+      "Literature & Evidence Synthesis"
+    ],
+    "capabilities": [
+      "Searches PubMed or accepts supplied records and uses a typed decision model to return title/abstract screening probabilities and inclusion categories."
+    ],
+    "limitation": "Requires the documented model service and credentials. Probabilities and automated screening thresholds are not independently calibrated for the user's review and do not replace adjudication. Static documentation review only; candidate code was not installed or executed.",
+    "url": "https://github.com/masa-med-ai/typesafe-screening-mcp",
+    "primarySourceURLs": [
+      "https://github.com/masa-med-ai/typesafe-screening-mcp/blob/main/README.md"
+    ],
+    "primaryBlobSHA": "308d68cb7a01ddf2437405900ef3b101615134c7",
+    "primaryRetrievedAt": "2026-10-13T04:48:31.674239+00:00",
+    "primaryTextSHA256": "3467dada50b597d9ce3d15ee8d39ebb6f2a00d324270a5a00441aea74d6b80d8",
+    "license": "MIT",
+    "repositoryLastPush": "2026-09-19T00:15:18Z",
+    "publicSourceVerified": true,
+    "publicSourceVerifiedAt": "2026-10-13T05:11:23.654060+00:00",
+    "relevance": {
+      "id": "RWE-6943",
+      "decision": "Core",
+      "rationale": "TypeSafe Literature Screening MCP: Searches PubMed or accepts supplied records and uses a typed decision model to return title/abstract screening probabilities and inclusion categories. Inclusion is limited to this documented health-research, evidence-synthesis or specific statistical-method function.",
+      "relevanceBasis": "Searches PubMed or accepts supplied records and uses a typed decision model to return title/abstract screening probabilities and inclusion categories.",
+      "evidenceLevel": "fresh-primary",
+      "evidenceRefs": [
+        "https://github.com/masa-med-ai/typesafe-screening-mcp/blob/main/README.md"
+      ],
+      "reviewGroup": "october-discovery-refresh",
+      "reviewedAt": "2026-10-12"
+    }
+  },
+  {
+    "id": "RWE-6944",
+    "name": "PubMed Literature Review Skill",
+    "kind": "Agent skill",
+    "category": "Literature & Evidence Synthesis",
+    "summary": "Documents a PICO-framed PubMed literature-search and synthesis workflow with DOI/PMID-linked Word output.",
+    "tags": [
+      "Literature & Evidence Synthesis",
+      "Documentation reviewed"
+    ],
+    "added": "Oct 12, 2026",
+    "checked": "Oct 12, 2026",
+    "status": "Static documentation reviewed · scoped capability",
+    "runtime": "Not independently runtime tested",
+    "repository": "Maxciev/PubMed-Literature-Review",
+    "website": "GitHub",
+    "packages": "Only the documented components described in this card were reviewed.",
+    "workflowFit": [
+      "Literature & Evidence Synthesis"
+    ],
+    "capabilities": [
+      "Documents a PICO-framed PubMed literature-search and synthesis workflow with DOI/PMID-linked Word output."
+    ],
+    "limitation": "Instruction-based synthesis must preserve executed searches and human eligibility decisions. Citations and generated interpretation require checking against the original papers. Static documentation review only; candidate code was not installed or executed.",
+    "url": "https://github.com/Maxciev/PubMed-Literature-Review",
+    "primarySourceURLs": [
+      "https://github.com/Maxciev/PubMed-Literature-Review/blob/main/README.md"
+    ],
+    "primaryBlobSHA": "770ca79b5f6bfb443c9c89bdb14d3e245728549f",
+    "primaryRetrievedAt": "2026-10-13T04:48:45.466750+00:00",
+    "primaryTextSHA256": "691dc1d9bd32ee669fb8210efda6b79eb07ecc4314839508a10d82765dacc1fb",
+    "license": "NOASSERTION",
+    "repositoryLastPush": "2026-10-09T19:29:43Z",
+    "publicSourceVerified": true,
+    "publicSourceVerifiedAt": "2026-10-13T05:11:23.643144+00:00",
+    "relevance": {
+      "id": "RWE-6944",
+      "decision": "Core",
+      "rationale": "PubMed Literature Review Skill: Documents a PICO-framed PubMed literature-search and synthesis workflow with DOI/PMID-linked Word output. Inclusion is limited to this documented health-research, evidence-synthesis or specific statistical-method function.",
+      "relevanceBasis": "Documents a PICO-framed PubMed literature-search and synthesis workflow with DOI/PMID-linked Word output.",
+      "evidenceLevel": "fresh-primary",
+      "evidenceRefs": [
+        "https://github.com/Maxciev/PubMed-Literature-Review/blob/main/README.md"
+      ],
+      "reviewGroup": "october-discovery-refresh",
+      "reviewedAt": "2026-10-12"
+    }
+  },
+  {
+    "id": "RWE-6945",
+    "name": "HL7 FHIR Generator",
+    "kind": "MCP server & agent skill",
+    "category": "Clinical Data & Interoperability",
+    "summary": "Documents generation, validation and explanation of synthetic FHIR resources against StructureDefinition profiles, plus scoped NPHIES claim checks.",
+    "tags": [
+      "Clinical Data & Interoperability",
+      "Documentation reviewed"
+    ],
+    "added": "Oct 12, 2026",
+    "checked": "Oct 12, 2026",
+    "status": "Static documentation reviewed · scoped capability",
+    "runtime": "Not independently runtime tested",
+    "repository": "mwaseem75/hl7fhirgen",
+    "website": "GitHub",
+    "packages": "Only the documented components described in this card were reviewed.",
+    "workflowFit": [
+      "Clinical Data & Interoperability"
+    ],
+    "capabilities": [
+      "Documents generation, validation and explanation of synthetic FHIR resources against StructureDefinition profiles, plus scoped NPHIES claim checks."
+    ],
+    "limitation": "Generated examples and schema validation do not establish clinical meaning or payment eligibility. Specific implementation guides and validation engines require separate checks. Static documentation review only; candidate code was not installed or executed.",
+    "url": "https://github.com/mwaseem75/hl7fhirgen",
+    "primarySourceURLs": [
+      "https://github.com/mwaseem75/hl7fhirgen/blob/master/README.md"
+    ],
+    "primaryBlobSHA": "d1c74e36b859f42bf3d56ca0627a9912ab007e28",
+    "primaryRetrievedAt": "2026-10-13T04:48:12.190651+00:00",
+    "primaryTextSHA256": "d4d8c70f2c5eaac79b41f08658a85eb268025e39a7472a844aa84620a64d98e7",
+    "license": "MIT",
+    "repositoryLastPush": "2026-09-14T14:32:37Z",
+    "publicSourceVerified": true,
+    "publicSourceVerifiedAt": "2026-10-13T05:11:23.976189+00:00",
+    "relevance": {
+      "id": "RWE-6945",
+      "decision": "Core",
+      "rationale": "HL7 FHIR Generator: Documents generation, validation and explanation of synthetic FHIR resources against StructureDefinition profiles, plus scoped NPHIES claim checks. Inclusion is limited to this documented health-research, evidence-synthesis or specific statistical-method function.",
+      "relevanceBasis": "Documents generation, validation and explanation of synthetic FHIR resources against StructureDefinition profiles, plus scoped NPHIES claim checks.",
+      "evidenceLevel": "fresh-primary",
+      "evidenceRefs": [
+        "https://github.com/mwaseem75/hl7fhirgen/blob/master/README.md"
+      ],
+      "reviewGroup": "october-discovery-refresh",
+      "reviewedAt": "2026-10-12"
+    }
+  },
+  {
+    "id": "RWE-6946",
+    "name": "Pipeworx ANZCTR Trial Lookup",
+    "kind": "MCP gateway component",
+    "category": "Trials & Study Design",
+    "summary": "Documents retrieval of a full ANZCTR trial registration by ACTRN, including design, eligibility, outcomes, dates and sponsor information.",
+    "tags": [
+      "Trials & Study Design",
+      "Documentation reviewed"
+    ],
+    "added": "Oct 12, 2026",
+    "checked": "Oct 12, 2026",
+    "status": "Static documentation reviewed · scoped capability",
+    "runtime": "Not independently runtime tested",
+    "repository": "pipeworx-io/mcp-anzctr",
+    "website": "GitHub",
+    "packages": "Only the documented components described in this card were reviewed.",
+    "workflowFit": [
+      "Trials & Study Design"
+    ],
+    "capabilities": [
+      "Documents retrieval of a full ANZCTR trial registration by ACTRN, including design, eligibility, outcomes, dates and sponsor information."
+    ],
+    "limitation": "Current documented scope is identifier lookup; historical search implementation is not included. Unofficial shared-gateway adapter; no live trial call or complete international coverage verified. Static documentation review only; candidate code was not installed or executed.",
+    "url": "https://github.com/pipeworx-io/mcp-anzctr",
+    "primarySourceURLs": [
+      "https://github.com/pipeworx-io/mcp-anzctr/blob/main/README.md"
+    ],
+    "primaryBlobSHA": "521261ffd9deaf77d22d928e3f74d17348972ef4",
+    "primaryRetrievedAt": "2026-10-13T04:48:20.750514+00:00",
+    "primaryTextSHA256": "e37cb7c2a9c3e663579f27f8f3018dc023c5987e479d4ef70f17c12f3eb377c5",
+    "license": "MIT",
+    "repositoryLastPush": "2026-10-09T23:10:13Z",
+    "publicSourceVerified": true,
+    "publicSourceVerifiedAt": "2026-10-13T05:11:24.382736+00:00",
+    "relevance": {
+      "id": "RWE-6946",
+      "decision": "Core",
+      "rationale": "Pipeworx ANZCTR Trial Lookup: Documents retrieval of a full ANZCTR trial registration by ACTRN, including design, eligibility, outcomes, dates and sponsor information. Inclusion is limited to this documented health-research, evidence-synthesis or specific statistical-method function.",
+      "relevanceBasis": "Documents retrieval of a full ANZCTR trial registration by ACTRN, including design, eligibility, outcomes, dates and sponsor information.",
+      "evidenceLevel": "fresh-primary",
+      "evidenceRefs": [
+        "https://github.com/pipeworx-io/mcp-anzctr/blob/main/README.md"
+      ],
+      "reviewGroup": "october-discovery-refresh",
+      "reviewedAt": "2026-10-12"
+    }
+  },
+  {
+    "id": "RWE-6947",
+    "name": "Pipeworx EU CTIS",
+    "kind": "MCP gateway component",
+    "category": "Trials & Study Design",
+    "summary": "Documents EU/EEA CTIS trial search, record details, medicine-specific listings and recent authorizations.",
+    "tags": [
+      "Trials & Study Design",
+      "Documentation reviewed"
+    ],
+    "added": "Oct 12, 2026",
+    "checked": "Oct 12, 2026",
+    "status": "Static documentation reviewed · scoped capability",
+    "runtime": "Not independently runtime tested",
+    "repository": "pipeworx-io/mcp-eu-ctis",
+    "website": "GitHub",
+    "packages": "Only the documented components described in this card were reviewed.",
+    "workflowFit": [
+      "Trials & Study Design"
+    ],
+    "capabilities": [
+      "Documents EU/EEA CTIS trial search, record details, medicine-specific listings and recent authorizations."
+    ],
+    "limitation": "Unofficial adapter to the public CTIS interface. Published fields, paging and authorization dates differ from results evidence; shared gateway tools are outside this component's scope. Static documentation review only; candidate code was not installed or executed.",
+    "url": "https://github.com/pipeworx-io/mcp-eu-ctis",
+    "primarySourceURLs": [
+      "https://github.com/pipeworx-io/mcp-eu-ctis/blob/main/README.md"
+    ],
+    "primaryBlobSHA": "7f80b742000a81834539f3ec82f7e4fb5756aed9",
+    "primaryRetrievedAt": "2026-10-13T04:48:21.469714+00:00",
+    "primaryTextSHA256": "67ce2221409784bc4baafe58f27deeb55cbb0b5b8de5fd23b26cbb53bfaaff62",
+    "license": "MIT",
+    "repositoryLastPush": "2026-09-25T23:50:39Z",
+    "publicSourceVerified": true,
+    "publicSourceVerifiedAt": "2026-10-13T05:11:24.160796+00:00",
+    "relevance": {
+      "id": "RWE-6947",
+      "decision": "Core",
+      "rationale": "Pipeworx EU CTIS: Documents EU/EEA CTIS trial search, record details, medicine-specific listings and recent authorizations. Inclusion is limited to this documented health-research, evidence-synthesis or specific statistical-method function.",
+      "relevanceBasis": "Documents EU/EEA CTIS trial search, record details, medicine-specific listings and recent authorizations.",
+      "evidenceLevel": "fresh-primary",
+      "evidenceRefs": [
+        "https://github.com/pipeworx-io/mcp-eu-ctis/blob/main/README.md"
+      ],
+      "reviewGroup": "october-discovery-refresh",
+      "reviewedAt": "2026-10-12"
+    }
+  },
+  {
+    "id": "RWE-6948",
+    "name": "Pipeworx ISRCTN",
+    "kind": "MCP gateway component",
+    "category": "Trials & Study Design",
+    "summary": "Documents ISRCTN registry search and trial-record retrieval for UK and international registered studies.",
+    "tags": [
+      "Trials & Study Design",
+      "Documentation reviewed"
+    ],
+    "added": "Oct 12, 2026",
+    "checked": "Oct 12, 2026",
+    "status": "Static documentation reviewed · scoped capability",
+    "runtime": "Not independently runtime tested",
+    "repository": "pipeworx-io/mcp-isrctn",
+    "website": "GitHub",
+    "packages": "Only the documented components described in this card were reviewed.",
+    "workflowFit": [
+      "Trials & Study Design"
+    ],
+    "capabilities": [
+      "Documents ISRCTN registry search and trial-record retrieval for UK and international registered studies."
+    ],
+    "limitation": "Unofficial adapter. Registry coverage, source updates, query translation and cross-registry duplicate reconciliation need checking; sibling gateway components are not approved by this record. Static documentation review only; candidate code was not installed or executed.",
+    "url": "https://github.com/pipeworx-io/mcp-isrctn",
+    "primarySourceURLs": [
+      "https://github.com/pipeworx-io/mcp-isrctn/blob/main/README.md"
+    ],
+    "primaryBlobSHA": "c2c8ddc8f9f521ab408172adcda228f97265439f",
+    "primaryRetrievedAt": "2026-10-13T04:48:20.090889+00:00",
+    "primaryTextSHA256": "9c0fc0a7d6af8ee6bde21368febc93453b4900f93701e82c8ce379be526528a8",
+    "license": "MIT",
+    "repositoryLastPush": "2026-10-09T23:14:26Z",
+    "publicSourceVerified": true,
+    "publicSourceVerifiedAt": "2026-10-13T05:11:24.113193+00:00",
+    "relevance": {
+      "id": "RWE-6948",
+      "decision": "Core",
+      "rationale": "Pipeworx ISRCTN: Documents ISRCTN registry search and trial-record retrieval for UK and international registered studies. Inclusion is limited to this documented health-research, evidence-synthesis or specific statistical-method function.",
+      "relevanceBasis": "Documents ISRCTN registry search and trial-record retrieval for UK and international registered studies.",
+      "evidenceLevel": "fresh-primary",
+      "evidenceRefs": [
+        "https://github.com/pipeworx-io/mcp-isrctn/blob/main/README.md"
+      ],
+      "reviewGroup": "october-discovery-refresh",
+      "reviewedAt": "2026-10-12"
+    }
+  },
+  {
+    "id": "RWE-6949",
+    "name": "Pipeworx WHO ICTRP",
+    "kind": "MCP gateway component",
+    "category": "Trials & Study Design",
+    "summary": "Documents cross-registry ICTRP search and trial-registration-data retrieval with source registry and trial identifiers.",
+    "tags": [
+      "Trials & Study Design",
+      "Documentation reviewed"
+    ],
+    "added": "Oct 12, 2026",
+    "checked": "Oct 12, 2026",
+    "status": "Static documentation reviewed · scoped capability",
+    "runtime": "Not independently runtime tested",
+    "repository": "pipeworx-io/mcp-who-ictrp",
+    "website": "GitHub",
+    "packages": "Only the documented components described in this card were reviewed.",
+    "workflowFit": [
+      "Trials & Study Design"
+    ],
+    "capabilities": [
+      "Documents cross-registry ICTRP search and trial-registration-data retrieval with source registry and trial identifiers."
+    ],
+    "limitation": "Unofficial integration. Aggregate registries can contain duplicate and delayed registrations; availability, anti-bot behavior and record completeness were not tested. Static documentation review only; candidate code was not installed or executed.",
+    "url": "https://github.com/pipeworx-io/mcp-who-ictrp",
+    "primarySourceURLs": [
+      "https://github.com/pipeworx-io/mcp-who-ictrp/blob/main/README.md"
+    ],
+    "primaryBlobSHA": "33d46a704ac622e5afab3c838152d598d35dfe9d",
+    "primaryRetrievedAt": "2026-10-13T04:48:21.462548+00:00",
+    "primaryTextSHA256": "b2e3afaacafeed34654861a549d88cfb0a78ace7bac39cfc9c8d113cbac5b47d",
+    "license": "MIT",
+    "repositoryLastPush": "2026-10-10T05:03:43Z",
+    "publicSourceVerified": true,
+    "publicSourceVerifiedAt": "2026-10-13T05:11:24.421768+00:00",
+    "relevance": {
+      "id": "RWE-6949",
+      "decision": "Core",
+      "rationale": "Pipeworx WHO ICTRP: Documents cross-registry ICTRP search and trial-registration-data retrieval with source registry and trial identifiers. Inclusion is limited to this documented health-research, evidence-synthesis or specific statistical-method function.",
+      "relevanceBasis": "Documents cross-registry ICTRP search and trial-registration-data retrieval with source registry and trial identifiers.",
+      "evidenceLevel": "fresh-primary",
+      "evidenceRefs": [
+        "https://github.com/pipeworx-io/mcp-who-ictrp/blob/main/README.md"
+      ],
+      "reviewGroup": "october-discovery-refresh",
+      "reviewedAt": "2026-10-12"
+    }
+  },
+  {
+    "id": "RWE-6950",
+    "name": "Statistical Agent Skills — causal review",
+    "kind": "Agent skill collection",
+    "category": "Causal Inference & Analytics",
+    "summary": "Documents estimand-first review of causal identification, propensity methods, overlap, experiments and Bayesian-model diagnostics.",
+    "tags": [
+      "Causal Inference & Analytics",
+      "Documentation reviewed"
+    ],
+    "added": "Oct 12, 2026",
+    "checked": "Oct 12, 2026",
+    "status": "Static documentation reviewed · scoped capability",
+    "runtime": "Not independently runtime tested",
+    "repository": "pitcany/statistical-agent-skills",
+    "website": "GitHub",
+    "packages": "Only the documented components described in this card were reviewed.",
+    "workflowFit": [
+      "Causal Inference & Analytics"
+    ],
+    "capabilities": [
+      "Documents estimand-first review of causal identification, propensity methods, overlap, experiments and Bayesian-model diagnostics."
+    ],
+    "limitation": "Retain named statistical-method review components only; advertising optimization, generic production workflows and proof review are outside this inclusion. Model critique is not numerical or methodological validation. Static documentation review only; candidate code was not installed or executed.",
+    "url": "https://github.com/pitcany/statistical-agent-skills",
+    "primarySourceURLs": [
+      "https://github.com/pitcany/statistical-agent-skills/blob/main/README.md"
+    ],
+    "primaryBlobSHA": "f4406713ee37c563dcf4465388ed0f347876dd8f",
+    "primaryRetrievedAt": "2026-10-13T04:48:58.506477+00:00",
+    "primaryTextSHA256": "39bdd250de9180ddbd8c35143b495ac9a43a1a0f9d81c249a709ba9c68ab7f84",
+    "license": "MIT",
+    "repositoryLastPush": "2026-09-20T06:06:58Z",
+    "publicSourceVerified": true,
+    "publicSourceVerifiedAt": "2026-10-13T05:11:24.484780+00:00",
+    "relevance": {
+      "id": "RWE-6950",
+      "decision": "Core",
+      "rationale": "Statistical Agent Skills — causal review: Documents estimand-first review of causal identification, propensity methods, overlap, experiments and Bayesian-model diagnostics. Inclusion is limited to this documented health-research, evidence-synthesis or specific statistical-method function.",
+      "relevanceBasis": "Documents estimand-first review of causal identification, propensity methods, overlap, experiments and Bayesian-model diagnostics.",
+      "evidenceLevel": "fresh-primary",
+      "evidenceRefs": [
+        "https://github.com/pitcany/statistical-agent-skills/blob/main/README.md"
+      ],
+      "reviewGroup": "october-discovery-refresh",
+      "reviewedAt": "2026-10-12"
+    }
+  },
+  {
+    "id": "RWE-6951",
+    "name": "Zetesis — clinical evidence tools",
+    "kind": "MCP server & agent skills",
+    "category": "Literature & Evidence Synthesis",
+    "summary": "Documents clinical-trial and RWE claim review with evidence retrieval from Europe PMC, ClinicalTrials.gov and openFDA, including date-bounded evidence queries.",
+    "tags": [
+      "Literature & Evidence Synthesis",
+      "Documentation reviewed"
+    ],
+    "added": "Oct 12, 2026",
+    "checked": "Oct 12, 2026",
+    "status": "Static documentation reviewed · scoped capability",
+    "runtime": "Not independently runtime tested",
+    "repository": "reutavidan/zetesis-plugin",
+    "website": "GitHub",
+    "packages": "Only the documented components described in this card were reviewed.",
+    "workflowFit": [
+      "Literature & Evidence Synthesis"
+    ],
+    "capabilities": [
+      "Documents clinical-trial and RWE claim review with evidence retrieval from Europe PMC, ClinicalTrials.gov and openFDA, including date-bounded evidence queries."
+    ],
+    "limitation": "Scope is the named health-evidence components. Hosted grading, signed-record verification, performance and privacy claims were not independently tested; other claim classes are not included. Static documentation review only; candidate code was not installed or executed.",
+    "url": "https://github.com/reutavidan/zetesis-plugin",
+    "primarySourceURLs": [
+      "https://github.com/reutavidan/zetesis-plugin/blob/main/README.md"
+    ],
+    "primaryBlobSHA": "8bd5bd46824168ddb20e3f66d214457600597e1e",
+    "primaryRetrievedAt": "2026-10-13T04:48:02.922244+00:00",
+    "primaryTextSHA256": "4fd7549a168c6fa86362f8fa757c2be37ca1597cea62412a22341b79c2edd092",
+    "license": "MIT",
+    "repositoryLastPush": "2026-09-08T14:07:18Z",
+    "publicSourceVerified": true,
+    "publicSourceVerifiedAt": "2026-10-13T05:11:24.568437+00:00",
+    "relevance": {
+      "id": "RWE-6951",
+      "decision": "Core",
+      "rationale": "Zetesis — clinical evidence tools: Documents clinical-trial and RWE claim review with evidence retrieval from Europe PMC, ClinicalTrials.gov and openFDA, including date-bounded evidence queries. Inclusion is limited to this documented health-research, evidence-synthesis or specific statistical-method function.",
+      "relevanceBasis": "Documents clinical-trial and RWE claim review with evidence retrieval from Europe PMC, ClinicalTrials.gov and openFDA, including date-bounded evidence queries.",
+      "evidenceLevel": "fresh-primary",
+      "evidenceRefs": [
+        "https://github.com/reutavidan/zetesis-plugin/blob/main/README.md"
+      ],
+      "reviewGroup": "october-discovery-refresh",
+      "reviewedAt": "2026-10-12"
+    }
+  },
+  {
+    "id": "RWE-6952",
+    "name": "OneAquaHealth Agent Gateway — health indicators",
+    "kind": "MCP server",
+    "category": "Public Health & Epidemiology",
+    "summary": "Documents FHIR-based population-health indicator retrieval with units, source references and deterministic integrity checks alongside environmental context.",
+    "tags": [
+      "Public Health & Epidemiology",
+      "Documentation reviewed"
+    ],
+    "added": "Oct 12, 2026",
+    "checked": "Oct 12, 2026",
+    "status": "Static documentation reviewed · scoped capability",
+    "runtime": "Not independently runtime tested",
+    "repository": "Ruthwik10/oah-agent-gateway",
+    "website": "GitHub",
+    "packages": "Only the documented components described in this card were reviewed.",
+    "workflowFit": [
+      "Public Health & Epidemiology"
+    ],
+    "capabilities": [
+      "Documents FHIR-based population-health indicator retrieval with units, source references and deterministic integrity checks alongside environmental context."
+    ],
+    "limitation": "Retain population-health indicators and their linked integrity checks only. Environmental measurements alone do not establish Core relevance or human-health effects; sandbox quality claims were not independently reproduced. Static documentation review only; candidate code was not installed or executed.",
+    "url": "https://github.com/Ruthwik10/oah-agent-gateway",
+    "primarySourceURLs": [
+      "https://github.com/Ruthwik10/oah-agent-gateway/blob/master/README.md"
+    ],
+    "primaryBlobSHA": "79c28d5e7ae801c9e01864454c3f5a75e2dd0a6b",
+    "primaryRetrievedAt": "2026-10-13T04:48:14.073106+00:00",
+    "primaryTextSHA256": "da2e37a00e59a68e76e82f28a1eca56ef5071cb87cd4465c9ccd1c83764e6446",
+    "license": "NOASSERTION",
+    "repositoryLastPush": "2026-10-05T02:30:39Z",
+    "publicSourceVerified": true,
+    "publicSourceVerifiedAt": "2026-10-13T05:11:24.567273+00:00",
+    "relevance": {
+      "id": "RWE-6952",
+      "decision": "Core",
+      "rationale": "OneAquaHealth Agent Gateway — health indicators: Documents FHIR-based population-health indicator retrieval with units, source references and deterministic integrity checks alongside environmental context. Inclusion is limited to this documented health-research, evidence-synthesis or specific statistical-method function.",
+      "relevanceBasis": "Documents FHIR-based population-health indicator retrieval with units, source references and deterministic integrity checks alongside environmental context.",
+      "evidenceLevel": "fresh-primary",
+      "evidenceRefs": [
+        "https://github.com/Ruthwik10/oah-agent-gateway/blob/master/README.md"
+      ],
+      "reviewGroup": "october-discovery-refresh",
+      "reviewedAt": "2026-10-12"
+    }
+  },
+  {
+    "id": "RWE-6953",
+    "name": "CMS Healthcare Data MCP",
+    "kind": "MCP server",
+    "category": "RWE Data & Analytics",
+    "summary": "Documents parameterized queries for CMS HCC risk scores, hospital readmissions, MIPS quality and Part D utilization, with an embedded demonstration mode.",
+    "tags": [
+      "RWE Data & Analytics",
+      "Documentation reviewed"
+    ],
+    "added": "Oct 12, 2026",
+    "checked": "Oct 12, 2026",
+    "status": "Static documentation reviewed · scoped capability",
+    "runtime": "Not independently runtime tested",
+    "repository": "SaeMind/mcp-server-for-cms-healthcare-data-tools",
+    "website": "GitHub",
+    "packages": "Only the documented components described in this card were reviewed.",
+    "workflowFit": [
+      "RWE Data & Analytics"
+    ],
+    "capabilities": [
+      "Documents parameterized queries for CMS HCC risk scores, hospital readmissions, MIPS quality and Part D utilization, with an embedded demonstration mode."
+    ],
+    "limitation": "Demo data are distinct from populated production CMS tables. Database setup, freshness, denominators, API access and query correctness were not independently tested. Static documentation review only; candidate code was not installed or executed.",
+    "url": "https://github.com/SaeMind/mcp-server-for-cms-healthcare-data-tools",
+    "primarySourceURLs": [
+      "https://github.com/SaeMind/mcp-server-for-cms-healthcare-data-tools/blob/main/README.md"
+    ],
+    "primaryBlobSHA": "ef16dee8a9c54a95ea3fe375adb4c056879c57d1",
+    "primaryRetrievedAt": "2026-10-13T04:49:08.409337+00:00",
+    "primaryTextSHA256": "a8673f9a29ae577924d015dd67f86381fed31c29f2dd30915286bb29335afdca",
+    "license": "Not declared",
+    "repositoryLastPush": "2026-09-03T00:46:46Z",
+    "publicSourceVerified": true,
+    "publicSourceVerifiedAt": "2026-10-13T05:11:24.661920+00:00",
+    "relevance": {
+      "id": "RWE-6953",
+      "decision": "Core",
+      "rationale": "CMS Healthcare Data MCP: Documents parameterized queries for CMS HCC risk scores, hospital readmissions, MIPS quality and Part D utilization, with an embedded demonstration mode. Inclusion is limited to this documented health-research, evidence-synthesis or specific statistical-method function.",
+      "relevanceBasis": "Documents parameterized queries for CMS HCC risk scores, hospital readmissions, MIPS quality and Part D utilization, with an embedded demonstration mode.",
+      "evidenceLevel": "fresh-primary",
+      "evidenceRefs": [
+        "https://github.com/SaeMind/mcp-server-for-cms-healthcare-data-tools/blob/main/README.md"
+      ],
+      "reviewGroup": "october-discovery-refresh",
+      "reviewedAt": "2026-10-12"
+    }
+  },
+  {
+    "id": "RWE-6954",
+    "name": "LitSearch II",
+    "kind": "MCP server",
+    "category": "Literature & Evidence Synthesis",
+    "summary": "Documents PubMed/Europe PMC and wider scholarly search, citation chaining, open-access full text, ClinicalTrials.gov lookup and bibliography exports.",
+    "tags": [
+      "Literature & Evidence Synthesis",
+      "Documentation reviewed"
+    ],
+    "added": "Oct 12, 2026",
+    "checked": "Oct 12, 2026",
+    "status": "Static documentation reviewed · scoped capability",
+    "runtime": "Not independently runtime tested",
+    "repository": "seun-john/litsearch-ii",
+    "website": "GitHub",
+    "packages": "Only the documented components described in this card were reviewed.",
+    "workflowFit": [
+      "Literature & Evidence Synthesis"
+    ],
+    "capabilities": [
+      "Documents PubMed/Europe PMC and wider scholarly search, citation chaining, open-access full text, ClinicalTrials.gov lookup and bibliography exports."
+    ],
+    "limitation": "Public providers impose distinct coverage and rate limits; offline mock tests do not establish live correctness. Search ranking and deduplication do not guarantee exhaustive evidence capture. Static documentation review only; candidate code was not installed or executed.",
+    "url": "https://github.com/seun-john/litsearch-ii",
+    "primarySourceURLs": [
+      "https://github.com/seun-john/litsearch-ii/blob/main/README.md"
+    ],
+    "primaryBlobSHA": "1486daf5d028c60bde86ea68d8baaa246b0243e5",
+    "primaryRetrievedAt": "2026-10-13T04:48:43.789941+00:00",
+    "primaryTextSHA256": "058db9def20913fd138f396db64a5daa886528bb22b4e0e5f6ba521066440f64",
+    "license": "MIT",
+    "repositoryLastPush": "2026-10-07T19:38:10Z",
+    "publicSourceVerified": true,
+    "publicSourceVerifiedAt": "2026-10-13T05:11:24.729620+00:00",
+    "relevance": {
+      "id": "RWE-6954",
+      "decision": "Core",
+      "rationale": "LitSearch II: Documents PubMed/Europe PMC and wider scholarly search, citation chaining, open-access full text, ClinicalTrials.gov lookup and bibliography exports. Inclusion is limited to this documented health-research, evidence-synthesis or specific statistical-method function.",
+      "relevanceBasis": "Documents PubMed/Europe PMC and wider scholarly search, citation chaining, open-access full text, ClinicalTrials.gov lookup and bibliography exports.",
+      "evidenceLevel": "fresh-primary",
+      "evidenceRefs": [
+        "https://github.com/seun-john/litsearch-ii/blob/main/README.md"
+      ],
+      "reviewGroup": "october-discovery-refresh",
+      "reviewedAt": "2026-10-12"
+    }
+  },
+  {
+    "id": "RWE-6955",
+    "name": "FHIRconnect Mapping Skills",
+    "kind": "Agent skill collection",
+    "category": "Clinical Data & Interoperability",
+    "summary": "Documents skills for drafting, linting and testing bidirectional openEHR/FHIR mappings, with path-extraction helpers and an engine test harness.",
+    "tags": [
+      "Clinical Data & Interoperability",
+      "Documentation reviewed"
+    ],
+    "added": "Oct 12, 2026",
+    "checked": "Oct 12, 2026",
+    "status": "Static documentation reviewed · scoped capability",
+    "runtime": "Not independently runtime tested",
+    "repository": "SevKohler/FHIRconnectTools",
+    "website": "GitHub",
+    "packages": "Only the documented components described in this card were reviewed.",
+    "workflowFit": [
+      "Clinical Data & Interoperability"
+    ],
+    "capabilities": [
+      "Documents skills for drafting, linting and testing bidirectional openEHR/FHIR mappings, with path-extraction helpers and an engine test harness."
+    ],
+    "limitation": "Mapping is beta and draft/testing workflows are alpha; the author reports mock-engine testing for the testing skill. Scope excludes the separate IDE plugin and assumes no clinical mapping validation. Static documentation review only; candidate code was not installed or executed.",
+    "url": "https://github.com/SevKohler/FHIRconnectTools",
+    "primarySourceURLs": [
+      "https://github.com/SevKohler/FHIRconnectTools/blob/main/README.md"
+    ],
+    "primaryBlobSHA": "58c4fc028744edc0dabaa90dbc3fd5462cf01bb8",
+    "primaryRetrievedAt": "2026-10-13T04:48:15.319218+00:00",
+    "primaryTextSHA256": "e0eb38b9ac1d89211c217284e4672de634b2ed3bc2e038ea382d9b751e6760f3",
+    "license": "Not declared",
+    "repositoryLastPush": "2026-10-02T16:20:36Z",
+    "publicSourceVerified": true,
+    "publicSourceVerifiedAt": "2026-10-13T05:11:24.760463+00:00",
+    "relevance": {
+      "id": "RWE-6955",
+      "decision": "Core",
+      "rationale": "FHIRconnect Mapping Skills: Documents skills for drafting, linting and testing bidirectional openEHR/FHIR mappings, with path-extraction helpers and an engine test harness. Inclusion is limited to this documented health-research, evidence-synthesis or specific statistical-method function.",
+      "relevanceBasis": "Documents skills for drafting, linting and testing bidirectional openEHR/FHIR mappings, with path-extraction helpers and an engine test harness.",
+      "evidenceLevel": "fresh-primary",
+      "evidenceRefs": [
+        "https://github.com/SevKohler/FHIRconnectTools/blob/main/README.md"
+      ],
+      "reviewGroup": "october-discovery-refresh",
+      "reviewedAt": "2026-10-12"
+    }
+  },
+  {
+    "id": "RWE-6956",
+    "name": "Econometric Data Pipeline Skill — causal methods",
+    "kind": "Agent skill",
+    "category": "Causal Inference & Analytics",
+    "summary": "Documents panel-data, difference-in-differences, instrumental-variable and double-machine-learning workflows with estimand, merge and provenance checks.",
+    "tags": [
+      "Causal Inference & Analytics",
+      "Documentation reviewed"
+    ],
+    "added": "Oct 12, 2026",
+    "checked": "Oct 12, 2026",
+    "status": "Static documentation reviewed · scoped capability",
+    "runtime": "Not independently runtime tested",
+    "repository": "Snailfarts24/econ-data-pipeline",
+    "website": "GitHub",
+    "packages": "Only the documented components described in this card were reviewed.",
+    "workflowFit": [
+      "Causal Inference & Analytics"
+    ],
+    "capabilities": [
+      "Documents panel-data, difference-in-differences, instrumental-variable and double-machine-learning workflows with estimand, merge and provenance checks."
+    ],
+    "limitation": "Retain the specific statistical-method workflow rather than generic data engineering. Identification, dependence, estimator implementation and uncertainty require study-specific review. Static documentation review only; candidate code was not installed or executed.",
+    "url": "https://github.com/Snailfarts24/econ-data-pipeline",
+    "primarySourceURLs": [
+      "https://github.com/Snailfarts24/econ-data-pipeline/blob/main/README.md"
+    ],
+    "primaryBlobSHA": "db739e334397b6ebacbd7fb18b53c2033484bf2e",
+    "primaryRetrievedAt": "2026-10-13T04:48:57.332865+00:00",
+    "primaryTextSHA256": "3c513d84d92bf0b7c9d1a27065d2c34608f86a13aae184de9e76114437c7886c",
+    "license": "Not declared",
+    "repositoryLastPush": "2026-10-13T03:37:01Z",
+    "publicSourceVerified": true,
+    "publicSourceVerifiedAt": "2026-10-13T05:11:24.848848+00:00",
+    "relevance": {
+      "id": "RWE-6956",
+      "decision": "Core",
+      "rationale": "Econometric Data Pipeline Skill — causal methods: Documents panel-data, difference-in-differences, instrumental-variable and double-machine-learning workflows with estimand, merge and provenance checks. Inclusion is limited to this documented health-research, evidence-synthesis or specific statistical-method function.",
+      "relevanceBasis": "Documents panel-data, difference-in-differences, instrumental-variable and double-machine-learning workflows with estimand, merge and provenance checks.",
+      "evidenceLevel": "fresh-primary",
+      "evidenceRefs": [
+        "https://github.com/Snailfarts24/econ-data-pipeline/blob/main/README.md"
+      ],
+      "reviewGroup": "october-discovery-refresh",
+      "reviewedAt": "2026-10-12"
+    }
+  },
+  {
+    "id": "RWE-6957",
+    "name": "Open Health Sync — released MCP interface",
+    "kind": "MCP server & research infrastructure",
+    "category": "Clinical Data & Interoperability",
+    "summary": "Documents self-hosted Apple Health and Withings ingestion and read-only MCP access to normalized wearable/health records in release 0.0.2.",
+    "tags": [
+      "Clinical Data & Interoperability",
+      "Documentation reviewed"
+    ],
+    "added": "Oct 12, 2026",
+    "checked": "Oct 12, 2026",
+    "status": "Static documentation reviewed · scoped capability",
+    "runtime": "Not independently runtime tested",
+    "repository": "soma-intelligence/open-health-sync",
+    "website": "GitHub",
+    "packages": "Only the documented components described in this card were reviewed.",
+    "workflowFit": [
+      "Clinical Data & Interoperability"
+    ],
+    "capabilities": [
+      "Documents self-hosted Apple Health and Withings ingestion and read-only MCP access to normalized wearable/health records in release 0.0.2."
+    ],
+    "limitation": "FHIR output and additional wearable connectors are described as future-release work and are excluded here. Device measurements, consent, normalization and backend security were not independently verified. Static documentation review only; candidate code was not installed or executed.",
+    "url": "https://github.com/soma-intelligence/open-health-sync",
+    "primarySourceURLs": [
+      "https://github.com/soma-intelligence/open-health-sync/blob/main/README.md"
+    ],
+    "primaryBlobSHA": "8602397f0b251ab90d68a98afa20fadb05ce332f",
+    "primaryRetrievedAt": "2026-10-13T04:48:15.093509+00:00",
+    "primaryTextSHA256": "b99099a805f0b8371a16937d53b506dc5159ecaecd34e819fd57ac9df8c7714f",
+    "license": "AGPL-3.0",
+    "repositoryLastPush": "2026-10-13T04:47:42Z",
+    "publicSourceVerified": true,
+    "publicSourceVerifiedAt": "2026-10-13T05:11:25.003391+00:00",
+    "relevance": {
+      "id": "RWE-6957",
+      "decision": "Core",
+      "rationale": "Open Health Sync — released MCP interface: Documents self-hosted Apple Health and Withings ingestion and read-only MCP access to normalized wearable/health records in release 0.0.2. Inclusion is limited to this documented health-research, evidence-synthesis or specific statistical-method function.",
+      "relevanceBasis": "Documents self-hosted Apple Health and Withings ingestion and read-only MCP access to normalized wearable/health records in release 0.0.2.",
+      "evidenceLevel": "fresh-primary",
+      "evidenceRefs": [
+        "https://github.com/soma-intelligence/open-health-sync/blob/main/README.md"
+      ],
+      "reviewGroup": "october-discovery-refresh",
+      "reviewedAt": "2026-10-12"
+    }
+  },
+  {
+    "id": "RWE-6958",
+    "name": "Clinical Trials MCP — REDCap and eligibility SQL",
+    "kind": "MCP server",
+    "category": "Trials & Study Design",
+    "summary": "Documents REDCap data-dictionary checks and protocol-derived OMOP eligibility SQL with criterion-to-query traceability and unresolved criteria marked for review.",
+    "tags": [
+      "Trials & Study Design",
+      "Documentation reviewed"
+    ],
+    "added": "Oct 12, 2026",
+    "checked": "Oct 12, 2026",
+    "status": "Static documentation reviewed · scoped capability",
+    "runtime": "Not independently runtime tested",
+    "repository": "SpiroGanas/Clinical-Trials-MCP",
+    "website": "GitHub",
+    "packages": "Only the documented components described in this card were reviewed.",
+    "workflowFit": [
+      "Trials & Study Design"
+    ],
+    "capabilities": [
+      "Documents REDCap data-dictionary checks and protocol-derived OMOP eligibility SQL with criterion-to-query traceability and unresolved criteria marked for review."
+    ],
+    "limitation": "SQL generation does not connect to a patient database or establish correct eligibility. Generated code, protocol extraction and REDCap compatibility require independent checking. Static documentation review only; candidate code was not installed or executed.",
+    "url": "https://github.com/SpiroGanas/Clinical-Trials-MCP",
+    "primarySourceURLs": [
+      "https://github.com/SpiroGanas/Clinical-Trials-MCP/blob/main/README.md"
+    ],
+    "primaryBlobSHA": "aa036264e7f4a3bef2073c42633b47ba78c3f848",
+    "primaryRetrievedAt": "2026-10-13T04:48:20.075813+00:00",
+    "primaryTextSHA256": "0b4012756229c51b3490bcf61f1d14dd90bafa09d8d3208b8683116ce0bd2684",
+    "license": "Not declared",
+    "repositoryLastPush": "2026-10-12T01:58:32Z",
+    "publicSourceVerified": true,
+    "publicSourceVerifiedAt": "2026-10-13T05:11:24.963769+00:00",
+    "relevance": {
+      "id": "RWE-6958",
+      "decision": "Core",
+      "rationale": "Clinical Trials MCP — REDCap and eligibility SQL: Documents REDCap data-dictionary checks and protocol-derived OMOP eligibility SQL with criterion-to-query traceability and unresolved criteria marked for review. Inclusion is limited to this documented health-research, evidence-synthesis or specific statistical-method function.",
+      "relevanceBasis": "Documents REDCap data-dictionary checks and protocol-derived OMOP eligibility SQL with criterion-to-query traceability and unresolved criteria marked for review.",
+      "evidenceLevel": "fresh-primary",
+      "evidenceRefs": [
+        "https://github.com/SpiroGanas/Clinical-Trials-MCP/blob/main/README.md"
+      ],
+      "reviewGroup": "october-discovery-refresh",
+      "reviewedAt": "2026-10-12"
+    }
+  },
+  {
+    "id": "RWE-6959",
+    "name": "ReviewFast Screening Skill and Tool",
+    "kind": "Agent skill & research tool",
+    "category": "Literature & Evidence Synthesis",
+    "summary": "Documents title/abstract screening ranked by a decision model, with a statistical stopping rule and review-state handling.",
+    "tags": [
+      "Literature & Evidence Synthesis",
+      "Documentation reviewed"
+    ],
+    "added": "Oct 12, 2026",
+    "checked": "Oct 12, 2026",
+    "status": "Static documentation reviewed · scoped capability",
+    "runtime": "Not independently runtime tested",
+    "repository": "taehojo/reviewfast",
+    "website": "GitHub",
+    "packages": "Only the documented components described in this card were reviewed.",
+    "workflowFit": [
+      "Literature & Evidence Synthesis"
+    ],
+    "capabilities": [
+      "Documents title/abstract screening ranked by a decision model, with a statistical stopping rule and review-state handling."
+    ],
+    "limitation": "Stopping guarantees depend on the sampling and relevance assumptions of the stated method. Model calibration, recall, search coverage and review-specific performance were not independently evaluated. Static documentation review only; candidate code was not installed or executed.",
+    "url": "https://github.com/taehojo/reviewfast",
+    "primarySourceURLs": [
+      "https://github.com/taehojo/reviewfast/blob/main/README.md"
+    ],
+    "primaryBlobSHA": "31cebfb9b4dc07e6557a2e5cd860d11dfd2a0095",
+    "primaryRetrievedAt": "2026-10-13T04:48:52.082130+00:00",
+    "primaryTextSHA256": "0f4a53e85e54a2fc6772fcf351284d062d7ba37e14b01e2af1e85ddedb781621",
+    "license": "Apache-2.0",
+    "repositoryLastPush": "2026-10-08T15:59:44Z",
+    "publicSourceVerified": true,
+    "publicSourceVerifiedAt": "2026-10-13T05:11:25.075591+00:00",
+    "relevance": {
+      "id": "RWE-6959",
+      "decision": "Core",
+      "rationale": "ReviewFast Screening Skill and Tool: Documents title/abstract screening ranked by a decision model, with a statistical stopping rule and review-state handling. Inclusion is limited to this documented health-research, evidence-synthesis or specific statistical-method function.",
+      "relevanceBasis": "Documents title/abstract screening ranked by a decision model, with a statistical stopping rule and review-state handling.",
+      "evidenceLevel": "fresh-primary",
+      "evidenceRefs": [
+        "https://github.com/taehojo/reviewfast/blob/main/README.md"
+      ],
+      "reviewGroup": "october-discovery-refresh",
+      "reviewedAt": "2026-10-12"
+    }
+  },
+  {
+    "id": "RWE-6960",
+    "name": "Systematic Review Evidence-Packet Skill",
+    "kind": "Agent skill",
+    "category": "Literature & Evidence Synthesis",
+    "summary": "Documents full-text claim/evidence extraction, structured classification and multi-reviewer voting packets with schema and identity checks.",
+    "tags": [
+      "Literature & Evidence Synthesis",
+      "Documentation reviewed"
+    ],
+    "added": "Oct 12, 2026",
+    "checked": "Oct 12, 2026",
+    "status": "Static documentation reviewed · scoped capability",
+    "runtime": "Not independently runtime tested",
+    "repository": "Tan28092006/systematic-review",
+    "website": "GitHub",
+    "packages": "Only the documented components described in this card were reviewed.",
+    "workflowFit": [
+      "Literature & Evidence Synthesis"
+    ],
+    "capabilities": [
+      "Documents full-text claim/evidence extraction, structured classification and multi-reviewer voting packets with schema and identity checks."
+    ],
+    "limitation": "Model votes are not independent human review. Synthetic fixtures verify packet structure rather than source truth; the described paper-based workflow needs review-specific validation. Static documentation review only; candidate code was not installed or executed.",
+    "url": "https://github.com/Tan28092006/systematic-review",
+    "primarySourceURLs": [
+      "https://github.com/Tan28092006/systematic-review/blob/main/README.md"
+    ],
+    "primaryBlobSHA": "f4cef14eefe0eb15675c459852ed0cdd1d4749ee",
+    "primaryRetrievedAt": "2026-10-13T04:48:52.758978+00:00",
+    "primaryTextSHA256": "e492c6e92a735b01becccb56ca606f8af64658776b0f15a27909c1c8c5859db9",
+    "license": "Not declared",
+    "repositoryLastPush": "2026-10-04T11:51:06Z",
+    "publicSourceVerified": true,
+    "publicSourceVerifiedAt": "2026-10-13T05:11:25.319565+00:00",
+    "relevance": {
+      "id": "RWE-6960",
+      "decision": "Core",
+      "rationale": "Systematic Review Evidence-Packet Skill: Documents full-text claim/evidence extraction, structured classification and multi-reviewer voting packets with schema and identity checks. Inclusion is limited to this documented health-research, evidence-synthesis or specific statistical-method function.",
+      "relevanceBasis": "Documents full-text claim/evidence extraction, structured classification and multi-reviewer voting packets with schema and identity checks.",
+      "evidenceLevel": "fresh-primary",
+      "evidenceRefs": [
+        "https://github.com/Tan28092006/systematic-review/blob/main/README.md"
+      ],
+      "reviewGroup": "october-discovery-refresh",
+      "reviewedAt": "2026-10-12"
+    }
+  },
+  {
+    "id": "RWE-6961",
+    "name": "Schema Crush — clinical FHIR mapping",
+    "kind": "MCP tools & research library",
+    "category": "Clinical Data & Interoperability",
+    "summary": "Documents biomedical-column profiling and clinical FHIR schema matching using curated mappings, embeddings and optional model-assisted review.",
+    "tags": [
+      "Clinical Data & Interoperability",
+      "Documentation reviewed"
+    ],
+    "added": "Oct 12, 2026",
+    "checked": "Oct 12, 2026",
+    "status": "Static documentation reviewed · scoped capability",
+    "runtime": "Not independently runtime tested",
+    "repository": "teslajoy/schema_crush",
+    "website": "GitHub",
+    "packages": "Only the documented components described in this card were reviewed.",
+    "workflowFit": [
+      "Clinical Data & Interoperability"
+    ],
+    "capabilities": [
+      "Documents biomedical-column profiling and clinical FHIR schema matching using curated mappings, embeddings and optional model-assisted review."
+    ],
+    "limitation": "Retain clinical schema matching, not molecular-only analyses. Suggested mappings and calibration do not establish semantic equivalence or production transformation validity. Static documentation review only; candidate code was not installed or executed.",
+    "url": "https://github.com/teslajoy/schema_crush",
+    "primarySourceURLs": [
+      "https://github.com/teslajoy/schema_crush/blob/main/README.md"
+    ],
+    "primaryBlobSHA": "15226e7cf06eb3eed994f87b2d9ba97c5f981827",
+    "primaryRetrievedAt": "2026-10-13T04:48:12.139394+00:00",
+    "primaryTextSHA256": "c8059483896c3b62fb5fb71fc616711633d9e05347afefd27cd648bc184589c7",
+    "license": "MIT",
+    "repositoryLastPush": "2026-09-16T15:06:47Z",
+    "publicSourceVerified": true,
+    "publicSourceVerifiedAt": "2026-10-13T05:11:25.349447+00:00",
+    "relevance": {
+      "id": "RWE-6961",
+      "decision": "Core",
+      "rationale": "Schema Crush — clinical FHIR mapping: Documents biomedical-column profiling and clinical FHIR schema matching using curated mappings, embeddings and optional model-assisted review. Inclusion is limited to this documented health-research, evidence-synthesis or specific statistical-method function.",
+      "relevanceBasis": "Documents biomedical-column profiling and clinical FHIR schema matching using curated mappings, embeddings and optional model-assisted review.",
+      "evidenceLevel": "fresh-primary",
+      "evidenceRefs": [
+        "https://github.com/teslajoy/schema_crush/blob/main/README.md"
+      ],
+      "reviewGroup": "october-discovery-refresh",
+      "reviewedAt": "2026-10-12"
+    }
+  },
+  {
+    "id": "RWE-6962",
+    "name": "Phở Research Tools",
+    "kind": "MCP server & agent skill",
+    "category": "Literature & Evidence Synthesis",
+    "summary": "Documents PubMed/OpenAlex search, citation verification, retraction checking, bibliography formatting and PRISMA count/diagram tools.",
+    "tags": [
+      "Literature & Evidence Synthesis",
+      "Documentation reviewed"
+    ],
+    "added": "Oct 12, 2026",
+    "checked": "Oct 12, 2026",
+    "status": "Static documentation reviewed · scoped capability",
+    "runtime": "Not independently runtime tested",
+    "repository": "thaohienhomes/pho-research-tools",
+    "website": "GitHub",
+    "packages": "Only the documented components described in this card were reviewed.",
+    "workflowFit": [
+      "Literature & Evidence Synthesis"
+    ],
+    "capabilities": [
+      "Documents PubMed/OpenAlex search, citation verification, retraction checking, bibliography formatting and PRISMA count/diagram tools."
+    ],
+    "limitation": "A resolvable identifier does not establish claim support or evidence quality. Retraction coverage, ambiguous matches, quotas and hosted-service behavior were not tested. Static documentation review only; candidate code was not installed or executed.",
+    "url": "https://github.com/thaohienhomes/pho-research-tools",
+    "primarySourceURLs": [
+      "https://github.com/thaohienhomes/pho-research-tools/blob/main/README.md"
+    ],
+    "primaryBlobSHA": "77086b26e93673c1acc5d5c81c65b1ef61d944ca",
+    "primaryRetrievedAt": "2026-10-13T04:49:08.814446+00:00",
+    "primaryTextSHA256": "5c046d7982ec0b2512d30d4fb08d2331377ec59b23f71d988fdff16d52d28913",
+    "license": "MIT",
+    "repositoryLastPush": "2026-10-12T02:34:59Z",
+    "publicSourceVerified": true,
+    "publicSourceVerifiedAt": "2026-10-13T05:11:25.363189+00:00",
+    "relevance": {
+      "id": "RWE-6962",
+      "decision": "Core",
+      "rationale": "Phở Research Tools: Documents PubMed/OpenAlex search, citation verification, retraction checking, bibliography formatting and PRISMA count/diagram tools. Inclusion is limited to this documented health-research, evidence-synthesis or specific statistical-method function.",
+      "relevanceBasis": "Documents PubMed/OpenAlex search, citation verification, retraction checking, bibliography formatting and PRISMA count/diagram tools.",
+      "evidenceLevel": "fresh-primary",
+      "evidenceRefs": [
+        "https://github.com/thaohienhomes/pho-research-tools/blob/main/README.md"
+      ],
+      "reviewGroup": "october-discovery-refresh",
+      "reviewedAt": "2026-10-12"
+    }
+  },
+  {
+    "id": "RWE-6963",
+    "name": "Zotero Scholar MCP — health literature retrieval",
+    "kind": "MCP server component",
+    "category": "Literature & Evidence Synthesis",
+    "summary": "Documents PubMed, Europe PMC and OpenAlex retrieval, merged searches, open-access section retrieval and citation checks with local-library matching.",
+    "tags": [
+      "Literature & Evidence Synthesis",
+      "Documentation reviewed"
+    ],
+    "added": "Oct 12, 2026",
+    "checked": "Oct 12, 2026",
+    "status": "Static documentation reviewed · scoped capability",
+    "runtime": "Not independently runtime tested",
+    "repository": "tiagojct/zotero-local-mcp",
+    "website": "GitHub",
+    "packages": "Only the documented components described in this card were reviewed.",
+    "workflowFit": [
+      "Literature & Evidence Synthesis"
+    ],
+    "capabilities": [
+      "Documents PubMed, Europe PMC and OpenAlex retrieval, merged searches, open-access section retrieval and citation checks with local-library matching."
+    ],
+    "limitation": "Scope is the scholar retrieval component; general library administration and editing are excluded. Local Zotero access, write defaults, matching and provider completeness were not independently checked. Static documentation review only; candidate code was not installed or executed.",
+    "url": "https://github.com/tiagojct/zotero-local-mcp",
+    "primarySourceURLs": [
+      "https://github.com/tiagojct/zotero-local-mcp/blob/main/README.md"
+    ],
+    "primaryBlobSHA": "ad054c9ceea72d2442cbba39b218651b0b9cd930",
+    "primaryRetrievedAt": "2026-10-13T04:48:41.223728+00:00",
+    "primaryTextSHA256": "d773736a4fd6fdba16fa642a9e876ab97a95038b072c3e181a88533cb118b07b",
+    "license": "MIT",
+    "repositoryLastPush": "2026-10-07T21:18:53Z",
+    "publicSourceVerified": true,
+    "publicSourceVerifiedAt": "2026-10-13T05:11:25.580012+00:00",
+    "relevance": {
+      "id": "RWE-6963",
+      "decision": "Core",
+      "rationale": "Zotero Scholar MCP — health literature retrieval: Documents PubMed, Europe PMC and OpenAlex retrieval, merged searches, open-access section retrieval and citation checks with local-library matching. Inclusion is limited to this documented health-research, evidence-synthesis or specific statistical-method function.",
+      "relevanceBasis": "Documents PubMed, Europe PMC and OpenAlex retrieval, merged searches, open-access section retrieval and citation checks with local-library matching.",
+      "evidenceLevel": "fresh-primary",
+      "evidenceRefs": [
+        "https://github.com/tiagojct/zotero-local-mcp/blob/main/README.md"
+      ],
+      "reviewGroup": "october-discovery-refresh",
+      "reviewedAt": "2026-10-12"
+    }
+  },
+  {
+    "id": "RWE-6964",
+    "name": "Biomedical Evidence MCP Suite",
+    "kind": "MCP server collection",
+    "category": "Literature & Evidence Synthesis",
+    "summary": "Documents shipped ClinicalTrials.gov, FDA labels/events/recalls/approvals and PubMed components with embedded corpora, refresh diagnostics and source-linked retrieval.",
+    "tags": [
+      "Literature & Evidence Synthesis",
+      "Documentation reviewed"
+    ],
+    "added": "Oct 12, 2026",
+    "checked": "Oct 12, 2026",
+    "status": "Static documentation reviewed · scoped capability",
+    "runtime": "Not independently runtime tested",
+    "repository": "tjromack/biomed-evidence-mcp",
+    "website": "GitHub",
+    "packages": "Only the documented components described in this card were reviewed.",
+    "workflowFit": [
+      "Literature & Evidence Synthesis"
+    ],
+    "capabilities": [
+      "Documents shipped ClinicalTrials.gov, FDA labels/events/recalls/approvals and PubMed components with embedded corpora, refresh diagnostics and source-linked retrieval."
+    ],
+    "limitation": "Embedded datasets are not complete live upstream inventories. Roadmap sources are excluded; author test counts, cross-source joins, summaries and refresh correctness were not independently verified. Static documentation review only; candidate code was not installed or executed.",
+    "url": "https://github.com/tjromack/biomed-evidence-mcp",
+    "primarySourceURLs": [
+      "https://github.com/tjromack/biomed-evidence-mcp/blob/main/README.md"
+    ],
+    "primaryBlobSHA": "00aac372619efdd9932fd1b75311c5dd8503ffa1",
+    "primaryRetrievedAt": "2026-10-13T04:48:02.036520+00:00",
+    "primaryTextSHA256": "f8fcadcb6209a05ea2ae886efc41b5886041305d304c68d4d0e3c00e1970982d",
+    "license": "MIT",
+    "repositoryLastPush": "2026-10-08T20:55:38Z",
+    "publicSourceVerified": true,
+    "publicSourceVerifiedAt": "2026-10-13T05:11:25.592306+00:00",
+    "relevance": {
+      "id": "RWE-6964",
+      "decision": "Core",
+      "rationale": "Biomedical Evidence MCP Suite: Documents shipped ClinicalTrials.gov, FDA labels/events/recalls/approvals and PubMed components with embedded corpora, refresh diagnostics and source-linked retrieval. Inclusion is limited to this documented health-research, evidence-synthesis or specific statistical-method function.",
+      "relevanceBasis": "Documents shipped ClinicalTrials.gov, FDA labels/events/recalls/approvals and PubMed components with embedded corpora, refresh diagnostics and source-linked retrieval.",
+      "evidenceLevel": "fresh-primary",
+      "evidenceRefs": [
+        "https://github.com/tjromack/biomed-evidence-mcp/blob/main/README.md"
+      ],
+      "reviewGroup": "october-discovery-refresh",
+      "reviewedAt": "2026-10-12"
+    }
+  },
+  {
+    "id": "RWE-6965",
+    "name": "Sampling and Propensity Score Skill",
+    "kind": "Agent skill",
+    "category": "Causal Inference & Analytics",
+    "summary": "Documents random/stratified sampling, binary and generalized propensity scores, overlap, balance, missingness and covariate-timing review workflows.",
+    "tags": [
+      "Causal Inference & Analytics",
+      "Documentation reviewed"
+    ],
+    "added": "Oct 12, 2026",
+    "checked": "Oct 12, 2026",
+    "status": "Static documentation reviewed · scoped capability",
+    "runtime": "Not independently runtime tested",
+    "repository": "triptidutta108/Random-Sampling-Propensity-Score-Matching-Skill",
+    "website": "GitHub",
+    "packages": "Only the documented components described in this card were reviewed.",
+    "workflowFit": [
+      "Causal Inference & Analytics"
+    ],
+    "capabilities": [
+      "Documents random/stratified sampling, binary and generalized propensity scores, overlap, balance, missingness and covariate-timing review workflows."
+    ],
+    "limitation": "Instructional workflow preserves human design decisions but cannot establish exchangeability or timing from column names. Computation and sensitivity analyses require independent statistical review. Static documentation review only; candidate code was not installed or executed.",
+    "url": "https://github.com/triptidutta108/Random-Sampling-Propensity-Score-Matching-Skill",
+    "primarySourceURLs": [
+      "https://github.com/triptidutta108/Random-Sampling-Propensity-Score-Matching-Skill/blob/main/README.md"
+    ],
+    "primaryBlobSHA": "4a302533abd8e767ad381dff072a90f134c71e84",
+    "primaryRetrievedAt": "2026-10-13T04:49:02.810361+00:00",
+    "primaryTextSHA256": "1f0eb0456b52e3f976e66a4d41d4c4cb385c93bcc55e53ec6ffe07f138d9478b",
+    "license": "MIT",
+    "repositoryLastPush": "2026-10-01T14:16:20Z",
+    "publicSourceVerified": true,
+    "publicSourceVerifiedAt": "2026-10-13T05:11:25.705272+00:00",
+    "relevance": {
+      "id": "RWE-6965",
+      "decision": "Core",
+      "rationale": "Sampling and Propensity Score Skill: Documents random/stratified sampling, binary and generalized propensity scores, overlap, balance, missingness and covariate-timing review workflows. Inclusion is limited to this documented health-research, evidence-synthesis or specific statistical-method function.",
+      "relevanceBasis": "Documents random/stratified sampling, binary and generalized propensity scores, overlap, balance, missingness and covariate-timing review workflows.",
+      "evidenceLevel": "fresh-primary",
+      "evidenceRefs": [
+        "https://github.com/triptidutta108/Random-Sampling-Propensity-Score-Matching-Skill/blob/main/README.md"
+      ],
+      "reviewGroup": "october-discovery-refresh",
+      "reviewedAt": "2026-10-12"
+    }
+  },
+  {
+    "id": "RWE-6966",
+    "name": "Librarian Search",
+    "kind": "Agent skill & research tool",
+    "category": "Literature & Evidence Synthesis",
+    "summary": "Documents medical-library-style PubMed, Europe PMC and trial searches, citation chaining and source-specific search logs with EndNote and methods outputs.",
+    "tags": [
+      "Literature & Evidence Synthesis",
+      "Documentation reviewed"
+    ],
+    "added": "Oct 12, 2026",
+    "checked": "Oct 12, 2026",
+    "status": "Static documentation reviewed · scoped capability",
+    "runtime": "Not independently runtime tested",
+    "repository": "wmyung/librarian-search",
+    "website": "GitHub",
+    "packages": "Only the documented components described in this card were reviewed.",
+    "workflowFit": [
+      "Literature & Evidence Synthesis"
+    ],
+    "capabilities": [
+      "Documents medical-library-style PubMed, Europe PMC and trial searches, citation chaining and source-specific search logs with EndNote and methods outputs."
+    ],
+    "limitation": "Reported benchmark recall is author evidence and does not transfer automatically to a new review. Provider coverage, translation and licensing constraints need checking. Static documentation review only; candidate code was not installed or executed.",
+    "url": "https://github.com/wmyung/librarian-search",
+    "primarySourceURLs": [
+      "https://github.com/wmyung/librarian-search/blob/main/README.md"
+    ],
+    "primaryBlobSHA": "1b2330a7aa526245d53a604ed3616d7489576c39",
+    "primaryRetrievedAt": "2026-10-13T04:48:50.471155+00:00",
+    "primaryTextSHA256": "2d7baa23abdbefac6e92b578b70c977a9a6509094f7c4502bae8d6c83d126816",
+    "license": "MIT",
+    "repositoryLastPush": "2026-10-11T14:18:59Z",
+    "publicSourceVerified": true,
+    "publicSourceVerifiedAt": "2026-10-13T05:11:25.786475+00:00",
+    "relevance": {
+      "id": "RWE-6966",
+      "decision": "Core",
+      "rationale": "Librarian Search: Documents medical-library-style PubMed, Europe PMC and trial searches, citation chaining and source-specific search logs with EndNote and methods outputs. Inclusion is limited to this documented health-research, evidence-synthesis or specific statistical-method function.",
+      "relevanceBasis": "Documents medical-library-style PubMed, Europe PMC and trial searches, citation chaining and source-specific search logs with EndNote and methods outputs.",
+      "evidenceLevel": "fresh-primary",
+      "evidenceRefs": [
+        "https://github.com/wmyung/librarian-search/blob/main/README.md"
+      ],
+      "reviewGroup": "october-discovery-refresh",
+      "reviewedAt": "2026-10-12"
+    }
+  },
+  {
+    "id": "RWE-6967",
+    "name": "Outbreak Watch Skill",
+    "kind": "Agent skill",
+    "category": "Public Health & Epidemiology",
+    "summary": "Documents structured outbreak-source retrieval, incident extraction and status-labeled tracking with multilingual search sweeps and a page validator.",
+    "tags": [
+      "Public Health & Epidemiology",
+      "Documentation reviewed"
+    ],
+    "added": "Oct 12, 2026",
+    "checked": "Oct 12, 2026",
+    "status": "Static documentation reviewed · scoped capability",
+    "runtime": "Not independently runtime tested",
+    "repository": "wolfgangrumpf/outbreak-watch",
+    "website": "GitHub",
+    "packages": "Only the documented components described in this card were reviewed.",
+    "workflowFit": [
+      "Public Health & Epidemiology"
+    ],
+    "capabilities": [
+      "Documents structured outbreak-source retrieval, incident extraction and status-labeled tracking with multilingual search sweeps and a page validator."
+    ],
+    "limitation": "Compiled public reporting is not official surveillance statistics or validated outbreak detection. Source verification and incident definitions require public-health review; scheduled delivery is a workflow instruction, not a built-in data feed. Static documentation review only; candidate code was not installed or executed.",
+    "url": "https://github.com/wolfgangrumpf/outbreak-watch",
+    "primarySourceURLs": [
+      "https://github.com/wolfgangrumpf/outbreak-watch/blob/main/README.md"
+    ],
+    "primaryBlobSHA": "6136e66a94fe80aed896ad597ac432ff3ab7a50e",
+    "primaryRetrievedAt": "2026-10-13T04:47:55.987323+00:00",
+    "primaryTextSHA256": "fcee818199771f77a612472414eefb7bd070981235f6dc67b54410ba04e812a1",
+    "license": "MIT",
+    "repositoryLastPush": "2026-10-06T22:55:44Z",
+    "publicSourceVerified": true,
+    "publicSourceVerifiedAt": "2026-10-13T05:11:25.746886+00:00",
+    "relevance": {
+      "id": "RWE-6967",
+      "decision": "Core",
+      "rationale": "Outbreak Watch Skill: Documents structured outbreak-source retrieval, incident extraction and status-labeled tracking with multilingual search sweeps and a page validator. Inclusion is limited to this documented health-research, evidence-synthesis or specific statistical-method function.",
+      "relevanceBasis": "Documents structured outbreak-source retrieval, incident extraction and status-labeled tracking with multilingual search sweeps and a page validator.",
+      "evidenceLevel": "fresh-primary",
+      "evidenceRefs": [
+        "https://github.com/wolfgangrumpf/outbreak-watch/blob/main/README.md"
+      ],
+      "reviewGroup": "october-discovery-refresh",
+      "reviewedAt": "2026-10-12"
+    }
+  },
+  {
+    "id": "RWE-6968",
+    "name": "Scientific Review Skill",
+    "kind": "Agent skill",
+    "category": "Literature & Evidence Synthesis",
+    "summary": "Documents PubMed-first structured searches, preprint and trial-register expansion, citation chasing, full-text verification and review audit steps.",
+    "tags": [
+      "Literature & Evidence Synthesis",
+      "Documentation reviewed"
+    ],
+    "added": "Oct 12, 2026",
+    "checked": "Oct 12, 2026",
+    "status": "Static documentation reviewed · scoped capability",
+    "runtime": "Not independently runtime tested",
+    "repository": "wuliRothschild/scientific-review",
+    "website": "GitHub",
+    "packages": "Only the documented components described in this card were reviewed.",
+    "workflowFit": [
+      "Literature & Evidence Synthesis"
+    ],
+    "capabilities": [
+      "Documents PubMed-first structured searches, preprint and trial-register expansion, citation chasing, full-text verification and review audit steps."
+    ],
+    "limitation": "Instructions describe an evidence-review process but do not establish complete retrieval or independent human screening. Reported reliability and model audit independence were not validated. Static documentation review only; candidate code was not installed or executed.",
+    "url": "https://github.com/wuliRothschild/scientific-review",
+    "primarySourceURLs": [
+      "https://github.com/wuliRothschild/scientific-review/blob/main/README.md"
+    ],
+    "primaryBlobSHA": "20703c00eebc424596f9d5354211c83b53f71976",
+    "primaryRetrievedAt": "2026-10-13T04:48:44.841057+00:00",
+    "primaryTextSHA256": "6215dfbc7603c6dfd547f9928663763f0ea46e43a3db56f13c14736a6e17b5a4",
+    "license": "Apache-2.0",
+    "repositoryLastPush": "2026-09-27T14:05:46Z",
+    "publicSourceVerified": true,
+    "publicSourceVerifiedAt": "2026-10-13T05:11:25.770035+00:00",
+    "relevance": {
+      "id": "RWE-6968",
+      "decision": "Core",
+      "rationale": "Scientific Review Skill: Documents PubMed-first structured searches, preprint and trial-register expansion, citation chasing, full-text verification and review audit steps. Inclusion is limited to this documented health-research, evidence-synthesis or specific statistical-method function.",
+      "relevanceBasis": "Documents PubMed-first structured searches, preprint and trial-register expansion, citation chasing, full-text verification and review audit steps.",
+      "evidenceLevel": "fresh-primary",
+      "evidenceRefs": [
+        "https://github.com/wuliRothschild/scientific-review/blob/main/README.md"
+      ],
+      "reviewGroup": "october-discovery-refresh",
+      "reviewedAt": "2026-10-12"
+    }
+  },
+  {
+    "id": "RWE-6969",
+    "name": "Thesis Retrieval — PubMed component",
+    "kind": "Agent skill & research tool",
+    "category": "Literature & Evidence Synthesis",
+    "summary": "Documents multi-source scholarly retrieval including PubMed, identifier deduplication, sorting and structured exports.",
+    "tags": [
+      "Literature & Evidence Synthesis",
+      "Documentation reviewed"
+    ],
+    "added": "Oct 12, 2026",
+    "checked": "Oct 12, 2026",
+    "status": "Static documentation reviewed · scoped capability",
+    "runtime": "Not independently runtime tested",
+    "repository": "Xun477/thesis-retrieval",
+    "website": "GitHub",
+    "packages": "Only the documented components described in this card were reviewed.",
+    "workflowFit": [
+      "Literature & Evidence Synthesis"
+    ],
+    "capabilities": [
+      "Documents multi-source scholarly retrieval including PubMed, identifier deduplication, sorting and structured exports."
+    ],
+    "limitation": "Retain biomedical retrieval only. Subscription databases, screenshot/OCR fallback, journal rankings and provider credentials have separate coverage and rights constraints; no live retrieval tested. Static documentation review only; candidate code was not installed or executed.",
+    "url": "https://github.com/Xun477/thesis-retrieval",
+    "primarySourceURLs": [
+      "https://github.com/Xun477/thesis-retrieval/blob/main/README.md"
+    ],
+    "primaryBlobSHA": "ec6437b7c86f1c1d59cc12ce16284abdf38c4934",
+    "primaryRetrievedAt": "2026-10-13T04:48:50.478992+00:00",
+    "primaryTextSHA256": "4a0a9983776b0309b0c6e29a67c54a8405edb4029df3bbb4ffe39bfa2ebde70c",
+    "license": "MIT",
+    "repositoryLastPush": "2026-09-17T14:49:06Z",
+    "publicSourceVerified": true,
+    "publicSourceVerifiedAt": "2026-10-13T05:11:25.925169+00:00",
+    "relevance": {
+      "id": "RWE-6969",
+      "decision": "Core",
+      "rationale": "Thesis Retrieval — PubMed component: Documents multi-source scholarly retrieval including PubMed, identifier deduplication, sorting and structured exports. Inclusion is limited to this documented health-research, evidence-synthesis or specific statistical-method function.",
+      "relevanceBasis": "Documents multi-source scholarly retrieval including PubMed, identifier deduplication, sorting and structured exports.",
+      "evidenceLevel": "fresh-primary",
+      "evidenceRefs": [
+        "https://github.com/Xun477/thesis-retrieval/blob/main/README.md"
+      ],
+      "reviewGroup": "october-discovery-refresh",
+      "reviewedAt": "2026-10-12"
+    }
+  },
+  {
+    "id": "RWE-6970",
+    "name": "Medical Research Skills",
+    "kind": "Agent skill collection",
+    "category": "Literature & Evidence Synthesis",
+    "summary": "Documents literature search/screen/extract workflows and an oncology trial/FDA extraction scaffold with provenance templates and consistency validation.",
+    "tags": [
+      "Literature & Evidence Synthesis",
+      "Documentation reviewed"
+    ],
+    "added": "Oct 12, 2026",
+    "checked": "Oct 12, 2026",
+    "status": "Static documentation reviewed · scoped capability",
+    "runtime": "Not independently runtime tested",
+    "repository": "yostboy6/medical-literature-review",
+    "website": "GitHub",
+    "packages": "Only the documented components described in this card were reviewed.",
+    "workflowFit": [
+      "Literature & Evidence Synthesis"
+    ],
+    "capabilities": [
+      "Documents literature search/screen/extract workflows and an oncology trial/FDA extraction scaffold with provenance templates and consistency validation."
+    ],
+    "limitation": "Packaged examples are fictional and the validator checks consistency rather than source truth. The scaffold is not a collected cohort or a completed meta-analysis; human extraction and adjudication remain required. Static documentation review only; candidate code was not installed or executed.",
+    "url": "https://github.com/yostboy6/medical-literature-review",
+    "primarySourceURLs": [
+      "https://github.com/yostboy6/medical-literature-review/blob/main/README.md"
+    ],
+    "primaryBlobSHA": "5e52ff96934506d7b101e858dce0571d5e816148",
+    "primaryRetrievedAt": "2026-10-13T04:48:56.530826+00:00",
+    "primaryTextSHA256": "37add59abc82401f4d4f60247da39c44f75f9d8734bb7b9ff62a3d1dde73402f",
+    "license": "Not declared",
+    "repositoryLastPush": "2026-10-12T23:32:32Z",
+    "publicSourceVerified": true,
+    "publicSourceVerifiedAt": "2026-10-13T05:11:26.084055+00:00",
+    "relevance": {
+      "id": "RWE-6970",
+      "decision": "Core",
+      "rationale": "Medical Research Skills: Documents literature search/screen/extract workflows and an oncology trial/FDA extraction scaffold with provenance templates and consistency validation. Inclusion is limited to this documented health-research, evidence-synthesis or specific statistical-method function.",
+      "relevanceBasis": "Documents literature search/screen/extract workflows and an oncology trial/FDA extraction scaffold with provenance templates and consistency validation.",
+      "evidenceLevel": "fresh-primary",
+      "evidenceRefs": [
+        "https://github.com/yostboy6/medical-literature-review/blob/main/README.md"
+      ],
+      "reviewGroup": "october-discovery-refresh",
+      "reviewedAt": "2026-10-12"
+    }
+  },
+  {
+    "id": "RWE-6971",
+    "name": "Epidemiology Disease-Modelling Skill",
+    "kind": "Agent skill & research library",
+    "category": "Public Health & Epidemiology",
+    "summary": "Documents a local Python disease-spread modelling module with a data loader and an interface for agent invocation.",
+    "tags": [
+      "Public Health & Epidemiology",
+      "Documentation reviewed"
+    ],
+    "added": "Oct 12, 2026",
+    "checked": "Oct 12, 2026",
+    "status": "Static documentation reviewed · scoped capability",
+    "runtime": "Not independently runtime tested",
+    "repository": "Yashshah97/epidemiology-agent-skill",
+    "website": "GitHub",
+    "packages": "Only the documented components described in this card were reviewed.",
+    "workflowFit": [
+      "Public Health & Epidemiology"
+    ],
+    "capabilities": [
+      "Documents a local Python disease-spread modelling module with a data loader and an interface for agent invocation."
+    ],
+    "limitation": "Documentation and author test claims do not establish epidemiologic adequacy. Model equations, calibration, population assumptions and predictive validity were not independently reviewed. Static documentation review only; candidate code was not installed or executed.",
+    "url": "https://github.com/Yashshah97/epidemiology-agent-skill",
+    "primarySourceURLs": [
+      "https://github.com/Yashshah97/epidemiology-agent-skill/blob/main/README.md"
+    ],
+    "primaryBlobSHA": "e6d2b92be2835228303105e5ba9b29f1db4dde99",
+    "primaryRetrievedAt": "2026-10-13T04:47:54.813937+00:00",
+    "primaryTextSHA256": "7726c31983766618162399b1218bd5690ecb179427e96edfd83d2431680f1b96",
+    "license": "NOASSERTION",
+    "repositoryLastPush": "2026-09-15T23:21:48Z",
+    "publicSourceVerified": true,
+    "publicSourceVerifiedAt": "2026-10-13T05:11:26.245134+00:00",
+    "relevance": {
+      "id": "RWE-6971",
+      "decision": "Core",
+      "rationale": "Epidemiology Disease-Modelling Skill: Documents a local Python disease-spread modelling module with a data loader and an interface for agent invocation. Inclusion is limited to this documented health-research, evidence-synthesis or specific statistical-method function.",
+      "relevanceBasis": "Documents a local Python disease-spread modelling module with a data loader and an interface for agent invocation.",
+      "evidenceLevel": "fresh-primary",
+      "evidenceRefs": [
+        "https://github.com/Yashshah97/epidemiology-agent-skill/blob/main/README.md"
+      ],
+      "reviewGroup": "october-discovery-refresh",
+      "reviewedAt": "2026-10-12"
+    }
+  },
+  {
+    "id": "RWE-6972",
+    "name": "Paper Preflight — bibliographic verification",
+    "kind": "MCP server & research tool",
+    "category": "Literature & Evidence Synthesis",
+    "summary": "Documents reference checks for LaTeX, BibTeX and PDF inputs against scholarly metadata including PubMed, with read-only MCP access.",
+    "tags": [
+      "Literature & Evidence Synthesis",
+      "Documentation reviewed"
+    ],
+    "added": "Oct 12, 2026",
+    "checked": "Oct 12, 2026",
+    "status": "Static documentation reviewed · scoped capability",
+    "runtime": "Not independently runtime tested",
+    "repository": "amos689/paper-preflight",
+    "website": "GitHub",
+    "packages": "Only the documented components described in this card were reviewed.",
+    "workflowFit": [
+      "Literature & Evidence Synthesis"
+    ],
+    "capabilities": [
+      "Documents reference checks for LaTeX, BibTeX and PDF inputs against scholarly metadata including PubMed, with read-only MCP access."
+    ],
+    "limitation": "Bibliographic matching does not establish that a paper supports a claim. Parsing, ambiguous records and provider coverage were not independently tested. Static documentation review only; candidate code was not installed or executed.",
+    "url": "https://github.com/amos689/paper-preflight",
+    "primarySourceURLs": [
+      "https://github.com/amos689/paper-preflight/blob/main/README.md"
+    ],
+    "primaryBlobSHA": "1eee15295e5e9e303f9d0735cbf6cdf42b408626",
+    "primaryRetrievedAt": "2026-10-13T04:58:03.892457+00:00",
+    "primaryTextSHA256": "4a5c0805f641cea31a4e5cf3f10a8d652fd55f9624c76d931abd0f8a5b9e2832",
+    "license": "MIT",
+    "repositoryLastPush": "2026-10-09T07:08:44Z",
+    "publicSourceVerified": true,
+    "publicSourceVerifiedAt": "2026-10-13T05:11:26.547514+00:00",
+    "relevance": {
+      "id": "RWE-6972",
+      "decision": "Core",
+      "rationale": "Paper Preflight — bibliographic verification: Documents reference checks for LaTeX, BibTeX and PDF inputs against scholarly metadata including PubMed, with read-only MCP access. Inclusion is limited to this documented health-research, evidence-synthesis or specific statistical-method function.",
+      "relevanceBasis": "Documents reference checks for LaTeX, BibTeX and PDF inputs against scholarly metadata including PubMed, with read-only MCP access.",
+      "evidenceLevel": "fresh-primary",
+      "evidenceRefs": [
+        "https://github.com/amos689/paper-preflight/blob/main/README.md"
+      ],
+      "reviewGroup": "october-discovery-refresh",
+      "reviewedAt": "2026-10-12"
+    }
+  },
+  {
+    "id": "RWE-6973",
+    "name": "CDISC Library MCP",
+    "kind": "MCP server",
+    "category": "OMOP & terminology",
+    "summary": "Documents retrieval of CDISC standards metadata, controlled-terminology packages, codelists and Biomedical Concepts through the CDISC Library API.",
+    "tags": [
+      "OMOP & terminology",
+      "Documentation reviewed"
+    ],
+    "added": "Oct 12, 2026",
+    "checked": "Oct 12, 2026",
+    "status": "Static documentation reviewed · scoped capability",
+    "runtime": "Not independently runtime tested",
+    "repository": "pendingintent/cdisc-library-mcp-server",
+    "website": "GitHub",
+    "packages": "Only the documented components described in this card were reviewed.",
+    "workflowFit": [
+      "OMOP & terminology"
+    ],
+    "capabilities": [
+      "Documents retrieval of CDISC standards metadata, controlled-terminology packages, codelists and Biomedical Concepts through the CDISC Library API."
+    ],
+    "limitation": "Requires a CDISC Library account/API key. Metadata retrieval does not validate a submission dataset or establish correct mapping to a study-specific CDISC standard. Static documentation review only; candidate code was not installed or executed.",
+    "url": "https://github.com/pendingintent/cdisc-library-mcp-server",
+    "primarySourceURLs": [
+      "https://github.com/pendingintent/cdisc-library-mcp-server/blob/main/README.md"
+    ],
+    "primaryBlobSHA": "13671748f45edda5c0dedb1c6655dd6b0b87a051",
+    "primaryRetrievedAt": "2026-10-13T04:49:52.751454+00:00",
+    "primaryTextSHA256": "76a13d3c9afdf94a0b4f45f9b8b40afe70f18fbcc5ac5afe55ac6624b61def55",
+    "license": "MIT",
+    "repositoryLastPush": "2026-09-22T20:03:33Z",
+    "publicSourceVerified": true,
+    "publicSourceVerifiedAt": "2026-10-13T05:11:28.073952+00:00",
+    "relevance": {
+      "id": "RWE-6973",
+      "decision": "Core",
+      "rationale": "CDISC Library MCP: Documents retrieval of CDISC standards metadata, controlled-terminology packages, codelists and Biomedical Concepts through the CDISC Library API. Inclusion is limited to this documented health-research, evidence-synthesis or specific statistical-method function.",
+      "relevanceBasis": "Documents retrieval of CDISC standards metadata, controlled-terminology packages, codelists and Biomedical Concepts through the CDISC Library API.",
+      "evidenceLevel": "fresh-primary",
+      "evidenceRefs": [
+        "https://github.com/pendingintent/cdisc-library-mcp-server/blob/main/README.md"
+      ],
+      "reviewGroup": "october-discovery-refresh",
+      "reviewedAt": "2026-10-12"
+    }
+  },
+  {
+    "id": "RWE-6974",
+    "name": "Recall Radar — medicine and device component",
+    "kind": "MCP server",
+    "category": "Regulatory & Product Data",
+    "summary": "Documents FDA medicine and medical-device recall retrieval and EMA medicine-shortage lookup with source URLs and dates.",
+    "tags": [
+      "Regulatory & Product Data",
+      "Documentation reviewed"
+    ],
+    "added": "Oct 12, 2026",
+    "checked": "Oct 12, 2026",
+    "status": "Static documentation reviewed · scoped capability",
+    "runtime": "Not independently runtime tested",
+    "repository": "MGrin/recall-radar-mcp",
+    "website": "GitHub",
+    "packages": "Only the documented components described in this card were reviewed.",
+    "workflowFit": [
+      "Regulatory & Product Data"
+    ],
+    "capabilities": [
+      "Documents FDA medicine and medical-device recall retrieval and EMA medicine-shortage lookup with source URLs and dates."
+    ],
+    "limitation": "Scope excludes general household/product recall tools. The smart-display front end is simulated and has not been connected to Alexa; source freshness and live MCP outputs were not tested. Static documentation review only; candidate code was not installed or executed.",
+    "url": "https://github.com/MGrin/recall-radar-mcp",
+    "primarySourceURLs": [
+      "https://github.com/MGrin/recall-radar-mcp/blob/main/README.md"
+    ],
+    "primaryBlobSHA": "d943c0e96c73248ec534cdc31e20de48a8a926ed",
+    "primaryRetrievedAt": "2026-10-13T04:49:52.755107+00:00",
+    "primaryTextSHA256": "40acf8cb5d14e65267a2fdda9cceebe4470a040120f1d6d72f3c89be0bd75e25",
+    "license": "MIT",
+    "repositoryLastPush": "2026-10-04T05:10:24Z",
+    "publicSourceVerified": true,
+    "publicSourceVerifiedAt": "2026-10-13T05:11:27.213568+00:00",
+    "relevance": {
+      "id": "RWE-6974",
+      "decision": "Core",
+      "rationale": "Recall Radar — medicine and device component: Documents FDA medicine and medical-device recall retrieval and EMA medicine-shortage lookup with source URLs and dates. Inclusion is limited to this documented health-research, evidence-synthesis or specific statistical-method function.",
+      "relevanceBasis": "Documents FDA medicine and medical-device recall retrieval and EMA medicine-shortage lookup with source URLs and dates.",
+      "evidenceLevel": "fresh-primary",
+      "evidenceRefs": [
+        "https://github.com/MGrin/recall-radar-mcp/blob/main/README.md"
+      ],
+      "reviewGroup": "october-discovery-refresh",
+      "reviewedAt": "2026-10-12"
+    }
+  },
+  {
+    "id": "RWE-6975",
+    "name": "Open Quality MCP",
+    "kind": "MCP server & research corpus",
+    "category": "RWE Data & Analytics",
+    "summary": "Documents read-only discovery and retrieval of versioned healthcare quality-measure packages, including CQL/SQL/SQL-on-FHIR artifacts and implementation questions.",
+    "tags": [
+      "RWE Data & Analytics",
+      "Documentation reviewed"
+    ],
+    "added": "Oct 12, 2026",
+    "checked": "Oct 12, 2026",
+    "status": "Static documentation reviewed · scoped capability",
+    "runtime": "Not independently runtime tested",
+    "repository": "FHIR-IQ/openquality",
+    "website": "GitHub",
+    "packages": "Only the documented components described in this card were reviewed.",
+    "workflowFit": [
+      "RWE Data & Analytics"
+    ],
+    "capabilities": [
+      "Documents read-only discovery and retrieval of versioned healthcare quality-measure packages, including CQL/SQL/SQL-on-FHIR artifacts and implementation questions."
+    ],
+    "limitation": "A measure corpus is distinct from a validated measure engine. Included artifacts, interpretation notes and test cases require version-specific review; execution against clinical data was not tested. Static documentation review only; candidate code was not installed or executed.",
+    "url": "https://github.com/FHIR-IQ/openquality",
+    "primarySourceURLs": [
+      "https://github.com/FHIR-IQ/openquality/blob/main/README.md"
+    ],
+    "primaryBlobSHA": "f49f42bd34584b9f89e570312d1bb5478b2b1f3a",
+    "primaryRetrievedAt": "2026-10-13T04:58:05.448671+00:00",
+    "primaryTextSHA256": "5d2e752317679c919a5e23448ca04376c51cd4577a2e69e350b4b591dc2a322d",
+    "license": "MIT",
+    "repositoryLastPush": "2026-10-12T21:47:00Z",
+    "publicSourceVerified": true,
+    "publicSourceVerifiedAt": "2026-10-13T05:11:26.495398+00:00",
+    "relevance": {
+      "id": "RWE-6975",
+      "decision": "Core",
+      "rationale": "Open Quality MCP: Documents read-only discovery and retrieval of versioned healthcare quality-measure packages, including CQL/SQL/SQL-on-FHIR artifacts and implementation questions. Inclusion is limited to this documented health-research, evidence-synthesis or specific statistical-method function.",
+      "relevanceBasis": "Documents read-only discovery and retrieval of versioned healthcare quality-measure packages, including CQL/SQL/SQL-on-FHIR artifacts and implementation questions.",
+      "evidenceLevel": "fresh-primary",
+      "evidenceRefs": [
+        "https://github.com/FHIR-IQ/openquality/blob/main/README.md"
+      ],
+      "reviewGroup": "october-discovery-refresh",
+      "reviewedAt": "2026-10-12"
+    }
+  }
+]
