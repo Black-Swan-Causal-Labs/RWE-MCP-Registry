@@ -1,0 +1,17 @@
+{
+  "runDate": "2026-10-12",
+  "status": "Discovery complete",
+  "newCoreCards": 62,
+  "coreTotal": 4280,
+  "candidateDispositions": {
+    "Excluded": 17,
+    "Included": 62,
+    "Held": 88,
+    "Existing": 5
+  },
+  "githubQueries": 64,
+  "smitheryQueries": 32,
+  "officialPages": 216,
+  "officialUpdateRecords": 21514,
+  "indexedDirectoryQueries": 20
+}

@@ -1,16 +1,17 @@
 {
-  "asOf": "2026-09-08",
-  "totalReviewed": 6227,
+  "asOf": "2026-10-12",
+  "totalReviewed": 6289,
   "historicalHold": 1,
   "counts": {
-    "Core": 4218,
+    "Core": 4280,
     "Archive": 2008,
     "Borderline": 1
   },
   "evidenceLevels": {
     "published-card": 6195,
-    "fresh-primary": 24,
+    "fresh-primary": 86,
     "retained-primary": 8
   },
-  "basis": "Individual relevance review of recorded capabilities and limitations, with explicitly identified source follow-ups. No new discovery stopping-rule claim and no runtime testing."
+  "basis": "September 8 individual relevance audit plus October 12 new-card documentation review. Historical review/check dates are unchanged. No exhaustive inventory, renewed whole-catalogue source audit or runtime validation is claimed.",
+  "historicalRelevanceAsOf": "2026-09-08"
 }

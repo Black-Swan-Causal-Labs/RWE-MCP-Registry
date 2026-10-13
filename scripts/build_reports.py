@@ -95,3 +95,4 @@ def build(name, title, subtitle):
 if __name__=='__main__':
     build('relevance-audit-2026-09-08','RWE relevance audit','September 8, 2026 | Core catalogue, discovery archive and borderline review')
     build('search-coverage-2026-09-07','Search coverage and remaining work','September 7-8, 2026 | Historical discovery campaign and documented coverage limits')
+    build('search-refresh-2026-10-12','Registry discovery refresh','October 12, 2026 | New searches, scoped additions and outstanding candidate reviews')
