@@ -72,7 +72,7 @@
       "Companion skill guides appraisal from retrieved precedents",
       "Hosted navigator and HTTP action provide additional access to the corpus"
     ],
-    "limitation": "Some corpus records are marked Needs manual review. Precedent retrieval does not establish regulatory acceptance of a proposed design. Documentation states appraisal design text and returned precedents are logged; review data handling before submitting confidential designs. Unaffiliated with Black Swan Causal Labs. Static documentation review only; code was not installed or executed.",
+    "limitation": "Some corpus records are marked Needs manual review. Precedent retrieval does not establish regulatory acceptance of a proposed design. Documentation states appraisal design text and returned precedents are logged; review data handling before submitting confidential designs. Static documentation review only; code was not installed or executed.",
     "url": "https://github.com/sajankhosla/Reg4RWE",
     "favorite": false,
     "primarySourceURLs": [
