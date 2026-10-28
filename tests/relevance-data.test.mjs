@@ -6,6 +6,7 @@ const summary=read('data/relevance-summary.json');
 const historical=read('data/historical-relevance.json');
 const expanded=read('data/reviewed-search-completion-2026-09-07.json');
 const refreshed=read('data/reviewed-refresh-2026-10-12.json');
+const additions=read('data/reviewed-additions-2026-10-27.json');
 const audit=read('public-data/relevance-audit-2026-09-08.json');
 test('every published capability has exactly one auditable relevance decision',()=>{
  const all=[...Object.values(historical),...expanded.map(c=>c.relevance)];
@@ -29,7 +30,7 @@ test('adjacent disaster discoveries remain available outside core',()=>{
 });
 test('website data contains only core records while the audit and workbook retain the full history',()=>{
  const browser=read('public/data/core-catalogue.json');
- assert.deepEqual(browser,[...expanded.filter(c=>c.relevance.decision==='Core'),...refreshed]);
+ assert.deepEqual(browser,[...expanded.filter(c=>c.relevance.decision==='Core'),...refreshed,...additions]);
  assert.equal(browser.length+Object.values(historical).filter(r=>r.decision==='Core').length,summary.counts.Core);
  assert.equal(fs.existsSync(new URL('../public/data/reviewed-search-completion-2026-09-07.json',import.meta.url)),false);
  assert.equal(fs.existsSync(new URL('../public/public-data/relevance-audit-2026-09-08.json',import.meta.url)),false);
@@ -47,7 +48,22 @@ test('refresh cards have unique stable identities and dated primary evidence wit
   assert.equal(c.runtime,'Not independently runtime tested');
   assert.equal(c.publicSourceVerified,true);
  }
- assert.equal(summary.counts.Core,audit.counts.Core+refreshed.length);
- assert.equal(summary.totalReviewed,audit.totalReviewed+refreshed.length);
+ assert.equal(summary.counts.Core,audit.counts.Core+refreshed.length+additions.length);
+ assert.equal(summary.totalReviewed,audit.totalReviewed+refreshed.length+additions.length);
  assert.equal(summary.historicalRelevanceAsOf,audit.asOf);
+});
+test('requested regulatory additions preserve ownership and hybrid resource types',()=>{
+ assert.equal(additions.length,2);
+ const intel=additions.find(c=>c.name==='RegIntel-MCP');
+ const reg4rwe=additions.find(c=>c.name==='Reg4RWE');
+ assert.equal(intel.favorite,true);
+ assert.equal(reg4rwe.favorite,false);
+ for(const c of additions){
+  assert.equal(c.category,'Regulatory & Product Data');
+  assert.equal(c.relevance.reviewedAt,'2026-10-27');
+  assert.equal(c.relevance.decision,'Core');
+  assert.equal(c.runtime,'Not independently runtime tested');
+  assert.ok(c.primarySourceURLs.includes(c.url+'/blob/main/README.md'));
+  assert.ok(!refreshed.some(old=>old.id===c.id||old.url===c.url));
+ }
 });

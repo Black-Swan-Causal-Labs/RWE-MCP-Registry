@@ -6,7 +6,7 @@ The public registry is available at [black-swan-causal-labs.github.io/RWE-MCP-Re
 
 ## Browse the catalogue
 
-The website shows **4,280 core capability records** after the October 12, 2026 discovery refresh: the September relevance audit's 4,218 core records plus 62 documentation-reviewed additions. Search by source, method or workflow, then combine the **Resource type** and **RWE category** filters. Resource types include MCP servers and components, skills and collections, agents and workflows, research tools and libraries, benchmarks, and other interfaces. Hybrid entries appear under each applicable type; these groups are not mutually exclusive counts of unique servers.
+The website shows **4,282 core capability records** after two requested regulatory additions on October 27, 2026: the September relevance audit's 4,218 core records plus 62 October 12 documentation-reviewed additions and RegIntel-MCP and Reg4RWE. Search by source, method or workflow, then combine the **Resource type** and **RWE category** filters. Resource types include MCP servers and components, skills and collections, agents and workflows, research tools and libraries, benchmarks, and other interfaces. Hybrid entries appear under each applicable type; these groups are not mutually exclusive counts of unique servers.
 
 Expand a card to see documented capabilities, workflow fit, limitations, review dates and source links. The **2,008 archived records**, **one borderline record**, and **one historical hold** remain in the workbook rather than the website catalogue.
 

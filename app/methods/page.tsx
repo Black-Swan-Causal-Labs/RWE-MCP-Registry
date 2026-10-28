@@ -20,12 +20,12 @@ export default function MethodsPage() {
     <section className="methods-hero">
       <div className="eyebrow"><span>Methods appendix</span><span>October discovery refresh</span></div>
       <h1>How we search<br /><i>the landscape.</i></h1>
-      <div className="methods-intro"><p>A living search protocol and a record of completed discovery and review work for real-world evidence tooling.</p><p>Updated October 12, 2026 · {relevanceSummary.counts.Core.toLocaleString()} core cards · Static source review with documented coverage limits.</p></div>
+      <div className="methods-intro"><p>A living search protocol and a record of completed discovery and review work for real-world evidence tooling.</p><p>Updated October 27, 2026 · {relevanceSummary.counts.Core.toLocaleString()} core cards · Static source review with documented coverage limits.</p></div>
     </section>
 
     <section className="decision-rules" id="october-refresh">
       <div><span className="kicker">October 12 discovery refresh</span><h2>Fresh searches.<br />Scoped additions.</h2></div>
-      <div><p>The new discovery wave added {refreshSummary.newCoreCards} documentation-reviewed capability records. The current catalogue contains {relevanceSummary.counts.Core.toLocaleString()} core records across servers, skills, components and workflows.</p>
+      <div><p>The October 12 discovery wave added {refreshSummary.newCoreCards} documentation-reviewed capability records. Two requested regulatory entries, RegIntel-MCP and Reg4RWE, were added after primary-documentation review on October 27. The current catalogue contains {relevanceSummary.counts.Core.toLocaleString()} core records across servers, skills, components and workflows.</p>
       <p>Completed discovery includes {refreshSummary.githubQueries} GitHub repository searches, {refreshSummary.smitheryQueries} Smithery queries, {refreshSummary.indexedDirectoryQueries} indexed-directory searches, and {refreshSummary.officialPages} pages from the Official MCP Registry update feed. The feed returned {refreshSummary.officialUpdateRecords.toLocaleString()} latest-version update observations since September 7; this is not a count of new RWE tools or a fresh full baseline harvest.</p>
       <p>{refreshSummary.candidateDispositions.Held} candidate identities remain held for first-party identity, distinctness or component follow-up. They are outside the catalogue and separate from the historical Borderline record. The wave does not claim exhaustive coverage or a new two-round stopping result. Historical card review dates remain unchanged; new records state documentation-only review and no independent runtime testing.</p>
       <p><a href={`${basePath}/public-data/search-refresh-2026-10-12.pdf`} download>Download the October refresh report (PDF) ↓</a> · <a href={`${basePath}/public-data/search-refresh-2026-10-12.json`}>Queries and candidate decisions (JSON) ↗</a></p></div>

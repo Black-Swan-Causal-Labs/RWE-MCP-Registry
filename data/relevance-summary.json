@@ -1,17 +1,17 @@
 {
-  "asOf": "2026-10-12",
-  "totalReviewed": 6289,
+  "asOf": "2026-10-27",
+  "totalReviewed": 6291,
   "historicalHold": 1,
   "counts": {
-    "Core": 4280,
+    "Core": 4282,
     "Archive": 2008,
     "Borderline": 1
   },
   "evidenceLevels": {
     "published-card": 6195,
-    "fresh-primary": 86,
+    "fresh-primary": 88,
     "retained-primary": 8
   },
-  "basis": "September 8 individual relevance audit plus October 12 new-card documentation review. Historical review/check dates are unchanged. No exhaustive inventory, renewed whole-catalogue source audit or runtime validation is claimed.",
+  "basis": "September 8 individual relevance audit plus October 12 new-card documentation review. Historical review/check dates are unchanged. No exhaustive inventory, renewed whole-catalogue source audit or runtime validation is claimed. October 27: two requested regulatory entries added after primary-documentation review.",
   "historicalRelevanceAsOf": "2026-09-08"
 }

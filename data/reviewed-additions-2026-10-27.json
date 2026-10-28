@@ -1,0 +1,94 @@
+[
+  {
+    "id": "RWE-6976",
+    "name": "RegIntel-MCP",
+    "kind": "MCP server + skills + workflow",
+    "category": "Regulatory & Product Data",
+    "summary": "FDA docket retrieval, comment-corpus export and draft-to-final guidance comparison for regulatory RWE research.",
+    "tags": [
+      "Regulations.gov",
+      "FDA guidance",
+      "Docket Lens"
+    ],
+    "added": "Oct 27, 2026",
+    "checked": "Oct 27, 2026",
+    "status": "Static documentation reviewed",
+    "runtime": "Not independently runtime tested",
+    "repository": "Black-Swan-Causal-Labs/regintel-mcp",
+    "website": "GitHub",
+    "packages": "regintel-mcp and companion skills",
+    "workflowFit": [
+      "Regulatory evidence review",
+      "RWE study planning"
+    ],
+    "capabilities": [
+      "Search dockets and retrieve documents, comments and attachment text",
+      "Build and export cached comment corpora",
+      "Compare draft and final guidance by section; companion skills support human-reviewed thematic and concordance analysis"
+    ],
+    "limitation": "Requires a Regulations.gov API key and local cache. Concordance does not establish that comments caused guidance changes. Interpretation belongs to companion skills with human checkpoints. Server MIT; explorer separately PolyForm Noncommercial. Static documentation review only; code was not installed or executed.",
+    "url": "https://github.com/Black-Swan-Causal-Labs/regintel-mcp",
+    "favorite": true,
+    "primarySourceURLs": [
+      "https://github.com/Black-Swan-Causal-Labs/regintel-mcp/blob/main/README.md"
+    ],
+    "relevance": {
+      "id": "RWE-6976",
+      "decision": "Core",
+      "rationale": "FDA docket retrieval, comment-corpus export and draft-to-final guidance comparison for regulatory RWE research.",
+      "relevanceBasis": "FDA docket retrieval, comment-corpus export and draft-to-final guidance comparison for regulatory RWE research.",
+      "evidenceLevel": "fresh-primary",
+      "evidenceRefs": [
+        "https://github.com/Black-Swan-Causal-Labs/regintel-mcp/blob/main/README.md"
+      ],
+      "reviewGroup": "requested-regulatory-additions",
+      "reviewedAt": "2026-10-27"
+    }
+  },
+  {
+    "id": "RWE-6977",
+    "name": "Reg4RWE",
+    "kind": "MCP server + skill",
+    "category": "Regulatory & Product Data",
+    "summary": "Study-design appraisal against regulatory precedents drawn from public FDA reviews and EMA assessment reports.",
+    "tags": [
+      "FDA / EMA",
+      "RWE precedents",
+      "Study appraisal"
+    ],
+    "added": "Oct 27, 2026",
+    "checked": "Oct 27, 2026",
+    "status": "Static documentation reviewed",
+    "runtime": "Not independently runtime tested",
+    "repository": "sajankhosla/Reg4RWE",
+    "website": "https://www.reg4rwe.com",
+    "packages": "reg4rwe MCP server and skill",
+    "workflowFit": [
+      "Regulatory evidence review",
+      "RWE study planning"
+    ],
+    "capabilities": [
+      "appraise_rwe_design returns relevant precedents and recorded regulatory feedback",
+      "Companion skill guides appraisal from retrieved precedents",
+      "Hosted navigator and HTTP action provide additional access to the corpus"
+    ],
+    "limitation": "Some corpus records are marked Needs manual review. Precedent retrieval does not establish regulatory acceptance of a proposed design. Documentation states appraisal design text and returned precedents are logged; review data handling before submitting confidential designs. Unaffiliated with Black Swan Causal Labs. Static documentation review only; code was not installed or executed.",
+    "url": "https://github.com/sajankhosla/Reg4RWE",
+    "favorite": false,
+    "primarySourceURLs": [
+      "https://github.com/sajankhosla/Reg4RWE/blob/main/README.md"
+    ],
+    "relevance": {
+      "id": "RWE-6977",
+      "decision": "Core",
+      "rationale": "Study-design appraisal against regulatory precedents drawn from public FDA reviews and EMA assessment reports.",
+      "relevanceBasis": "Study-design appraisal against regulatory precedents drawn from public FDA reviews and EMA assessment reports.",
+      "evidenceLevel": "fresh-primary",
+      "evidenceRefs": [
+        "https://github.com/sajankhosla/Reg4RWE/blob/main/README.md"
+      ],
+      "reviewGroup": "requested-regulatory-additions",
+      "reviewedAt": "2026-10-27"
+    }
+  }
+]
